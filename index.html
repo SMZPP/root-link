@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>家族関係図ジェネレーター</title>
+<style>
+  body { font-family: sans-serif; padding: 20px; }
+  svg { border: 1px solid #ccc; margin-top: 20px; }
+  .node-text { text-anchor: middle; font-size: 14px; dominant-baseline: middle; }
+  fieldset { margin-bottom: 10px; }
+</style>
+</head>
+<body>
+
+<h1>家族関係図ジェネレーター（自分中心＋配偶者）</h1>
+
+<fieldset>
+  <legend>自分</legend>
+  名前: <input type="text" id="meName" value="自分" />
+  性別: 
+  <select id="meGender">
+    <option value="male">男性</option>
+    <option value="female">女性</option>
+  </select>
+</fieldset>
+
+<fieldset>
+  <legend>結婚相手</legend>
+  名前: <input type="text" id="spouseName" value="配偶者" />
+  性別: 
+  <select id="spouseGender">
+    <option value="male">男性</option>
+    <option value="female" selected>女性</option>
+  </select>
+</fieldset>
+
+<fieldset>
+  <legend>親</legend>
+  <div id="parentInputs"></div>
+  <button type="button" onclick="addMember('parent')">＋親追加</button>
+</fieldset>
+
+<fieldset>
+  <legend>兄弟</legend>
+  <div id="siblingInputs"></div>
+  <button type="button" onclick="addMember('sibling')">＋兄弟追加</button>
+</fieldset>
+
+<fieldset>
+  <legend>子</legend>
+  <div id="childInputs"></div>
+  <button type="button" onclick="addMember('child')">＋子追加</button>
+</fieldset>
+
+<button onclick="drawTree()">関係図を生成</button>
+
+<svg id="familyTree" width="900" height="600"></svg>
+
+<script>
+function addMember(type) {
+  const container = document.getElementById(type + 'Inputs');
+  const idx = container.children.length + 1;
+  const div = document.createElement('div');
+  div.innerHTML = `
+    名前: <input type="text" class="${type}-name" value="${type}${idx}" />
+    性別: <select class="${type}-gender">
+      <option value="male">男性</option>
+      <option value="female">女性</option>
+    </select>
+  `;
+  container.appendChild(div);
+}
+
+function drawNode(svg, x, y, name, gender) {
+  if (gender === 'male') {
+    svg.innerHTML += `<rect x="${x-40}" y="${y-20}" width="80" height="40" fill="#add8e6" stroke="black"/>`;
+  } else {
+    svg.innerHTML += `<circle cx="${x}" cy="${y}" r="25" fill="#f4cccc" stroke="black"/>`;
+  }
+  svg.innerHTML += `<text x="${x}" y="${y}" class="node-text">${name}</text>`;
+}
+
+function drawTree() {
+  const svg = document.getElementById('familyTree');
+  svg.innerHTML = '';
+
+  const meName = document.getElementById('meName').value;
+  const meGender = document.getElementById('meGender').value;
+
+  const spouseName = document.getElementById('spouseName').value;
+  const spouseGender = document.getElementById('spouseGender').value;
+
+  const parents = Array.from(document.querySelectorAll('.parent-name')).map((input, i) => ({
+    name: input.value,
+    gender: document.querySelectorAll('.parent-gender')[i].value
+  }));
+  const siblings = Array.from(document.querySelectorAll('.sibling-name')).map((input, i) => ({
+    name: input.value,
+    gender: document.querySelectorAll('.sibling-gender')[i].value
+  }));
+  const children = Array.from(document.querySelectorAll('.child-name')).map((input, i) => ({
+    name: input.value,
+    gender: document.querySelectorAll('.child-gender')[i].value
+  }));
+
+  const centerX = 450;
+  const centerY = 300;
+  const spouseX = centerX + 150;
+
+  // 自分と配偶者
+  drawNode(svg, centerX, centerY, meName, meGender);
+  drawNode(svg, spouseX, centerY, spouseName, spouseGender);
+
+  // 結婚線
+  svg.innerHTML += `<line x1="${centerX + 40}" y1="${centerY}" x2="${spouseX - 40}" y2="${centerY}" stroke="black"/>`;
+
+  // 親（自分側の上）
+  parents.forEach((p, i) => {
+    const px = centerX - (parents.length - 1) * 100 / 2 + i * 100;
+    const py = centerY - 200;
+    drawNode(svg, px, py, p.name, p.gender);
+    svg.innerHTML += `<line x1="${centerX}" y1="${centerY-20}" x2="${px}" y2="${py+20}" stroke="black"/>`;
+  });
+
+  // 子（夫婦の中間から下）
+  const midX = (centerX + spouseX) / 2;
+  children.forEach((c, i) => {
+    const cx = midX - (children.length - 1) * 100 / 2 + i * 100;
+    const cy = centerY + 200;
+    drawNode(svg, cx, cy, c.name, c.gender);
+    svg.innerHTML += `<line x1="${midX}" y1="${centerY+20}" x2="${cx}" y2="${cy-20}" stroke="black"/>`;
+  });
+
+  // 兄弟（自分側の左右）
+  siblings.forEach((s, i) => {
+    const offset = (i+1) * 100;
+    const sx = centerX + (i % 2 === 0 ? offset : -offset);
+    const sy = centerY;
+    drawNode(svg, sx, sy, s.name, s.gender);
+    svg.innerHTML += `<line x1="${centerX + (sx>centerX?40:-40)}" y1="${centerY}" x2="${sx + (sx>centerX?-40:40)}" y2="${sy}" stroke="black"/>`;
+  });
+}
+</script>
+
+</body>
+</html>
