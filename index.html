@@ -41,9 +41,9 @@
 </fieldset>
 
 <fieldset>
-  <legend>兄弟</legend>
-  <div id="siblingInputs"></div>
-  <button type="button" onclick="addMember('sibling')">＋兄弟追加</button>
+  <legend>配偶者の親</legend>
+  <div id="spouseParentInputs"></div>
+  <button type="button" onclick="addMember('spouseParent')">＋配偶者の親追加</button>
 </fieldset>
 
 <fieldset>
@@ -52,7 +52,9 @@
   <button type="button" onclick="addMember('child')">＋子追加</button>
 </fieldset>
 
-<button onclick="drawTree()">関係図を生成</button>
+<div>
+  <button onclick="drawTree()">関係図を生成</button>
+</div>
 
 <svg id="familyTree" width="900" height="600"></svg>
 
@@ -62,7 +64,7 @@ function addMember(type) {
   const idx = container.children.length + 1;
   const div = document.createElement('div');
   div.innerHTML = `
-    名前: <input type="text" class="${type}-name" value="${type}${idx}" />
+    続柄: <input type="text" class="${type}-name" value="${type}${idx}" />
     性別: <select class="${type}-gender">
       <option value="male">男性</option>
       <option value="female">女性</option>
@@ -90,17 +92,18 @@ function drawTree() {
   const spouseName = document.getElementById('spouseName').value;
   const spouseGender = document.getElementById('spouseGender').value;
 
+  // 入力値取得
   const parents = Array.from(document.querySelectorAll('.parent-name')).map((input, i) => ({
     name: input.value,
     gender: document.querySelectorAll('.parent-gender')[i].value
   }));
-  const siblings = Array.from(document.querySelectorAll('.sibling-name')).map((input, i) => ({
-    name: input.value,
-    gender: document.querySelectorAll('.sibling-gender')[i].value
-  }));
   const children = Array.from(document.querySelectorAll('.child-name')).map((input, i) => ({
     name: input.value,
     gender: document.querySelectorAll('.child-gender')[i].value
+  }));
+  const spouseParents = Array.from(document.querySelectorAll('.spouseParent-name')).map((input, i) => ({
+    name: input.value,
+    gender: document.querySelectorAll('.spouseParent-gender')[i].value
   }));
 
   const centerX = 450;
@@ -114,12 +117,20 @@ function drawTree() {
   // 結婚線
   svg.innerHTML += `<line x1="${centerX + 40}" y1="${centerY}" x2="${spouseX - 40}" y2="${centerY}" stroke="black"/>`;
 
-  // 親（自分側の上）
+  // 親（自分側）
   parents.forEach((p, i) => {
     const px = centerX - (parents.length - 1) * 100 / 2 + i * 100;
     const py = centerY - 200;
     drawNode(svg, px, py, p.name, p.gender);
     svg.innerHTML += `<line x1="${centerX}" y1="${centerY-20}" x2="${px}" y2="${py+20}" stroke="black"/>`;
+  });
+
+  // 配偶者の親
+  spouseParents.forEach((p, i) => {
+    const px = spouseX - (spouseParents.length - 1) * 100 / 2 + i * 100;
+    const py = centerY - 200;
+    drawNode(svg, px, py, p.name, p.gender);
+    svg.innerHTML += `<line x1="${spouseX}" y1="${centerY-20}" x2="${px}" y2="${py+20}" stroke="black"/>`;
   });
 
   // 子（夫婦の中間から下）
@@ -129,15 +140,6 @@ function drawTree() {
     const cy = centerY + 200;
     drawNode(svg, cx, cy, c.name, c.gender);
     svg.innerHTML += `<line x1="${midX}" y1="${centerY+20}" x2="${cx}" y2="${cy-20}" stroke="black"/>`;
-  });
-
-  // 兄弟（自分側の左右）
-  siblings.forEach((s, i) => {
-    const offset = (i+1) * 100;
-    const sx = centerX + (i % 2 === 0 ? offset : -offset);
-    const sy = centerY;
-    drawNode(svg, sx, sy, s.name, s.gender);
-    svg.innerHTML += `<line x1="${centerX + (sx>centerX?40:-40)}" y1="${centerY}" x2="${sx + (sx>centerX?-40:40)}" y2="${sy}" stroke="black"/>`;
   });
 }
 </script>
