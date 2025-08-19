@@ -90,3 +90,13 @@ button#generateBtn:hover {
         margin-bottom: 16px;
     }
 }
+
+@media print {
+  aside, fieldset, nav, #printBtn {
+    display: none;
+  }
+  #familyTree {
+    width: 100%;
+    height: auto;
+  }
+}
