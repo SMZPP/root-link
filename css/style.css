@@ -82,13 +82,23 @@ button#generateBtn:hover {
 
 /* スマホ対応 */
 @media (max-width: 768px) {
-    body {
-        grid-template-columns: 1fr;
-    }
-    aside {
-        order: -1; /* 広告を上に */
-        margin-bottom: 16px;
-    }
+  body {
+    grid-template-columns: 1fr; /* 1カラムにする */
+  }
+  main {
+    order: 0;
+  }
+  aside {
+    order: 1; /* 本文の下に移動 */
+    margin-top: 16px;
+    display: flex;
+    gap: 8px;
+    justify-content: center; /* 広告を横並びで中央寄せ */
+  }
+  aside > div {
+    flex: 1;              /* 広告枠を均等に広げる */
+    max-width: 150px;     /* 広告の最大幅 */
+  }
 }
 
 @media print {
