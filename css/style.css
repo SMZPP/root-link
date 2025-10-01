@@ -9,7 +9,7 @@ body {
     padding: 0;
     font-family: sans-serif;
     display: grid;
-    grid-template-columns: 200px 1fr 200px; /* 左広告・メイン・右広告 */
+    grid-template-columns: 1fr;
     gap: 16px;
     min-height: 100vh;
     background: #f0f0f0;
@@ -35,18 +35,9 @@ body {
   border-bottom: 2px solid #0073e6;
 }
 
-aside {
-    background: #fff;
-    padding: 8px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
 main {
     background: #fff;
-    padding: 16px;
+    padding: 16px 350px;
     border-radius: 12px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
@@ -83,9 +74,10 @@ button#generateBtn:hover {
 /* スマホ対応 */
 @media (max-width: 768px) {
   body {
-    grid-template-columns: 1fr; /* 1カラムにする */
+    grid-template-columns: 1fr;
   }
   main {
+    padding: 5px 10px;
     order: 0;
   }
   .navbar {
@@ -97,21 +89,10 @@ button#generateBtn:hover {
     margin: 8px 0;
     font-size: 18px;
   }
-  aside {
-    order: 1; /* 本文の下に移動 */
-    margin-top: 16px;
-    display: flex;
-    gap: 8px;
-    justify-content: center; /* 広告を横並びで中央寄せ */
-  }
-  aside > div {
-    flex: 1;              /* 広告枠を均等に広げる */
-    max-width: 150px;     /* 広告の最大幅 */
-  }
 }
 
 @media print {
-  aside, fieldset, nav, #printBtn {
+  fieldset, nav, #printBtn {
     display: none;
   }
   #familyTree {
