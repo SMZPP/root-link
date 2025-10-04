@@ -20,164 +20,242 @@
 <!-- メインコンテンツ -->
 <main>
   <nav class="navbar">
-    <a href="index.html">家族関係図メーカー</a>
-    <a href="howto.html">使い方</a>
-    <a href="contact.html">お問い合わせ</a>
-    <a href="privacy.html">プライバシーポリシー</a>
-    <a href="blog.html">記事一覧</a>
+    <a href="index.html" class="nav-link">家族関係図メーカー</a>
+    <a href="contact.html" class="nav-link">お問い合わせ</a>
+    <a href="privacy.html" class="nav-link">プライバシーポリシー</a>
   </nav>
 
   <h1>家族関係図メーカー</h1>
 
-  <p>このツールでは、自分や家族の家系図を簡単に作成できます。名前や性別を入力するだけで、関係図を自動生成。家族の絆を可視化し、整理するのに役立ちます。</p>
-<!-- Google AdSense -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3016118096844603"
-     crossorigin="anonymous"></script>
-<!-- レスポンシブ -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-3016118096844603"
-     data-ad-slot="4142062273"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-  <fieldset>
-    <legend>自分</legend>
-    続柄: <input type="text" id="meName" value="本人" />
-    性別: 
-    <select id="meGender">
-      <option value="male">男性</option>
-      <option value="female">女性</option>
-    </select>
-  </fieldset>
+  <p>
+    <a href="#target" class="cta-link">
+      <span>オンライン無料ツールで家族関係図を作成する</span>
+    </a>
+  </p>
 
-  <fieldset>
-    <legend>結婚相手</legend>
-    続柄: <input type="text" id="spouseName" value="妻" />
-    性別: 
-    <select id="spouseGender">
-      <option value="male">男性</option>
-      <option value="female" selected>女性</option>
-    </select>
-  </fieldset>
+  <!-- ここから記事一覧 -->
+  <section id="articles">
+    <div class="article-list">
+      <article class="article-item">
+        <h3>家系図を作るメリットとは？家族のつながりを可視化しよう</h3>
+        <p>家系図と聞くと先祖をたどるためのものという印象が強いですが、実際には現代の暮らしでも役立ちます。</p>
+        <ul>
+          <li><strong>家族の歴史を整理できる</strong>：図にまとめることで祖父母や曽祖父母とのつながりを視覚的に理解できます。</li>
+          <li><strong>相続やライフイベントに活用</strong>：相続の資料や結婚式・記念日の贈り物としても最適です。</li>
+          <li><strong>教育的効果</strong>：自由研究や学びの題材として、自分のルーツを知るきっかけになります。</li>
+        </ul>
+      </article>
 
-  <fieldset>
-    <legend>親</legend>
-    <div id="parentInputs"></div>
-    <button type="button" onclick="addMember('parent')">＋親追加</button>
-  </fieldset>
+      <article class="article-item">
+        <h3>相続や遺産分割における家系図の重要性</h3>
+        <p>相続では「誰が相続人か」を把握できないことが混乱の原因です。家系図を作成しておけば、一目で関係を理解できます。</p>
+        <p>兄弟姉妹や再婚家庭など複雑なケースでも整理に役立ち、司法書士や弁護士に相談するときにもスムーズです。事前に整えることで争いを防ぎ、家族円満につながります。</p>
+      </article>
 
-  <fieldset>
-    <legend>配偶者の親</legend>
-    <div id="spouseParentInputs"></div>
-    <button type="button" onclick="addMember('spouseParent')">＋配偶者の親追加</button>
-  </fieldset>
+      <article class="article-item">
+        <h3>子どもの自由研究におすすめ！家系図を作ってみよう</h3>
+        <p>夏休みの自由研究で人気のテーマが「家系図作り」。祖父母や両親へのインタビューやアルバムを活用すれば、楽しく進められます。</p>
+        <p>模造紙だけでなくデジタルツールでまとめるのもおすすめ。写真やイラストを加えれば見栄えが良く、発表資料にも最適です。</p>
+      </article>
 
-  <fieldset>
-    <legend>子</legend>
-    <div id="childInputs"></div>
-    <button type="button" onclick="addMember('child')">＋子追加</button>
-  </fieldset>
+      <!-- 残りの記事には .hidden-article クラス -->
+      <div class="hidden-articles">
 
-  <div>
-    <button id="generateBtn" onclick="drawTree()">関係図を生成</button>
-    <button id="printBtn" onclick="window.print()">印刷する</button>
+        <article>
+          <h3>歴史的人物の家系図から学ぶこと</h3>
+          <p>
+            徳川家や源氏などを例にすると、血縁や婚姻が政治にどう影響したかがわかります。文化人や芸術家の家系をたどると才能の継承にも気づけます。
+          </p>
+          <p>
+            歴史的人物の家系図は「社会の縮図」。自分の家系図と照らし合わせれば、歴史をより身近に感じられます。
+          </p>
+        </article>
+
+        <article>
+          <h3>結婚式で活用できる家系図のアイデア</h3>
+          <p>
+            新郎新婦の家族紹介や両家が一つになる瞬間を象徴的に表現できます。プロフィールブックやウェルカムスペースに活用するのも効果的。
+          </p>
+          <p>
+            親への感謝の手紙と共に贈れば、感動を呼ぶプレゼントにもなります。
+          </p>
+        </article>
+
+        <article>
+          <h3>海外における家系図文化の違い</h3>
+          <p>
+            欧米では「ファミリーツリー」として誕生日や記念日を記録、中国や韓国では「族譜」という伝統的な文化があります。
+          </p>
+          <p>
+            それぞれの文化を知ることで、日本の家系図にも新しい視点を取り入れられます。
+          </p>
+        </article>
+
+        <article>
+          <h3>デジタルツールで簡単に家系図を作ろう</h3>
+          <p>
+            オンラインツールなら名前を入力するだけで自動生成。編集や追加も簡単で、PDFや画像として保存できます。
+          </p>
+          <p>
+            プライバシー保護に配慮しながら、安全に便利さを活用しましょう。
+          </p>
+        </article>
+
+        <article>
+          <h3>家系図と戸籍の違いとは？</h3>
+          <p>
+            戸籍は法律に基づいた公的記録、家系図は系譜をわかりやすく整理するための資料です。法律的効力はありませんが、関係を理解するのに役立ちます。
+          </p>
+          <p>
+            相続や研究目的で戸籍を入手したら、必ず家系図にまとめておくと便利です。
+          </p>
+        </article>
+
+        <article>
+          <h3>高齢者と一緒に家系図を作るメリット</h3>
+          <p>
+            人生を振り返り、子や孫に伝える機会になります。家族と一緒に作業すれば思い出話が広がり、写真やエピソードを残せます。
+          </p>
+          <p>
+            「自分の歩みを残せた」という達成感は心の健康にもつながります。
+          </p>
+        </article>
+
+        <article>
+          <h3>未来に残すための家系図活用法</h3>
+          <p>
+            成人や結婚、出産などの節目に渡せば「家族の歴史」として大切にされます。デジタル保存すれば世代を超えて伝えられる資産に。
+          </p>
+          <p>
+            家系図は今だけでなく、未来の家族のために残す財産でもあります。
+          </p>
+        </article>
+      </div>
+    </div>
+
+    <div class="show-more-container">
+      <button id="showMoreBtn">続きを見る</button>
+    </div>
+  </section>
+  <!-- 記事一覧ここまで -->
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3016118096844603"
+      crossorigin="anonymous"></script>
+  <!-- レスポンシブ -->
+  <ins class="adsbygoogle"
+      style="display:block"
+      data-ad-client="ca-pub-3016118096844603"
+      data-ad-slot="4142062273"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+  <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+
+  <div id="target">
+    <section class="accordion">
+      <button class="accordion-btn">
+        <span class="accordion-title">家族関係図メーカーの使い方（詳細）</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h3>1. 自分の情報を入力</h3>
+        <p>
+          ページを開くと最初に「自分」の入力欄があります。ここに自分の続柄（例：本人、私など）と性別を選んでください。<br>
+          性別を「男性」にすると四角、「女性」にすると丸の図形で表示されます。
+        </p>
+
+        <h3>2. 結婚相手を追加</h3>
+        <p>
+          続いて「結婚相手」の欄に名前や続柄（例：妻、夫）を入力し、性別を選びます。<br>
+          入力すると、自分と配偶者が線でつながって表示されます。
+        </p>
+
+        <h3>3. 親や配偶者の親を追加</h3>
+        <p>
+          <strong>＋親追加</strong> ボタンを押すと、父や母など複数の親を入力できます。<br>
+          同様に、<strong>＋配偶者の親追加</strong> ボタンを押せば、義父・義母の入力が可能です。
+        </p>
+
+        <h3>4. 子どもを追加</h3>
+        <p>
+          <strong>＋子追加</strong> ボタンを押すと、子どもを複数入力できます。<br>
+          兄弟姉妹がいる場合は人数分追加し、それぞれ名前と性別を選んでください。
+        </p>
+
+        <h3>5. 関係図を生成</h3>
+        <p>
+          すべての入力が終わったら、<strong>「関係図を生成」ボタン</strong> をクリックします。<br>
+          画面下部に自動的に家族関係図が描画されます。
+        </p>
+
+        <h3>6. 印刷・保存</h3>
+        <p>
+          <strong>「印刷する」ボタン</strong> を押すと、生成した図をプリンターで印刷できます。<br>
+          「PDFとして保存」を選べばデジタルファイルとして残すことも可能です。
+        </p>
+
+        <h3>7. 活用のアイデア</h3>
+        <ul>
+          <li>相続や遺産整理の場面で相関関係を整理</li>
+          <li>結婚式や記念日の演出として両家の関係図を作成</li>
+          <li>夏休みの自由研究や学習教材として利用</li>
+          <li>高齢の家族と一緒に思い出話を残す資料に活用</li>
+        </ul>
+      </div>
+    </section>
+
+    <p class="notice">
+      ※入力内容をサーバーに保存せず、ブラウザ上でのみ生成されるため、安心してご利用いただけます。
+    </p>
+
+    <fieldset>
+      <legend>自分</legend>
+      続柄: <input type="text" id="meName" value="本人" />
+      性別: 
+      <select id="meGender">
+        <option value="male">男性</option>
+        <option value="female">女性</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>結婚相手</legend>
+      続柄: <input type="text" id="spouseName" value="妻" />
+      性別: 
+      <select id="spouseGender">
+        <option value="male">男性</option>
+        <option value="female" selected>女性</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>親</legend>
+      <div id="parentInputs"></div>
+      <button type="button" onclick="addMember('parent')">＋親追加</button>
+    </fieldset>
+
+    <fieldset>
+      <legend>配偶者の親</legend>
+      <div id="spouseParentInputs"></div>
+      <button type="button" onclick="addMember('spouseParent')">＋配偶者の親追加</button>
+    </fieldset>
+
+    <fieldset>
+      <legend>子</legend>
+      <div id="childInputs"></div>
+      <button type="button" onclick="addMember('child')">＋子追加</button>
+    </fieldset>
+
+    <div>
+      <button id="generateBtn" onclick="drawTree()">関係図を生成</button>
+      <button id="printBtn">印刷する</button>
+    </div>
+
+    <svg id="familyTree"></svg>
   </div>
-
-  <svg id="familyTree"></svg>
 </main>
-
-<script>
-function drawNode(svg, x, y, name, gender) {
-  if (gender === 'male') {
-    svg.innerHTML += `<rect x="${x-40}" y="${y-20}" width="80" height="40" fill="#add8e6" stroke="black"/>`;
-  } else {
-    svg.innerHTML += `<circle cx="${x}" cy="${y}" r="25" fill="#f4cccc" stroke="black"/>`;
-  }
-  // テキスト中央寄せ
-  svg.innerHTML += `<text x="${x}" y="${y}" text-anchor="middle" dominant-baseline="middle" class="node-text">${name}</text>`;
-}
-
-function drawTree() {
-  const svg = document.getElementById('familyTree');
-  svg.setAttribute("viewBox", "0 0 1000 800");
-  svg.setAttribute("width", "100%");
-  svg.setAttribute("height", "600");
-
-  svg.innerHTML = '';
-
-  const meName = document.getElementById('meName').value;
-  const meGender = document.getElementById('meGender').value;
-
-  const spouseName = document.getElementById('spouseName').value;
-  const spouseGender = document.getElementById('spouseGender').value;
-
-  const parents = Array.from(document.querySelectorAll('.parent-name')).map((input, i) => ({
-    name: input.value,
-    gender: document.querySelectorAll('.parent-gender')[i].value
-  }));
-  const children = Array.from(document.querySelectorAll('.child-name')).map((input, i) => ({
-    name: input.value,
-    gender: document.querySelectorAll('.child-gender')[i].value
-  }));
-  const spouseParents = Array.from(document.querySelectorAll('.spouseParent-name')).map((input, i) => ({
-    name: input.value,
-    gender: document.querySelectorAll('.spouseParent-gender')[i].value
-  }));
-
-  const centerX = 500; // SVG中央を基準
-  const centerY = 400;
-  const spouseX = centerX + 200;
-
-  // 自分と配偶者
-  drawNode(svg, centerX, centerY, meName, meGender);
-  drawNode(svg, spouseX, centerY, spouseName, spouseGender);
-
-  // 結婚線
-  svg.innerHTML += `<line x1="${centerX+40}" y1="${centerY}" x2="${spouseX-40}" y2="${centerY}" stroke="black"/>`;
-
-  // 親（自分側）
-  parents.forEach((p, i) => {
-    const px = centerX - (parents.length - 1) * 120 / 2 + i * 120;
-    const py = centerY - 200;
-    drawNode(svg, px, py, p.name, p.gender);
-    svg.innerHTML += `<line x1="${centerX}" y1="${centerY-20}" x2="${px}" y2="${py+20}" stroke="black"/>`;
-  });
-
-  // 配偶者の親
-  spouseParents.forEach((p, i) => {
-    const px = spouseX - (spouseParents.length - 1) * 120 / 2 + i * 120;
-    const py = centerY - 200;
-    drawNode(svg, px, py, p.name, p.gender);
-    svg.innerHTML += `<line x1="${spouseX}" y1="${centerY-20}" x2="${px}" y2="${py+20}" stroke="black"/>`;
-  });
-
-  // 子供
-  const midX = (centerX + spouseX) / 2;
-  children.forEach((c, i) => {
-    const cx = midX - (children.length - 1) * 120 / 2 + i * 120;
-    const cy = centerY + 200;
-    drawNode(svg, cx, cy, c.name, c.gender);
-    svg.innerHTML += `<line x1="${midX}" y1="${centerY+20}" x2="${cx}" y2="${cy-30}" stroke="black"/>`;
-  });
-}
-
-function addMember(type) {
-  const container = document.getElementById(type + 'Inputs');
-  const idx = container.children.length + 1;
-  const div = document.createElement('div');
-  div.innerHTML = `
-    続柄: <input type="text" class="${type}-name" value="${type}${idx}" />
-    性別: <select class="${type}-gender">
-      <option value="male">男性</option>
-      <option value="female">女性</option>
-    </select>
-  `;
-  container.appendChild(div);
-}
-</script>
-
+<script src="js/common.js"></script>
 </body>
 </html>
