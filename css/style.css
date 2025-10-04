@@ -1,8 +1,10 @@
 h1 {
     text-align: center;
-    background-color: #ffeb3b; /* 背景色 */
-    padding: 10px;
-    border-radius: 8px;
+    background: linear-gradient(135deg, #66a6ff, #89f7fe); /* 青系グラデーション */
+    color: #fff; /* 文字色は白で見やすく */
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 軽い影で浮き上がる感じ */
 }
 body {
     margin: 0;
@@ -18,11 +20,12 @@ body {
 /* ナビ全体 */
 .navbar {
   display: flex;
-  gap: 20px; /* リンク間の余白 */
-  justify-content: center; /* 中央揃え */
+  gap: 20px; 
+  justify-content: center;
   padding: 20px;
-  background-color: #f8f9fa; /* ナビ背景 */
-  border-bottom: 2px solid #e0e0e0;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff); /* 青系グラデーション */
+  border-bottom: 2px solid #357ab8;
+  border-radius: 0 0 15px 15px; /* 少し丸みを下部に */
 }
 /* 個別リンク */
 .nav-link {
@@ -120,20 +123,25 @@ svg {
 
 button#send,
 button#generateBtn {
-    display: block;          /* ブロック要素にして中央寄せ */
-    margin: 20px auto;       /* 上下マージン + 左右自動で中央 */
-    padding: 20px 100px;      /* ボタンの余白 */
-    background-color: #4caf50; /* 緑色の背景 */
-    color: white;             /* 文字色 */
-    border: none;             /* 枠線なし */
-    border-radius: 8px;       /* 角丸 */
+    display: block;
+    margin: 20px auto;
+    padding: 15px 80px;
+    background: linear-gradient(90deg, #4facfe, #00f2fe); /* 青系グラデーション */
+    color: white;
+    border: none;
+    border-radius: 12px;
     font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* 立体感 */
 }
-button#send,
+
+button#send:hover,
 button#generateBtn:hover {
-    background-color: #45a049; /* ホバー時の色 */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(90deg, #00f2fe, #4facfe); /* ホバー時グラデーション反転 */
 }
 
 .accordion {
