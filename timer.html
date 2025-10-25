@@ -1,0 +1,48 @@
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>シンプルタイマー（終了ベル）</title>
+  <link rel="stylesheet" href="css/timer/timer.css">
+</head>
+<body>
+  <div class="card" role="main">
+    <h1>シンプルタイマー</h1>
+    <div class="lead">時間を設定してスタート。終了時にベルが鳴ります。</div>
+
+    <div class="grid">
+      <div class="controls">
+        <div class="inputs" aria-hidden>
+          <input id="hours" type="number" min="0" placeholder="時間（h）" />
+          <input id="minutes" type="number" min="0" max="59" placeholder="分（m）" />
+          <input id="seconds" type="number" min="0" max="59" placeholder="秒（s）" />
+        </div>
+
+        <div style="display:flex;gap:8px">
+          <button class="btn" id="startBtn">スタート</button>
+          <button class="btn secondary" id="pauseBtn">一時停止</button>
+          <button class="btn secondary" id="resetBtn">リセット</button>
+        </div>
+
+        <div class="switch small">
+          <label><input type="checkbox" id="soundToggle" checked> サウンド有効</label>
+          <span style="margin-left:auto" id="notifyHint" class="small"></span>
+        </div>
+
+        <div class="small">デスクトップ通知を表示するにはブラウザの許可を与えてください。</div>
+      </div>
+
+      <div class="clock" aria-live="polite">
+        <div class="time" id="display">00:00:00</div>
+        <div class="sub" id="note">準備完了</div>
+        <div class="progress" aria-hidden><div class="bar" id="bar"></div></div>
+        <div class="status" id="status"></div>
+      </div>
+    </div>
+
+    <footer>時間になったらベルが鳴ります。モバイルはバイブも試行します。</footer>
+  </div>
+
+  <script src="js/timer/timer.js"></script>
+</body>
+</html>
