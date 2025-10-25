@@ -6,7 +6,6 @@ const pauseBtn = document.getElementById('pauseBtn');
 const resetBtn = document.getElementById('resetBtn');
 const display = document.getElementById('display');
 const note = document.getElementById('note');
-const status = document.getElementById('status');
 const bar = document.getElementById('bar');
 const soundToggle = document.getElementById('soundToggle');
 const notifyHint = document.getElementById('notifyHint');
@@ -18,7 +17,9 @@ let running = false;
 
 const AudioCtx = window.AudioContext || window.webkitAudioContext;
 let audioCtx = null;
+
 function ensureAudio(){ if(!audioCtx) audioCtx = new AudioCtx(); }
+
 function playTone(freq, duration=200, type='sine', gain=0.2){
   if(!soundToggle.checked) return;
   try{
@@ -35,8 +36,11 @@ function playTone(freq, duration=200, type='sine', gain=0.2){
     o.stop(now + (duration/1000) + 0.02);
   }catch(e){ console.warn('Audio failed',e); }
 }
-function playEndBell(){ playTone(600,350,'sine',0.28); setTimeout(()=>playTone(720,200,'sine',0.22),380); }
 
+function playEndBell(){
+  playTone(600, 1000, 'sine', 0.4);   // メインベル 1秒
+  setTimeout(() => playTone(720, 800, 'triangle', 0.3), 1000); // 追いかけ音
+}
 function notify(title, body){
   if(window.Notification && Notification.permission === 'granted'){
     new Notification(title, {body});
@@ -57,17 +61,22 @@ function updateUI(){
   if(!running && remaining===0){ note.textContent = '準備完了'; }
 }
 
-function tick(){
-  if(remaining <= 0){
-    clearInterval(timerId); timerId = null; running = false;
-    status.textContent = '終了';
+function tick() {
+  if (remaining <= 0) {
+    clearInterval(timerId);
+    timerId = null;
+    running = false;
     note.textContent = '時間になりました';
     playEndBell();
-    try{ if(navigator.vibrate) navigator.vibrate([300,100,300]); }catch(e){}
+
+    showPopup();
+
+    try { if(navigator.vibrate) navigator.vibrate([300,100,300]); } catch(e) {}
     document.title = '⏰ 終了 - タイマー';
     notify('タイマー終了', '設定した時間が終了しました');
     return;
   }
+
   remaining -= 1;
   updateUI();
   document.title = formatTime(remaining) + ' - タイマー';
@@ -84,7 +93,6 @@ function startTimer(){
     if(totalSeconds <= 0){ alert('時間を正しく入力してください。'); return; }
   }
   running = true;
-  status.textContent = '動作中';
   note.textContent = 'タイマーが動いています';
   timerId = setInterval(tick, 1000);
   try{ if(audioCtx && audioCtx.state === 'suspended') audioCtx.resume(); }catch(e){}
@@ -93,7 +101,6 @@ function startTimer(){
 function pauseTimer(){
   if(timerId) clearInterval(timerId);
   timerId = null; running = false;
-  status.textContent = '一時停止';
   note.textContent = '停止中';
   document.title = '⏸ タイマー';
 }
@@ -102,7 +109,6 @@ function resetTimer(){
   if(timerId) clearInterval(timerId);
   timerId = null; running = false;
   totalSeconds = 0; remaining = 0;
-  status.textContent = '';
   note.textContent = 'リセットされました';
   display.textContent = '00:00:00';
   bar.style.width = '0%';
@@ -129,3 +135,85 @@ resetTimer();
 }));
 
 document.addEventListener('keydown', ()=>{ if(audioCtx && audioCtx.state === 'suspended') audioCtx.resume(); }, {once:true});
+
+
+function startFireworks() {
+  const canvas = document.getElementById('fireworks');
+  const ctx = canvas.getContext('2d');
+  canvas.hidden = false; // ← ここを追加
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  let particles = [];
+  function random(min, max) { return Math.random() * (max - min) + min; }
+
+  function createFirework() {
+    const x = random(100, canvas.width - 100);
+    const y = random(100, canvas.height / 2);
+    const color = `hsl(${Math.floor(random(0, 360))},100%,60%)`;
+    for (let i = 0; i < 50; i++) {
+      particles.push({
+        x, y,
+        angle: random(0, Math.PI * 2),
+        speed: random(1, 6),
+        radius: 3,
+        alpha: 1,
+        color
+      });
+    }
+  }
+
+  function animate() {
+    ctx.fillStyle = "rgba(0,0,0,0.15)";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    particles.forEach((p, i) => {
+      p.x += Math.cos(p.angle) * p.speed;
+      p.y += Math.sin(p.angle) * p.speed;
+      p.alpha -= 0.015;
+      if (p.alpha <= 0) particles.splice(i, 1);
+      ctx.beginPath();
+      ctx.fillStyle = `${p.color}`;
+      ctx.globalAlpha = p.alpha;
+      ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+      ctx.fill();
+    });
+    ctx.globalAlpha = 1;
+    requestAnimationFrame(animate);
+  }
+
+  const interval = setInterval(createFirework, 400);
+  animate();
+
+  setTimeout(() => {
+    clearInterval(interval);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    canvas.hidden = true; // ← 終了後に非表示に戻す
+  }, 3000);
+}
+
+function showPopup() {
+  const popup = document.getElementById('popup');
+  const fireworks = document.getElementById('fireworks');
+
+  // 表示開始
+  popup.style.display = 'flex';
+  fireworks.style.display = 'block';
+
+  // フェードイン
+  requestAnimationFrame(() => {
+    popup.style.opacity = '1';
+    fireworks.style.opacity = '1';
+  });
+
+  startFireworks();
+
+  // 3.5秒後に自動で消える
+  setTimeout(() => {
+    popup.style.opacity = '0';
+    fireworks.style.opacity = '0';
+    setTimeout(() => {
+      popup.style.display = 'none';
+      fireworks.style.display = 'none';
+    }, 400); // フェードアウト後に完全非表示
+  }, 3500);
+}
