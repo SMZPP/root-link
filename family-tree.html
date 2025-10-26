@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>家族関係図メーカー｜無料で家系図を作成</title>
+<link rel="stylesheet" href="css/family/family.css">
+<link rel="icon" href="/images/favicon-fl.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon-fl.png">
+<meta name="description" content="家族関係図メーカーは、簡単に自分や家族の家系図を作成できる無料ツールです。親、配偶者、子供などを入力して関係図を生成できます。">
+<meta name="keywords" content="家族関係図, 家系図, 無料作成, 関係図メーカー, genealogy, family tree, ジェノグラム, 家族図">
+</head>
+
+<body>
+  <main>
+    <a href="index.html" class="nav-link">🏠 ホームへ戻る</a>
+    <h1>家族関係図作成ツール</h1>
+
+    <section class="howto">
+      <h2>📘 ツールの使い方</h2>
+      <ol>
+        <li><strong>自分の情報を入力：</strong> 「自分」の続柄（例：本人）と性別を選びます。</li>
+        <li><strong>結婚相手を追加：</strong> 「結婚相手」の欄に続柄（例：妻、夫）を入力します。</li>
+        <li><strong>親や配偶者の親を追加：</strong> 「＋親追加」や「＋配偶者の親追加」で両親・義父母を追加。</li>
+        <li><strong>子どもを追加：</strong> 「＋子追加」ボタンで複数の子どもを追加できます。</li>
+        <li><strong>関係図を生成：</strong> 「関係図を生成」ボタンで家族関係図を描画します。</li>
+        <li><strong>印刷・保存：</strong> 「印刷する」ボタンで印刷またはPDFとして保存できます。</li>
+      </ol>
+      <p class="notice">※入力内容はサーバーに保存されず、ブラウザ上でのみ処理されます。</p>
+    </section>
+
+    <!-- 入力フォーム -->
+    <section class="input-section">
+      <fieldset>
+        <legend>自分</legend>
+        続柄: <input type="text" id="meName" value="本人">
+        性別:
+        <select id="meGender">
+          <option value="male">男性</option>
+          <option value="female">女性</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>結婚相手</legend>
+        続柄: <input type="text" id="spouseName" value="妻">
+        性別:
+        <select id="spouseGender">
+          <option value="male">男性</option>
+          <option value="female" selected>女性</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>親</legend>
+        <div id="parentInputs"></div>
+        <button type="button" onclick="addMember('parent')">＋親追加</button>
+      </fieldset>
+
+      <fieldset>
+        <legend>配偶者の親</legend>
+        <div id="spouseParentInputs"></div>
+        <button type="button" onclick="addMember('spouseParent')">＋配偶者の親追加</button>
+      </fieldset>
+
+      <fieldset>
+        <legend>子</legend>
+        <div id="childInputs"></div>
+        <button type="button" onclick="addMember('child')">＋子追加</button>
+      </fieldset>
+
+      <div class="center-buttons">
+        <button id="generateBtn" onclick="drawTree()">関係図を生成</button>
+        <button id="printBtn">印刷する</button>
+      </div>
+
+      <svg id="familyTree"></svg>
+    </section>
+  </main>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3016118096844603"
+    crossorigin="anonymous"></script>
+  <!-- レスポンシブ -->
+  <ins class="adsbygoogle"
+      style="display:block"
+      data-ad-client="ca-pub-3016118096844603"
+      data-ad-slot="4142062273"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+  <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+
+  <footer class="footer">
+    <p>&copy; 2025 家族関係図メーカー smz All Rights Reserved.</p>
+    <div class="footer-nav">
+      <a href="index.html">🏠 ホームへ戻る</a>
+    </div>
+  </footer>
+
+  <script src="js/family/family.js"></script>
+</body>
+</html>

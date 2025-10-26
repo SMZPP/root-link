@@ -1,62 +1,48 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>お問い合わせ｜家族関係図メーカー</title>
-<link rel="stylesheet" href="css/style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ｜Family Link Up</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="/images/favicon-fl.ico" type="image/x-icon">
+  <meta name="description" content="Family Link Up へのお問い合わせページです。ご意見・ご要望をお待ちしております。">
 </head>
+
 <body>
+  <!-- ヘッダー -->
+  <header>
+    <h1>Family Link Up｜お問い合わせ</h1>
+    <nav>
+      <a href="index.html">ホーム</a>
+      <a href="contact.html" class="active">お問い合わせ</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+    </nav>
+  </header>
 
-<main>
-  <!-- ナビゲーション -->
-  <nav class="navbar">
-    <a href="index.html" class="nav-link">家族関係図メーカー</a>
-    <a href="contact.html" class="nav-link">お問い合わせ</a>
-    <a href="privacy.html" class="nav-link">プライバシーポリシー</a>
-    <a href="timer.html" class="nav-link">その他ツール</a>
-  </nav>
+  <!-- メイン -->
+  <main class="contact">
+    <section>
+      <h2>ご連絡方法</h2>
+      <p>
+        Family Link Up へのご意見・ご要望は、以下のメールアドレスまでお願いいたします。
+      </p>
+      <p><strong>Email：</strong>
+        <a href="mailto:smz.contact.co@gmail.com">smz.contact.co@gmail.com</a>
+      </p>
+      <p>
+        内容により、返信にお時間をいただく場合があります。あらかじめご了承ください。
+      </p>
+    </section>
+  </main>
 
-  <h1>お問い合わせ</h1>
-
-  <!-- メール連絡先 -->
-  <section>
-    <p>ご意見・ご要望は下記メールアドレスまでお願いいたします。</p>
-    <p><strong>Email:</strong> 
-      <a href="mailto:smz.contact.co@gmail.com">smz.contact.co@gmail.com</a>
-    </p>
-  </section>
-
-  <!-- お問い合わせフォーム -->
-  <section>
-    <h2>お問い合わせフォーム</h2>
-    <form action="mailto:smz.contact.co@gmail.com" method="post" enctype="text/plain">
-      <fieldset>
-        <label for="name">お名前:</label>
-        <input type="text" id="name" name="name" placeholder="例: 山田 太郎" required>
-      </fieldset>
-      <fieldset>
-        <label for="email">メール:</label>
-        <input type="email" id="email" name="email" placeholder="例: example@mail.com" required>
-      </fieldset>
-      <fieldset>
-        <label for="message">内容:</label>
-        <textarea id="message" name="message" rows="6" placeholder="ご意見・ご要望をご記入ください" required></textarea>
-      </fieldset>
-      <button id="send" type="submit">送信</button>
-    </form>
-  </section>
-</main>
-
+  <!-- フッター -->
+  <footer>
+    <p>&copy; 2025 Family Link Up smz All Rights Reserved.</p>
+    <div class="footer-nav">
+      <a href="privacy.html">プライバシーポリシー</a> |
+      <a href="index.html">ホーム</a>
+    </div>
+  </footer>
 </body>
-
-<footer class="footer">
-  <p>&copy; 2025 家族関係図メーカー smz All Rights Reserved.</p>
-  <nav class="footer-nav">
-    <a href="privacy.html">プライバシーポリシー</a> |
-    <a href="index.html">家族関係図メーカー</a>
-  </nav>
-</footer>
-
 </html>
