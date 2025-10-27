@@ -1,0 +1,37 @@
+name: Fetch Daily Image
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install dependencies
+        run: pip install requests Pillow
+
+      - name: Fetch 6 images
+        env:
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+        run: python scripts/fetch_images.py
+
+      - name: Generate text images
+        run: python scripts/generate_text_images.py
+
+      - name: Commit & push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "127411779+SMZPP@users.noreply.github.com"
+          git add images/
+          git commit -m "Add processed LGTM images $(date +'%Y-%m-%d')" || echo "No changes"
+          git push

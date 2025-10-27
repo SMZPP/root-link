@@ -1,35 +1,42 @@
 import os
 import requests
-from datetime import datetime
+import datetime
+import shutil
 
-PEXELS_API_KEY = os.getenv("PEXELS_API_KEY")
-SAVE_DIR = "images"
+API_KEY = os.getenv("PEXELS_API_KEY")
+headers = {"Authorization": API_KEY}
 
-def fetch_image():
-    headers = {"Authorization": PEXELS_API_KEY}
-    query = "nature"  # キーワード（例：風景）
-    url = f"https://api.pexels.com/v1/search?query={query}&per_page=1"
+topics = ["nature", "city", "ocean", "sky", "animal", "space"]
 
-    response = requests.get(url, headers=headers)
-    data = response.json()
+today = datetime.date.today().strftime("%Y-%m-%d")
 
-    if "photos" not in data or len(data["photos"]) == 0:
-        print("画像が見つかりませんでした。")
-        return None
+work_dir = "images/work"
+os.makedirs(work_dir, exist_ok=True)
+
+# ① 古いworkフォルダを空にする
+for f in os.listdir(work_dir):
+    path = os.path.join(work_dir, f)
+    if os.path.isfile(path):
+        os.remove(path)
+
+# ② 各テーマの画像を1枚ずつ取得
+for topic in topics:
+    url = f"https://api.pexels.com/v1/search?query={topic}&per_page=5"
+    res = requests.get(url, headers=headers)
+    data = res.json()
+
+    if not data.get("photos"):
+        print(f"⚠️ {topic}: No photo found")
+        continue
 
     photo = data["photos"][0]
-    image_url = photo["src"]["large2x"]
+    img_url = photo["src"]["landscape"]
+    save_path = os.path.join(work_dir, f"{today}_{topic}.jpg")
 
-    os.makedirs(SAVE_DIR, exist_ok=True)
-    filename = f"{datetime.now().strftime('%Y%m%d')}.jpg"
-    filepath = os.path.join(SAVE_DIR, filename)
-
-    img_data = requests.get(image_url).content
-    with open(filepath, "wb") as f:
+    img_data = requests.get(img_url).content
+    with open(save_path, "wb") as f:
         f.write(img_data)
 
-    print(f"✅ 画像を保存しました: {filepath}")
-    return filepath
+    print(f"✅ {topic} image saved to {save_path}")
 
-if __name__ == "__main__":
-    fetch_image()
+print("🎉 All 6 images downloaded to work/")
