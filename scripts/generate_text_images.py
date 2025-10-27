@@ -5,10 +5,10 @@ import datetime
 
 # 各種テキスト
 texts = {
-    "lgtm": "L　G　T　M！",
+    "lgtm": "L　G　T　M",
     "goodjob": "GOOD JOB！",
-    "otsukare": "今日も一日お疲れさま！",
-    "approved": "Approved！"
+    "otsukare": "お疲れさま！",
+    "approved": "APPROVED"
 }
 
 # 出力フォルダ作成
