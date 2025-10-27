@@ -2,6 +2,7 @@ from PIL import Image, ImageDraw, ImageFont
 import os
 import sys
 import datetime
+import json
 
 # 各種テキスト
 texts = {
@@ -29,7 +30,7 @@ except OSError:
 
 # 画像処理
 for filename in os.listdir(work_dir):
-    if not filename.lower().endswith(".jpg"):
+    if not filename.lower().endswith((".jpg", ".jpeg", ".png")):
         continue
 
     img_path = os.path.join(work_dir, filename)
@@ -58,6 +59,15 @@ for filename in os.listdir(work_dir):
         output_path = f"images/{folder}/{filename}"
         new_img.convert("RGB").save(output_path, "JPEG")
         print(f"✅ Generated {folder}/{filename}")
+
+# JSON 自動生成
+for folder in texts.keys():
+    folder_path = f"images/{folder}"
+    images = [f for f in os.listdir(folder_path) if f.lower().endswith((".jpg", ".jpeg", ".png"))]
+    json_path = os.path.join(folder_path, "index.json")
+    with open(json_path, "w", encoding="utf-8") as f:
+        json.dump(images, f, ensure_ascii=False, indent=2)
+    print(f"📝 Generated {json_path}")
 
 # work フォルダの中身を削除（フォルダは残す）
 for f in os.listdir(work_dir):
