@@ -61,8 +61,10 @@ for filename in os.listdir(work_dir):
         new_img.convert("RGB").save(output_path, "JPEG")
         print(f"✅ Generated {folder}/{filename}")
 
-# 最後に work フォルダを空にする
+# work フォルダの中身を削除（フォルダ自体は残す）
 for f in os.listdir(work_dir):
-    os.remove(os.path.join(work_dir, f))
+    f_path = os.path.join(work_dir, f)
+    if os.path.isfile(f_path):
+        os.remove(f_path)
 
 print("🧹 Cleaned up images/work/")
