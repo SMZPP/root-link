@@ -2,6 +2,7 @@ from PIL import Image, ImageDraw, ImageFont
 import os
 import datetime
 import shutil
+import sys
 
 texts = {
     "lgtm": "LGTM",
@@ -24,8 +25,12 @@ try:
 except OSError:
     # Linux用 (GitHub Actions)
     font_path = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
+    if not os.path.exists(font_path):
+        print("フォントが見つかりません。Linuxなら fonts-dejavu-core をインストールしてください。")
+        sys.exit(1)
     font = ImageFont.truetype(font_path, 80)
 
+# work フォルダの画像を処理
 for filename in os.listdir(work_dir):
     if not filename.lower().endswith(".jpg"):
         continue
@@ -39,7 +44,8 @@ for filename in os.listdir(work_dir):
 
         # 文字位置を中央に
         W, H = new_img.size
-        w, h = draw.textsize(text, font=font)
+        bbox = draw.textbbox((0, 0), text, font=font)
+        w, h = bbox[2] - bbox[0], bbox[3] - bbox[1]
         position = ((W - w) / 2, (H - h) / 2)
 
         # 半透明黒背景（文字視認性UP）
@@ -55,7 +61,7 @@ for filename in os.listdir(work_dir):
         new_img.convert("RGB").save(output_path, "JPEG")
         print(f"✅ Generated {folder}/{filename}")
 
-# 最後にworkフォルダを空にする
+# 最後に work フォルダを空にする
 for f in os.listdir(work_dir):
     os.remove(os.path.join(work_dir, f))
 
