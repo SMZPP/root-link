@@ -17,7 +17,14 @@ for folder in texts.keys():
 work_dir = "images/work"
 today = datetime.date.today().strftime("%Y-%m-%d")
 
-font = ImageFont.truetype("arial.ttf", 80)  # LinuxではDejaVuSans.ttfでもOK
+# フォントを OS に応じて切り替え
+try:
+    # Windows用
+    font = ImageFont.truetype("arial.ttf", 80)
+except OSError:
+    # Linux用 (GitHub Actions)
+    font_path = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
+    font = ImageFont.truetype(font_path, 80)
 
 for filename in os.listdir(work_dir):
     if not filename.lower().endswith(".jpg"):
