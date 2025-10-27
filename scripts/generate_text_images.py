@@ -5,10 +5,10 @@ import shutil
 import sys
 
 texts = {
-    "lgtm": "LGTM",
-    "goodjob": "GOOD JOB!",
+    "lgtm": "L　G　T　M！",
+    "goodjob": "GOOD JOB！",
     "otsukare": "今日も一日お疲れさま！",
-    "approved": "Approved"
+    "approved": "Approved！"
 }
 
 # 各フォルダ作成
@@ -18,15 +18,15 @@ for folder in texts.keys():
 work_dir = "images/work"
 today = datetime.date.today().strftime("%Y-%m-%d")
 
-# フォントを OS に応じて切り替え
+# フォントを OS に応じて切り替え（日本語対応）
 try:
-    # Windows用
-    font = ImageFont.truetype("arial.ttf", 80)
+    # Windows 用（Meiryo）
+    font = ImageFont.truetype("meiryo.ttc", 80)
 except OSError:
-    # Linux用 (GitHub Actions)
-    font_path = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
+    # Linux 用（Noto Sans CJK）
+    font_path = "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc"
     if not os.path.exists(font_path):
-        print("フォントが見つかりません。Linuxなら fonts-dejavu-core をインストールしてください。")
+        print("日本語フォントが見つかりません。Linuxなら fonts-noto-cjk をインストールしてください。")
         sys.exit(1)
     font = ImageFont.truetype(font_path, 80)
 
