@@ -2,6 +2,7 @@ import os
 import requests
 import datetime
 import shutil
+import random  # ★ ランダムページ選択に使用
 
 API_KEY = os.getenv("PEXELS_API_KEY")
 headers = {"Authorization": API_KEY}
@@ -19,9 +20,10 @@ for f in os.listdir(work_dir):
     if os.path.isfile(path):
         os.remove(path)
 
-# ② 各テーマの画像を1枚ずつ取得
+# ② 各テーマの画像を1枚ずつ取得（★ランダムページ対応）
 for topic in topics:
-    url = f"https://api.pexels.com/v1/search?query={topic}&per_page=5"
+    page = random.randint(1, 50)  # ★ ランダムなページを指定（1〜50）
+    url = f"https://api.pexels.com/v1/search?query={topic}&per_page=1&page={page}"
     res = requests.get(url, headers=headers)
     data = res.json()
 
