@@ -7,7 +7,7 @@
 
   <!-- 🔍 SEO 対策 -->
   <meta name="description" content="LGTM画像やGood Job、お疲れさま、Approvedなど、仕事やSNSで使えるメッセージ画像を集めた無料ギャラリー。クリックで拡大表示できます。">
-  <meta name="keywords" content="LGTM,Good Job,お疲れさま,Approved,画像,フリー素材,ギャラリー,Family Link Up">
+  <meta name="keywords" content="LGTM,Good Job,お疲れさま,Approved,画像,フリー素材,ギャラリー,マージ,LGTM画像,Family Link Up">
   <meta property="og:title" content="LGTM画像ギャラリー｜Family Link Up">
   <meta property="og:description" content="LGTM・Good Job・お疲れさま・Approved画像をまとめた無料ギャラリー。仕事やSNS投稿に使えます。">
   <meta property="og:image" content="https://family-link-up.com/images/lgtm-og.png">
@@ -41,7 +41,7 @@
   <main>
     <p class="intro">
       仕事やSNSで使える「LGTM」「Good Job」「お疲れさま」「Approved」などのメッセージ画像をまとめました。  
-      気に入った画像をクリックして拡大できます。
+      気に入った画像をクリックして拡大できます。画像を日替わりで
     </p>
 
     <section id="lgtm" class="gallery active" aria-label="LGTM画像"></section>
@@ -52,7 +52,9 @@
 
   <!-- ===== モーダル ===== -->
   <div id="modal" class="modal" aria-hidden="true">
+    <button id="prev-btn" class="modal-btn left" aria-label="前の画像">&#10094;</button>
     <img id="modal-img" src="" alt="拡大画像">
+    <button id="next-btn" class="modal-btn right" aria-label="次の画像">&#10095;</button>
   </div>
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3016118096844603"

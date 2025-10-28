@@ -188,6 +188,33 @@ main {
   cursor: zoom-out;
 }
 
+.modal-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 1010;
+  transition: background 0.2s;
+}
+
+.modal-btn:hover {
+  background: rgba(0,0,0,0.8);
+}
+
+.modal-btn.left {
+  left: 10px;
+}
+
+.modal-btn.right {
+  right: 10px;
+}
+
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }

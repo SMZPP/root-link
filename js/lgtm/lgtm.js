@@ -14,16 +14,41 @@ document.querySelectorAll('.tab').forEach(tab => {
 // === モーダル ===
 const modal = document.getElementById('modal');
 const modalImg = document.getElementById('modal-img');
+let currentGallery = null;
+let currentIndex = 0;
 
-modal.addEventListener('click', () => modal.classList.remove('show'));
-
+// ギャラリー画像クリックでモーダル表示
 document.querySelectorAll('.gallery').forEach(gallery => {
   gallery.addEventListener('click', e => {
     if (e.target.tagName === 'IMG') {
+      currentGallery = Array.from(gallery.querySelectorAll('img'));
+      currentIndex = currentGallery.indexOf(e.target);
       modalImg.src = e.target.src;
       modal.classList.add('show');
     }
   });
+});
+
+// モーダル閉じる（背景クリック）
+modal.addEventListener('click', e => {
+  if (e.target === modal || e.target === modalImg) {
+    modal.classList.remove('show');
+  }
+});
+
+// 前後ボタン
+document.getElementById('prev-btn').addEventListener('click', e => {
+  e.stopPropagation();
+  if (!currentGallery) return;
+  currentIndex = (currentIndex - 1 + currentGallery.length) % currentGallery.length;
+  modalImg.src = currentGallery[currentIndex].src;
+});
+
+document.getElementById('next-btn').addEventListener('click', e => {
+  e.stopPropagation();
+  if (!currentGallery) return;
+  currentIndex = (currentIndex + 1) % currentGallery.length;
+  modalImg.src = currentGallery[currentIndex].src;
 });
 
 // === 各フォルダの画像読み込み ===
