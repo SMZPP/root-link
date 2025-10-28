@@ -9,7 +9,7 @@ texts = {
     "lgtm": "L　G　T　M",
     "goodjob": "GOOD JOB！",
     "otsukare": "お疲れさま！",
-    "approved": "APPROVED"
+    "approved": "A P P R O V E D"
 }
 
 # 出力フォルダ作成
@@ -60,7 +60,7 @@ for filename in os.listdir(work_dir):
         new_img.convert("RGB").save(output_path, "JPEG")
         print(f"✅ Generated {folder}/{filename}")
 
-# JSON 自動生成（★ 最新の画像を最初にソートして出力）
+# JSON生成＆30枚制限
 for folder in texts.keys():
     folder_path = f"images/{folder}"
     images = [
@@ -68,13 +68,25 @@ for folder in texts.keys():
         if f.lower().endswith((".jpg", ".jpeg", ".png"))
     ]
 
-    # ★ ファイル名の日付部分（例: 2025-10-28_～）で降順ソート
-    images.sort(reverse=True)
+    # 更新日時で新しい順にソート
+    images.sort(key=lambda f: os.path.getmtime(os.path.join(folder_path, f)), reverse=True)
 
+    # --- 🧹 古い画像を削除（30枚を超えた分） ---
+    if len(images) > 30:
+        for old_file in images[30:]:
+            old_path = os.path.join(folder_path, old_file)
+            try:
+                os.remove(old_path)
+                print(f"🗑️ Deleted old image: {folder}/{old_file}")
+            except Exception as e:
+                print(f"⚠️ Failed to delete {old_file}: {e}")
+        images = images[:30]  # 残り30枚を保持
+
+    # --- index.json を出力 ---
     json_path = os.path.join(folder_path, "index.json")
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump(images, f, ensure_ascii=False, indent=2)
-    print(f"📝 Generated {json_path}")
+    print(f"📝 Updated {json_path} (kept {len(images)} images)")
 
 # work フォルダの中身を削除（フォルダは残す）
 for f in os.listdir(work_dir):

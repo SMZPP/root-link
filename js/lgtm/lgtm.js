@@ -25,16 +25,22 @@ document.querySelectorAll('.gallery').forEach(gallery => {
       currentIndex = currentGallery.indexOf(e.target);
       modalImg.src = e.target.src;
       modal.classList.add('show');
+      document.body.style.overflow = 'hidden'; // 背景スクロール防止
     }
   });
 });
 
-// モーダル閉じる（背景クリック）
+// モーダル閉じる（背景クリック or 画像クリック）
 modal.addEventListener('click', e => {
   if (e.target === modal || e.target === modalImg) {
-    modal.classList.remove('show');
+    closeModal();
   }
 });
+
+function closeModal() {
+  modal.classList.remove('show');
+  document.body.style.overflow = ''; // スクロール復帰
+}
 
 // 前後ボタン
 document.getElementById('prev-btn').addEventListener('click', e => {
@@ -49,6 +55,35 @@ document.getElementById('next-btn').addEventListener('click', e => {
   if (!currentGallery) return;
   currentIndex = (currentIndex + 1) % currentGallery.length;
   modalImg.src = currentGallery[currentIndex].src;
+});
+
+// === キーボード操作 ===
+document.addEventListener('keydown', e => {
+  if (!modal.classList.contains('show')) return;
+
+  // ← / → キーで画像切替
+  if (e.key === 'ArrowLeft') {
+    e.preventDefault();
+    currentIndex = (currentIndex - 1 + currentGallery.length) % currentGallery.length;
+    modalImg.src = currentGallery[currentIndex].src;
+  } else if (e.key === 'ArrowRight') {
+    e.preventDefault();
+    currentIndex = (currentIndex + 1) % currentGallery.length;
+    modalImg.src = currentGallery[currentIndex].src;
+  } 
+  // Escキーで閉じる
+  else if (e.key === 'Escape') {
+    e.preventDefault();
+    closeModal();
+  }
+  // Ctrl / Cmd + キーで「別タブやショートカット」防止（ただしコピーは除外）
+  else if (e.ctrlKey || e.metaKey) {
+    const blockedKeys = ['s', 't', 'w', 'n', 'r']; 
+    // ⬆ Ctrl+S / T / W / N / R → 保存, 新タブ, 閉じる, 新ウィンドウ, 再読込
+    if (blockedKeys.includes(e.key.toLowerCase())) {
+      e.preventDefault();
+    }
+  }
 });
 
 // === 各フォルダの画像読み込み ===
