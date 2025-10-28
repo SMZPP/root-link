@@ -60,10 +60,17 @@ for filename in os.listdir(work_dir):
         new_img.convert("RGB").save(output_path, "JPEG")
         print(f"✅ Generated {folder}/{filename}")
 
-# JSON 自動生成
+# JSON 自動生成（★ 最新の画像を最初にソートして出力）
 for folder in texts.keys():
     folder_path = f"images/{folder}"
-    images = [f for f in os.listdir(folder_path) if f.lower().endswith((".jpg", ".jpeg", ".png"))]
+    images = [
+        f for f in os.listdir(folder_path)
+        if f.lower().endswith((".jpg", ".jpeg", ".png"))
+    ]
+
+    # ★ ファイル名の日付部分（例: 2025-10-28_～）で降順ソート
+    images.sort(reverse=True)
+
     json_path = os.path.join(folder_path, "index.json")
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump(images, f, ensure_ascii=False, indent=2)
