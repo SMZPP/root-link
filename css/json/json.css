@@ -12,15 +12,15 @@ html, body {
     height: 100%;
     margin: 0;
     font-family: Inter, system-ui, "Segoe UI", Meiryo, "Hiragino Kaku Gothic ProN", sans-serif;
-    background: linear-gradient(180deg,#f3f8ff,#f7fbff);
+    background: linear-gradient(180deg, #f3f8ff, #f7fbff);
     color: #111;
 }
 
 /* ページ全幅に変更 */
 .wrap {
-    max-width: 100%;       /* 中央幅制限を解除 */
-    margin: 0;             /* 自動マージン解除 */
-    padding: 20px 40px;    /* 画面端との余白は必要に応じて */
+    max-width: 100%;
+    margin: 0;
+    padding: 20px 40px;
     box-sizing: border-box;
 }
 
@@ -30,7 +30,7 @@ header.json-header {
     border-radius: var(--radius);
     padding: 28px 20px;
     text-align: center;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
     margin-bottom: 32px;
     position: relative;
     overflow: hidden;
@@ -84,7 +84,7 @@ header.json-header p {
     grid-template-columns: 1fr 1fr;
     gap: 24px;
     margin-top: 24px;
-    width: 100%;       /* 全幅に拡張 */
+    width: 100%;
 }
 
 /* ===== パネル ===== */
@@ -92,10 +92,10 @@ header.json-header p {
     background: var(--panel);
     border-radius: var(--radius);
     padding: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    border: 1px solid rgba(0,0,0,0.05);
-    width: 100%;        /* 親幅いっぱいに広げる */
-    max-width: none;    /* 制限解除 */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: none;
 }
 
 /* ===== ラベル ===== */
@@ -148,20 +148,18 @@ button {
     border-radius: 10px;
     cursor: pointer;
     font-weight: 600;
-    box-shadow: 0 6px 18px rgba(3,102,255,0.12);
+    box-shadow: 0 6px 18px rgba(3, 102, 255, 0.12);
     transition: all 0.2s ease;
 }
 button:hover {
     filter: brightness(1.05);
 }
-
 button.secondary {
     background: #fff;
     color: var(--accent);
-    border: 1px solid rgba(3,102,255,0.12);
+    border: 1px solid rgba(3, 102, 255, 0.12);
     box-shadow: none;
 }
-
 button.small {
     padding: 6px 10px;
     font-size: 0.9rem;
@@ -173,7 +171,6 @@ button.small {
     gap: 12px;
     align-items: center;
 }
-
 input[type=file] {
     display: none;
 }
@@ -192,7 +189,6 @@ input[type=file] + span {
     color: var(--muted);
     margin-top: 14px;
 }
-
 .message {
     margin-top: 8px;
     color: #b91c1c;
@@ -205,7 +201,7 @@ footer.footer {
     text-align: center;
     background: #e0e4e8;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     color: #555;
     font-size: 14px;
 }
@@ -244,8 +240,21 @@ select {
         height: 300px;
     }
 
-    header h1 {
+    header.json-header {
+        padding-top: 20px;
+    }
+
+    header.json-header .home-link {
+        position: static;
+        display: inline-block;
+        margin-bottom: 12px;
+        font-size: 14px;
+        background: rgba(96, 165, 250, 0.15);
+    }
+
+    header.json-header h1 {
         font-size: 1.6rem;
+        margin-top: 0;
     }
 
     .wrap {
