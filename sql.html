@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SQL整形ツール — Family Link Up</title>
+
+  <meta name="description" content="SQL整形ツールは、SQL文を見やすく整形・圧縮・大文字化できる無料オンラインツールです。Beautify・Minify・Uppercase機能付き。オフライン対応。">
+  <meta name="keywords" content="SQL, 整形, フォーマット, Beautify, Minify, Uppercase, Formatter, Webツール, Family Link Up">
+  <meta property="og:title" content="SQL整形ツール｜無料で整形・圧縮・大文字化できるオンラインエディタ">
+  <meta property="og:description" content="SQL文を見やすく整形したり、圧縮したり、キーワードを大文字に統一できるオンラインツールです。">
+  <meta property="og:image" content="https://family-link-up.com/images/sql-formatter-og.png">
+  <meta property="og:url" content="https://family-link-up.com/sql.html">
+  <meta property="og:type" content="website">
+  <meta name="robots" content="index,follow">
+
+  <link rel="icon" href="/images/favicon-fl.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/sql/sql.css">
+</head>
+<body>
+  <div class="wrap">
+    <!-- ===== ヘッダー ===== -->
+    <header class="json-header">
+      <a href="/" class="home-link">🏠 ホームへ戻る</a>
+      <h1>SQL整形ツール</h1>
+      <p>貼り付けて<strong>Beautify / Minify / Uppercase</strong>できます。ファイルのアップロード／ダウンロード対応。</p>
+    </header>
+
+    <!-- ===== グリッド ===== -->
+    <div class="grid">
+
+      <!-- ===== 入力パネル ===== -->
+      <div class="panel panel-left">
+        <label for="input">入力（未整形のSQL）</label>
+        <textarea id="input" placeholder="例: SELECT * FROM users WHERE age>20;"></textarea>
+
+        <div class="controls">
+          <button id="beautify">整形（Beautify）</button>
+          <button id="minify" class="secondary">圧縮（Minify）</button>
+          <button id="uppercase" class="secondary small">大文字化（Uppercase）</button>
+          <button id="clearIn" class="secondary small">クリア（Clear）</button>
+        </div>
+
+        <div class="controls options">
+          <label>Indent
+            <select id="indent">
+              <option value="2">2</option>
+              <option value="4" selected>4</option>
+              <option value="0">0 (compact)</option>
+            </select>
+          </label>
+
+          <label for="fileIn" id="loadFile" class="secondary small">Upload .sql</label>
+          <input type="file" id="fileIn" style="display:none">
+        </div>
+
+        <div class="controls">
+          <button id="copyIn" class="secondary small">Copy Input</button>
+          <button id="download" class="secondary small">Download Input</button>
+          <button id="paste" class="small">Paste Clipboard</button>
+        </div>
+
+        <div id="message" class="message" aria-live="polite"></div>
+      </div>
+
+      <!-- ===== 出力パネル ===== -->
+      <div class="panel panel-right">
+        <label for="output">出力 / 整形結果</label>
+        <pre id="output" class="output" tabindex="0"></pre>
+
+        <div class="controls">
+          <button id="copyOut">Copy Output</button>
+          <button id="downloadOutput" class="secondary">Download .sql</button>
+          <button id="clearOut" class="secondary small">Clear</button>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="meta">
+      軽量でオフラインでも使えます（このファイル単体で動作）。
+    </p>
+  </div>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3016118096844603"
+    crossorigin="anonymous"></script>
+    <!-- レスポンシブ -->
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-3016118096844603"
+        data-ad-slot="4142062273"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+  <footer class="footer">
+    © 2025 Family Link Up / SQL Formatter
+  </footer>
+
+  <script src="js/sql/sql.js"></script>
+</body>
+</html>

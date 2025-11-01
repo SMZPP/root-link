@@ -1,0 +1,254 @@
+/* ===== ルート変数 ===== */
+:root {
+    --bg: #f7fbff;
+    --panel: #ffffff;
+    --accent: #0078ff;
+    --muted: #6b7280;
+    --radius: 16px;
+}
+
+/* ===== 基本レイアウト ===== */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Inter, system-ui, "Segoe UI", Meiryo, "Hiragino Kaku Gothic ProN", sans-serif;
+    background: linear-gradient(180deg, #f3f8ff, #f7fbff);
+    color: #111;
+}
+
+/* ページ全幅に変更 */
+.wrap {
+    max-width: 100%;
+    margin: 0;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+/* ===== ヘッダー ===== */
+header.json-header {
+    background: linear-gradient(90deg, #ffffff, #e0e4e8);
+    border-radius: var(--radius);
+    padding: 28px 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    margin-bottom: 32px;
+    position: relative;
+    overflow: hidden;
+}
+
+header.json-header .home-link {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    font-size: 14px;
+    color: #60a5fa;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 8px;
+    background: rgba(96, 165, 250, 0.1);
+    transition: all 0.2s ease;
+}
+header.json-header .home-link:hover {
+    background: rgba(96, 165, 250, 0.2);
+    text-decoration: underline;
+}
+
+header.json-header h1 {
+    font-size: 32px;
+    margin: 0 0 10px 0;
+    background: linear-gradient(90deg, #b91c1c, #0078ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+header.json-header h1::before {
+    content: '⚡';
+    font-size: 28px;
+    display: inline-block;
+    animation: bounce 1.5s infinite alternate;
+}
+header.json-header p {
+    font-size: 15px;
+    color: #555;
+    margin: 0;
+}
+
+/* ===== グリッド ===== */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 24px;
+    width: 100%;
+}
+
+/* ===== パネル ===== */
+.panel {
+    background: var(--panel);
+    border-radius: var(--radius);
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: none;
+}
+
+/* ===== ラベル ===== */
+label {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 8px;
+}
+
+/* ===== テキストエリア ===== */
+textarea {
+    width: 95%;
+    height: 400px;
+    border-radius: 12px;
+    border: 1px solid #e6eefc;
+    padding: 12px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;
+    resize: vertical;
+    background: #fbfeff;
+}
+
+/* ===== 出力プリ ===== */
+pre.output {
+    white-space: pre-wrap;
+    word-break: break-word;
+    overflow: auto;
+    height: 400px;
+    padding: 12px;
+    border-radius: 12px;
+    background: #0b1220;
+    color: #e6f0ff;
+    font-family: ui-monospace, Menlo, monospace;
+}
+
+/* ===== コントロール ===== */
+.controls {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+}
+
+/* ===== ボタン ===== */
+button {
+    background: var(--accent);
+    border: 0;
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 6px 18px rgba(3, 102, 255, 0.12);
+    transition: all 0.2s ease;
+}
+button:hover {
+    filter: brightness(1.05);
+}
+button.secondary {
+    background: #fff;
+    color: var(--accent);
+    border: 1px solid rgba(3, 102, 255, 0.12);
+    box-shadow: none;
+}
+button.small {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+}
+
+/* ===== オプション / ツールバー ===== */
+.options {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+input[type=file] {
+    display: none;
+}
+input[type=file] + span {
+    cursor: pointer;
+    background: #f1f5f9;
+    padding: 4px 8px;
+    border-radius: 6px;
+    border: 1px solid #e6eefc;
+    font-size: 0.85rem;
+}
+
+/* ===== メタ情報 ===== */
+.meta {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 14px;
+}
+.message {
+    margin-top: 8px;
+    color: #b91c1c;
+}
+
+/* ===== フッター ===== */
+footer.footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    background: #e0e4e8;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: #555;
+    font-size: 14px;
+}
+
+/* ===== セレクトメニュー ===== */
+select {
+    border: 1px solid #e6eefc;
+    border-radius: 6px;
+    padding: 6px;
+    font-size: 0.85rem;
+}
+
+/* ===== アニメーション ===== */
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-6px); }
+}
+
+/* ===== メディアクエリ ===== */
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    textarea,
+    pre.output {
+        height: 300px;
+    }
+
+    header.json-header {
+        padding-top: 20px;
+    }
+
+    header.json-header .home-link {
+        position: static;
+        display: inline-block;
+        margin-bottom: 12px;
+        font-size: 14px;
+        background: rgba(96, 165, 250, 0.15);
+    }
+
+    header.json-header h1 {
+        font-size: 1.6rem;
+        margin-top: 0;
+    }
+
+    .wrap {
+        padding: 12px 16px;
+    }
+}
