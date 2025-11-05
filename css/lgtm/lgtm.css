@@ -136,21 +136,23 @@ main {
   color: #555;
 }
 
-/* ===== ギャラリー ===== */
+/* ===== ギャラリー（1列に最大6個固定） ===== */
 .gallery {
-  display: none;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6列固定 */
   gap: 16px;
+  justify-items: center;
+  align-items: center;
 }
 
 .gallery.active {
-  display: flex;
+  display: grid; /* flex → grid に変更 */
 }
 
 .gallery img {
-  width: 180px;
-  height: 180px;
+  width: 100%;
+  max-width: 160px; /* 各画像の最大幅 */
+  aspect-ratio: 1 / 1; /* 正方形に揃える */
   object-fit: cover;
   border-radius: 12px;
   background: var(--card-bg);
@@ -162,6 +164,25 @@ main {
 .gallery img:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+/* ===== レスポンシブ対応 ===== */
+@media (max-width: 1200px) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* ===== モーダル ===== */
@@ -229,15 +250,4 @@ footer {
   background: #fff;
   margin-top: 2rem;
   border-top: 1px solid var(--border);
-}
-
-/* ===== レスポンシブ ===== */
-@media (max-width: 600px) {
-  .gallery img {
-    width: 45vw;
-    height: 45vw;
-  }
-  .intro {
-    font-size: 0.95rem;
-  }
 }
