@@ -1,111 +1,176 @@
-  body {
-    font-family: "Segoe UI", "Hiragino Sans", "Meiryo", sans-serif;
-    background: #f8fafc;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    text-align: center;
-  }
+/* ===============================
+   Family Link Up - メインスタイル
+   =============================== */
 
-  header {
-    background: linear-gradient(90deg, #3b82f6, #60a5fa);
-    color: white;
-    padding: 1.5rem 0;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  }
+body {
+  font-family: "Segoe UI", "Hiragino Sans", "Meiryo", sans-serif;
+  background: linear-gradient(180deg, #f0f4f8 0%, #ffffff 100%);
+  margin: 0;
+  padding: 0;
+  color: #333;
+  text-align: center;
+}
 
-  header h1 {
-    margin: 0;
-    font-size: 1.8rem;
-    letter-spacing: 0.05em;
-  }
+/* ヘッダー */
+header {
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+  color: white;
+  padding: 1.5rem 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
 
-  nav {
-    margin-top: 0.5rem;
-  }
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  letter-spacing: 0.05em;
+}
 
-  nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 1rem;
-    font-weight: 500;
-  }
+nav {
+  margin-top: 0.5rem;
+}
 
-  main {
-    padding: 2rem 1rem;
-  }
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 500;
+}
 
-  .intro {
-    max-width: 700px;
-    margin: 0 auto 2.5rem;
-    font-size: 1.1rem;
-    line-height: 1.7;
-  }
+nav a:hover {
+  text-decoration: underline;
+}
 
-  .tool-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
-  }
+main {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0.3rem 1rem;
+  text-align: left;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
 
-  .tool-btn {
-    background: white;
-    border: 2px solid #3b82f6;
-    border-radius: 20px;
-    padding: 2rem 3rem;
-    text-decoration: none;
-    color: #1e3a8a;
-    font-size: 1.4rem;
-    font-weight: 600;
-    transition: all 0.25s ease;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
-    width: 260px;
-  }
+.intro {
+  max-width: 700px;
+  margin: 0 auto 0;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  text-align: center;
+}
 
-  .tool-btn:hover {
-    background: #3b82f6;
-    color: white;
-    transform: translateY(-3px);
-  }
+/* Family Link Upとはセクション */
+.about-site h2 {
+  color: #2563eb;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
 
-  footer {
-    background: #f1f5f9;
-    padding: 1.5rem;
-    margin-top: 3rem;
-    font-size: 0.9rem;
-    color: #555;
-  }
+.about-site p {
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  color: #444;
+}
 
-  .footer-nav a {
-    color: #2563eb;
-    text-decoration: none;
-    margin: 0 0.5rem;
-  }
+/* ツールボタン一覧（グリッド化） */
+.tool-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+  margin-top: 2rem;
+  text-align: center;
+}
 
-  .footer-nav a:hover {
-    text-decoration: underline;
-  }
+/* 各ツールボタン */
+.tool-btn {
+  background: white;
+  border: 2px solid #3b82f6;
+  border-radius: 20px;
+  padding: 2rem 3rem;
+  text-decoration: none;
+  color: #1e3a8a;
+  font-size: 1.4rem;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  width: 100%;
+  max-width: 260px;
+}
 
-  @media (max-width: 600px) {
-    .tool-btn {
-      width: 90%;
-      padding: 1.5rem;
-      font-size: 1.2rem;
-    }
-  }
+.tool-btn:hover {
+  background: #3b82f6;
+  color: white;
+  transform: translateY(-3px);
+}
 
-/* --- お問い合わせページ専用--- */
+.tool-btn.active {
+  background: #3b82f6;
+  color: white;
+}
+
+/* 広告エリア */
+.ads-area {
+  text-align: center;
+  margin: 2rem auto;
+  padding: 1rem 0;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* フッター */
+footer {
+  background: #f1f5f9;
+  padding: 1.5rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+}
+
+.footer-nav a {
+  color: #2563eb;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+/* お問い合わせページ専用 */
 main.contact {
-  max-width: 720px;
+  max-width: 1080px;
   margin: 40px auto;
   padding: 0 20px;
   line-height: 1.8;
 }
 
 .contact h2 {
-  color: var(--accent, #60a5fa);
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  color: #2563eb;
+  border-bottom: 1px solid rgba(37,99,235,0.3);
   padding-bottom: 4px;
   margin-bottom: 16px;
+}
+
+/* スマホ対応 */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .tool-btn {
+    padding: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  main {
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
+.small-red {
+  color: #d9534f; /* 少し落ち着いた赤 */
+  font-size: 0.9rem;
+  line-height: 1.6;
+  text-align: center;
 }
