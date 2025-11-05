@@ -20,6 +20,7 @@ body {
 
 /* ===== ヘッダー ===== */
 header {
+  position: relative; /* ホームリンク右上固定のため */
   text-align: center;
   padding: 1.5rem 1rem;
   background: var(--accent);
@@ -32,21 +33,25 @@ header h1 {
   margin: 0;
 }
 
-/* ===== ホームリンク ===== */
+/* ===== ホームリンク（PC:右上固定 / SP:中央寄せ） ===== */
 .home-container {
-  text-align: center;
-  margin: 1.5rem 0 0.5rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  margin: 0;
+  text-align: right;
 }
 
 .home-link {
   display: inline-block;
-  padding: 10px 20px;
-  border-radius: 25px;
+  padding: 6px 14px;
+  border-radius: 20px;
   background: var(--card-bg);
   border: 1px solid var(--accent);
   text-decoration: none;
   color: var(--accent);
-  font-weight: bold;
+  font-weight: 500;
+  font-size: 0.9rem;
   transition: var(--transition);
   box-shadow: var(--shadow);
 }
@@ -55,6 +60,20 @@ header h1 {
   background: var(--accent);
   color: #fff;
   transform: translateY(-2px);
+}
+
+/* ===== スマホ対応（中央寄せ） ===== */
+@media (max-width: 600px) {
+  .home-container {
+    position: static;         /* 絶対配置解除 */
+    text-align: center;       /* 中央寄せ */
+    margin: 0.5rem 0 0.8rem;  /* 適度な余白 */
+  }
+
+  .home-link {
+    font-size: 0.95rem;
+    padding: 8px 18px;
+  }
 }
 
 /* ===== タブ ===== */
@@ -115,7 +134,7 @@ header h1 {
   transform: translateY(-3px);
 }
 
-/* ===== モバイル ===== */
+/* ===== モバイルタブ調整 ===== */
 @media (max-width: 600px) {
   .tab {
     font-size: 0.95rem;
@@ -139,20 +158,20 @@ main {
 /* ===== ギャラリー（1列に最大6個固定） ===== */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(6, 1fr); /* 6列固定 */
+  grid-template-columns: repeat(6, 1fr);
   gap: 16px;
   justify-items: center;
   align-items: center;
 }
 
 .gallery.active {
-  display: grid; /* flex → grid に変更 */
+  display: grid;
 }
 
 .gallery img {
   width: 100%;
-  max-width: 160px; /* 各画像の最大幅 */
-  aspect-ratio: 1 / 1; /* 正方形に揃える */
+  max-width: 160px;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 12px;
   background: var(--card-bg);
@@ -166,7 +185,7 @@ main {
   box-shadow: 0 6px 16px rgba(0,0,0,0.25);
 }
 
-/* ===== レスポンシブ対応 ===== */
+/* ===== レスポンシブ ===== */
 @media (max-width: 1200px) {
   .gallery {
     grid-template-columns: repeat(4, 1fr);
