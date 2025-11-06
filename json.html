@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>JSON整形ツール — Family Link Up</title>
 
-  <meta name="description" content="JSON整形ツールは、JSONデータを見やすく整形・最小化・検証できる無料オンラインツールです。Beautify・Minify・Validate機能付き。">
+  <meta name="description" content="JSON整形ツールは、JSONデータを見やすく整形・圧縮・検証できる無料オンラインツールです。Beautify・Minify・Validate 機能付きで、コピーやダウンロードも可能。">
   <meta name="keywords" content="JSON, 整形, フォーマット, Beautify, Minify, 検証, Validator, Webツール, Family Link Up">
   <meta property="og:title" content="JSON整形ツール｜無料でフォーマット・検証できるオンラインエディタ">
   <meta property="og:description" content="JSONデータを見やすく整形したり、最小化したり、エラーを自動検出できるオンラインツールです。">
@@ -18,86 +18,140 @@
   <link rel="stylesheet" href="css/json/json.css">
 </head>
 <body>
-    <div class="wrap">
-        <!-- ===== ヘッダー ===== -->
-        <header class="json-header">
-        <a href="/" class="home-link">🏠 ホームへ戻る</a>
-        <h1>JSON整形ツール</h1>
-        <p>貼り付けて<strong>Beautify / Minify / Validate</strong>できます。ファイルのアップロード／ダウンロード対応。</p>
-        </header>
+  <div class="wrap">
+    <!-- ===== ヘッダー ===== -->
+    <header class="json-header">
+      <a href="/" class="home-link">🏠 ホームへ戻る</a>
+      <h1>JSON整形ツール</h1>
+      <p>JSONデータを<strong>Beautify（整形）</strong>・<strong>Minify（圧縮）</strong>・<strong>Validate（検証）</strong>できます。<br>コピー、ダウンロード、ファイルアップロードにも対応。</p>
+    </header>
 
-        <!-- ===== グリッド ===== -->
-        <div class="grid">
-        <!-- 入力パネル -->
-        <div class="panel panel-left">
-            <label for="input">入力（未整形のJSON）</label>
-            <textarea id="input" placeholder='例: {"name": "太郎", "age":30}'></textarea>
+    <!-- ===== グリッド ===== -->
+    <div class="grid">
+      <!-- 入力パネル -->
+      <div class="panel panel-left">
+        <label for="input">入力（未整形のJSON）</label>
+        <textarea id="input" placeholder='例: {"name": "太郎", "age": 30}'></textarea>
 
-            <div class="controls">
-            <button id="beautify">整形（Beautify）</button>
-            <button id="minify" class="secondary">圧縮（Minify）</button>
-            <button id="validate" class="secondary small">検証（Validate）</button>
-            <button id="clear" class="secondary small">クリア（Clear）</button>
-            </div>
-
-            <div class="controls options">
-            <label>Indent
-                <select id="indent">
-                <option value="2">2</option>
-                <option value="4" selected>4</option>
-                <option value="0">0 (compact)</option>
-                </select>
-            </label>
-
-            <label>
-                <input type="file" id="fileInput"> <span class="small">Upload .json</span>
-            </label>
-            </div>
-
-            <div class="controls">
-            <button id="copyInput" class="secondary small">Copy Input</button>
-            <button id="downloadInput" class="secondary small">Download Input</button>
-            <button id="pasteClipboard" class="small">Paste Clipboard</button>
-            </div>
-
-            <div id="message" class="message" aria-live="polite"></div>
+        <div class="controls">
+          <button id="beautify">整形（Beautify）</button>
+          <button id="minify" class="secondary">圧縮（Minify）</button>
+          <button id="validate" class="secondary small">検証（Validate）</button>
+          <button id="clear" class="secondary small">クリア（Clear）</button>
         </div>
 
-        <!-- 出力パネル -->
-        <div class="panel panel-right">
-            <label for="output">出力 / 整形結果</label>
-            <pre id="output" class="output" tabindex="0">{\n  \n}</pre>
+        <div class="controls options">
+          <label>Indent
+            <select id="indent">
+              <option value="2">2</option>
+              <option value="4" selected>4</option>
+              <option value="0">0 (compact)</option>
+            </select>
+          </label>
 
-            <div class="controls">
-            <button id="copyOutput">Copy Output</button>
-            <button id="downloadOutput" class="secondary">Download .json</button>
-            <button id="clearOutput" class="secondary small">Clear</button>
-            </div>
-        </div>
+          <label>
+            <input type="file" id="fileInput">
+            <span class="small">Upload .json</span>
+          </label>
         </div>
 
-        <p class="meta">
-        軽量でオフラインでも使えます（このファイル単体で動作）。
-        </p>
+        <div class="controls">
+          <button id="copyInput" class="secondary small">Copy Input</button>
+          <button id="downloadInput" class="secondary small">Download Input</button>
+          <button id="pasteClipboard" class="small">Paste Clipboard</button>
+        </div>
+
+        <div id="message" class="message" aria-live="polite"></div>
+      </div>
+
+      <!-- 出力パネル -->
+      <div class="panel panel-right">
+        <label for="output">出力 / 整形結果</label>
+        <pre id="output" class="output" tabindex="0">{}</pre>
+
+        <div class="controls">
+          <button id="copyOutput">Copy Output</button>
+          <button id="downloadOutput" class="secondary">Download .json</button>
+          <button id="clearOutput" class="secondary small">Clear</button>
+        </div>
+      </div>
     </div>
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3016118096844603"
-    crossorigin="anonymous"></script>
-    <!-- レスポンシブ -->
-    <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-client="ca-pub-3016118096844603"
-        data-ad-slot="4142062273"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
+    <!-- ===== 使い方セクション ===== -->
+    <section class="how-to">
+    <h2>使い方</h2>
 
-    <footer class="footer">
-        © 2025 Family Link Up / JSON Formatter
-    </footer>
+    <div class="how-step">
+        <h3>① JSONデータを貼り付ける</h3>
+        <p>左側の入力欄に整形したい JSON データを貼り付けます。ファイルをドラッグ＆ドロップ、または「Upload .json」ボタンからアップロードも可能です。</p>
+    </div>
 
-    <script src="js/json/json.js"></script>
+    <div class="how-step">
+        <h3>② 操作ボタンを選ぶ</h3>
+        <ul>
+        <li><strong>整形（Beautify）</strong> — 改行・インデントを付けて見やすく整形します。</li>
+        <li><strong>圧縮（Minify）</strong> — 余分なスペースや改行を削除し、軽量化します。</li>
+        <li><strong>検証（Validate）</strong> — JSON の構文エラーを自動検出し、問題箇所を表示します。</li>
+        </ul>
+    </div>
+
+    <div class="how-step">
+        <h3>③ 結果を確認・保存</h3>
+        <p>右側の出力欄に整形後の JSON が表示されます。「Copy」や「Download」ボタンで簡単に利用可能です。</p>
+    </div>
+
+    <div class="how-step note">
+        <h3>💡 ヒント</h3>
+        <p>
+        このツールはブラウザ上で動作するため、サーバーにデータを送信しません。  
+        セキュアで高速に JSON の整形・検証が可能です。プログラミング、API 開発、データ分析などの用途に最適です。
+        </p>
+        <p class="meta">
+        軽量でオフラインでも使えます（このファイル単体で動作します）。
+        </p>
+    </div>
+    </section>
+
+    <!-- ===== 関連ツールセクション ===== -->
+    <section class="related-tools">
+      <h2>他の便利なツールもチェック</h2>
+      <p>
+        Family Link Up では、JSON整形ツールのほかにも無料で使えるオンラインツールを多数公開しています。
+      </p>
+      <div class="tool-links">
+        <a href="/merge.html" class="tool-card">🪄 Web版 WinMerge（差分比較）</a>
+        <a href="/timer.html" class="tool-card">⏰ タイマー</a>
+        <a href="/sql.html" class="tool-card">🛠️ SQL整形ツール</a>
+      </div>
+      <p class="more-tools">
+        👉 そのほかのツール一覧は <a href="/">Family Link Up トップページ</a> からご覧いただけます。
+      </p>
+    </section>
+
+  </div>
+
+  <!-- Google 広告 -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3016118096844603"
+  crossorigin="anonymous"></script>
+  <ins class="adsbygoogle"
+      style="display:block"
+      data-ad-client="ca-pub-3016118096844603"
+      data-ad-slot="4142062273"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+  <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <p>© 2025 Family Link Up / JSON Formatter</p>
+    <div class="footer-nav">
+      <a href="privacy.html">プライバシーポリシー</a> |
+      <a href="contact.html">お問い合わせ</a>
+    </div>
+  </footer>
+
+  <script src="js/json/json.js"></script>
 </body>
 </html>

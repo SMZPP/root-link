@@ -124,7 +124,7 @@ button:hover {
 
 /* --- 差分表示 --- */
 #diff {
-  width: 100%;
+  width: 98%;
   min-height: 180px;
   white-space: pre-wrap;
   font-family: monospace;
@@ -175,7 +175,6 @@ footer.footer .footer-nav a:hover {
 }
 
 /* --- 使い方セクション --- */
-/* --- 使い方セクション全体 --- */
 .how-to {
   margin-top: 50px;
   padding: 30px;
@@ -188,7 +187,6 @@ footer.footer .footer-nav a:hover {
 .how-to h2 {
   font-size: 24px;
   margin-bottom: 15px;
-  border-left: 6px solid #3b82f6;
   padding-left: 10px;
   color: #111827;
 }
@@ -258,13 +256,50 @@ footer.footer .footer-nav a:hover {
   color: #111;
 }
 
-/* --- 締めの文 --- */
-.how-to .closing {
-  margin-top: 25px;
-  padding-top: 10px;
-  border-top: 1px solid #ddd;
+/* --- 関連ツール --- */
+.related-tools {
+  margin-top: 50px;
+  padding: 30px;
+  background: #f9fafb;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.related-tools h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.related-tools p {
   font-size: 14.5px;
-  color: #333;
+  color: #444;
+}
+
+.tool-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.tool-card {
+  display: inline-block;
+  background: #ffffff;
+  padding: 12px 20px;
+  border-radius: 10px;
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid #d1d5db;
+  transition: all 0.25s ease;
+}
+
+.tool-card:hover {
+  background: #eff6ff;
+  border-color: #60a5fa;
+  transform: translateY(-2px);
 }
 
 .more-tools a {
