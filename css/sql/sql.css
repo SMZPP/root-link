@@ -39,7 +39,7 @@ header.json-header {
 header.json-header .home-link {
     position: absolute;
     top: 16px;
-    right: 20px;
+    left: 20px;
     font-size: 14px;
     color: #60a5fa;
     text-decoration: none;
@@ -94,7 +94,7 @@ header.json-header p {
     padding: 20px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
     border: 1px solid rgba(0, 0, 0, 0.05);
-    width: 100%;
+    width: 95%;
     max-width: none;
 }
 
@@ -205,6 +205,15 @@ footer.footer {
     color: #555;
     font-size: 14px;
 }
+footer.footer .footer-nav a {
+    color: #60a5fa;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 10px;
+}
+footer.footer .footer-nav a:hover {
+    text-decoration: underline;
+}
 
 /* ===== セレクトメニュー ===== */
 select {
@@ -251,4 +260,128 @@ select {
     .wrap {
         padding: 12px 16px;
     }
+}
+
+/* ===== 使い方セクション改良版 ===== */
+.how-to {
+    margin-top: 50px;
+    padding: 40px 28px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.how-to h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111827;
+    border-bottom: 2px solid #3b82f6;
+    display: inline-block;
+    padding-bottom: 6px;
+}
+
+.how-step {
+    margin-bottom: 24px;
+    padding: 16px 18px;
+    background: #f9fafb;
+    border-radius: 10px;
+    border-left: 5px solid #3b82f6;
+}
+
+.how-step h3 {
+    font-size: 18px;
+    color: #1e3a8a;
+    margin-bottom: 8px;
+}
+
+.how-step p,
+.how-step li {
+    color: #444;
+    font-size: 14.5px;
+    line-height: 1.7;
+    margin: 0 0 6px 0;
+}
+
+.how-step ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 6px 0 0 0;
+}
+
+.how-step ul li {
+    padding-left: 1.2em;
+    position: relative;
+}
+
+.how-step ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #3b82f6;
+    font-size: 13px;
+}
+
+.how-step.note {
+    background: #f0f9ff;
+    border-left-color: #2563eb;
+}
+
+.how-step.note h3 {
+    color: #1d4ed8;
+}
+
+/* --- 関連ツール --- */
+.related-tools {
+  margin-top: 50px;
+  padding: 30px;
+  background: #f9fafb;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.related-tools h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.related-tools p {
+  font-size: 14.5px;
+  color: #444;
+}
+
+.tool-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.tool-card {
+  display: inline-block;
+  background: #ffffff;
+  padding: 12px 20px;
+  border-radius: 10px;
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid #d1d5db;
+  transition: all 0.25s ease;
+}
+
+.tool-card:hover {
+  background: #eff6ff;
+  border-color: #60a5fa;
+  transform: translateY(-2px);
+}
+
+.more-tools a {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+}
+.more-tools a:hover {
+  text-decoration: underline;
 }

@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>SQL整形ツール — Family Link Up</title>
 
-  <meta name="description" content="SQL整形ツールは、SQL文を見やすく整形・圧縮・大文字化できる無料オンラインツールです。Beautify・Minify・Uppercase機能付き。オフライン対応。">
-  <meta name="keywords" content="SQL, 整形, フォーマット, Beautify, Minify, Uppercase, Formatter, Webツール, Family Link Up">
-  <meta property="og:title" content="SQL整形ツール｜無料で整形・圧縮・大文字化できるオンラインエディタ">
-  <meta property="og:description" content="SQL文を見やすく整形したり、圧縮したり、キーワードを大文字に統一できるオンラインツールです。">
-  <meta property="og:image" content="https://family-link-up.com/images/sql-formatter-og.png">
+  <meta name="description" content="SQL整形ツールは、SQLクエリを見やすく整形・圧縮・検証できる無料オンラインツールです。Beautify・Minify 機能付きで、コピーやダウンロードも可能。">
+  <meta name="keywords" content="SQL, 整形, フォーマット, Beautify, Minify, Validator, Webツール, Family Link Up">
+  <meta property="og:title" content="SQL整形ツール｜無料でフォーマットできるオンラインエディタ">
+  <meta property="og:description" content="SQLクエリを整形・圧縮・検証できるオンラインツールです。MySQL・PostgreSQL・SQLite などに対応。">
+  <meta property="og:image" content="https://family-link-up.com/images/sql-og.png">
   <meta property="og:url" content="https://family-link-up.com/sql.html">
   <meta property="og:type" content="website">
   <meta name="robots" content="index,follow">
@@ -23,22 +23,21 @@
     <header class="json-header">
       <a href="/" class="home-link">🏠 ホームへ戻る</a>
       <h1>SQL整形ツール</h1>
-      <p>貼り付けて<strong>Beautify / Minify / Uppercase</strong>できます。ファイルのアップロード／ダウンロード対応。</p>
+      <p>SQL文を <strong>Beautify（整形）</strong>・<strong>Minify（圧縮）</strong>・<strong>Validate（構文チェック）</strong> できます。<br>コピー、ダウンロード、ファイルアップロードにも対応。</p>
     </header>
 
     <!-- ===== グリッド ===== -->
     <div class="grid">
-
-      <!-- ===== 入力パネル ===== -->
+      <!-- 入力パネル -->
       <div class="panel panel-left">
         <label for="input">入力（未整形のSQL）</label>
-        <textarea id="input" placeholder="例: SELECT * FROM users WHERE age>20;"></textarea>
+        <textarea id="input" placeholder="例: SELECT name, age FROM users WHERE age > 20 ORDER BY age DESC;"></textarea>
 
         <div class="controls">
           <button id="beautify">整形（Beautify）</button>
           <button id="minify" class="secondary">圧縮（Minify）</button>
-          <button id="uppercase" class="secondary small">大文字化（Uppercase）</button>
-          <button id="clearIn" class="secondary small">クリア（Clear）</button>
+          <button id="validate" class="secondary small">検証（Validate）</button>
+          <button id="clear" class="secondary small">クリア（Clear）</button>
         </div>
 
         <div class="controls options">
@@ -50,53 +49,106 @@
             </select>
           </label>
 
-          <label for="fileIn" id="loadFile" class="secondary small">Upload .sql</label>
-          <input type="file" id="fileIn" style="display:none">
+          <label>
+            <input type="file" id="fileInput">
+            <span class="small">Upload .sql</span>
+          </label>
         </div>
 
         <div class="controls">
-          <button id="copyIn" class="secondary small">Copy Input</button>
-          <button id="download" class="secondary small">Download Input</button>
-          <button id="paste" class="small">Paste Clipboard</button>
+          <button id="copyInput" class="secondary small">Copy Input</button>
+          <button id="downloadInput" class="secondary small">Download Input</button>
+          <button id="pasteClipboard" class="small">Paste Clipboard</button>
         </div>
 
         <div id="message" class="message" aria-live="polite"></div>
       </div>
 
-      <!-- ===== 出力パネル ===== -->
+      <!-- 出力パネル -->
       <div class="panel panel-right">
         <label for="output">出力 / 整形結果</label>
         <pre id="output" class="output" tabindex="0"></pre>
 
         <div class="controls">
-          <button id="copyOut">Copy Output</button>
+          <button id="copyOutput">Copy Output</button>
           <button id="downloadOutput" class="secondary">Download .sql</button>
-          <button id="clearOut" class="secondary small">Clear</button>
+          <button id="clearOutput" class="secondary small">Clear</button>
         </div>
       </div>
-
     </div>
 
-    <p class="meta">
-      軽量でオフラインでも使えます（このファイル単体で動作）。
-    </p>
+    <!-- ===== 使い方セクション ===== -->
+    <section class="how-to">
+      <h2>使い方</h2>
+
+      <div class="how-step">
+        <h3>① SQL文を貼り付ける</h3>
+        <p>左側の入力欄に整形したい SQL 文を貼り付けます。ファイルをドラッグ＆ドロップ、または「Upload .sql」ボタンからアップロードも可能です。</p>
+      </div>
+
+      <div class="how-step">
+        <h3>② 操作ボタンを選ぶ</h3>
+        <ul>
+          <li><strong>整形（Beautify）</strong> — 改行やインデントを付けて見やすく整形します。</li>
+          <li><strong>圧縮（Minify）</strong> — 改行や余白を削除し、軽量化します。</li>
+          <li><strong>検証（Validate）</strong> — SQL の基本的な構文チェックを行い、エラー箇所を表示します。</li>
+        </ul>
+      </div>
+
+      <div class="how-step">
+        <h3>③ 結果を確認・保存</h3>
+        <p>右側の出力欄に整形後の SQL 文が表示されます。「Copy」や「Download」ボタンで簡単に利用可能です。</p>
+      </div>
+
+      <div class="how-step note">
+        <h3>💡 ヒント</h3>
+        <p>
+        このツールはブラウザ上で動作するため、サーバーにデータを送信しません。  
+        安全かつ高速に SQL の整形・検証が可能です。データベース設計やクエリレビューにも最適です。
+        </p>
+        <p class="meta">
+        軽量でオフラインでも使えます（このファイル単体で動作します）。
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== 関連ツールセクション ===== -->
+    <section class="related-tools">
+      <h2>他の便利なツールもチェック</h2>
+      <p>
+        Family Link Up では、SQL整形ツールのほかにも無料で使えるオンラインツールを多数公開しています。
+      </p>
+      <div class="tool-links">
+        <a href="/merge.html" class="tool-card">⚡ Web版 WinMerge（差分比較）</a>
+        <a href="/json.html" class="tool-card">🧩 JSON整形ツール</a>
+        <a href="/timer.html" class="tool-card">⏰ タイマー</a>
+      </div>
+      <p class="more-tools">
+        👉 そのほかのツール一覧は <a href="/">Family Link Up トップページ</a> からご覧いただけます。
+      </p>
+    </section>
   </div>
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3016118096844603"
-    crossorigin="anonymous"></script>
-    <!-- レスポンシブ -->
-    <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-client="ca-pub-3016118096844603"
-        data-ad-slot="4142062273"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
+  <!-- Google 広告 -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3016118096844603"
+  crossorigin="anonymous"></script>
+  <ins class="adsbygoogle"
+      style="display:block"
+      data-ad-client="ca-pub-3016118096844603"
+      data-ad-slot="4142062273"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+  <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
 
+  <!-- フッター -->
   <footer class="footer">
-    © 2025 Family Link Up / SQL Formatter
+    <p>© 2025 Family Link Up / SQL Formatter</p>
+    <div class="footer-nav">
+      <a href="privacy.html">プライバシーポリシー</a> |
+      <a href="contact.html">お問い合わせ</a>
+    </div>
   </footer>
 
   <script src="js/sql/sql.js"></script>

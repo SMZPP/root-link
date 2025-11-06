@@ -4,20 +4,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const beautifyBtn = document.getElementById("beautify");
   const minifyBtn = document.getElementById("minify");
-  const uppercaseBtn = document.getElementById("uppercase");
+  const validateBtn = document.getElementById("validate");
 
-  const clearIn = document.getElementById("clearIn");
-  const clearOut = document.getElementById("clearOut");
-  const copyIn = document.getElementById("copyIn");
-  const copyOut = document.getElementById("copyOut");
-  const pasteBtn = document.getElementById("paste");
+  const clearBtn = document.getElementById("clear");
+  const clearOutputBtn = document.getElementById("clearOutput");
 
-  const loadFileBtn = document.getElementById("loadFile");
-  const fileIn = document.getElementById("fileIn");
-  const downloadBtn = document.getElementById("download");
+  const copyInputBtn = document.getElementById("copyInput");
+  const copyOutputBtn = document.getElementById("copyOutput");
+  const pasteClipboardBtn = document.getElementById("pasteClipboard");
+
+  const fileInput = document.getElementById("fileInput");
+  const downloadInputBtn = document.getElementById("downloadInput");
   const downloadOutputBtn = document.getElementById("downloadOutput");
 
   const indentSelect = document.getElementById("indent");
+  const message = document.getElementById("message");
 
   // ===== Beautify =====
   beautifyBtn.addEventListener("click", () => {
@@ -37,26 +38,27 @@ document.addEventListener("DOMContentLoaded", () => {
       .trim();
 
     output.textContent = sql;
+    message.textContent = "整形完了 ✅";
   });
 
   // ===== Minify =====
   minifyBtn.addEventListener("click", () => {
     output.textContent = input.value.replace(/\s+/g, " ").trim();
+    message.textContent = "圧縮完了 ✅";
   });
 
-  // ===== Uppercase =====
-  uppercaseBtn.addEventListener("click", () => {
-    output.textContent = input.value.replace(
-      /\b(select|from|where|and|or|insert|into|values|update|set|delete|join|on|group by|order by|limit|offset)\b/gi,
-      m => m.toUpperCase()
-    );
+  // ===== Validate =====
+  validateBtn.addEventListener("click", () => {
+    const sql = input.value;
+    const result = validateSQL(sql);
+    message.textContent = result;
   });
 
-  // ===== Clipboard =====
-  copyIn.addEventListener("click", () => navigator.clipboard.writeText(input.value));
-  copyOut.addEventListener("click", () => navigator.clipboard.writeText(output.textContent));
+  // ===== Copy / Paste =====
+  copyInputBtn.addEventListener("click", () => navigator.clipboard.writeText(input.value));
+  copyOutputBtn.addEventListener("click", () => navigator.clipboard.writeText(output.textContent));
 
-  pasteBtn.addEventListener("click", async () => {
+  pasteClipboardBtn.addEventListener("click", async () => {
     try {
       const text = await navigator.clipboard.readText();
       input.value = text;
@@ -65,22 +67,21 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  clearIn.addEventListener("click", () => input.value = "");
-  clearOut.addEventListener("click", () => output.textContent = "");
+  // ===== Clear =====
+  clearBtn.addEventListener("click", () => (input.value = ""));
+  clearOutputBtn.addEventListener("click", () => (output.textContent = ""));
 
-  // ===== File load =====
-  loadFileBtn.addEventListener("click", () => fileIn.click());
-  fileIn.addEventListener("change", e => {
+  // ===== File Upload =====
+  fileInput.addEventListener("change", e => {
     const file = e.target.files[0];
     if (!file) return;
-
     const reader = new FileReader();
-    reader.onload = ev => input.value = ev.target.result;
+    reader.onload = ev => (input.value = ev.target.result);
     reader.readAsText(file);
   });
 
   // ===== Download Input =====
-  downloadBtn.addEventListener("click", () => {
+  downloadInputBtn.addEventListener("click", () => {
     const blob = new Blob([input.value], { type: "text/sql" });
     const a = document.createElement("a");
     a.href = URL.createObjectURL(blob);
@@ -96,4 +97,12 @@ document.addEventListener("DOMContentLoaded", () => {
     a.download = "formatted.sql";
     a.click();
   });
+
+  // ===== Validate function =====
+  function validateSQL(sql) {
+    if (!sql.trim()) return "SQLが空です";
+    const forbidden = sql.match(/(DROP\s+DATABASE|DELETE\s+FROM\s+\w+)/i);
+    if (forbidden) return "⚠️ 注意: データ破壊系コマンドが含まれています";
+    return "基本構文チェック完了 ✅";
+  }
 });
