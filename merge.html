@@ -41,32 +41,82 @@
   }
   </script>
 
-<link rel="icon" href="/images/favicon-fl.ico" type="image/x-icon">
-<link rel="stylesheet" href="css/merge/merge.css">
+  <link rel="icon" href="/images/favicon-fl.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/merge/merge.css">
 </head>
 <body>
 
 <header class="merge-header">
     <a href="/" class="home-link">🏠 ホームへ戻る</a>
-  <h1>Web版 WinMerge（簡易版）</h1>
-  <p>左右のテキストに入力して差分を比較できます</p>
+    <h1>Web版 WinMerge（差分比較ツール）</h1>
+    <p>2つのテキストを入力し、差分を即座に比較できます。インストール不要でスマホにも対応。</p>
+    <p class="intro">このツールは、プログラミングコードの比較や文章のバージョン管理に役立ちます。</p>
 </header>
 
 <div class="container">
-  <textarea id="left" placeholder="左側のテキスト"></textarea>
-  <textarea id="right" placeholder="右側のテキスト"></textarea>
+  <textarea id="left" placeholder="左側のテキスト（例: 変更前）"></textarea>
+  <textarea id="right" placeholder="右側のテキスト（例: 変更後）"></textarea>
 </div>
 
 <div id="buttons">
-  <button id="compareBtn">比較</button>
+  <button id="compareBtn">差分を比較</button>
   <button id="clearBtn">クリア</button>
 </div>
 
 <div id="diff"></div>
 
+<section class="how-to">
+  <h2>使い方</h2>
+  <p>
+    「Web版 WinMerge」は、2つのテキストの違いを一瞬で確認できるオンライン差分比較ツールです。
+    ソフトのインストールは不要で、ブラウザ上でそのまま利用できます。
+  </p>
+
+  <div class="step-list">
+    <div class="step">
+      <h3>① テキストを入力</h3>
+      <p>左側に「変更前」、右側に「変更後」のテキストを入力します。プログラムコードや文章など、内容は自由です。</p>
+    </div>
+
+    <div class="step">
+      <h3>② 差分を比較</h3>
+      <p>「差分を比較」ボタンをクリックすると、2つのテキストの違いが自動で解析され、変更点が色分け表示されます。</p>
+    </div>
+
+    <div class="step">
+      <h3>③ 結果の確認</h3>
+      <p>
+        <span class="added-sample">緑色</span>は追加された部分、
+        <span class="removed-sample">赤色</span>は削除された部分として表示されます。
+        一目で変更箇所を確認できます。
+      </p>
+    </div>
+
+    <div class="step">
+      <h3>④ 内容をリセット</h3>
+      <p>「クリア」ボタンを押すと、入力内容をすべて削除し、再比較がすぐに行えます。</p>
+    </div>
+  </div>
+
+  <h2>主な用途</h2>
+  <ul class="use-cases">
+    <li><strong>ソースコードの変更確認：</strong> コード修正前後の違いを素早く確認できます。</li>
+    <li><strong>文章の校正・編集：</strong> ライターや編集者が、変更箇所を明確に把握できます。</li>
+    <li><strong>契約書や文書の比較：</strong> 文面変更のチェックに最適です。</li>
+    <li><strong>ブログ・記事の更新確認：</strong> 複数人での編集作業でも差分を簡単に把握。</li>
+    <li><strong>データファイルの比較：</strong> CSVやJSONなどのテキストデータの変更点分析にも活用できます。</li>
+  </ul>
+
+  <p class="closing">
+    このツールは、開発者・ライター・ビジネス担当者など、あらゆる人の作業効率を高めるために設計されています。
+    簡単操作で、誰でもすぐに差分比較を始められます。<br>
+    👉 そのほかのツール一覧は <a href="/">Family Link Up トップページ</a> からご覧いただけます。
+  </p>
+
+</section>
+
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3016118096844603"
 crossorigin="anonymous"></script>
-<!-- レスポンシブ -->
 <ins class="adsbygoogle"
     style="display:block"
     data-ad-client="ca-pub-3016118096844603"
@@ -80,7 +130,8 @@ crossorigin="anonymous"></script>
 <footer class="footer">
   <p>&copy; 2025 Family Link Up smz All Rights Reserved.</p>
   <div class="footer-nav">
-    <a href="/">🏠 ホームへ戻る</a>
+    <a href="privacy.html">プライバシーポリシー</a> |
+    <a href="contact.html">お問い合わせ</a>
   </div>
 </footer>
 
