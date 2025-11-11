@@ -19,30 +19,27 @@ body {
 }
 
 /* ===== ヘッダー ===== */
-header {
-  position: relative; /* ホームリンク右上固定のため */
-  text-align: center;
-  padding: 1.5rem 1rem;
+.header {
+  position: relative;        /* ホームリンク絶対配置のため */
+  text-align: center;        /* タイトル中央 */
+  padding: 1rem 2rem;
   background: var(--accent);
   color: #fff;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
-header h1 {
+/* タイトル中央 */
+.header h1 {
+  margin: 0;
   font-size: 1.8rem;
-  margin: 0;
 }
 
-/* ===== ホームリンク（PC:右上固定 / SP:中央寄せ） ===== */
-.home-container {
+/* ホームリンク左上固定 */
+.header .home-link {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
-  margin: 0;
-  text-align: right;
-}
-
-.home-link {
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
   display: inline-block;
   padding: 6px 14px;
   border-radius: 20px;
@@ -56,23 +53,22 @@ header h1 {
   box-shadow: var(--shadow);
 }
 
-.home-link:hover {
+.header .home-link:hover {
   background: var(--accent);
   color: #fff;
-  transform: translateY(-2px);
+  transform: translateY(-50%) translateY(-2px);
 }
 
-/* ===== スマホ対応（中央寄せ） ===== */
+/* ===== SP対応 ===== */
 @media (max-width: 600px) {
-  .home-container {
-    position: static;         /* 絶対配置解除 */
-    text-align: center;       /* 中央寄せ */
-    margin: 0.5rem 0 0.8rem;  /* 適度な余白 */
+  .header {
+    text-align: center;
+    padding: 0.5rem 1rem;
   }
-
-  .home-link {
-    font-size: 0.95rem;
-    padding: 8px 18px;
+  .header .home-link {
+    position: static;
+    transform: none;
+    margin-bottom: 0.5rem;
   }
 }
 
