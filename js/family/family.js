@@ -115,15 +115,3 @@ document.getElementById('printBtn').addEventListener('click', function() {
   printWindow.print();
   printWindow.close();
 });
-
-const showMoreBtn = document.getElementById('showMoreBtn');
-const hiddenArticles = document.querySelector('.hidden-articles');
-
-showMoreBtn.addEventListener('click', () => {
-  hiddenArticles.classList.toggle('show');
-  if(hiddenArticles.classList.contains('show')) {
-    showMoreBtn.textContent = "閉じる";
-  } else {
-    showMoreBtn.textContent = "続きを見る";
-  }
-});
