@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GIFアニメーション生成ツール｜Family Link Up</title>
+  <meta name="description" content="複数の画像から簡単にGIFアニメーションを作成できる無料オンラインツール。フレーム間隔の調整やプレビュー表示、ダウンロードも可能です。">
+  <meta name="keywords" content="GIF, アニメーション, 画像, 無料, Family Link Up, オンラインツール">
+  <link rel="icon" href="/images/favicon-fl.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/gif/gif.css">
+  <link rel="canonical" href="https://family-link-up.com/gif.html">
+  <meta property="og:title" content="GIFアニメーション生成ツール｜Family Link Up">
+  <meta property="og:description" content="複数画像から簡単にGIFを作成できる無料オンラインツール。フレーム間隔調整・プレビュー・ダウンロード対応。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://family-link-up.com/gif.html">
+  <meta property="og:image" content="https://family-link-up.com/images/og-image-gif.png">
+  <meta name="robots" content="index, follow">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "GIFアニメーション生成ツール",
+    "url": "https://family-link-up.com/gif.html",
+    "description": "複数画像から簡単にGIFを作成できる無料オンラインツール。フレーム間隔調整・プレビュー・ダウンロード対応。",
+    "applicationCategory": "ToolApplication",
+    "operatingSystem": "Web"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ===== ヘッダー ===== -->
+  <header class="header">
+    <a href="/" class="home-link">🏠 ホームへ戻る</a>
+    <h1>🎬 GIFアニメーション生成ツール 🎬</h1>
+  </header>
+
+  <main>
+    <!-- 使い方 -->
+    <section class="howto">
+      <h2>📘 ツールの使い方</h2>
+      <ol>
+        <li>「画像を選択（複数可）」ボタンから対象画像を選択します。</li>
+        <li>プレビューで画像の順番や表示を確認します。</li>
+        <li>フレーム間隔（ms）を必要に応じて変更します（初期値: 500ms）。</li>
+        <li>「GIFを作成」ボタンをクリックするとアニメーションGIFが生成されます。</li>
+        <li>生成されたGIFを確認後、「GIFをダウンロード」で保存できます。</li>
+        <li>※ 画像はブラウザ上でのみ処理され、サーバーには送信されません。</li>
+      </ol>
+    </section>
+
+    <!-- ① 画像アップロード -->
+    <section class="input-section">
+      <h2>① 画像アップロード</h2>
+
+      <label for="images" class="upload-btn">
+        📤 画像を選択（複数可）
+      </label>
+
+      <input type="file" id="images" accept="image/*" multiple>
+      
+      <p class="upload-hint">※ クリックして画像を読み込みます</p>
+    </section>
+
+    <!-- ② プレビュー -->
+    <section class="preview-section">
+      <h2>② プレビュー</h2>
+      <div id="preview"></div>
+    </section>
+
+    <!-- ③ フレーム間隔 -->
+    <section class="input-section">
+      <h2>③ フレーム間隔（ms）</h2>
+      <input type="number" id="delay" value="500" min="50">
+    </section>
+
+    <!-- ④ GIF生成 -->
+    <section class="result-section">
+      <h2>④ GIFを作成</h2>
+      <a id="generate">GIFを作成</a>
+    </section>
+
+    <!-- ⑤ GIFダウンロード -->
+    <section class="result-section">
+      <h2>⑤ 生成されたGIF</h2>
+      <img id="result-gif" alt="生成されたGIF" style="display:none;">
+      <a id="download" download="result.gif">GIFをダウンロード</a>
+    </section>
+
+    <!-- 関連ツール -->
+    <section class="related-tools">
+      <h2>他の便利なツールもチェック</h2>
+      <div class="tool-links">
+        <a href="/merge.html" class="tool-card">⚡ Web版 WinMerge</a>
+        <a href="/json.html" class="tool-card">🧩 JSON整形ツール</a>
+        <a href="/timer.html" class="tool-card">⏰ タイマー</a>
+      </div>
+      <p class="more-tools">
+        👉 そのほかのツール一覧は <a href="/">Family Link Up トップページ</a> からご覧いただけます。
+      </p>
+    </section>
+  </main>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3016118096844603"
+  crossorigin="anonymous"></script>
+  <!-- レスポンシブ -->
+  <ins class="adsbygoogle"
+      style="display:block"
+      data-ad-client="ca-pub-3016118096844603"
+      data-ad-slot="4142062273"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+  <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+
+  <!-- フッター -->
+  <footer>
+    <p>© 2025 Family Link Up / GIFアニメーション生成ツール</p>
+    <div class="footer-nav">
+      <a href="privacy.html">プライバシーポリシー</a> |
+      <a href="contact.html">お問い合わせ</a>
+    </div>
+  </footer>
+
+  <script src="js/gif/gif.js"></script>
+  <script src="js/gif/gif_local.js"></script>
+</body>
+</html>

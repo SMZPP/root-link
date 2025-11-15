@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>家族関係図メーカー｜無料で簡単に家系図・ジェノグラム作成</title>
+    <meta name="description" content="家族関係図メーカーは、自分や家族の家系図を無料で簡単に作成できるツールです。親、配偶者、子供などを入力して関係図を自動生成。PDF保存や印刷も可能。">
+    <meta name="keywords" content="家族関係図, 家系図, 無料作成, 関係図メーカー, genealogy, family tree, ジェノグラム, 家族図, 親子関係, 子供, 配偶者">
+    <link rel="icon" href="/images/favicon-fl.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/images/og-image-family.png">
+    <link rel="stylesheet" href="css/family/family.css">
+    <link rel="canonical" href="https://family-link-up.com/family.html">
+    <meta property="og:title" content="家族関係図メーカー｜無料で簡単に家系図作成">
+    <meta property="og:description" content="自分や家族の家系図を無料で簡単に作成できるツール。親、配偶者、子供を入力して関係図を自動生成します。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://family-link-up.com/family.html">
+    <meta property="og:image" content="https://family-link-up.com/images/og-image-family.png">
+    <meta name="robots" content="index, follow">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "家族関係図メーカー",
+      "url": "https://family-link-up.com/family.html",
+      "description": "自分や家族の家系図を無料で簡単に作成できるツール。親、配偶者、子供を入力して関係図を自動生成。",
+      "applicationCategory": "ToolApplication",
+      "operatingSystem": "Web"
+    }
+    </script>
+</head>
+<body>
+    <!-- ===== ヘッダー ===== -->
+    <header class="header">
+        <a href="/" class="home-link">🏠 ホームへ戻る</a>
+        <h1>👪 家族関係図作成ツール 👪</h1>
+    </header>
+
+    <main>
+        <!-- 使い方 -->
+        <section class="howto">
+            <h2>📘 ツールの使い方</h2>
+            <ol>
+                <li><strong>自分の情報を入力：</strong> 「自分」の続柄（例：本人）と性別を選びます。</li>
+                <li><strong>配偶者／パートナーを追加：</strong> 「配偶者／パートナー」の欄に続柄（例：妻、夫）を入力します。</li>
+                <li><strong>親や配偶者の親を追加：</strong> 「＋親追加」や「＋配偶者の親追加」で両親・義父母を追加。</li>
+                <li><strong>子どもを追加：</strong> 「＋子追加」ボタンで複数の子どもを追加できます。</li>
+                <li><strong>関係図を生成：</strong> 「関係図を生成」ボタンで家族関係図を描画します。</li>
+                <li><strong>印刷・保存：</strong> 「印刷する」ボタンで印刷またはPDFとして保存できます。</li>
+            </ol>
+            <p class="notice">※入力内容はブラウザ上でのみ処理されます。</p>
+        </section>
+
+        <!-- 入力フォーム -->
+        <section class="input-section">
+            <fieldset>
+                <legend>自分</legend>
+                続柄: <input type="text" id="meName" value="本人">
+                性別: 
+                <select id="meGender">
+                    <option value="male">男性</option>
+                    <option value="female">女性</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>配偶者／パートナー</legend>
+                続柄: <input type="text" id="spouseName" value="妻">
+                性別: 
+                <select id="spouseGender">
+                    <option value="male">男性</option>
+                    <option value="female" selected>女性</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>親</legend>
+                <div id="parentInputs"></div>
+                <button type="button" onclick="addMember('parent')">＋親追加</button>
+            </fieldset>
+
+            <fieldset>
+                <legend>配偶者の親</legend>
+                <div id="spouseParentInputs"></div>
+                <button type="button" onclick="addMember('spouseParent')">＋配偶者の親追加</button>
+            </fieldset>
+
+            <fieldset>
+                <legend>子</legend>
+                <div id="childInputs"></div>
+                <button type="button" onclick="addMember('child')">＋子追加</button>
+            </fieldset>
+
+            <div class="center-buttons">
+                <button id="generateBtn" onclick="drawTree()">関係図を生成</button>
+                <button id="printBtn">印刷する</button>
+            </div>
+
+            <svg id="familyTree"></svg>
+        </section>
+
+        <!-- ===== 関連ツールセクション ===== -->
+        <section class="related-tools">
+          <h2>他の便利なツールもチェック</h2>
+          <p>
+            Family Link Up では、SQL整形ツールのほかにも無料で使えるオンラインツールを多数公開しています。
+          </p>
+          <div class="tool-links">
+            <a href="/merge.html" class="tool-card">⚡ Web版 WinMerge（差分比較）</a>
+            <a href="/json.html" class="tool-card">🧩 JSON整形ツール</a>
+            <a href="/timer.html" class="tool-card">⏰ タイマー</a>
+          </div>
+          <p class="more-tools">
+            👉 そのほかのツール一覧は <a href="/">Family Link Up トップページ</a> からご覧いただけます。
+          </p>
+        </section>
+    </main>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3016118096844603"
+    crossorigin="anonymous"></script>
+    <!-- レスポンシブ -->
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-3016118096844603"
+        data-ad-slot="4142062273"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <!-- ===== フッター ===== -->
+    <footer>
+      <p>© 2025 Family Link Up / 家族関係図メーカー</p>
+      <div class="footer-nav">
+        <a href="privacy.html">プライバシーポリシー</a> |
+        <a href="contact.html">お問い合わせ</a>
+      </div>
+    </footer>
+
+    <script src="js/family/family.js"></script>
+</body>
+</html>
