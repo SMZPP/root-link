@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ルーレット作成ツール｜Family Link Up</title>
+  <meta name="description" content="項目を入力するだけで簡単にルーレットが作れる無料オンラインツール。スピン、停止、結果表示も可能。" />
+  <meta name="keywords" content="ルーレット, 無料ツール, 抽選, Family Link Up, オンラインツール" />
+  <link rel="icon" href="/images/favicon-fl.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="css/roulette/roulette.css" />
+  <link rel="canonical" href="https://family-link-up.com/roulette.html" />
+
+  <meta property="og:title" content="ルーレット作成ツール｜Family Link Up" />
+  <meta property="og:description" content="項目を入力するだけでルーレットが作れる無料オンラインツール。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://family-link-up.com/roulette.html" />
+  <meta property="og:image" content="https://family-link-up.com/images/og-image-roulette.png" />
+  <meta name="robots" content="index, follow" />
+</head>
+
+<body>
+  <!-- ===== ヘッダー ===== -->
+  <header class="header">
+    <a href="/" class="home-link">🏠 ホームへ戻る</a>
+    <h1>🎡 ルーレットツール 🎡</h1>
+  </header>
+
+  <main>
+    <!-- 使い方 -->
+    <section class="howto">
+      <h2>📘 ツールの使い方</h2>
+      <ol>
+        <li>下の入力欄にルーレットに入れたい項目を入力します（1行＝1項目）。</li>
+        <li>「ルーレットを作成」ボタンを押すと表示されます。</li>
+        <li>「ルーレットスタート」を押すとルーレットが回転します。</li>
+        <li>止まると選ばれた項目が表示されます。</li>
+        <li>サーバーには何も送信されません（ブラウザのみで動作）。</li>
+      </ol>
+    </section>
+
+    <!-- ① 項目入力 -->
+    <section class="input-section">
+      <h2>① 項目入力</h2>
+      <textarea id="items" placeholder="例：焼肉&#10;寿司&#10;ラーメン" rows="6"></textarea>
+
+      <a id="create" class="action-btn">ルーレットを作成</a>
+    </section>
+
+    <!-- ② ルーレット表示 -->
+    <section class="preview-section">
+      <h2>② ルーレット</h2>
+      <canvas id="roulette" width="380" height="380"></canvas>
+    </section>
+
+    <!-- ③ ボタン -->
+    <section class="result-section">
+      <h2>③ スタート / 結果</h2>
+
+      <a id="start" class="action-btn">ルーレットスタート</a>
+
+      <p id="result" class="result-text"></p>
+    </section>
+
+    <!-- 関連ツール -->
+    <section class="related-tools">
+      <h2>他の便利なツールもチェック</h2>
+      <div class="tool-links">
+        <a href="/gif.html" class="tool-card">🎬 GIF生成ツール</a>
+        <a href="/json.html" class="tool-card">🧩 JSON整形ツール</a>
+        <a href="/timer.html" class="tool-card">⏰ タイマー</a>
+      </div>
+      <p class="more-tools">
+        👉 そのほかのツール一覧は <a href="/">Family Link Up トップページ</a> からご覧いただけます。
+      </p>
+    </section>
+  </main>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3016118096844603"
+  crossorigin="anonymous"></script>
+  <!-- レスポンシブ -->
+  <ins class="adsbygoogle"
+      style="display:block"
+      data-ad-client="ca-pub-3016118096844603"
+      data-ad-slot="4142062273"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+  <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+
+  <footer>
+    <p>© 2025 Family Link Up / ルーレット作成ツール</p>
+    <div class="footer-nav">
+      <a href="privacy.html">プライバシーポリシー</a> |
+      <a href="contact.html">お問い合わせ</a>
+    </div>
+  </footer>
+
+  <script src="js/roulette/roulette.js"></script>
+</body>
+</html>
