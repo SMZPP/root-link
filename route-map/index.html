@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>通学路図作成ツール</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <meta name="description" content="ルート経路図メーカー｜自宅から学校・駅までの通学路・通勤路の簡略図を無料で作成。A4の1/4サイズなど小さく印刷でき、学校の提出書類にもそのまま貼り付け可能。">
+  <meta name="keywords" content="ルート図, 経路図, 通学路, 通勤路, 地図作成, 学校提出, 無料, 印刷">
+  <meta property="og:title" content="ルート経路図メーカー｜通学路・通勤路の簡略図を無料作成">
+  <meta property="og:description" content="自宅から学校・駅のルート図を簡単作成。小さく印刷して学校書類への貼り付けにも対応。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://family-link-up.com/route-map/">
+  <meta property="og:image" content="https://family-link-up.com/images/og-image.png">
+  <link rel="canonical" href="https://family-link-up.com/route-map/">
+</head>
+<body>
+<div class="flu-back-bar">
+  <a href="../index.html" class="flu-back-btn">← Family Link Up ホーム</a>
+</div>
+<style>
+.flu-back-bar{background:#3b82f6;padding:8px 16px;text-align:left;}
+.flu-back-btn{color:#fff;text-decoration:none;font-size:13px;font-weight:600;letter-spacing:0.03em;}
+.flu-back-btn:hover{text-decoration:underline;}
+</style>
+
+  <!-- Header -->
+  <header id="app-header">
+    <div id="header-title">
+      <span class="header-icon">🗺️</span>
+      <span>通学路図作成ツール</span>
+    </div>
+    <div id="header-actions">
+      <button class="btn-export" id="btn-png" title="PNG形式で保存">📷 PNG保存</button>
+      <button class="btn-export" id="btn-pdf" title="PDF形式で保存">📄 PDF保存</button>
+      <button class="btn-export" id="btn-print" title="印刷する">🖨️ 印刷</button>
+    </div>
+  </header>
+
+  <div id="app-body">
+
+    <!-- Left Toolbar -->
+    <aside id="toolbar">
+      <div class="toolbar-section">
+        <div class="toolbar-section-title">ツール</div>
+        <button class="tool-btn active" data-tool="select" title="選択・移動モード">
+          <span class="tool-icon">↖️</span>
+          <span class="tool-label">選択/移動</span>
+        </button>
+        <button class="tool-btn" data-tool="addNode" title="ノードを追加">
+          <span class="tool-icon">➕</span>
+          <span class="tool-label">ノード追加</span>
+        </button>
+        <button class="tool-btn" data-tool="addPath" title="パスを追加">
+          <span class="tool-icon">📏</span>
+          <span class="tool-label">パス追加</span>
+        </button>
+        <button class="tool-btn" data-tool="addText" title="テキストを追加">
+          <span class="tool-icon">✍️</span>
+          <span class="tool-label">テキスト追加</span>
+        </button>
+        <button class="tool-btn" data-tool="delete" title="削除モード">
+          <span class="tool-icon">🗑️</span>
+          <span class="tool-label">削除</span>
+        </button>
+      </div>
+
+      <div class="toolbar-section">
+        <div class="toolbar-section-title">ノード種別</div>
+        <div id="node-type-list">
+          <button class="node-type-btn active" data-type="home" title="自宅">
+            <span>🏠</span><span>自宅</span>
+          </button>
+          <button class="node-type-btn" data-type="school" title="学校">
+            <span>🏫</span><span>学校</span>
+          </button>
+          <button class="node-type-btn" data-type="station" title="駅">
+            <span>🚉</span><span>駅</span>
+          </button>
+          <button class="node-type-btn" data-type="busstop" title="バス停">
+            <span>🚌</span><span>バス停</span>
+          </button>
+          <button class="node-type-btn" data-type="intersection" title="交差点">
+            <span>⚠️</span><span>交差点</span>
+          </button>
+          <button class="node-type-btn" data-type="landmark" title="地点">
+            <span>📍</span><span>地点</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="toolbar-section">
+        <div class="toolbar-section-title">ヒント</div>
+        <div class="hint-text">
+          <p>• <b>選択/移動</b>: ノードをドラッグして移動</p>
+          <p>• <b>パス追加</b>: 始点→終点の順にノードをクリック</p>
+          <p>• <b>Delete</b>キーで選択要素を削除</p>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Canvas Area -->
+    <main id="canvas-area">
+      <div id="canvas-wrapper">
+        <svg id="main-svg" width="700" height="500" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="arrowhead" markerWidth="10" markerHeight="7"
+                    refX="9" refY="3.5" orient="auto">
+              <polygon points="0 0, 10 3.5, 0 7" fill="#555" />
+            </marker>
+            <marker id="arrowhead-selected" markerWidth="10" markerHeight="7"
+                    refX="9" refY="3.5" orient="auto">
+              <polygon points="0 0, 10 3.5, 0 7" fill="#d97706" />
+            </marker>
+          </defs>
+          <g id="paths-layer"></g>
+          <g id="nodes-layer"></g>
+          <g id="texts-layer"></g>
+          <!-- Path preview line (for addPath mode) -->
+          <line id="path-preview" x1="0" y1="0" x2="0" y2="0"
+                stroke="#d97706" stroke-width="2" stroke-dasharray="6,4"
+                opacity="0" pointer-events="none"/>
+        </svg>
+      </div>
+    </main>
+
+    <!-- Right Panel -->
+    <aside id="right-panel">
+
+      <!-- Node Properties -->
+      <div id="panel-node" class="panel-section hidden">
+        <div class="panel-title">ノードのプロパティ</div>
+        <div class="prop-row">
+          <label>名前</label>
+          <input type="text" id="prop-node-name" placeholder="例：自宅">
+        </div>
+        <div class="prop-row">
+          <label>種別</label>
+          <select id="prop-node-type">
+            <option value="home">🏠 自宅</option>
+            <option value="school">🏫 学校</option>
+            <option value="station">🚉 駅</option>
+            <option value="busstop">🚌 バス停</option>
+            <option value="intersection">⚠️ 交差点</option>
+            <option value="landmark">📍 地点</option>
+          </select>
+        </div>
+        <div class="prop-row">
+          <label>色</label>
+          <input type="color" id="prop-node-color" value="#ffffff">
+        </div>
+      </div>
+
+      <!-- Path Properties -->
+      <div id="panel-path" class="panel-section hidden">
+        <div class="panel-title">パスのプロパティ</div>
+        <div class="prop-row">
+          <label>ラベル</label>
+          <input type="text" id="prop-path-label" placeholder="例：10分">
+        </div>
+        <div class="prop-row">
+          <label>線種</label>
+          <select id="prop-path-style">
+            <option value="solid">実線</option>
+            <option value="dashed">点線</option>
+          </select>
+        </div>
+        <div class="prop-row">
+          <label>矢印</label>
+          <select id="prop-path-arrow">
+            <option value="none">なし</option>
+            <option value="end">→ 終点</option>
+            <option value="both">↔ 両端</option>
+          </select>
+        </div>
+        <div class="prop-row">
+          <label>色</label>
+          <input type="color" id="prop-path-color" value="#555555">
+        </div>
+        <div class="prop-row">
+          <label>太さ</label>
+          <input type="range" id="prop-path-width" min="1" max="10" value="2">
+          <span id="prop-path-width-val">2px</span>
+        </div>
+      </div>
+
+      <!-- Text Properties -->
+      <div id="panel-text" class="panel-section hidden">
+        <div class="panel-title">テキストのプロパティ</div>
+        <div class="prop-row">
+          <label>内容</label>
+          <input type="text" id="prop-text-content" placeholder="テキストを入力">
+        </div>
+        <div class="prop-row">
+          <label>色</label>
+          <input type="color" id="prop-text-color" value="#333333">
+        </div>
+        <div class="prop-row">
+          <label>サイズ</label>
+          <input type="range" id="prop-text-size" min="8" max="32" value="13">
+          <span id="prop-text-size-val">13px</span>
+        </div>
+      </div>
+
+      <!-- Default message -->
+      <div id="panel-default" class="panel-section">
+        <div class="panel-title">プロパティ</div>
+        <p class="panel-hint">要素を選択するとプロパティが表示されます。</p>
+      </div>
+
+      <!-- Print Size Settings -->
+      <div id="panel-print" class="panel-section">
+        <div class="panel-title">印刷サイズ設定</div>
+        <div id="print-size-options">
+          <label class="print-size-opt">
+            <input type="radio" name="printSize" value="100" checked>
+            <div class="print-preview-wrap">
+              <div class="print-preview size-100"></div>
+              <span>A4全体 (100%)</span>
+            </div>
+          </label>
+          <label class="print-size-opt">
+            <input type="radio" name="printSize" value="50">
+            <div class="print-preview-wrap">
+              <div class="print-preview size-50"></div>
+              <span>A4の1/2 (50%)</span>
+            </div>
+          </label>
+          <label class="print-size-opt">
+            <input type="radio" name="printSize" value="25">
+            <div class="print-preview-wrap">
+              <div class="print-preview size-25"></div>
+              <span>A4の1/4 (25%)</span>
+            </div>
+          </label>
+          <label class="print-size-opt">
+            <input type="radio" name="printSize" value="12.5">
+            <div class="print-preview-wrap">
+              <div class="print-preview size-12"></div>
+              <span>A4の1/8 (12.5%)</span>
+            </div>
+          </label>
+        </div>
+      </div>
+
+    </aside>
+  </div>
+
+  <!-- Text input dialog -->
+  <div id="text-dialog" class="hidden">
+    <div id="text-dialog-box">
+      <div class="dialog-title">テキストを入力</div>
+      <input type="text" id="text-dialog-input" placeholder="テキストを入力してください">
+      <div class="dialog-actions">
+        <button id="text-dialog-ok" class="btn-primary">追加</button>
+        <button id="text-dialog-cancel" class="btn-secondary">キャンセル</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+<!-- 関連ツール -->
+<section class="related-tools">
+  <h2>他の便利なツールもチェック</h2>
+  <p>Family Link Up では、就職・学習・日常に役立つ無料ツールを多数ご用意しています。</p>
+  <div class="tool-links">
+    <a href="../career-resume/" class="tool-card">📋 職務経歴書メーカー</a>
+    <a href="../personal-resume/" class="tool-card">📝 履歴書メーカー</a>
+    <a href="../word-study/" class="tool-card">🔤 英単語学習</a>
+    <a href="../img-to-pdf/" class="tool-card">🖼️ 画像→PDF変換</a>
+    <a href="/timer/" class="tool-card">⏰ タイマー</a>
+    <a href="/json/" class="tool-card">📝 JSON整形ツール</a>
+    <a href="/family/" class="tool-card">👪 家族関係図メーカー</a>
+  </div>
+  <p class="more-tools">👉 そのほかのツール一覧は <a href="/">Family Link Up トップページ</a> からご覧いただけます。</p>
+</section>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3016118096844603"
+    crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-3016118096844603"
+    data-ad-slot="4142062273"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<footer>
+  <p>© 2025-2026 Family Link Up / ルート経路図メーカー</p>
+  <div class="footer-nav">
+    <a href="../privacy.html">プライバシーポリシー</a> |
+    <a href="../contact.html">お問い合わせ</a>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>副業収入の税金計算ツール｜確定申告・住民税への影響を無料シミュレーション</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="/images/favicon-fl.ico" type="image/x-icon">
+  <meta name="description" content="副業収入と経費を入力するだけで、所得税・住民税の増加額と確定申告の必要性を自動判定。フリマ・せどり・ライター・YouTubeなど副業の税金を無料計算。">
+  <meta name="keywords" content="副業 税金, 確定申告, 雑所得, 副業収入, 住民税, 所得税, 副業 20万円, フリマ 税金, せどり 税金, YouTube 税金">
+  <meta property="og:title" content="副業収入の税金計算ツール｜確定申告・住民税への影響を無料シミュレーション">
+  <meta property="og:description" content="副業収入と経費を入力するだけで、所得税・住民税の増加額と確定申告の必要性を自動判定。フリマ・せどり・ライター・YouTubeなど副業の税金を無料計算。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://family-link-up.com/side-income-tax/">
+  <meta property="og:image" content="https://family-link-up.com/images/og-image.png">
+  <link rel="canonical" href="https://family-link-up.com/side-income-tax/">
+</head>
+<body>
+
+<div class="flu-back-bar">
+  <a href="/" class="flu-back-btn">← Family Link Up ホーム</a>
+</div>
+
+<header class="tool-header">
+  <div class="header-inner">
+    <div class="header-icon">📊</div>
+    <div>
+      <h1>副業収入の税金計算ツール</h1>
+      <p class="header-sub">確定申告の必要性・追加税金・実質手取りをかんたんシミュレーション</p>
+    </div>
+  </div>
+</header>
+
+<main class="main-container">
+
+  <!-- 入力セクション -->
+  <section class="card input-section">
+    <h2 class="section-title">
+      <span class="icon-circle">📝</span> 収入情報を入力
+    </h2>
+
+    <div class="input-grid">
+      <div class="form-group">
+        <label for="main-income">本業年収（給与所得）<span class="required">必須</span></label>
+        <div class="input-with-unit">
+          <input type="number" id="main-income" placeholder="例: 4000000" min="0">
+          <span class="unit">円</span>
+        </div>
+        <p class="hint">源泉徴収票の「支払金額」をご入力ください</p>
+      </div>
+
+      <div class="form-group">
+        <label for="income-type">副業収入の種類</label>
+        <select id="income-type">
+          <option value="misc">雑所得（フリマ・せどり・ライター・YouTube等）</option>
+          <option value="business">事業所得（継続的・規模が大きい副業）</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="side-income">副業収入（年間）<span class="required">必須</span></label>
+        <div class="input-with-unit">
+          <input type="number" id="side-income" placeholder="例: 500000" min="0">
+          <span class="unit">円</span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="side-expenses">副業経費（年間）</label>
+        <div class="input-with-unit">
+          <input type="number" id="side-expenses" placeholder="例: 100000" min="0" value="0">
+          <span class="unit">円</span>
+        </div>
+        <p class="hint">仕入・通信費・交通費・機材代など</p>
+      </div>
+
+      <div class="form-group">
+        <label for="age">年齢</label>
+        <div class="input-with-unit">
+          <input type="number" id="age" value="35" min="15" max="80">
+          <span class="unit">歳</span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="spouse-deduction">配偶者控除</label>
+        <select id="spouse-deduction">
+          <option value="0">なし</option>
+          <option value="1">あり（配偶者の年収103万円以下）</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="dependents">扶養家族数（配偶者除く）</label>
+        <div class="input-with-unit">
+          <input type="number" id="dependents" value="0" min="0" max="10">
+          <span class="unit">人</span>
+        </div>
+      </div>
+    </div>
+
+    <button class="btn-calc" onclick="calculate()">税金を計算する</button>
+  </section>
+
+  <!-- 結果プレースホルダー -->
+  <div id="result-placeholder" class="result-placeholder">
+    <div class="placeholder-icon">💡</div>
+    <p>副業収入を入力して「税金を計算する」ボタンを押してください</p>
+  </div>
+
+  <!-- 結果 -->
+  <div id="result-content" style="display:none;">
+
+    <!-- 確定申告判定バナー -->
+    <div class="filing-banner" id="filing-banner"></div>
+
+    <!-- 住民税バナー -->
+    <div class="residence-banner">
+      <span class="badge badge-warning">⚠️ 住民税の申告</span>
+      副業所得が20万円以下でも、<strong>住民税の申告は市区町村に対して必要です</strong>。
+      ただし年末調整済みの会社員で副業収入が少額の場合、給与からの特別徴収で対応される場合があります。
+    </div>
+
+    <!-- サマリーカード -->
+    <div class="summary-grid">
+      <div class="summary-card">
+        <div class="scard-label">副業の純利益（収入−経費）</div>
+        <div class="scard-value" id="side-profit">―</div>
+      </div>
+      <div class="summary-card highlight-card">
+        <div class="scard-label">追加される所得税</div>
+        <div class="scard-value red" id="add-income-tax">―</div>
+      </div>
+      <div class="summary-card highlight-card">
+        <div class="scard-label">追加される住民税</div>
+        <div class="scard-value red" id="add-residence-tax">―</div>
+      </div>
+      <div class="summary-card total-card">
+        <div class="scard-label">合計追加税負担</div>
+        <div class="scard-value" id="total-add-tax">―</div>
+      </div>
+      <div class="summary-card net-card">
+        <div class="scard-label">実質手取り副業収入</div>
+        <div class="scard-value green" id="side-net">―</div>
+        <div class="scard-sub">（収入 − 経費 − 追加税金）</div>
+      </div>
+      <div class="summary-card">
+        <div class="scard-label">副業の実質税率</div>
+        <div class="scard-value" id="effective-rate">―</div>
+      </div>
+    </div>
+
+    <!-- 詳細テーブル -->
+    <section class="card">
+      <h3 class="table-title">税金の増加内訳（本業との合算計算）</h3>
+      <table class="breakdown-table">
+        <thead>
+          <tr><th>項目</th><th>本業のみ</th><th>本業＋副業</th><th>増加分</th></tr>
+        </thead>
+        <tbody id="detail-tbody"></tbody>
+      </table>
+    </section>
+
+    <!-- アドバイス欄 -->
+    <section class="card advice-card">
+      <h3 class="advice-title">💡 節税アドバイス</h3>
+      <div id="advice-content"></div>
+    </section>
+
+    <div class="notice-box">
+      <strong>⚠️ 注意事項</strong>
+      <ul>
+        <li>この計算結果は2024年度の税率に基づく概算です。実際の税額は異なる場合があります。</li>
+        <li>副業収入が20万円を超える場合は、翌年3月15日までに確定申告が必要です。</li>
+        <li>経費として認められる範囲は副業の内容によって異なります。税理士にご確認ください。</li>
+        <li>フリマアプリでの不用品売却は原則非課税（生活用動産）の場合があります。</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<!-- 関連ツール -->
+<section class="related-tools">
+  <h2>他の便利なツールもチェック</h2>
+  <p>Family Link Up では、就職・学習・日常に役立つ無料ツールを多数ご用意しています。</p>
+  <div class="tool-links">
+    <a href="../net-salary/" class="tool-card">💰 手取り計算</a>
+    <a href="../freelance-vs-employee/" class="tool-card">⚖️ フリーランス vs 正社員</a>
+    <a href="../career-resume/" class="tool-card">📋 職務経歴書メーカー</a>
+    <a href="../personal-resume/" class="tool-card">📝 履歴書メーカー</a>
+    <a href="/timer/" class="tool-card">⏰ タイマー</a>
+  </div>
+  <p class="more-tools">👉 そのほかのツール一覧は <a href="/">Family Link Up トップページ</a> からご覧いただけます。</p>
+</section>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3016118096844603" crossorigin="anonymous"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3016118096844603" data-ad-slot="4142062273" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+<footer>
+  <p>© 2025-2026 Family Link Up / 副業収入の税金計算ツール</p>
+  <div class="footer-nav">
+    <a href="../privacy.html">プライバシーポリシー</a> |
+    <a href="../contact.html">お問い合わせ</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

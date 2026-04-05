@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>フリーランス vs 正社員 収入比較ツール｜手取り・税金・社会保険の違い</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="/images/favicon-fl.ico" type="image/x-icon">
+  <meta name="description" content="同じ年収でもフリーランスと正社員では手取りがこんなに違う！社会保険・税金の差を徹底比較できる無料ツール">
+  <meta name="keywords" content="フリーランス, 正社員, 収入比較, 手取り, 社会保険, 国民健康保険, 厚生年金, 所得税, 住民税, フリーランス税金">
+  <meta property="og:title" content="フリーランス vs 正社員 収入比較ツール｜手取り・税金・社会保険の違い">
+  <meta property="og:description" content="同じ年収でもフリーランスと正社員では手取りがこんなに違う！社会保険・税金の差を徹底比較できる無料ツール">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://family-link-up.com/freelance-vs-employee/">
+  <meta property="og:image" content="https://family-link-up.com/images/og-image.png">
+  <link rel="canonical" href="https://family-link-up.com/freelance-vs-employee/">
+</head>
+<body>
+
+<div class="flu-back-bar">
+  <a href="/" class="flu-back-btn">← Family Link Up ホーム</a>
+</div>
+
+<header class="tool-header">
+  <div class="header-inner">
+    <div class="header-icon">⚖️</div>
+    <div>
+      <h1>フリーランス vs 正社員 収入比較</h1>
+      <p class="header-sub">同じ年収でも手取りがこんなに違う！社会保険・税金を徹底比較</p>
+    </div>
+  </div>
+</header>
+
+<main class="main-container">
+
+  <!-- 入力エリア（上部・共通） -->
+  <section class="card input-section">
+    <h2 class="section-title">
+      <span class="icon-circle">📝</span> 収入・条件を入力（正社員・フリーランス共通）
+    </h2>
+    <div class="input-grid">
+      <div class="form-group">
+        <label for="annual-income">年収（額面）<span class="required">必須</span></label>
+        <div class="input-with-unit">
+          <input type="number" id="annual-income" placeholder="例: 5000000" min="0">
+          <span class="unit">円</span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="age">年齢</label>
+        <div class="input-with-unit">
+          <input type="number" id="age" placeholder="例: 35" min="15" max="80" value="35">
+          <span class="unit">歳</span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="spouse-deduction">配偶者控除</label>
+        <select id="spouse-deduction">
+          <option value="0">なし</option>
+          <option value="1">あり（配偶者の年収103万円以下）</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="dependents">扶養家族数（配偶者除く）</label>
+        <div class="input-with-unit">
+          <input type="number" id="dependents" value="0" min="0" max="10">
+          <span class="unit">人</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider-label">フリーランス専用の節税設定</div>
+    <div class="input-grid">
+      <div class="form-group">
+        <label for="expenses">年間経費（任意）</label>
+        <div class="input-with-unit">
+          <input type="number" id="expenses" placeholder="例: 500000" min="0">
+          <span class="unit">円</span>
+        </div>
+        <p class="hint">通信費・交通費・PC代など課税所得から控除されます</p>
+      </div>
+      <div class="form-group">
+        <label for="small-biz-kyosai">小規模企業共済掛金（任意）</label>
+        <div class="input-with-unit">
+          <input type="number" id="small-biz-kyosai" placeholder="例: 840000" min="0" max="840000">
+          <span class="unit">円</span>
+        </div>
+        <p class="hint">最大840,000円/年。全額所得控除の強力な節税策</p>
+      </div>
+    </div>
+
+    <button class="btn-calc" onclick="calculate()">比較する</button>
+  </section>
+
+  <!-- 比較結果（下部・2カラム） -->
+  <div id="result-placeholder" class="result-placeholder">
+    <div class="placeholder-icon">⚖️</div>
+    <p>上の入力欄に年収を入力して「比較する」ボタンを押してください</p>
+  </div>
+
+  <div id="result-content" style="display:none;">
+
+    <!-- 差額ハイライト -->
+    <div class="diff-banner" id="diff-banner"></div>
+
+    <div class="compare-grid">
+      <!-- 正社員 -->
+      <section class="card compare-card employee-card">
+        <div class="compare-header employee-header">
+          <div class="compare-icon">🏢</div>
+          <div>
+            <div class="compare-type">正社員</div>
+            <div class="compare-label">（協会けんぽ加入）</div>
+          </div>
+        </div>
+        <div class="net-hero employee-hero">
+          <div class="hero-label">年間手取り</div>
+          <div class="hero-amount" id="emp-net">―</div>
+        </div>
+        <div class="monthly-net">月手取り: <strong id="emp-monthly">―</strong></div>
+
+        <table class="breakdown-table">
+          <thead><tr><th>項目</th><th>金額</th></tr></thead>
+          <tbody id="emp-tbody"></tbody>
+        </table>
+
+        <div class="company-cost-box">
+          <div class="cost-label">会社が負担するコスト（参考）</div>
+          <div class="cost-amount" id="emp-company-cost">―</div>
+          <div class="cost-hint">※ 社会保険料の会社負担分（あなたの実質コスト）</div>
+        </div>
+      </section>
+
+      <!-- フリーランス -->
+      <section class="card compare-card freelance-card">
+        <div class="compare-header freelance-header">
+          <div class="compare-icon">💻</div>
+          <div>
+            <div class="compare-type">フリーランス</div>
+            <div class="compare-label">（国保 + 国民年金）</div>
+          </div>
+        </div>
+        <div class="net-hero freelance-hero">
+          <div class="hero-label">年間手取り</div>
+          <div class="hero-amount" id="fl-net">―</div>
+        </div>
+        <div class="monthly-net">月手取り: <strong id="fl-monthly">―</strong></div>
+
+        <table class="breakdown-table">
+          <thead><tr><th>項目</th><th>金額</th></tr></thead>
+          <tbody id="fl-tbody"></tbody>
+        </table>
+      </section>
+    </div>
+
+    <div class="notice-box">
+      <strong>⚠️ 注意事項</strong>
+      <ul>
+        <li>この計算結果は2024年度の税率・保険料率に基づく概算です。</li>
+        <li>フリーランスの国民健康保険料は所得・市区町村によって大幅に異なります。</li>
+        <li>経費の内容によっては計上が認められない場合があります。税理士にご確認ください。</li>
+        <li>正社員の厚生年金は将来の年金受給額に影響します。単純な手取り比較以外の要素もご考慮ください。</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<!-- 関連ツール -->
+<section class="related-tools">
+  <h2>他の便利なツールもチェック</h2>
+  <p>Family Link Up では、就職・学習・日常に役立つ無料ツールを多数ご用意しています。</p>
+  <div class="tool-links">
+    <a href="../net-salary/" class="tool-card">💰 手取り計算</a>
+    <a href="../side-income-tax/" class="tool-card">📊 副業税金計算</a>
+    <a href="../career-resume/" class="tool-card">📋 職務経歴書メーカー</a>
+    <a href="../personal-resume/" class="tool-card">📝 履歴書メーカー</a>
+    <a href="/timer/" class="tool-card">⏰ タイマー</a>
+  </div>
+  <p class="more-tools">👉 そのほかのツール一覧は <a href="/">Family Link Up トップページ</a> からご覧いただけます。</p>
+</section>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3016118096844603" crossorigin="anonymous"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3016118096844603" data-ad-slot="4142062273" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+<footer>
+  <p>© 2025-2026 Family Link Up / フリーランス vs 正社員 収入比較ツール</p>
+  <div class="footer-nav">
+    <a href="../privacy.html">プライバシーポリシー</a> |
+    <a href="../contact.html">お問い合わせ</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

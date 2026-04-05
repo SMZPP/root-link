@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>職務経歴書メーカー</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <meta name="description" content="職務経歴書メーカー｜入力するだけでプロ仕様の職務経歴書が無料で作成できます。PDFダウンロード・印刷にも対応。データは外部に送信されません。">
+  <meta name="keywords" content="職務経歴書, 職務経歴書作成, 職務経歴書テンプレート, 無料, PDF, 転職">
+  <meta property="og:title" content="職務経歴書メーカー｜無料で簡単作成・PDF保存">
+  <meta property="og:description" content="入力するだけで職務経歴書が完成。PDF保存・印刷対応。完全無料・データ外部送信なし。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://family-link-up.com/career-resume/">
+  <meta property="og:image" content="https://family-link-up.com/images/og-image.png">
+  <link rel="canonical" href="https://family-link-up.com/career-resume/">
+</head>
+<body>
+<div class="flu-back-bar">
+  <a href="../index.html" class="flu-back-btn">← Family Link Up ホーム</a>
+</div>
+<style>
+.flu-back-bar{background:#3b82f6;padding:8px 16px;text-align:left;}
+.flu-back-btn{color:#fff;text-decoration:none;font-size:13px;font-weight:600;letter-spacing:0.03em;}
+.flu-back-btn:hover{text-decoration:underline;}
+</style>
+  <div class="app">
+
+    <header class="app-header">
+      <div class="header-left">
+        <div class="header-logo">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+            <line x1="16" y1="13" x2="8" y2="13"/>
+            <line x1="16" y1="17" x2="8" y2="17"/>
+            <polyline points="10 9 9 9 8 9"/>
+          </svg>
+        </div>
+        <div>
+          <h1>職務経歴書メーカー</h1>
+          <span class="header-sub">入力するだけでプロ仕様の職務経歴書が完成</span>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button class="btn-header btn-print-h" onclick="printResume()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 6 2 18 2 18 9"/>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
+            <rect x="6" y="14" width="12" height="8"/>
+          </svg>
+          印刷
+        </button>
+        <button class="btn-header btn-pdf-h" onclick="downloadPDF()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          PDF保存
+        </button>
+      </div>
+    </header>
+
+    <main class="app-main">
+
+      <!-- ===== 左パネル：入力フォーム ===== -->
+      <div class="form-panel">
+
+        <nav class="tab-nav">
+          <button class="tab-btn active" data-tab="basic" onclick="switchTab('basic')">基本情報</button>
+          <button class="tab-btn" data-tab="summary" onclick="switchTab('summary')">職務要約</button>
+          <button class="tab-btn" data-tab="work" onclick="switchTab('work')">職務経歴</button>
+          <button class="tab-btn" data-tab="skills" onclick="switchTab('skills')">スキル</button>
+          <button class="tab-btn" data-tab="cert" onclick="switchTab('cert')">資格・免許</button>
+          <button class="tab-btn" data-tab="pr" onclick="switchTab('pr')">自己PR</button>
+        </nav>
+
+        <div class="tab-contents">
+
+          <!-- 基本情報 -->
+          <div class="tab-content active" id="tab-basic">
+            <div class="form-section">
+              <div class="section-title-form">基本情報</div>
+
+              <div class="form-group">
+                <label>作成日</label>
+                <input type="date" name="createdDate" oninput="updatePreview()">
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label>氏名 <span class="required">必須</span></label>
+                  <input type="text" name="name" placeholder="山田 太郎" oninput="updatePreview()">
+                </div>
+                <div class="form-group">
+                  <label>フリガナ</label>
+                  <input type="text" name="nameKana" placeholder="ヤマダ タロウ" oninput="updatePreview()">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label>生年月日</label>
+                  <input type="date" name="birthDate" oninput="updatePreview()">
+                </div>
+                <div class="form-group">
+                  <label>性別</label>
+                  <select name="gender" onchange="updatePreview()">
+                    <option value="">記載しない</option>
+                    <option value="男性">男性</option>
+                    <option value="女性">女性</option>
+                    <option value="その他">その他</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>現住所</label>
+                <input type="text" name="address" placeholder="東京都渋谷区〇〇 1-2-3" oninput="updatePreview()">
+              </div>
+
+              <div class="form-group">
+                <label>最寄り駅</label>
+                <input type="text" name="station" placeholder="渋谷駅 徒歩5分" oninput="updatePreview()">
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label>電話番号</label>
+                  <input type="tel" name="phone" placeholder="090-1234-5678" oninput="updatePreview()">
+                </div>
+                <div class="form-group">
+                  <label>メールアドレス</label>
+                  <input type="email" name="email" placeholder="example@email.com" oninput="updatePreview()">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 職務要約 -->
+          <div class="tab-content" id="tab-summary">
+            <div class="form-section">
+              <div class="section-title-form">職務要約</div>
+              <div class="form-group">
+                <label>職務要約</label>
+                <p class="form-hint">これまでの職歴を2〜4行で簡潔に要約してください</p>
+                <textarea name="summary" rows="8" placeholder="例：Webエンジニアとして5年間、フロントエンドからバックエンドまで幅広い開発経験があります。特にReact・Node.jsを用いたSPA開発に強みを持ち、チームリーダーとしてプロジェクトをリードした実績があります。" oninput="updatePreview()"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- 職務経歴 -->
+          <div class="tab-content" id="tab-work">
+            <div class="form-section">
+              <div class="section-title-form">職務経歴</div>
+              <p class="form-hint">直近の職歴から順に追加してください</p>
+              <div id="work-entries"></div>
+              <button type="button" class="btn-add" onclick="addWorkEntry()">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+                </svg>
+                職歴を追加する
+              </button>
+            </div>
+          </div>
+
+          <!-- スキル -->
+          <div class="tab-content" id="tab-skills">
+            <div class="form-section">
+              <div class="section-title-form">保有スキル</div>
+              <div class="form-group">
+                <label>スキル・技術タグ</label>
+                <p class="form-hint">入力してEnterキーまたは「追加」ボタンでタグを追加できます</p>
+                <div class="skill-input-row">
+                  <input type="text" id="skill-input" placeholder="例: JavaScript, Python, AWS, Excel...">
+                  <button type="button" class="btn-add-sm" onclick="addSkill()">追加</button>
+                </div>
+                <div id="skill-tags" class="skill-tags-container"></div>
+              </div>
+              <div class="form-group" style="margin-top:20px">
+                <label>スキル詳細・補足（任意）</label>
+                <textarea name="skillDetail" rows="5" placeholder="例：&#10;・JavaScript / TypeScript：実務5年（React, Vue.js, Node.js）&#10;・Python：実務3年（Django, データ分析）&#10;・AWS：EC2, S3, Lambda, RDSの構築・運用経験" oninput="updatePreview()"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- 資格・免許 -->
+          <div class="tab-content" id="tab-cert">
+            <div class="form-section">
+              <div class="section-title-form">資格・免許</div>
+              <p class="form-hint">取得年月と資格名を入力してください</p>
+              <div class="cert-header-row">
+                <span>取得年月</span>
+                <span>資格名・免許名</span>
+              </div>
+              <div id="cert-entries"></div>
+              <button type="button" class="btn-add" onclick="addCertEntry()">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+                </svg>
+                資格を追加する
+              </button>
+            </div>
+          </div>
+
+          <!-- 自己PR -->
+          <div class="tab-content" id="tab-pr">
+            <div class="form-section">
+              <div class="section-title-form">自己PR</div>
+              <div class="form-group">
+                <label>自己PR</label>
+                <p class="form-hint">あなたの強み・経験・志望動機などを自由に記載してください</p>
+                <textarea name="selfPR" rows="14" placeholder="例：私は課題解決力と技術への探究心を強みとするエンジニアです。前職では〜..." oninput="updatePreview()"></textarea>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /tab-contents -->
+      </div><!-- /form-panel -->
+
+      <!-- ===== 右パネル：プレビュー ===== -->
+      <div class="preview-panel">
+        <div class="preview-toolbar">
+          <div class="preview-toolbar-left">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+              <circle cx="12" cy="12" r="3"/>
+            </svg>
+            プレビュー
+          </div>
+          <div class="preview-toolbar-actions">
+            <button class="btn-toolbar btn-print-t" onclick="printResume()">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 6 2 18 2 18 9"/>
+                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
+                <rect x="6" y="14" width="12" height="8"/>
+              </svg>
+              印刷
+            </button>
+            <button class="btn-toolbar btn-pdf-t" onclick="downloadPDF()">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+              PDF保存
+            </button>
+          </div>
+        </div>
+        <div class="preview-container">
+          <div class="preview-page" id="resume-preview">
+            <div class="p-empty">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="1.5">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+                <polyline points="10 9 9 9 8 9"/>
+              </svg>
+              <p>左側のフォームに入力すると<br>ここにプレビューが表示されます</p>
+            </div>
+          </div>
+        </div>
+      </div><!-- /preview-panel -->
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+<!-- 関連ツール -->
+<section class="related-tools">
+  <h2>他の便利なツールもチェック</h2>
+  <p>Family Link Up では、就職・学習・日常に役立つ無料ツールを多数ご用意しています。</p>
+  <div class="tool-links">
+    <a href="../personal-resume/" class="tool-card">📝 履歴書メーカー</a>
+    <a href="../word-study/" class="tool-card">🔤 英単語学習</a>
+    <a href="../img-to-pdf/" class="tool-card">🖼️ 画像→PDF変換</a>
+    <a href="../route-map/" class="tool-card">🗺️ ルート経路図メーカー</a>
+    <a href="/timer/" class="tool-card">⏰ タイマー</a>
+    <a href="/json/" class="tool-card">📝 JSON整形ツール</a>
+    <a href="/family/" class="tool-card">👪 家族関係図メーカー</a>
+  </div>
+  <p class="more-tools">👉 そのほかのツール一覧は <a href="/">Family Link Up トップページ</a> からご覧いただけます。</p>
+</section>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3016118096844603"
+    crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-3016118096844603"
+    data-ad-slot="4142062273"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<footer>
+  <p>© 2025-2026 Family Link Up / 職務経歴書メーカー</p>
+  <div class="footer-nav">
+    <a href="../privacy.html">プライバシーポリシー</a> |
+    <a href="../contact.html">お問い合わせ</a>
+  </div>
+</footer>
+</body>
+</html>
