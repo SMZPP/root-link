@@ -88,7 +88,7 @@ document.addEventListener('keydown', e => {
 
 // === 各フォルダの画像読み込み ===
 folders.forEach(folder => {
-  fetch(`./images/${folder}/index.json?t=${timestamp}`)
+  fetch(`../images/${folder}/index.json?t=${timestamp}`)
     .then(res => res.json())
     .then(images => {
       const gallery = document.getElementById(folder);
