@@ -94,7 +94,7 @@ folders.forEach(folder => {
       const gallery = document.getElementById(folder);
       images.forEach(name => {
         const img = document.createElement('img');
-        img.src = `./images/${folder}/${name}?t=${timestamp}`;
+        img.src = `../images/${folder}/${name}?t=${timestamp}`;
         img.alt = `${folder}カテゴリの画像`;
         gallery.appendChild(img);
       });
