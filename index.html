@@ -48,6 +48,32 @@
     </p>
   </section>
 
+
+  <!-- ===== AI最新ニュース ===== -->
+  <section class="ai-news-section">
+    <div class="ai-news-header">
+      <h2>🤖 AI最新ニュース</h2>
+      <span class="ai-news-updated" id="home-news-updated"></span>
+      <a href="ai-news/" class="ai-news-more-link">すべて見る →</a>
+    </div>
+    <div class="ai-news-category-bar" id="home-cat-bar">
+      <button class="home-cat-btn active" data-cat="all">すべて</button>
+      <button class="home-cat-btn" data-cat="LLM">🧠 LLM</button>
+      <button class="home-cat-btn" data-cat="画像生成">🎨 画像生成</button>
+      <button class="home-cat-btn" data-cat="製品">📦 製品</button>
+      <button class="home-cat-btn" data-cat="研究">🔬 研究</button>
+      <button class="home-cat-btn" data-cat="規制">⚖️ 規制</button>
+      <button class="home-cat-btn" data-cat="ビジネス">💼 ビジネス</button>
+    </div>
+    <div class="ai-news-grid" id="home-news-grid">
+      <div class="home-news-loading">読み込み中…</div>
+    </div>
+    <div class="ai-news-footer">
+      <a href="ai-news/" class="ai-news-all-btn">📰 過去記事・全記事を見る</a>
+    </div>
+  </section>
+
+
   <section class="tool-list">
     <h2>📄 就職・転職サポートツール</h2>
     <div class="tool-buttons">
@@ -60,6 +86,10 @@
     <h2>📚 学習・語学ツール</h2>
     <div class="tool-buttons">
       <a href="word-study/" class="tool-btn">🔤 英単語学習</a>
+      <a href="chinese-study/" class="tool-btn">🇨🇳 中国語学習</a>
+      <a href="korean-study/" class="tool-btn">🇰🇷 韓国語学習</a>
+      <a href="french-study/" class="tool-btn">🇫🇷 フランス語学習</a>
+      <a href="german-study/" class="tool-btn">🇩🇪 ドイツ語学習</a>
     </div>
   </section>
 
@@ -82,10 +112,82 @@
     <h2>💴 お金・税金計算ツール</h2>
     <div class="tool-buttons">
       <a href="net-salary/" class="tool-btn">💰 手取り計算</a>
-      <a href="freelance-vs-employee/" class="tool-btn">⚖️ フリーランス vs 正社員</a>
+      <a href="freelance-vs-employee/" class="tool-btn">⚖️ フリーランスvs正社員</a>
       <a href="side-income-tax/" class="tool-btn">📊 副業税金計算</a>
     </div>
   </section>
+
+  <!-- AI ニュース ウィジェット スクリプト -->
+  <script>
+  (function() {
+    const CAT_COLORS = {
+      'LLM': {bg:'#ede9fe', color:'#7c3aed'},
+      '画像生成': {bg:'#fce7f3', color:'#db2777'},
+      '製品': {bg:'#e0f2fe', color:'#0891b2'},
+      '研究': {bg:'#dcfce7', color:'#16a34a'},
+      '規制': {bg:'#fee2e2', color:'#dc2626'},
+      'ビジネス': {bg:'#fef3c7', color:'#d97706'},
+      'その他': {bg:'#f1f5f9', color:'#64748b'},
+    };
+    const CAT_ICONS = {'LLM':'🧠','画像生成':'🎨','製品':'📦','研究':'🔬','規制':'⚖️','ビジネス':'💼','その他':'📌'};
+    let allArticles = [];
+    let currentCat = 'all';
+
+    function escHtml(s) {
+      return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+
+    function render() {
+      const filtered = currentCat === 'all'
+        ? allArticles
+        : allArticles.filter(a => a.category === currentCat);
+      const shown = filtered.slice(0, 5);
+      const grid = document.getElementById('home-news-grid');
+      if (!shown.length) {
+        grid.innerHTML = '<div class="home-news-loading">該当する記事がありません。</div>';
+        return;
+      }
+      grid.innerHTML = shown.map(a => {
+        const cc = CAT_COLORS[a.category] || CAT_COLORS['その他'];
+        const icon = CAT_ICONS[a.category] || '📌';
+        const dateStr = a.date ? a.date.slice(5) : '';
+        return `<div class="home-news-card">
+          <div class="home-news-card-top">
+            <span class="home-cat-badge" style="background:${cc.bg};color:${cc.color}">${icon} ${escHtml(a.category)}</span>
+            <span class="home-src">${escHtml(a.source)}</span>
+            <span class="home-news-date">${dateStr}</span>
+          </div>
+          <div class="home-news-title"><a href="${escHtml(a.url)}" target="_blank" rel="noopener noreferrer">${escHtml(a.title)}</a></div>
+          <div class="home-news-summary">${escHtml(a.summary)}</div>
+          <a href="${escHtml(a.url)}" target="_blank" rel="noopener noreferrer" class="home-read-btn">記事を読む →</a>
+        </div>`;
+      }).join('');
+    }
+
+    fetch('ai-news/data/articles.json?t=' + Date.now())
+      .then(r => r.json())
+      .then(data => {
+        allArticles = data.articles || [];
+        const upd = new Date(data.updated);
+        const el = document.getElementById('home-news-updated');
+        if (el) el.textContent = '更新: ' + upd.toLocaleDateString('ja-JP');
+        render();
+      })
+      .catch(() => {
+        const grid = document.getElementById('home-news-grid');
+        if (grid) grid.innerHTML = '<div class="home-news-loading">記事を取得できませんでした。</div>';
+      });
+
+    document.getElementById('home-cat-bar').addEventListener('click', function(e) {
+      const btn = e.target.closest('.home-cat-btn');
+      if (!btn) return;
+      currentCat = btn.dataset.cat;
+      document.querySelectorAll('.home-cat-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      render();
+    });
+  })();
+  </script>
 
   <!-- 広告エリア -->
   <div class="ads-area">

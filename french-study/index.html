@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>フランス語学習</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="フランス語学習サイト｜初級・中級・上級レベルの無料単語集付き。フラッシュカード・4択クイズで楽しく学習。学習履歴はブラウザに保存されます。">
+  <meta name="keywords" content="フランス語, フランス語学習, 仏単語, フラッシュカード, クイズ, 初級フランス語, 中級フランス語, 無料">
+  <meta property="og:title" content="フランス語学習｜初級・中級・上級レベル単語集付き無料サイト">
+  <meta property="og:description" content="フラッシュカード・クイズでフランス語単語を楽しく学習。初級・中級・上級レベルの無料単語集付き。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://family-link-up.com/french-study/">
+  <meta property="og:image" content="https://family-link-up.com/images/og-image.png">
+  <link rel="canonical" href="https://family-link-up.com/french-study/">
+</head>
+<body>
+<div class="flu-back-bar">
+  <a href="../index.html" class="flu-back-btn">← Family Link Up ホーム</a>
+</div>
+<style>
+.flu-back-bar{background:#7c3aed;padding:8px 16px;text-align:left;}
+.flu-back-btn{color:#fff;text-decoration:none;font-size:13px;font-weight:600;letter-spacing:0.03em;}
+.flu-back-btn:hover{text-decoration:underline;}
+</style>
+
+  <header>
+    <div class="header-inner">
+      <h1>フランス語学習</h1>
+      <p class="subtitle">French Vocabulary Trainer</p>
+    </div>
+  </header>
+
+  <nav class="tabs">
+    <button class="tab-btn active" data-tab="wordlist">単語帳</button>
+    <button class="tab-btn" data-tab="flashcard">フラッシュカード</button>
+    <button class="tab-btn" data-tab="quiz">クイズ</button>
+    <button class="tab-btn" data-tab="stats">統計</button>
+  </nav>
+
+  <!-- ===== 単語帳 ===== -->
+  <section id="tab-wordlist" class="tab-content active">
+    <div class="toolbar">
+      <input id="search-input" type="text" placeholder="検索（フランス語・日本語）…" />
+      <select id="sort-select">
+        <option value="date-desc">追加日（新しい順）</option>
+        <option value="date-asc">追加日（古い順）</option>
+        <option value="alpha-asc">アルファベット順 A→Z</option>
+        <option value="alpha-desc">アルファベット順 Z→A</option>
+      </select>
+      <button id="btn-add-word" class="btn-primary">＋ 単語を追加</button>
+      <button id="btn-import-set" class="btn-set">📚 単語集をインポート</button>
+    </div>
+
+    <div class="table-wrap">
+      <table id="word-table">
+        <thead>
+          <tr>
+            <th>フランス語</th>
+            <th>日本語訳</th>
+            <th>例文</th>
+            <th>メモ</th>
+            <th>習得</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody id="word-tbody"></tbody>
+      </table>
+      <p id="no-words-msg" class="empty-msg" style="display:none">単語がありません。単語を追加してください。</p>
+    </div>
+  </section>
+
+  <!-- ===== フラッシュカード ===== -->
+  <section id="tab-flashcard" class="tab-content">
+    <div class="fc-controls">
+      <label>
+        <input type="radio" name="fc-filter" value="all" checked /> すべて
+      </label>
+      <label>
+        <input type="radio" name="fc-filter" value="unmastered" /> 未習得のみ
+      </label>
+      <button id="fc-shuffle" class="btn-secondary">シャッフル</button>
+    </div>
+
+    <div class="fc-progress-wrap">
+      <span id="fc-progress">0 / 0</span>
+    </div>
+
+    <div id="fc-area">
+      <div class="card" id="fc-card">
+        <div class="card-inner" id="fc-card-inner">
+          <div class="card-front" id="fc-front">
+            <div class="card-hint">クリックして裏を見る</div>
+            <div class="card-word" id="fc-word"></div>
+          </div>
+          <div class="card-back" id="fc-back">
+            <div class="card-hint">日本語訳</div>
+            <div class="card-word" id="fc-meaning"></div>
+            <div class="card-example" id="fc-example"></div>
+            <div class="card-note" id="fc-note"></div>
+          </div>
+        </div>
+      </div>
+      <p id="fc-empty" class="empty-msg" style="display:none">対象の単語がありません。</p>
+    </div>
+
+    <div class="fc-actions" id="fc-actions">
+      <button id="fc-mastered" class="btn-success">覚えた ✓</button>
+      <button id="fc-again" class="btn-danger">もう一度 ↺</button>
+    </div>
+
+    <div class="fc-nav">
+      <button id="fc-prev" class="btn-secondary">◀ 前へ</button>
+      <button id="fc-next" class="btn-secondary">次へ ▶</button>
+    </div>
+  </section>
+
+  <!-- ===== クイズ ===== -->
+  <section id="tab-quiz" class="tab-content">
+    <div id="quiz-start-screen" class="quiz-screen">
+      <h2>クイズを始める</h2>
+      <p>フランス語の単語を見て、正しい日本語訳を選んでください。</p>
+      <div class="quiz-setting">
+        <label>問題数:
+          <select id="quiz-count-select">
+            <option value="5">5問</option>
+            <option value="10" selected>10問</option>
+            <option value="20">20問</option>
+            <option value="all">全問</option>
+          </select>
+        </label>
+      </div>
+      <button id="quiz-start-btn" class="btn-primary btn-lg">スタート</button>
+    </div>
+
+    <div id="quiz-play-screen" class="quiz-screen" style="display:none">
+      <div class="quiz-header">
+        <span id="quiz-qnum">問題 1 / 10</span>
+        <span id="quiz-score-live">スコア: 0</span>
+        <span id="quiz-streak">🔥 0</span>
+      </div>
+      <div class="quiz-question-box">
+        <div class="quiz-label">この単語の日本語訳は？</div>
+        <div class="quiz-word" id="quiz-word"></div>
+        <div class="quiz-example" id="quiz-example-hint"></div>
+      </div>
+      <div class="quiz-options" id="quiz-options"></div>
+      <div id="quiz-feedback" class="quiz-feedback" style="display:none"></div>
+    </div>
+
+    <div id="quiz-result-screen" class="quiz-screen" style="display:none">
+      <h2>クイズ結果</h2>
+      <div class="result-score-box">
+        <div class="result-score-num" id="result-score-num"></div>
+        <div class="result-score-label">正解</div>
+      </div>
+      <div class="result-details" id="result-details"></div>
+      <button id="quiz-retry-btn" class="btn-primary btn-lg">もう一度</button>
+      <button id="quiz-back-btn" class="btn-secondary btn-lg">メニューへ</button>
+    </div>
+  </section>
+
+  <!-- ===== 統計 ===== -->
+  <section id="tab-stats" class="tab-content">
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-num" id="stat-total">0</div>
+        <div class="stat-label">登録単語数</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num" id="stat-mastered">0</div>
+        <div class="stat-label">習得済み</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num" id="stat-unmastered">0</div>
+        <div class="stat-label">未習得</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num" id="stat-pct">0%</div>
+        <div class="stat-label">習得率</div>
+      </div>
+    </div>
+
+    <div class="stats-chart-section">
+      <h3>習得状況</h3>
+      <div class="donut-wrap">
+        <div class="donut" id="donut-chart"></div>
+        <div class="donut-legend">
+          <span class="legend-dot mastered-dot"></span> 習得済み
+          <span class="legend-dot unmastered-dot"></span> 未習得
+        </div>
+      </div>
+    </div>
+
+    <div class="stats-history-section">
+      <h3>最近のクイズ結果</h3>
+      <ul id="quiz-history-list" class="history-list">
+        <li class="empty-msg">まだクイズの記録がありません。</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== モーダル: 単語追加・編集 ===== -->
+  <div id="word-modal" class="modal-overlay" style="display:none">
+    <div class="modal-box">
+      <h2 id="modal-title">単語を追加</h2>
+      <form id="word-form">
+        <input type="hidden" id="edit-id" />
+        <div class="form-group">
+          <label>フランス語 <span class="required">*</span></label>
+          <input type="text" id="form-word" placeholder="例: bonjour" required />
+        </div>
+        <div class="form-group">
+          <label>日本語訳 <span class="required">*</span></label>
+          <input type="text" id="form-japanese" placeholder="例: こんにちは" required />
+        </div>
+        <div class="form-group">
+          <label>例文 <span class="optional">（任意）</span></label>
+          <input type="text" id="form-example" placeholder="例: Bonjour! Comment allez-vous?" />
+        </div>
+        <div class="form-group">
+          <label>メモ <span class="optional">（任意）</span></label>
+          <input type="text" id="form-notes" placeholder="例: 挨拶" />
+        </div>
+        <div class="form-group checkbox-group">
+          <label>
+            <input type="checkbox" id="form-mastered" />
+            習得済みとしてマーク
+          </label>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">保存</button>
+          <button type="button" id="modal-cancel" class="btn-secondary">キャンセル</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ===== 単語集インポートモーダル ===== -->
+  <div id="import-modal" class="modal-overlay" style="display:none">
+    <div class="modal-box modal-import">
+      <h2>📚 無料単語集をインポート</h2>
+      <p class="import-desc">レベルを選んで単語帳に追加できます</p>
+
+      <div class="level-cards">
+        <div class="level-card" data-level="beginner">
+          <div class="level-badge" style="background:#7c3aed">初級</div>
+          <div class="level-title">初級レベル</div>
+          <div class="level-info">日常会話の基本単語<br>挨拶・動詞・形容詞など</div>
+          <div class="level-count" id="import-count-beginner"></div>
+        </div>
+        <div class="level-card" data-level="intermediate">
+          <div class="level-badge" style="background:#6d28d9">中級</div>
+          <div class="level-title">中級レベル</div>
+          <div class="level-info">中級会話の単語<br>職業・感情・天気など</div>
+          <div class="level-count" id="import-count-intermediate"></div>
+        </div>
+        <div class="level-card" data-level="advanced">
+          <div class="level-badge" style="background:#5b21b6">上級</div>
+          <div class="level-title">上級レベル</div>
+          <div class="level-info">上級・ビジネス単語<br>学術・抽象概念など</div>
+          <div class="level-count" id="import-count-advanced"></div>
+        </div>
+      </div>
+
+      <div id="import-mode-row" class="import-mode-row" style="display:none">
+        <span class="import-mode-label">インポート方法：</span>
+        <label class="radio-label-import">
+          <input type="radio" name="import-mode" value="add" checked> 現在の単語帳に追加
+        </label>
+        <label class="radio-label-import">
+          <input type="radio" name="import-mode" value="replace"> 現在の単語帳と置き換え
+        </label>
+      </div>
+
+      <div id="import-preview" class="import-preview" style="display:none">
+        <div class="import-preview-header">
+          <span id="import-preview-title">プレビュー</span>
+          <span id="import-preview-count"></span>
+        </div>
+        <div class="import-preview-list" id="import-preview-list"></div>
+      </div>
+
+      <div class="form-actions" style="margin-top:16px">
+        <button id="import-confirm-btn" class="btn-primary" disabled>インポートする</button>
+        <button id="import-cancel-btn" class="btn-secondary">キャンセル</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 削除確認モーダル ===== -->
+  <div id="delete-modal" class="modal-overlay" style="display:none">
+    <div class="modal-box modal-sm">
+      <h2>単語を削除しますか？</h2>
+      <p id="delete-word-name" class="delete-word-label"></p>
+      <div class="form-actions">
+        <button id="confirm-delete" class="btn-danger">削除</button>
+        <button id="cancel-delete" class="btn-secondary">キャンセル</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="words-data.js"></script>
+  <script src="script.js"></script>
+
+<!-- 関連ツール -->
+<section class="related-tools">
+  <h2>他の言語学習ツールもチェック</h2>
+  <p>Family Link Up では、各種言語学習や日常に役立つ無料ツールを多数ご用意しています。</p>
+  <div class="tool-links">
+    <a href="../word-study/" class="tool-card">🇬🇧 英単語学習</a>
+    <a href="../chinese-study/" class="tool-card">🇨🇳 中国語学習</a>
+    <a href="../korean-study/" class="tool-card">🇰🇷 韓国語学習</a>
+    <a href="../german-study/" class="tool-card">🇩🇪 ドイツ語学習</a>
+    <a href="../career-resume/" class="tool-card">📋 職務経歴書メーカー</a>
+    <a href="../img-to-pdf/" class="tool-card">🖼️ 画像→PDF変換</a>
+  </div>
+  <p class="more-tools">👉 そのほかのツール一覧は <a href="/">Family Link Up トップページ</a> からご覧いただけます。</p>
+</section>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3016118096844603"
+    crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-3016118096844603"
+    data-ad-slot="4142062273"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<footer>
+  <p>© 2025-2026 Family Link Up / フランス語学習</p>
+  <div class="footer-nav">
+    <a href="../privacy.html">プライバシーポリシー</a> |
+    <a href="../contact.html">お問い合わせ</a>
+  </div>
+</footer>
+</body>
+</html>
