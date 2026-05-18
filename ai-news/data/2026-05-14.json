@@ -2,17 +2,6 @@
   "date": "2026-05-14",
   "articles": [
     {
-      "id": "39a434f21ed7",
-      "title": "名刺交換のお礼メールを作ろうと思ったら、Pythonで自動化を進めてきた件（Gemini Pro）",
-      "summary": "import smtplib from email.mime.text import MIMEText from email.mime.multipart import MIMEMultipart 送信元設定 SMTP_SERVER = \"smtp.gmail…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/masato7suzuki/articles/d704464469717a",
-      "category": "LLM",
-      "date": "2026-05-14",
-      "datetime": "2026-05-14T20:47:45+09:00"
-    },
-    {
       "id": "25de5c8cfa59",
       "title": "Claude Codeではなく、Cursorを選んだ理由 ｜ note2Zenn開発記（番外編 / Vol.2）",
       "summary": "Claude Codeは非常に優れたツールです。 非エンジニアの方でもnoteを見ていたら、 言葉を見たことがある方も多いと思います。 開発だけでなく、さまざまなことに活用できるAIエージェントです。 逆にCursorはエンジニアの方には馴染みがあるかもしれま…",
@@ -35,39 +24,6 @@
       "datetime": "2026-05-14T16:21:45+09:00"
     },
     {
-      "id": "2ad51e6507f6",
-      "title": "【Google Cloud Next '26 レポート】企業の AI 活用における「コンテキスト」の重要性",
-      "summary": "! 本記事は、Google Cloud Next ’26 現地でのセッション聴講内容をもとにした速報レポートです。発表内容の速報性を重視しているため、今後の詳細情報の公開や更なる検証結果に基づき、内容の修正や追記を行う可能性があります。あらかじめご了承ください…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/softbank/articles/a04d7a8d138b6d",
-      "category": "製品",
-      "date": "2026-05-14",
-      "datetime": "2026-05-14T15:21:45+09:00"
-    },
-    {
-      "id": "e1382766e57d",
-      "title": "AIを触ったことがなかったQAエンジニアが、ClaudeとGeminiで業務効率化に挑戦してみた話",
-      "summary": "はじめに こんにちは、QA エンジニアの山田です。 突然ですが、こんなふうに思っている QA エンジニアの方、いませんか？ 「AIってなんだか難しそう…」 「プロンプトとか、専門知識がないと使えないんでしょ？」 「そもそも、QAの仕事にAIってどう活かすの？」…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/rehabforjapan/articles/5vbz5kxsfaon0n",
-      "category": "LLM",
-      "date": "2026-05-14",
-      "datetime": "2026-05-14T14:12:01+09:00"
-    },
-    {
-      "id": "b462b5e7e416",
-      "title": "数億円のIBM量子コンピュータで「今日はパスタかラーメンか」を決めた話【Qiskit入門】",
-      "summary": "美容系勤務独学初心者マリー・アントワネット系エンジニア目指してます！ 今回は量子コンピュータが無いなら IBMのを無料で借りればいいじゃない👸🍰です。 読了時間の目安：約7〜10分 ! 3行まとめ IBM量子コンピュータは無料アカウントで誰でも実機に触れる（月…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/miki_mini/articles/500204176f8284",
-      "category": "その他",
-      "date": "2026-05-14",
-      "datetime": "2026-05-14T11:58:05+09:00"
-    },
-    {
       "id": "db4bd78a7bc2",
       "title": "Tree of Thoughts本番パイプライン設計：コスト最適化と非同期実装",
       "summary": "Tree of Thoughts本番パイプライン設計：コスト最適化と非同期実装 この記事でわかること Tree of Thoughts（ToT）を本番環境で運用する際のコスト構造と、API呼び出しを60-70%削減するキャッシュ戦略 asyncioを使ったノー…",
@@ -77,28 +33,6 @@
       "category": "その他",
       "date": "2026-05-14",
       "datetime": "2026-05-14T11:29:02+09:00"
-    },
-    {
-      "id": "6c1b337e78e2",
-      "title": "Gemini の議事メモだけでも十分便利だった。NotebookLM を足したら、さらに使いやすくなった",
-      "summary": "Google Meet で Gemini が議事メモを作ってくれるようになって、会議中にメモを取ることがほとんどなくなりました。 特に、単発で完結する会議ならこれだけでも十分便利です。 会議後に要点を振り返るには実用的ですし、「議事メモを残す」という意味では、…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/softbank/articles/e26fe601192333",
-      "category": "LLM",
-      "date": "2026-05-14",
-      "datetime": "2026-05-14T10:55:33+09:00"
-    },
-    {
-      "id": "ac54de13467a",
-      "title": "Gemini APIで完璧なシームレス360度パノラマ空間を錬成する「360° AI Panorama Generator」",
-      "summary": "概要 VR空間の背景や3Dモデルのライティング用HDRIとして欠かせない「360度パノラマ画像」。 AIでこれを生成しようとすると、どうしても画像の左端と右端が繋がらず、球体にマッピングした際に不自然な境界線（シーム）が生まれてしまうという構造的な課題がありま…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/furuyan1234/articles/0a530c2526cd02",
-      "category": "LLM",
-      "date": "2026-05-14",
-      "datetime": "2026-05-14T10:16:33+09:00"
     },
     {
       "id": "6b2eeb9d18e4",
