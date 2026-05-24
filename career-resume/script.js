@@ -457,7 +457,60 @@ function updatePreview() {
 // Print & PDF
 // ============================================================
 function printResume() {
-  window.print();
+  const preview = document.getElementById('resume-preview');
+  if (!preview) return;
+
+  if (preview.querySelector('.p-empty')) {
+    alert('印刷する内容がありません。フォームに入力してください。');
+    return;
+  }
+
+  const cssHref = new URL('style.css', window.location.href).href;
+  const printWin = window.open('', '_blank', 'noopener,noreferrer');
+
+  if (!printWin) {
+    window.print();
+    return;
+  }
+
+  printWin.document.write(`<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>職務経歴書</title>
+  <link rel="stylesheet" href="${cssHref}">
+  <style>
+    body { margin: 0; background: white; }
+    @page { size: A4 portrait; margin: 15mm 20mm; }
+    .preview-page {
+      box-shadow: none !important;
+      width: 100% !important;
+      min-height: auto !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+  </style>
+</head>
+<body>
+  <div class="preview-page">${preview.innerHTML}</div>
+</body>
+</html>`);
+
+  printWin.document.close();
+
+  const startPrint = () => {
+    printWin.focus();
+    printWin.print();
+    printWin.onafterprint = () => printWin.close();
+  };
+
+  const stylesheet = printWin.document.querySelector('link[rel="stylesheet"]');
+  if (stylesheet) {
+    stylesheet.onload = startPrint;
+    stylesheet.onerror = startPrint;
+  } else {
+    startPrint();
+  }
 }
 
 function downloadPDF() {

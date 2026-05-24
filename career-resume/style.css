@@ -834,10 +834,27 @@ select {
     print-color-adjust: exact !important;
   }
 
+  /* サイト共通のヘッダー・フッター・広告などを非表示 */
+  body > *:not(.app) {
+    display: none !important;
+  }
+
   .app-header,
   .form-panel,
-  .preview-toolbar {
+  .preview-toolbar,
+  .flu-back-bar,
+  .related-tools,
+  footer,
+  ins.adsbygoogle {
     display: none !important;
+  }
+
+  html,
+  body {
+    height: auto !important;
+    background: white !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
   .app {
