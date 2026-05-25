@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 AI News Fetcher
-毎日 GitHub Actions で実行し、AI 関連の日本語ニュースを RSS から収集して JSON に保存する。
+毎日 GitHub Actions（日本時間 5:00）で実行し、AI 関連の日本語ニュースを RSS から収集して JSON に保存する。
 """
 
 import feedparser
