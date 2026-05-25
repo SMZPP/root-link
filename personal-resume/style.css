@@ -36,18 +36,40 @@ html, body {
    Header
    ============================================================ */
 .app-header {
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 0 24px; height: 60px;
-  background: var(--primary); color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+  height: 60px;
+  background: var(--primary);
+  color: white;
   flex-shrink: 0;
   box-shadow: 0 2px 8px rgba(22,163,74,0.4);
   z-index: 100;
 }
-.header-left { display: flex; align-items: center; gap: 12px; }
+
+.app-header:has(.home-link) {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
 .header-logo { display: flex; align-items: center; opacity: 0.9; }
 .app-header h1 { font-size: 17px; font-weight: 700; letter-spacing: 0.02em; line-height: 1.2; }
 .header-sub { font-size: 11px; opacity: 0.75; display: block; margin-top: 1px; }
-.header-actions { display: flex; gap: 8px; }
+.header-actions {
+  display: flex;
+  gap: 8px;
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
 .btn-header {
   display: flex; align-items: center; gap: 6px;
@@ -393,6 +415,18 @@ select {
   .form-panel { width: 100%; max-width: 100%; height: 50vh; border-right: none; border-bottom: 1px solid var(--border); }
   .preview-panel { height: 50vh; }
   .header-sub { display: none; }
+}
+
+@media (max-width: 600px) {
+  .app-header:has(.home-link) .header-left {
+    justify-content: center;
+  }
+
+  .app-header:has(.home-link) .header-actions {
+    position: static;
+    transform: none;
+    justify-content: center;
+  }
 }
 
 /* ===== 関連ツールセクション ===== */

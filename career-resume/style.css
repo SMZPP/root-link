@@ -53,7 +53,7 @@ html, body {
 .app-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0 24px;
   height: 60px;
   background: var(--primary);
@@ -63,9 +63,15 @@ html, body {
   z-index: 100;
 }
 
+.app-header:has(.home-link) {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
 .header-left {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 12px;
 }
 
@@ -92,6 +98,10 @@ html, body {
 .header-actions {
   display: flex;
   gap: 8px;
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .btn-header {
@@ -953,6 +963,18 @@ select {
 
   .header-sub {
     display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .app-header:has(.home-link) .header-left {
+    justify-content: center;
+  }
+
+  .app-header:has(.home-link) .header-actions {
+    position: static;
+    transform: none;
+    justify-content: center;
   }
 }
 
