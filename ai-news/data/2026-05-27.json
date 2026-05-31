@@ -2,28 +2,6 @@
   "date": "2026-05-27",
   "articles": [
     {
-      "id": "a9294996422c",
-      "title": "GitHub Actions で AI 自動レビューを作るまでに全 API でハマった記録",
-      "summary": "はじめに PR が来たら AI が自動でコードレビューしてくれる仕組みを作ろうとした。 やることは単純だ。diff を取って AI API に投げ、結果を PR コメントに投稿する。 PR open → diff 取得 → AI API → PR コメント投稿…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/tsuzudev05/articles/github-actions-pr-review-api-journey",
-      "category": "その他",
-      "date": "2026-05-27",
-      "datetime": "2026-05-27T21:51:29+09:00"
-    },
-    {
-      "id": "6f386658451d",
-      "title": "Retrieval Signalsを設計する ─ AIが引用したくなる本文5つの構造",
-      "summary": "「同じ情報なのに、引用されるサイトと無視されるサイトがある」。私がここ半年LLMOを試して一番感じたのはこの不公平さでした。 Google検索1位でも、ChatGPTやPerplexityには無視される。逆に順位の低いサイトが、AI回答の引用元として何度も出て…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/kenimo49/articles/retrieval-signals-5-content-structures",
-      "category": "LLM",
-      "date": "2026-05-27",
-      "datetime": "2026-05-27T18:41:28+09:00"
-    },
-    {
       "id": "f2ffbd8ca96b",
       "title": "Opus 4.7 と GPT-5.5 のレビュー特性を統計的に明らかにした（オトナの自由研究 #19）",
       "summary": "はじめに Opus 4.7 は、「半年後に読める形か」を一歩踏み込んで見る、読み手志向の辛口採点者 GPT-5.5 は、書かれた制約を一字一句そのまま適用する、原則厳守の採点者 #16の結果から、コードレビューはモデルで差が出るという事実が見えてきました。今回…",
@@ -44,72 +22,6 @@
       "category": "その他",
       "date": "2026-05-27",
       "datetime": "2026-05-27T14:17:56+09:00"
-    },
-    {
-      "id": "7226fccce9d9",
-      "title": "Embeddingを足して見えた、AIエージェントの役割ドリフト検知の落とし穴 - Microsoft Agent ハッカソン参加記 #2",
-      "summary": "はじめに 正常な切り分け文を入力したのに、Embeddingがわずかに「診断方向」に傾いた。差は0.0059。これがEmbeddingを主判定にしてはいけない理由だ。 Microsoft Agent ハッカソンに向けて、業務用AIエージェントの役割ドリフトを検…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/lifona/articles/03b20570cd07b7",
-      "category": "その他",
-      "date": "2026-05-27",
-      "datetime": "2026-05-27T12:56:49+09:00"
-    },
-    {
-      "id": "51d3b64fd669",
-      "title": "Claude CodeとCodexを2ヶ月使い比べて分かった選び方 — settings.jsonを育てた側が速い",
-      "summary": "「どっちが速いの？」という問いへの正直な答え AIコーディングツールを検討するとき、誰もが最初に聞く。「Claude CodeとCodex、実際どっちが速い？」 ベンチマークや機能表は世の中に溢れている。でも「同じプロジェクトに両方投入した体感」をレポートして…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/playpark/articles/claude-code-vs-codex-comparison",
-      "category": "LLM",
-      "date": "2026-05-27",
-      "datetime": "2026-05-27T11:16:51+09:00"
-    },
-    {
-      "id": "4ba848300584",
-      "title": "稟議書作成承認の全自動化AI Agent（AI-DLCで開発）【Microsoft Agent Hackathon 2026】",
-      "summary": "はじめに 普段はAWSサーバレスアーキテクチャの設計/開発、AI駆動開発の適用検討、n8nやワークフローツールも活用した高度AI利活用提案/設計/開発などをしています https://zenn.dev/bakuchiku_house/articles/5622…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/bakuchiku_house/articles/024729851528f9",
-      "category": "その他",
-      "date": "2026-05-27",
-      "datetime": "2026-05-27T09:32:24+09:00"
-    },
-    {
-      "id": "4fdfce2af1ff",
-      "title": "トランプ大統領、AIセキュリティ大統領令の署名を延期――「阻害要因になり得た」",
-      "summary": "本記事は筆者が運営する AI Quotidia (ai.quotidia.jp) の海外ニュース解説記事です。 トランプ大統領、AIモデルの「事前審査」大統領令を先送り——その背景と日本への影響 皆さん、「AIを世に出す前に、政府がチェックする」と聞いたら、ど…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/quotidia/articles/quotidia-aq-013",
-      "category": "その他",
-      "date": "2026-05-27",
-      "datetime": "2026-05-27T08:21:54+09:00"
-    },
-    {
-      "id": "0b6b2dcd46b8",
-      "title": "OpenAI Codex CLI を本番運用するためのセキュリティ初期設定と運用ルール",
-      "summary": "OpenAI Codex CLI は、ChatGPT アカウントまたは API キーで認証し、リポジトリ内のファイル編集・コマンド実行までを担う CLI エージェントです。導入直後のデフォルト設定でも動きますが、本番リポジトリや業務コードに使うなら、サンドボッ…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/engineer__117/articles/codex-cli-security-best-practices",
-      "category": "LLM",
-      "date": "2026-05-27",
-      "datetime": "2026-05-27T06:31:47+09:00"
-    },
-    {
-      "id": "1012724e71de",
-      "title": "AnthropicとOpenAI、公式プロンプトベストプラクティスを徹底比較してみた",
-      "summary": "社内でAI導入を進める中で、ChatGPTとClaude、両方を業務に組み込むケースが増えてきた。 「同じプロンプトを使い回せるのか」「両者で書き方を変えるべきなのか」――現場でよく聞かれる問いに答えるため、今回はAnthropicとOpenAIが公開している…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/aiops_insider/articles/a6c56302c3e651",
-      "category": "LLM",
-      "date": "2026-05-27",
-      "datetime": "2026-05-27T04:37:50+09:00"
     }
   ]
 }
