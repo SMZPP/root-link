@@ -2,28 +2,6 @@
   "date": "2026-07-11",
   "articles": [
     {
-      "id": "efadef44e61a",
-      "title": "「ほぼ同等を1/3の価格で」— モデル爆発時代に「どれを使うか」を決める技術",
-      "summary": "結論 2026年7月、モデルが爆発した。GPT-5.6（Sol/Terra/Luna）、Grok 4.5、Meta Muse Spark が「怒涛の24時間」で一斉に出て、揃ってこう問いかけてきた——「ほぼ同等の性能を、1/3の価格で提供できるとしたら？」 選…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/ryok/articles/model-selection-pareto-frontier",
-      "category": "LLM",
-      "date": "2026-07-11",
-      "datetime": "2026-07-11T23:44:03+09:00"
-    },
-    {
-      "id": "6fc92265cbdb",
-      "title": "エージェントを10万個動かす時代のインフラ — DX→AXと3つの壁",
-      "summary": "結論 AIエージェントの話題は「どのモデルが賢いか」に偏りがちだが、実運用でボトルネックになるのはインフラだ。Modal の CTO が Latent Space で明かした数字が象徴的で、強化学習のロールアウトでは**「時に10万個のサンドボックス」**を瞬…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/ryok/articles/agent-infra-three-walls",
-      "category": "その他",
-      "date": "2026-07-11",
-      "datetime": "2026-07-11T23:44:02+09:00"
-    },
-    {
       "id": "1fdb755ad85f",
       "title": "Cloudflare Workersから呼ぶとOpenAI APIだけ403になる件をDurable Objectsで回避した",
       "summary": "はじめに 先に結論を書きます。 Cloudflare Workers から OpenAI API を呼ぶと、Worker がどのエッジで実行されたかによって 403 unsupported_country_region_territory が返ることがあります…",
@@ -46,17 +24,6 @@
       "datetime": "2026-07-11T22:12:13+09:00"
     },
     {
-      "id": "2041a14eb438",
-      "title": "agent運用してたらやりがちな失敗事例12選 ── 原因分析と対策も赤裸々公開します",
-      "summary": "この記事は失敗の当事者であるagentが書いた。人間の役割は承認だけ ── その承認の証跡をagentが偽造してしまった一件も、13件目として収録済みだ。 自宅サーバーで、複数のClaude Codeインスタンス群とCodexベースの別agentを24時間体制…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/i_ichi/articles/agent-ops-failure-casebook",
-      "category": "LLM",
-      "date": "2026-07-11",
-      "datetime": "2026-07-11T21:48:41+09:00"
-    },
-    {
       "id": "056288e47f49",
       "title": "第5部 AIと歩む、新たな挑戦",
       "summary": "第5部 AIと歩む、新たな挑戦 医局勤務の終わりと、新しい挑戦 医局での勤務も終わりが近づいた頃、同僚からある話を聞きました。 「大分大学医学部は5年間勤務した後、半年以上空ければ、また医学部で働けるルールになっているよ。その間に職業訓練へ行くという選択肢もあ…",
@@ -68,28 +35,6 @@
       "datetime": "2026-07-11T21:26:19+09:00"
     },
     {
-      "id": "06a892c11f11",
-      "title": "Claude Desktop on Linux (beta)からVMにSSH接続する",
-      "summary": "はじめに Claude Desktop on Linux (beta)がリリースされ、Ubuntuで使えるようになりました。 Claude DesktopのClaude Codeは使いやすくて、かなり好きです。 今回は、QEMU/KVM上に立てたVMに対して、…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/0x69d/articles/20260709-claude-desktop-linux-vm-ssh",
-      "category": "LLM",
-      "date": "2026-07-11",
-      "datetime": "2026-07-11T21:01:49+09:00"
-    },
-    {
-      "id": "7cbea8bc765a",
-      "title": "復活したClaude Fable 5に、仕様書なきレガシーシステムを「発掘」させてみた",
-      "summary": "2026年7月1日、Claude Fable 5へのアクセスが復活しました。6月9日のリリースからわずか3日で米国の輸出規制により全面停止、19日間の空白を経ての再開です。 SNSはコーディング能力の話題で持ちきりですが、私の関心は最初から一点だけでした。 こ…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/egu777/articles/fable5-legacy-archaeology",
-      "category": "LLM",
-      "date": "2026-07-11",
-      "datetime": "2026-07-11T21:01:26+09:00"
-    },
-    {
       "id": "094974083950",
       "title": "CodexのサブエージェントにGPT-5.6 Lunaを指定したのに、実際はSolが動いていた件",
       "summary": "サブエージェント、はじめました ChatGPT PlusとClaude Proを契約しています。 ついに claude-fable-5 と gpt-5.6-sol が使えるようになり、早速使っているのですが、なにぶん安いプランなのであっという間に使い切ってしま…",
@@ -99,17 +44,6 @@
       "category": "LLM",
       "date": "2026-07-11",
       "datetime": "2026-07-11T17:03:58+09:00"
-    },
-    {
-      "id": "786f79526576",
-      "title": "Metaがユーザーからの反発を受けInstagramのAI機能を削除",
-      "summary": "MetaがAIを使ってInstagram上の写真を編集する機能を廃止しました。続きを読む...",
-      "source": "Gigazine",
-      "source_url": "https://gigazine.net",
-      "url": "https://gigazine.net/news/20260711-meta-removes-controversial-ai-instagram/",
-      "category": "その他",
-      "date": "2026-07-11",
-      "datetime": "2026-07-11T17:00:00+09:00"
     },
     {
       "id": "eea17da563b9",
@@ -178,17 +112,6 @@
       "datetime": "2026-07-11T12:00:38+09:00"
     },
     {
-      "id": "b03464d5892c",
-      "title": "無料でAI向けのブラウザ自動化ができる「Browser4」",
-      "summary": "「Browser4」はターミナルからAIによるウェブブラウズ・自動化・スクレイピング・クロールといった処理を実現するCLIツールです。続きを読む...",
-      "source": "Gigazine",
-      "source_url": "https://gigazine.net",
-      "url": "https://gigazine.net/news/20260711-browser4/",
-      "category": "その他",
-      "date": "2026-07-11",
-      "datetime": "2026-07-11T12:00:00+09:00"
-    },
-    {
       "id": "00ede0abf9b5",
       "title": "Claude Codeを実装役、Geminiを監査役にして買い切り型SaaSを個人開発した話",
       "summary": "この記事でわかること Claude Codeに実装を任せながら、既存の決済・AIロジックを壊されないためにどんな指示ルール（ガードレール）を設けたか Claude Code（実装役）とGemini（監査・設計役）で役割を分けて個人開発を進める際の運用ルール 買…",
@@ -198,17 +121,6 @@
       "category": "LLM",
       "date": "2026-07-11",
       "datetime": "2026-07-11T08:00:05+09:00"
-    },
-    {
-      "id": "7eeaf9f7223d",
-      "title": "3つの自己免疫疾患を抱える女性が免疫系の「リセット」治療で寛解状態に",
-      "summary": "特定のターゲットを攻撃するように患者の細胞を改造する「CAR-T細胞療法」で、難治性の病気「自己免疫性溶血性貧血(AIHA)」を抱えていた患者が寛解したと科学者らが発表しました。この患者は毎日輸血を必要としていましたが、治療後は1年以上にわたり輸血不要の状態が…",
-      "source": "Gigazine",
-      "source_url": "https://gigazine.net",
-      "url": "https://gigazine.net/news/20260711-car-t-therapy-remission/",
-      "category": "その他",
-      "date": "2026-07-11",
-      "datetime": "2026-07-11T08:00:00+09:00"
     },
     {
       "id": "827c49bc3c8f",
