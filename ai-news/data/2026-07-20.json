@@ -13,17 +13,6 @@
       "datetime": "2026-07-20T19:51:35+09:00"
     },
     {
-      "id": "0fb5deabca0a",
-      "title": "ChatGPTで提案書が3分できた話｜営業マンが実際に使ったプロンプト3本を公開",
-      "summary": "正直に言います。提案書を作るのに、ずっと2時間以上かけていました 商談が終わって会社に戻ったのが18時。次のアポは翌朝10時。「今日中に提案書送っておきます」と言ってしまった手前、そこから構成を考えて、スライドを開いて、文章を整えて……気づいたら21時を回って…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/shoooroom/articles/chatgpt-sales-proposal-3min",
-      "category": "LLM",
-      "date": "2026-07-20",
-      "datetime": "2026-07-20T18:21:21+09:00"
-    },
-    {
       "id": "8e6e89aaea7a",
       "title": "\"Cloud Run × Cloud Logging × Gemini でエラーを自動解析してメール通知する仕組みを作った\"",
       "summary": "てつどんです。データエンジニアっぽい仕事を日々行っています。 日々、データ整備のためにパイプライン処理を構築して、現在Cloud Run上に100近くの処理がある状況になってます。 普段 GCP でパイプラインを動かしていると、エラーが起きたときは Cloud…",
@@ -33,28 +22,6 @@
       "category": "LLM",
       "date": "2026-07-20",
       "datetime": "2026-07-20T17:44:37+09:00"
-    },
-    {
-      "id": "a3068e582aed",
-      "title": "【Bedrock】Amazon Bedrock Mantleとは？",
-      "summary": "はじめに 2025 年 12 月、Amazon Bedrock に Mantle という新しい推論エンジンが追加されました。re:Invent 2025 のキーノート（Infrastructure Innovations with Peter DeSantis…",
-      "source": "Qiita",
-      "source_url": "https://qiita.com",
-      "url": "https://qiita.com/ryu-ki/items/17fa3462d4c619e4fea5",
-      "category": "その他",
-      "date": "2026-07-20",
-      "datetime": "2026-07-20T17:12:41+09:00"
-    },
-    {
-      "id": "11c26f7614d4",
-      "title": "まだ知識を教えているのか？──大AI時代の『知識・判断 分離革命』",
-      "summary": "まだ知識を教えているのか？ ——大AI時代の「知識・判断 分離革命」 AI駆動開発の話を書こうと思っていた。 判断ログやGit Diff、Markdown、Context Engineering……。 ところが考えれば考えるほど、これは開発者だけの話ではないと…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/frb_tamasub/articles/ai_knowledge_judgment_separation_revolution",
-      "category": "その他",
-      "date": "2026-07-20",
-      "datetime": "2026-07-20T17:01:30+09:00"
     },
     {
       "id": "5618ae58b691",
@@ -101,48 +68,15 @@
       "datetime": "2026-07-20T12:06:52+09:00"
     },
     {
-      "id": "2fa1fc26b8b3",
-      "title": "プロンプトエンジニアリング超入門：AIの回答がブレる人のための「指示を安定させる4つの型」",
-      "summary": "「同じことを頼んだのに、昨日と今日でAIの答えがぜんぜん違う」「なんとなく賢いけど、そのまま仕事には使えない」——生成AIを触りはじめると、多くの人がここでつまずく。原因の大半は、AIの性能ではなく こちらの頼み方（指示の書き方） にある。 この記事は、プロン…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/yushiyamamoto/articles/prompt-engineering-basics-2026-07",
-      "category": "LLM",
-      "date": "2026-07-20",
-      "datetime": "2026-07-20T07:16:27+09:00"
-    },
-    {
-      "id": "a971cceed2b7",
-      "title": "送信前レビューを複数ペルソナで比較、迎合バイアスをコンテキスト分離で崩す運用",
-      "summary": "TL;DR 単一のLLMセッションに「これで大丈夫か」とだけ聞く送信前チェックは、モデルが同意的な応答へ収束しやすい迎合バイアス（sycophancy）の影響を強く受け、読み手の実際の反応を近似できない 利害・評価軸が異なる複数のペルソナを演じさせて反応を比較…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/every_ai_recipe/articles/pre-send-persona-pushback-compare",
-      "category": "LLM",
-      "date": "2026-07-20",
-      "datetime": "2026-07-20T06:07:40+09:00"
-    },
-    {
       "id": "f7b93071c114",
-      "title": "GitHub Copilot で MCP を使って生成した画像をインライン表示する方法",
-      "summary": "VS Code の GitHub Copilot のチャットから画像生成 AI を呼び出せる MCP サーバー「copilot-image-gen-mcp」を作りました。生成した画像は、チャット内にそのままインライン表示されます。 ソースコード: GitHub…",
+      "title": "GitHub Copilot で MCP を使って生成した画像をチャット内に表示する方法",
+      "summary": "画像を出力する MCP サーバーを作っても、ツールの実行結果として保存先のパスを返すだけでは、VS Code の GitHub Copilot Chat に画像は表示されません。画像を確認するたびにファイルを開く必要があり、生成と修正を繰り返すと手間がかかりま…",
       "source": "Zenn.dev",
       "source_url": "https://zenn.dev",
       "url": "https://zenn.dev/kmdkmd/articles/copilot-chat-inline-image-mcp",
       "category": "LLM",
       "date": "2026-07-20",
       "datetime": "2026-07-20T03:21:20+09:00"
-    },
-    {
-      "id": "2cd1a43c5bc4",
-      "title": "LLMのJSONパースエラーをXMLデリミタで根本解決する",
-      "summary": "筆者は記事リライトを自動化するパイプラインを運用しており、その中で Gemini に記事全文を JSON で返させる設計を採っていた。{ rewrittenContent: string } というスキーマで本文を受け取る素直な実装だったが、日本語の引用符や複…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/anikuma/articles/llm-json-parse-xml-delimiter",
-      "category": "LLM",
-      "date": "2026-07-20",
-      "datetime": "2026-07-20T00:00:00+09:00"
     }
   ]
 }
