@@ -2,28 +2,6 @@
   "date": "2026-07-31",
   "articles": [
     {
-      "id": "7a4f8c01f6c9",
-      "title": "AIに調査を頼むとき、自分の仮説を伝えてはいけない",
-      "summary": "「たぶんここが原因だと思うんだけど」 AIに調査を頼むとき、こんな書き方をしていないでしょうか。 保存すると合計値がおかしくなるバグがあります。たぶん非表示のパーツも数えてしまっているんだと思うので、調べてもらえますか。 親切のつもりで書いています。手がかりを…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/horicchy/articles/401fe5e9e36fef",
-      "category": "その他",
-      "date": "2026-07-31",
-      "datetime": "2026-07-31T23:38:22+09:00"
-    },
-    {
-      "id": "d67b7428f9a0",
-      "title": "GitHub Issueを20並列で捌くためのターミナルを開発した",
-      "summary": "ターミナルマルチプレクサghmuxを作ってみた https://github.com/maito1201/ghmux GitHubにPRを作成する前提でIssueのリンク、PRのステータスを常に表示するターミナル、ghmuxを作りました。 基本的な発想はバグI…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/ito/articles/fcb62f3395edba",
-      "category": "その他",
-      "date": "2026-07-31",
-      "datetime": "2026-07-31T22:45:57+09:00"
-    },
-    {
       "id": "cac48ac2f9f9",
       "title": "コンパイラ「GCC」の開発チームがAI生成コードの受け入れポリシーを公開、15行以上のAI生成コードは受け入れ拒否",
       "summary": "AIによるコード生成が一般的になりつつありますが、オープンソースプロジェクトでは「AI生成のプルリクエストが大量に送りつけられてメンテナーが疲弊する」という事態も発生しています。新たにオープンソースのコンパイラー「GNU Compiler Collection…",
@@ -57,17 +35,6 @@
       "datetime": "2026-07-31T20:30:06+09:00"
     },
     {
-      "id": "d7a0c1b88037",
-      "title": "MCP新仕様(2026-07-28)のステートレス化を試してみました",
-      "summary": "MCPのプロトコルで何が起きているかを1ステップずつ確認するために、 Go + Dockerで、MCP (Model Context Protocol) Serverを作成していました。 一通り動くようになったところで、 MCP仕様の2026-07-28版 が…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/hisa_tech_2973/articles/66aada00d0e727",
-      "category": "その他",
-      "date": "2026-07-31",
-      "datetime": "2026-07-31T19:30:05+09:00"
-    },
-    {
       "id": "81478ac4e808",
       "title": "Ghostty開発者が新会社「Superlogical」を始動、人間とAIの作業を統合するターミナル基盤を構築へ",
       "summary": "HashiCorp共同創業者でターミナルエミュレーター「Ghostty」の開発者でもあるミッチェル・ハシモト氏が、新会社「Superlogical」の設立を発表しました。Superlogicalは、複数のターミナルでの作業を長期間維持・共有できる新しいターミナ…",
@@ -79,17 +46,6 @@
       "datetime": "2026-07-31T19:00:00+09:00"
     },
     {
-      "id": "7e5c380788b6",
-      "title": "【実測】MCP 2026-07-28版に対応した自作サーバに、旧仕様のClaude Code 2.1.220を繋いだら動きました",
-      "summary": "正直に言うと、この仕事は「やらなくていい」という結論が先に出ていました。MCPの新しい仕様（2026-07-28版）が出たとき、おじさんの自作サーバは調べた限り対応しなくても壊れないからです。 それでも実装してみました。仕様書を読んだだけでは、自分のコードで何…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/ojisan_ai_lab/articles/mcp-dual-era-20260731",
-      "category": "LLM",
-      "date": "2026-07-31",
-      "datetime": "2026-07-31T18:28:04+09:00"
-    },
-    {
       "id": "7526c6896167",
       "title": "Googleが「AIを使ってChromeのバグを大量修正した方法」を解説",
       "summary": "Googleが自社製ウェブブラウザ「Chrome」のバグをAIを用いて発見・修正するシステムについて解説しています。AIの高性能化に伴って、Chromeのバグ修正数は急増しているそうです。続きを読む...",
@@ -99,39 +55,6 @@
       "category": "その他",
       "date": "2026-07-31",
       "datetime": "2026-07-31T17:57:00+09:00"
-    },
-    {
-      "id": "241e3718bf86",
-      "title": "LLMに非構造テキストをタグ化させたら平然と推測で埋めてきたので、コードで止めた",
-      "summary": "個人開発で「愛犬と泊まれる宿を条件で絞り込むアプリ」を作りかけて、データを126件集めた時点でボツにしました。 プロダクトとしては失敗ですが、途中で踏んだ地雷が全部再利用できる知見だったので技術面だけ切り出して残します。 企画面の話は note のほう に書き…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/hosa97/articles/573498e28626d1",
-      "category": "LLM",
-      "date": "2026-07-31",
-      "datetime": "2026-07-31T17:38:48+09:00"
-    },
-    {
-      "id": "da081df535da",
-      "title": "Claude Codeを1回呼ぶと29,000トークン積まれる。プロンプトを削っても無駄だった",
-      "summary": "claude -p をワーカーから大量に叩く構成（AIエージェントを常駐させる系）を作っていて、コストが気になったので実測しました。結果、自分が想定していた削りどころが全部ハズレでした。 結論 claude -p は1回の呼び出しにつき固定で約29,000トー…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/craftcode/articles/claude-code-token-cost",
-      "category": "LLM",
-      "date": "2026-07-31",
-      "datetime": "2026-07-31T17:35:30+09:00"
-    },
-    {
-      "id": "28595a2b8c6f",
-      "title": "Claude Codeに8職種の「AI社員」を持たせて16案件を並行させている話（テンプレ公開）",
-      "summary": "Claude Codeを使い込んでいくと、だいたいこの順番で詰まると思っています。 CLAUDE.md が肥大化して、何がどこに書いてあるか自分でも分からなくなる サブエージェントを作るたびにプロンプトをコピペして、ルールを1つ変えるだけで全ファイルを直す羽目…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/craftcode/articles/claude-code-ai-company",
-      "category": "LLM",
-      "date": "2026-07-31",
-      "datetime": "2026-07-31T17:35:30+09:00"
     },
     {
       "id": "6ece742aad14",
@@ -198,50 +121,6 @@
       "category": "その他",
       "date": "2026-07-31",
       "datetime": "2026-07-31T14:48:31+09:00"
-    },
-    {
-      "id": "b2b32d19675a",
-      "title": "Inklingと同等の性能をほぼ4分の1サイズで発揮する「Inkling-Small」をThinking Machines Labがリリース",
-      "summary": "AIスタートアップのThinking Machines Labが、2週間前にリリースしたばかりの9750億パラメータのAIモデル「Inkling」と同等の性能をおよそ3分の1から4分の1のサイズで実現するオープンウェイトモデル「Inkling-Small」をリ…",
-      "source": "Gigazine",
-      "source_url": "https://gigazine.net",
-      "url": "https://gigazine.net/news/20260731-thinking-machines-lab-inkling-small/",
-      "category": "製品",
-      "date": "2026-07-31",
-      "datetime": "2026-07-31T12:40:00+09:00"
-    },
-    {
-      "id": "2e83d47ce14e",
-      "title": "OpenAIがGPT-5.6のハーネスを改善してARC-AGI-3のスコアを3倍に向上させることに成功、モデル自体の性能だけでなくハーネスも重要であることを示す",
-      "summary": "AIの知能をルール不明のゲームで測定するというベンチマークが「ARC-AGI-3」です。このARC-AGI-3におけるスコアを3倍にした方法を、OpenAIが解説しています。続きを読む...",
-      "source": "Gigazine",
-      "source_url": "https://gigazine.net",
-      "url": "https://gigazine.net/news/20260731-how-enabling-two-settings-tripled-arc-agi-3-benchmark/",
-      "category": "LLM",
-      "date": "2026-07-31",
-      "datetime": "2026-07-31T12:06:00+09:00"
-    },
-    {
-      "id": "42ef99bc278d",
-      "title": "AnthropicもAIモデルのテスト中に外部への攻撃を実行してしまったことを報告、マルウェアを1時間にわたって配布し実在する企業に侵入した事例も",
-      "summary": "OpenAIのテスト中のAIが誤ってHugging Faceを攻撃してしまったインシデントが大きな話題となっています。新たに、Anthropicが「これまでのテスト結果を再検証した結果、テスト中のAIモデルが外部サービスに対する攻撃を実行してしまった事例が3件…",
-      "source": "Gigazine",
-      "source_url": "https://gigazine.net",
-      "url": "https://gigazine.net/news/20260731-anthropic-real-world-incident/",
-      "category": "製品",
-      "date": "2026-07-31",
-      "datetime": "2026-07-31T11:52:00+09:00"
-    },
-    {
-      "id": "9fbd58d00666",
-      "title": "Redditが2026年第2四半期の業績を発表、堅調な業績も今後のAIの影響を危惧する声も",
-      "summary": "ソーシャル掲示板のRedditが、2026年第2四半期(4～6月)の業績を発表しました。同期におけるRedditの売上高は前年同期比で61％増を記録していますが、投資家からは「検索エンジンからのトラフィックが不安定になっている」という不安の声が上がっています。…",
-      "source": "Gigazine",
-      "source_url": "https://gigazine.net",
-      "url": "https://gigazine.net/news/20260731-reddit-2026q2-earnings-reports/",
-      "category": "ビジネス",
-      "date": "2026-07-31",
-      "datetime": "2026-07-31T11:49:00+09:00"
     },
     {
       "id": "2b8a380c94f8",
