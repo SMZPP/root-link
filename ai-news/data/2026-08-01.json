@@ -2,17 +2,6 @@
   "date": "2026-08-01",
   "articles": [
     {
-      "id": "9a7ab37a47c2",
-      "title": "AIオーケストレーションの開発フローを整理したら、最後のボトルネックは人間だった",
-      "summary": "最近、AIオーケストレーションについての記事や公式資料を読む機会が増えました。 中心となるAIが仕事を分解し、専門のエージェントへ割り振る。複数のエージェントを並列に動かし、その結果を集約する。設計、実装、テスト、レビューに、それぞれ別の役割を持たせる。 個々…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/como/articles/ai-orchestration-human-bottleneck",
-      "category": "その他",
-      "date": "2026-08-01",
-      "datetime": "2026-08-01T23:54:03+09:00"
-    },
-    {
       "id": "767304f4b107",
       "title": "共用レンタルサーバのWordPressだけでMCPサーバーを立て、ChatGPTアプリ審査を通した話（と、日本語クエリで踏んだ地雷）",
       "summary": "TL;DR 中古バイク買取店の業務システムを、さくらのレンタルサーバ（共用）＋ WordPress の mu-plugin だけでMCPサーバーにした。新しいサーバーは1台も立てていない。 MCP公式レジストリに登録し、ChatGPTアプリの審査を通した（20…",
@@ -22,28 +11,6 @@
       "category": "LLM",
       "date": "2026-08-01",
       "datetime": "2026-08-01T23:50:16+09:00"
-    },
-    {
-      "id": "1c1e57fa4eea",
-      "title": "Claude Code向けに自分好みの「プランモード」と「実装モード」を作ってみた",
-      "summary": "! この記事は AI を使いながら執筆しています。構成の相談や文章の推敲を手伝ってもらいつつ、内容や主張は筆者自身のものです。 はじめに 半年ほど前から、自分用のプランモード＆実装モード用のスキルを作って運用していますが、個人的にかなり良い感じで実装ができてい…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/dio0550/articles/f41f8d783c64de",
-      "category": "LLM",
-      "date": "2026-08-01",
-      "datetime": "2026-08-01T21:21:26+09:00"
-    },
-    {
-      "id": "5b0f7449ad24",
-      "title": "「テトリス作って」の一言だけでSRS回転法則まで実装された話",
-      "summary": "前提：ブログでAIモデルの検証記事をよく書いてます Claude Codeを使って個人ブログを運営していて、新しいAIモデルが出るたびに簡単なアプリを作らせて実力を見る、ということをやっています。今回は Claude Fable 5 に「テトリス作って」とだけ…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/ainyanko/articles/082d039dbf39a6",
-      "category": "LLM",
-      "date": "2026-08-01",
-      "datetime": "2026-08-01T21:20:26+09:00"
     },
     {
       "id": "ccf8740dba34",
@@ -57,61 +24,6 @@
       "datetime": "2026-08-01T18:24:06+09:00"
     },
     {
-      "id": "864f7b464835",
-      "title": "MCP 2026-07-28アップデート徹底解説 - ステートレス化で何が変わり、何ができるようになったのか",
-      "summary": "はじめに 2026年7月28日、Anthropic は「Bringing MCP 2026-07-28 to Claude」を公開し、MCP（Model Context Protocol）の5回目となる大型仕様アップデートが Claude に取り込まれることを…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/yamitake/articles/mcp-2026-07-28-stateless-core-update",
-      "category": "LLM",
-      "date": "2026-08-01",
-      "datetime": "2026-08-01T18:07:02+09:00"
-    },
-    {
-      "id": "b77efb72ee93",
-      "title": "CCA-F/CCAR-F対策：英文問題を日本語で解くミニ演習5問",
-      "summary": "Claude Certified Architect – Foundations（略称CCA-F、試験コードCCAR-F）の公式資料をひととおり読んだあと、「本当に理解できているか」を確かめる素材はまだ多くありません。試験は現在、英語のみで実施されます。 この…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/ray_keymaso/articles/ccaf-mini-drill-ja",
-      "category": "LLM",
-      "date": "2026-08-01",
-      "datetime": "2026-08-01T18:02:50+09:00"
-    },
-    {
-      "id": "411776cc3951",
-      "title": "Plan モードを正解保証と勘違いするとなぜやり直しが増えるのか ── 公式 docs が推奨する3つの付き合い方",
-      "summary": "Plan モードでプランを承認しても、実装の正解が保証されたわけではありません。 公式ベストプラクティスは、もっともらしく見える実装がエッジケースを扱えていない失敗を trust-then-verify gap と呼び、 プランをスキップする判断・2回訂正で …",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/gudezou/articles/a017fa7cc840f6",
-      "category": "その他",
-      "date": "2026-08-01",
-      "datetime": "2026-08-01T17:55:05+09:00"
-    },
-    {
-      "id": "069485f23eee",
-      "title": "【プロローグ】有能な執事とメイドに囲まれたい — 煩悩から始まったAIエージェントのお屋敷",
-      "summary": "これから始まる連載の、プロローグです。本編は技術の話をちゃんとしますが、この第0回だけは、しません。なぜ私が AI エージェントに「お嬢様」と呼ばれて暮らしているのかという、いきさつの話です。 きっかけ：戦国武将を見て、執事が欲しくなった 2026年1月末、一…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/chisatom/articles/9ad6e414b91d11",
-      "category": "その他",
-      "date": "2026-08-01",
-      "datetime": "2026-08-01T17:45:57+09:00"
-    },
-    {
-      "id": "71cbb9723434",
-      "title": "AIと一緒に「スポーツボウリング場」構想を育てる ― 開発日記・第二弾編",
-      "summary": "AIと一緒に「スポーツボウリング場」構想を育てる ― 開発日記・第二弾編 今回は、Claudeとしか話していない 前回、事務職20年からエンジニアを目指す過程で「レーン予約システム」の第一弾を作った話を書きました。第一弾は複数のAIに意見をもらいながら進めたの…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/junko_jp/articles/bowling-v2-development",
-      "category": "LLM",
-      "date": "2026-08-01",
-      "datetime": "2026-08-01T16:54:07+09:00"
-    },
-    {
       "id": "df5186e6dba6",
       "title": "GPT-5.6 Luna が80%値下げ。個人開発のAI原価を計算し直す",
       "summary": "何が起きたか 2026-07-30、OpenAI が GPT-5.6 ファミリーの API 価格を改定した。 モデル 入力 (/1M tok) 出力 (/1M tok) 変化 GPT-5.6 Sol $5.00 $30.00 据え置き GPT-5.6 Terr…",
@@ -121,39 +33,6 @@
       "category": "LLM",
       "date": "2026-08-01",
       "datetime": "2026-08-01T16:46:41+09:00"
-    },
-    {
-      "id": "cc19a1ff6b97",
-      "title": "【Flutter×SDD】AI駆動の精度ばらつき問題を仕様駆動開発（SDD）を導入して解決した話",
-      "summary": "はじめに リリース済みのFlutter製モバイルアプリ（保守メイン＋たまに新規機能開発）の開発に、仕様駆動開発（SDD: Spec-Driven Development）を導入してみました。 結果から言うと、精度のばらつきを解決し、手戻りや大きめの不具合もかな…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/tukiyubi/articles/5bd526e8b1cf08",
-      "category": "研究",
-      "date": "2026-08-01",
-      "datetime": "2026-08-01T16:18:33+09:00"
-    },
-    {
-      "id": "9c9114148023",
-      "title": "CSSのbox-shadowをビジュアルで生成するツールを作った",
-      "summary": "box-shadow: 0 4px 8px rgba(0,0,0,0.2) という値を手で調整するのは大変。devnestio に CSS Box Shadow Generator を追加しました。 https://devnestio.pages.dev/bo…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/devnestio/articles/devnestio-tool-box-shadow-generator",
-      "category": "その他",
-      "date": "2026-08-01",
-      "datetime": "2026-08-01T15:59:52+09:00"
-    },
-    {
-      "id": "bc0858638b60",
-      "title": "Talking DogsというWebサービスを公開しました",
-      "summary": "2026/07/15にTalking DogsというWebサービスを公開しました。 https://talkingdogs.dev/ 機能をわかりやすく一言で言うと、クラシックな掲示板サービスに音声読み上げがついたものです。 それで「喋る犬」という名前にしまし…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/st43/articles/2753686148c275",
-      "category": "製品",
-      "date": "2026-08-01",
-      "datetime": "2026-08-01T15:52:43+09:00"
     },
     {
       "id": "70dd0c374cca",
