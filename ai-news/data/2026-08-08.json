@@ -2,28 +2,6 @@
   "date": "2026-08-08",
   "articles": [
     {
-      "id": "2163c7579536",
-      "title": "「信頼済みコマンド」を設定しても夜間オート実行はできなかった - claude --helpで分かった見落とし",
-      "summary": "この記事で得られること 「調査系コマンドの承認をゼロにする」設定（許可リスト方式）と、「夜間バッチで記事生成→コミット→push→PR作成まで無人で回す」ことの間にあったギャップ claude --help を実際に読んで見つけた、許可リスト方式とは別レイヤー…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/devex12/articles/claude-code-unattended-permission-mode-gap",
-      "category": "LLM",
-      "date": "2026-08-08",
-      "datetime": "2026-08-08T23:43:38+09:00"
-    },
-    {
-      "id": "2f21da706504",
-      "title": "Raspberry Pi 5でClaude Codeを動かす",
-      "summary": "はじめに 本記事ではRaspberry Pi 5 で Claude Code を常時起動し、外部から常時アクセス可能にします。低消費電力で 24 時間つけっぱなしにできる Pi 5 は、Agent の常駐場所として手頃です。母艦の Mac とは切り離された専用…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/gsy0911/articles/a4dc76f0639576",
-      "category": "LLM",
-      "date": "2026-08-08",
-      "datetime": "2026-08-08T22:14:38+09:00"
-    },
-    {
       "id": "112443e2bc97",
       "title": "commit前にcold-reader!",
       "summary": "! ここだけ中の人間側の注釈 中の人的にはチャット上での限界というか ぶっちゃけ めんどくさくなった ので中盤以降の指摘、修正を 放棄して 投稿しています。オフザケ、片手間に無料版Google AIモードで生実況を遊んでいた私自身が一番のインシデントですｗ 以…",
@@ -46,17 +24,6 @@
       "datetime": "2026-08-08T19:13:54+09:00"
     },
     {
-      "id": "6660efb3d46f",
-      "title": "AIエージェントが黙って\"別解\"を出した話 - Figma実装失敗から専用スキルを作るまで",
-      "summary": "この記事はAIを使って書かれているよ！ 導入 クライアント案件のLPをFigmaデザイン通りにHTML化する依頼を受けた。出てきた成果物を見て最初に思ったのは「これ、本当に同じデザインを見て作ったのか」だった。 配色からトーンまで、依頼したFigmaデザインと…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/mumumu_umino/articles/1e82dbdc77f63b",
-      "category": "その他",
-      "date": "2026-08-08",
-      "datetime": "2026-08-08T18:49:01+09:00"
-    },
-    {
       "id": "b4b7d72babca",
       "title": "ClaudeCodeの利用制限がきたらCodexにのりかえる仕組みを作った",
       "summary": "こんにちは。うぐいすソリューションズのぴよです。私は経営者ですが、病むたびにClaudeCodeをぶんまわして開発をしています。 普段はClaudeDesktopのCoworkを使ってスライド作成だの、事業計画作成だのをしているのでサブスクの利用制限がくること…",
@@ -66,39 +33,6 @@
       "category": "LLM",
       "date": "2026-08-08",
       "datetime": "2026-08-08T18:37:04+09:00"
-    },
-    {
-      "id": "26630182a805",
-      "title": "Claude Code に作業ログを書かせたら60本たまった — 引き継ぎもネタ出しも困らない運用",
-      "summary": "こんにちは。人間の記憶力には限界がありますが、私の限界はだいたい一晩です。 「昨日の私、Claude Code に何をやらせたんだっけ?」 朝いちばん、続きをやろうとして手が止まる。これが嫌で、作業のたびに Claude Code 自身に作業ログを書かせる運用…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/hoshiorange/articles/06-claude-code-worklog-as-asset",
-      "category": "LLM",
-      "date": "2026-08-08",
-      "datetime": "2026-08-08T18:10:43+09:00"
-    },
-    {
-      "id": "0bc3c3fa2d45",
-      "title": "プレビューURL付きのセルフホスト型開発サンドボックス「sandboxd」",
-      "summary": "アプリやシステムの開発環境を隔離して他のプロジェクトへの影響を防ぎながらコードを実行する仕組みをサンドボックスと言います。Docker・Traefik・SQLiteを利用し、なおかつAIエージェントによる開発に特化したサンドボックス基盤を簡単に構築できる「sa…",
-      "source": "Gigazine",
-      "source_url": "https://gigazine.net",
-      "url": "https://gigazine.net/news/20260808-sandboxd/",
-      "category": "その他",
-      "date": "2026-08-08",
-      "datetime": "2026-08-08T18:00:00+09:00"
-    },
-    {
-      "id": "3c2f23b3b6dc",
-      "title": "Unicode記号テーブル — 121シンボルをワンクリックでコピー",
-      "summary": "矢印・数学記号・著作権マーク・通貨記号などをドキュメントやコードに使いたいとき、いちいち検索するのが面倒。devnestio に Unicode Symbol Table を追加しました。 https://devnestio.pages.dev/unicode…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/devnestio/articles/devnestio-tool-unicode-table",
-      "category": "規制",
-      "date": "2026-08-08",
-      "datetime": "2026-08-08T17:12:31+09:00"
     },
     {
       "id": "1a72a9953e3c",
@@ -121,17 +55,6 @@
       "category": "LLM",
       "date": "2026-08-08",
       "datetime": "2026-08-08T09:47:52+09:00"
-    },
-    {
-      "id": "bff559e93539",
-      "title": "AI音楽生成サービス「Suno」がAI生成楽曲に音声透かしを導入すると発表",
-      "summary": "AI音楽生成サービスの「Suno」が、プラットフォーム上で作成された楽曲を識別し、ダウンロードを制限し、模倣楽曲を防止するためのコミュニティガイドラインを更新するための新ツールを発表しました。続きを読む...",
-      "source": "Gigazine",
-      "source_url": "https://gigazine.net",
-      "url": "https://gigazine.net/news/20260808-suno-start-watermarking-songs/",
-      "category": "規制",
-      "date": "2026-08-08",
-      "datetime": "2026-08-08T09:00:00+09:00"
     },
     {
       "id": "a8e078e50644",
