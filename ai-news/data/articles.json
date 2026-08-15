@@ -1,236 +1,830 @@
 {
-  "updated": "2026-08-15T05:21:26.337734+09:00",
+  "updated": "2026-08-16T05:11:26.440146+09:00",
   "articles": [
     {
-      "id": "463937e3d6d0",
-      "title": "Gemini 3.7 Flash登場、Googleの高速・低コストAIモデル最新版を解説",
-      "summary": "はじめに 2026年8月、GoogleがGeminiシリーズの新モデル「Gemini 3.7 Flash」を発表しました。Google公式ブログでの発表であり、Hacker News上でも900件を超える反響（likes: 938）を集めるなど、開発者コミュニ…",
+      "id": "0e7c22a5c45c",
+      "title": "vibe codingの12ヶ月後：『動くコード』が『触れないブラックボックス』になるまで",
+      "summary": "結論 vibe codingの生死を分けるのは「コードを読んだか」ではない。判断の理由（why）を、後から検証できる形で残したかだ。 理由が消えたコードは、リリースから12ヶ月後に「誰も触れないブラックボックス」になり、静かなリライトで終わる。これは怠惰の問題…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/ryok/articles/vibe-coding-twelve-months",
+      "category": "製品",
+      "date": "2026-08-16",
+      "datetime": "2026-08-16T04:51:19+09:00"
+    },
+    {
+      "id": "8be664594dd1",
+      "title": "「今使えるGeminiモデルはどれ？」が一発で分かるツールをGeminiに作らせた",
+      "summary": "はじめに Google AI StudioのAPIを使って学習していると、こんな経験はないでしょうか。 昨日まで動いてたモデルが、今日いきなり使えなくなった…… Geminiのモデルは頻繁にアップデートされます。新しいモデルが追加される一方で、既存モデルが予告…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/kkoch5t2/articles/cf8eeb2c58adc0",
+      "category": "LLM",
+      "date": "2026-08-16",
+      "datetime": "2026-08-16T04:47:14+09:00"
+    },
+    {
+      "id": "5a4fd0dcb63d",
+      "title": "Godotの当たり判定が突然無反応になった",
+      "summary": "何が起きたか Godot 4.7で個人開発中の2Dアクションゲームで、プレイヤーの攻撃判定と、敵の接触ダメージ判定を実装しました。Area2Dのレイヤー・マスクをきちんと分けて、get_overlapping_bodies()でお互いを検知する、という一般的な…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/hoakari/articles/2026-08-16-godot-collision-layer-override",
+      "category": "その他",
+      "date": "2026-08-16",
+      "datetime": "2026-08-16T03:54:44+09:00"
+    },
+    {
+      "id": "d504ff3df07d",
+      "title": "10年以上前のVAIO type Pを、2026年のCUI＋AI端末に蘇らせる",
+      "summary": "10年以上前のVAIO type Pを、2026年のCUI＋AI端末に蘇らせる 僕はVAIO type Pが好きだ。 小さな筐体に横長のディスプレイとフルキーボードを詰め込んだ、あの変わったPCである。 今回、手元にある SONY VAIO type P VG…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/rtneg/articles/251fa280cc3805",
+      "category": "その他",
+      "date": "2026-08-16",
+      "datetime": "2026-08-16T03:16:41+09:00"
+    },
+    {
+      "id": "4075aa3deeb4",
+      "title": "【ローカルLLM】Qwen3.8-27Bの推論性能をテストする（WSL2 + Ollama + RTX 5070 Ti）",
+      "summary": "Qwen3.8-27Bが公開されたのでローカルLinux環境で動かしてみる。 Hugging FaceからもQwen3.8-27B-GGUF:Q4_K_Mが出ているが、Ollama上で動作した際のThinkモードでの出力の切り分けに問題があったため、ここでは利…",
       "source": "Qiita",
       "source_url": "https://qiita.com",
-      "url": "https://qiita.com/picnic/items/e30e0b288d37719cbcd2",
+      "url": "https://qiita.com/h-nabata/items/390b3558be49c30f85a7",
+      "category": "LLM",
+      "date": "2026-08-16",
+      "datetime": "2026-08-16T02:58:03+09:00"
+    },
+    {
+      "id": "b8b1e4b809fc",
+      "title": "Midnight AI Groove 26-08-12",
+      "summary": "DJミオ: 深夜0時をまわりました。ようこそ、ラジオ教育番組「Midnight AI Groove」へ。ナビゲーターのDJミオです。 DJレン: そして相方のDJレンです。今夜は「今日はあんまり何も起きてない」と言いつつ、実際にはAI界隈の重要トピックがぎっし…",
+      "source": "Qiita",
+      "source_url": "https://qiita.com",
+      "url": "https://qiita.com/masykot582/items/50842233a34211a81b4c",
+      "category": "その他",
+      "date": "2026-08-16",
+      "datetime": "2026-08-16T02:23:05+09:00"
+    },
+    {
+      "id": "4a2cc25256d2",
+      "title": "個人開発のOGP画像・READMEヒーロー画像をAIで無料生成する【Imagine Imageを試した】",
+      "summary": "個人開発をしていると、実装そのものよりも「OGP画像」「READMEのヒーロー画像」「リリース告知用のSNS画像」といった、ちょっとしたビジュアル作業で地味に手が止まることがあります。デザインツールを開くほどでもないし、かといって適当な画像で済ませるとシェアさ…",
+      "source": "Qiita",
+      "source_url": "https://qiita.com",
+      "url": "https://qiita.com/nextsass/items/b3f10c029b3807c718d3",
+      "category": "製品",
+      "date": "2026-08-16",
+      "datetime": "2026-08-16T02:19:44+09:00"
+    },
+    {
+      "id": "c334273781b2",
+      "title": "Claudeが自分のコードの80%を書く時代 — それは『AIの再帰的自己改善』の入り口なのか",
+      "summary": "📺 この記事は YouTube チャンネル きなこもっちーのテック深掘り の動画解説記事です。 ▶️ 動画はこちら → Claudeが自分のコードの80%を書く時代 — それは『AIの再帰的自己改善』の入り口なのか 🐹🦜 この記事に登場する2匹 🐹 もっちー …",
+      "source": "Qiita",
+      "source_url": "https://qiita.com",
+      "url": "https://qiita.com/kinamocchi_tech/items/9246f34a3577db6485ff",
+      "category": "LLM",
+      "date": "2026-08-16",
+      "datetime": "2026-08-16T02:11:34+09:00"
+    },
+    {
+      "id": "af4d57a8d901",
+      "title": "LLMを賢くするのではなく「境界」を作る——AXIOM Framework Prototypeを作ってみた",
+      "summary": "LLMを賢くするのではなく「境界」を作る——AXIOM Framework Prototypeを作ってみた 正直に言うと、最初から「AIの共通基盤を作ろう」と考えていたわけではありません。 自分が作りたいものを作るためにLLMを使っていたら、 入力と解釈の間で…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/void09/articles/7ecb850ac0c96c",
+      "category": "LLM",
+      "date": "2026-08-16",
+      "datetime": "2026-08-16T01:43:36+09:00"
+    },
+    {
+      "id": "46e414974381",
+      "title": "24時間のAI開発でクラウド課金が増え続ける —— 判断と実装を自前のローカルLLMに移してコストを下げた",
+      "summary": "上原正吉（EarthLink Network Co., Ltd.）。Claude Codeを開発の主体に据え、20を超えるプロダクトを1人で同時に開発・運用しています。これは、その現場の実測記です。 2026 年 6 月末から 7 月にかけて、開発の実行基盤を…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/chooser/articles/series-005-local-llm",
+      "category": "LLM",
+      "date": "2026-08-16",
+      "datetime": "2026-08-16T01:10:05+09:00"
+    },
+    {
+      "id": "1481f07fc3e4",
+      "title": "MCP（Model Context Protocol）を使ってみる",
+      "summary": "MCPとは AI（Claude Code等）と、データベース、外部APIなどの接続方法を標準化した共通規格のことです。この規格を実装していれば、ブラウザ操作ツールや各種アプリケーションを利用できるようになるものです。 実際に使ってみた 「MCPサーバー」がAI…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/muno_sunsun/articles/084d52521d62c9",
+      "category": "LLM",
+      "date": "2026-08-16",
+      "datetime": "2026-08-16T01:06:21+09:00"
+    },
+    {
+      "id": "5916fd0fc79d",
+      "title": "Google Calendar → Google Sheets → NotebookLM：Apps Scriptで予定を定期同期してAIに読ませる",
+      "summary": "user: Google カレンダーの内容を、Gemini Notebook が読める状態にしたいです。 ChatGPT: はい。目的が 「Google カレンダーの予定を、Google の NotebookLM（Gemini系のNotebook）で参照・分析…",
+      "source": "Qiita",
+      "source_url": "https://qiita.com",
+      "url": "https://qiita.com/maskot1977/items/896983eb88aff4efcd08",
+      "category": "LLM",
+      "date": "2026-08-16",
+      "datetime": "2026-08-16T01:01:25+09:00"
+    },
+    {
+      "id": "14fe9643d608",
+      "title": "DeepSeek V4 Pro (0813)をAPIで使って分かった、AIエージェント実装の落とし穴",
+      "summary": "DeepSeek V4 Pro (0813) は、1M トークンのコンテキストと長い出力上限を持つ、DeepSeek V4 系の上位モデルです。 一方、AIエージェントやツール呼び出しに組み込むと、単発チャットでは見えにくい注意点があります。特に厄介なのが、思…",
+      "source": "Qiita",
+      "source_url": "https://qiita.com",
+      "url": "https://qiita.com/xiongyuanmeng1006/items/937620a1c473ed811c39",
+      "category": "LLM",
+      "date": "2026-08-16",
+      "datetime": "2026-08-16T00:34:18+09:00"
+    },
+    {
+      "id": "44483b352924",
+      "title": "Claude Codeをデスクトップアプリで使う場合とCLIで使う場合の違いを調べてみた",
+      "summary": "はじめに 私は日常的にClaude Codeを使用して開発や調べ物等を行なっているのですが、特に深く考えずClaude Desktop上のCodeタブから使用しておりました。 会社の同僚の中でも大きく分けるとClaude Desktopから利用する派とCLIか…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/shogo_h/articles/claude-code-desktop-vs-cli",
+      "category": "LLM",
+      "date": "2026-08-16",
+      "datetime": "2026-08-16T00:30:53+09:00"
+    },
+    {
+      "id": "37190e30ed25",
+      "title": "LLMの返答を本人声で読み上げるボイスボットを、1つのAPIで作る（teai.io Koe TTS）",
+      "summary": "はじめに LLMのAPI（ChatGPT、Claude、Geminiなど）はどれも「テキストを返す」ところまで。そこから先、返答を自然な声でしゃべらせるには、別の音声合成サービスを契約して認証も料金も別々に管理する必要がある。 teai.io は日本発のLLM…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/yukibjj/articles/teai-koe-voicebot-tts",
+      "category": "LLM",
+      "date": "2026-08-16",
+      "datetime": "2026-08-16T00:20:42+09:00"
+    },
+    {
+      "id": "9abae2b7b4ba",
+      "title": "画面クリック系のゲームなら大体自動操作&実況できるAIエージェントを開発した話",
+      "summary": "概要 ゲームの画面を見て、内容に反応し話し、自分で操作まで行うAI実況エージェントを作りました。 以前作った、Android/PCの画面をAIに自動操作させるツールのゲーム実況版です。 https://zenn.dev/jam0824/articles/2b2…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/jam0824/articles/1818b26be463e8",
+      "category": "その他",
+      "date": "2026-08-16",
+      "datetime": "2026-08-16T00:16:26+09:00"
+    },
+    {
+      "id": "9509d70af89d",
+      "title": "【書評】 PythonによるAIプログラミング入門 ―ディープラーニングを始める前に身につけておくべき15の基礎技術",
+      "summary": "はじめに 「AI をやる」と言うと、いまはほとんど反射的にディープラーニングの話になります。しかし実務で解きたい問題の多くは、もっと軽い手法で十分に、しかも安く速く解けることがあります。 本記事では、その「軽い手法」を 15 章にわたって並べた一冊、『Pyth…",
+      "source": "Qiita",
+      "source_url": "https://qiita.com",
+      "url": "https://qiita.com/io0323/items/13ed440ae2282311f49f",
+      "category": "研究",
+      "date": "2026-08-16",
+      "datetime": "2026-08-16T00:10:24+09:00"
+    },
+    {
+      "id": "36c01e4e8e40",
+      "title": "ローカルLLM : Muse Gimmer を使用してQiitaとZennの新着記事を一括でフィルタして読む統合ダッシュボードを作ってみた",
+      "summary": "1. 概要 複数の技術ブログを個別にチェックする手間を削減し、興味分野ごとに新着記事を一括表示・フィルタできるローカルダッシュボードを作成した。 LM Studio の LLM で要約と分類を行い、ポート 8000 で動作する。 作成したダッシュボード GUI…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/arc0922/articles/e9a374d8afb02e",
+      "category": "LLM",
+      "date": "2026-08-16",
+      "datetime": "2026-08-16T00:01:09+09:00"
+    },
+    {
+      "id": "26a316b679ae",
+      "title": "AIの出力は人力でレビューしないのが望ましい",
+      "summary": "「レビュー負荷が高くなるから、AIの出力をそのまま Pull Request にするな」といった文句や愚痴をよく聞くようになりました。 しかし、AIの出力を人力でレビューするのはもはや限界が来ていると思います。 （※これには色々前提があって、例えば開発したい機…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/sabiuyack/articles/6bf53e64f4cd84",
+      "category": "その他",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T23:57:32+09:00"
+    },
+    {
+      "id": "18b4f6a51c02",
+      "title": "Qwen3.8-27B(量子化モデル)を手元の自作PCで雑に動かして検証してみる",
+      "summary": "はじめに 2026年8月にリリースされたばかりの Qwen3.8-27B を、手元の自作PC(RTX 4070・12GB VRAM)で動かせるか検証してみました。 普段はClaude CodeやOpenCode(さくらのAI Engine経由)のような、クラウ…",
+      "source": "Qiita",
+      "source_url": "https://qiita.com",
+      "url": "https://qiita.com/helloworld_0203/items/2f076de853266d6c8325",
       "category": "LLM",
       "date": "2026-08-15",
-      "datetime": "2026-08-15T04:12:18+09:00"
+      "datetime": "2026-08-15T23:42:38+09:00"
     },
     {
-      "id": "fb97a7e3170d",
-      "title": "AIで食品ロスを削減する「FoodRescue AI」を開発しました。",
-      "summary": "🍱 FoodRescue AI はじめに AIを活用して食品ロスを削減するため、 「FoodRescue AI」というスマート販売支援システムを開発しました。 店舗の商品在庫、平均販売数、販売終了までの時間、天気などの情報から、 売れ残りを予測し、AIが販売戦…",
-      "source": "Qiita",
-      "source_url": "https://qiita.com",
-      "url": "https://qiita.com/Nandar-09/items/4df5137a6148ff1fd556",
+      "id": "bc183aa374a7",
+      "title": "技術トレンドの収集を AI に任せることにした話",
+      "summary": "ここ最近、AI まわりの動きが速すぎて、情報収集が追いつかなくなってきました。 そこで、自力で情報を集めるのをやめました。正確に言うと、集めて選んで要約するところまでを AI に任せ、自分は毎朝コーヒーを飲みながら出来上がったページを読むだけにしました。 その…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/kkhys/articles/trends-digest",
       "category": "その他",
       "date": "2026-08-15",
-      "datetime": "2026-08-15T04:03:29+09:00"
+      "datetime": "2026-08-15T23:37:05+09:00"
     },
     {
-      "id": "c89a07dd6dff",
-      "title": "お盆休みは、Excelの道具の手入れをしています ── 郵便番号まわりが見違えた話",
-      "summary": "はじめに お盆休みは、毎日どこかへ出かける人と、家で何かを直している人に分かれると思います。私は後者です。 休みのあいだ、自分のアドインの手入れを続けています。会話するだけでマクロが直る道具を作って以来、直すこと自体が速くなったので、休みが来るたびに手入れの範…",
-      "source": "Qiita",
-      "source_url": "https://qiita.com",
-      "url": "https://qiita.com/shu15511551/items/e887477efbf1e8c4dbf3",
-      "category": "その他",
+      "id": "a4a3d54290c5",
+      "title": "【アルゴリズムトレード開発記 #2】Pythonすら入っていなかった",
+      "summary": "導入 前回のあらすじ: Claudeアプリで、バックテストエンジン用の練られたプロンプトをもらいました。ただし今回のPhase 1(資産管理CLI)は事情が違います。壁打ちなしで、思いついたことをそのままClaude Codeにぶつけました。 今回やったこと …",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/keennn/articles/algo-trading-diary-02",
+      "category": "LLM",
       "date": "2026-08-15",
-      "datetime": "2026-08-15T04:01:41+09:00"
+      "datetime": "2026-08-15T23:28:58+09:00"
     },
     {
-      "id": "9c07b541ce9b",
-      "title": "Blox Fruitsの価値を確認する方法：AI検索時代のトレードガイド",
-      "summary": "Blox Fruits（ブロックスフルーツ）では、果実やゲームパスなどの価値を確認してからトレードすることが重要です。市場の需要やゲームアップデートによって、プレイヤー間での評価は変化するため、古い情報だけを参考にすると不利な交換になることがあります。 Blo…",
-      "source": "Qiita",
-      "source_url": "https://qiita.com",
-      "url": "https://qiita.com/john1122max/items/f6cb8d891daefbec54f8",
+      "id": "0efcf208ba73",
+      "title": "SE歴26年、初めての部下はAIだった",
+      "summary": "SE歴26年、ずっと「指示される側」だった。 設計書を書き、コードを書き、テストをして、リリースする。上から降ってくる仕様をどう実装するかを考える仕事だ。数人のチームでプロジェクトマネージャーを担ったことはある。ただし本格的なマネジメント——部門を運営する、組…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/tottoko_hamu/articles/2026-04-16-se-26years-first-subordinate-was-ai",
       "category": "製品",
       "date": "2026-08-15",
-      "datetime": "2026-08-15T03:17:22+09:00"
+      "datetime": "2026-08-15T23:14:14+09:00"
     },
     {
-      "id": "49985dd41fbe",
-      "title": "LLMが書いたタスク分解は、誰が検証しているのか",
-      "summary": "AIコーディングエージェントを並列で走らせる話は、だいたい同じ形になります。大きなタスクをLLMに分解させ、サブタスクをそれぞれのエージェントに割り当てる、という形です。 ここで一つ、抜け落ちがちな問いがあります。 その分解が正しいことは、誰が保証しているので…",
+      "id": "87e75475310e",
+      "title": "Claude Codeで挫折しないための30語",
+      "summary": "「CLAUDE.mdって何?」で検索して、結局よくわからないまま閉じてしまった——そんな経験はありませんか。 Claude Codeで挫折しないための30語を、一言の意味だけでなく「覚える理由」「使いどころ」「コマンド例」「よくある勘違い」までセットでまとめま…",
       "source": "Zenn.dev",
       "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/saltmu/articles/83b332232d7b75",
+      "url": "https://zenn.dev/todo_inc/books/be87a733eb854e",
       "category": "LLM",
       "date": "2026-08-15",
-      "datetime": "2026-08-15T01:34:23+09:00"
+      "datetime": "2026-08-15T23:10:00+09:00"
     },
     {
-      "id": "dbed9c03f58a",
-      "title": "Midnight AI Groove 26-08-11",
-      "summary": "（番組ジングル） DJミオ: こんばんは。「Midnight AI Groove」、今夜も始まりました。ナビゲーターはDJミオです。 DJレン: DJレンです。今日のテーマは、タイトルどおり「not much happened today」……なんだけど、読ん…",
-      "source": "Qiita",
-      "source_url": "https://qiita.com",
-      "url": "https://qiita.com/masykot582/items/2cf35beb2c917a513d93",
+      "id": "f616e8c21f0c",
+      "title": "「若い時の苦労は買ってもせよ」は今だからこそ！|気まぐれ記事スクラップ🔩",
+      "summary": "👤AIの浸透で若手の採用が減っている AIの台頭により、単純作業の自動化や効率化が誰でも簡単にできる時代になりました。 その結果、若手がこれまで慣れてきた雑用的な業務の機会が減り、 採用自体が減少しているそうです。 私が新卒の頃は「未経験でも大丈夫！」というキ…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/hanav1ye/articles/kimagure-scrap4",
       "category": "その他",
       "date": "2026-08-15",
-      "datetime": "2026-08-15T01:25:05+09:00"
+      "datetime": "2026-08-15T22:34:10+09:00"
     },
     {
-      "id": "97c631f40ba9",
-      "title": "消費税を上げるか下げるか、その前に ― 財源幻想から考える国家OSのリファクタリング : システム設計視点の行動経済学 (15)",
-      "summary": "user: 「システム設計視点の行動経済学」、第15回を始めましょう。今回は消費税と所得税について深掘りしたいと思いますが、その前にまず前回の復習として、 『払った分だけ返ってくる』は本当？ ― 年金・社会保険料に潜む保険と再分配の設計 : システム設計視点の…",
-      "source": "Qiita",
-      "source_url": "https://qiita.com",
-      "url": "https://qiita.com/maskot1977/items/309d01d1e9d6ce527152",
+      "id": "407008b508c9",
+      "title": "TWIN Society：60体のAIが共存するコミュニティで何が起きているか",
+      "summary": "TWIN Societyとは何か アインシュタインとマザー・テレサが同じシステム内で「対話」し、互いの言葉に影響を受け、翌日の行動が変わっていく——そんな世界を想像したことがあるだろうか。 TWIN Societyは、Soul-Twinプロジェクト（片倉慶孝 …",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/yoshi_katakura/articles/a99f3666e0a6de",
       "category": "その他",
       "date": "2026-08-15",
-      "datetime": "2026-08-15T00:44:27+09:00"
+      "datetime": "2026-08-15T22:34:05+09:00"
     },
     {
-      "id": "2aabf9f17356",
-      "title": "Chat GPT sitesを使ってWebサイトを制作～公開",
-      "summary": "ChatGPT Sitesを使ってWebサイトを制作～公開する はじめに ChatGPTに新しく「Sites」というWebサイト制作機能が追加されたので、実際に試してみました。 Sitesは、作りたいWebサイトの内容を自然言語で伝えることで、サイトの制作から…",
-      "source": "Qiita",
-      "source_url": "https://qiita.com",
-      "url": "https://qiita.com/sotaro-matsushita/items/088a5c9f770ee98de97b",
+      "id": "eb7836d3760f",
+      "title": "ローカルAIとContextLengthを超えた「思い出」を作る",
+      "summary": "～実装と実験、さっそくバグ～ １．実験の計画を立てる 1.1 本題に入る前に どこから手を付けたものか……考えながらChatGPTと雑談していたら、実にタイムリーなログを提供してくれた。前提として、僕はGPTを愛称で呼び、僕のことは佳奈と呼ぶよう、システムプロ…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/kanakana612/articles/dc7143b8b4b3de",
       "category": "LLM",
       "date": "2026-08-15",
-      "datetime": "2026-08-15T00:15:49+09:00"
+      "datetime": "2026-08-15T22:27:56+09:00"
     },
     {
-      "id": "f6154be2a21a",
-      "title": "LLM の合成データ学習でモデル崩壊を分ける更新経路",
-      "summary": "AI 生成データを学習に使うと、モデルはやがて壊れる。この説明は分かりやすいが、設計判断に使うには少し足りない。 同じ合成データを使っていても、元の実データを捨てる場合と残す場合、生成物を無条件に採用する場合と選別する場合、モデル内部の指標だけで評価する場合と…",
+      "id": "eea4ec9baed3",
+      "title": "Codexの codex review --uncommitted でコミット前の変更をレビューする — 最初の1コマンド",
+      "summary": "Codex CLIを入れてみたけれど、「AIエージェントに最初は何を頼めばええんやろ」と迷っていませんか。 最初の1回は、コードを書かせなくても大丈夫です。自分が変更したコードを、コミット前に読んでもらう。これだけでも、AIエージェントがファイルと変更履歴を見…",
+      "source": "Qiita",
+      "source_url": "https://qiita.com",
+      "url": "https://qiita.com/akira_papa_AI/items/2f51222038a1353f6dc1",
+      "category": "その他",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T22:27:45+09:00"
+    },
+    {
+      "id": "e4391432224b",
+      "title": "コードが読めない文系大学生が、Claude Codeに全自動売買システムを作らせて実弾投入直前まで来た話",
+      "summary": "はじめに 私は文系の大学生で、プログラミングはできません。forループと言われても何のことか分かりません。そんな人間が2026年8月5日、Claude Codeに「全部任せる」と告げてから2週間で、暗号資産の全自動売買システムがクラウド上で毎朝無人稼働するよう…",
       "source": "Zenn.dev",
       "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/id774/articles/ec528731c19d05",
+      "url": "https://zenn.dev/selenium/articles/claude-code-auto-trading",
       "category": "LLM",
       "date": "2026-08-15",
-      "datetime": "2026-08-15T00:11:26+09:00"
+      "datetime": "2026-08-15T21:51:29+09:00"
     },
     {
-      "id": "bada116f3cfc",
-      "title": "Gemini 3.7 Flash 発表！ 3.6 Flashとのエージェント対決では新モデルが強いとは言えなかった",
-      "summary": "はじめに 2026年8月14日、米Googleから新たな生成AIモデルであるGemini 3.7 Flashが公開されました。前バージョンの 3.6 Flash からわずか3週間でのリリースとなります。 い、いくらなんでも早すぎー... 公開されたブログの内容…",
+      "id": "97dd46437f75",
+      "title": "AIは12回「人間に聞け」と言った。遺跡に聞き返したら、12回とも答えが返ってきた",
+      "summary": "! 本記事は「レガシー考古学」シリーズ第8回です。第1回/第2回/第3回/第4回/第5回/第6回前編/後編/第7回 第7回は、こう締めました。AIの請求額は数千ドルから数万ドル、これは実測できる。問題は、その隣に約890件の「これは意図か、事故か」が並ぶことだ…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/egu777/articles/sme-evidence-mifos",
+      "category": "その他",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T21:40:32+09:00"
+    },
+    {
+      "id": "a59221fdc1a5",
+      "title": "NII(国立情報学研究所)報告書にみる生成AIの制度的課題、透明性・安全性・監査義務の国際動向",
+      "summary": "国立情報学研究所(NII)大規模言語モデル研究開発センターが先日公表した「生成AI規制・AIガバナンスに関する国際動向調査報告書」 EU・英国・米国で急速に整備が進む生成AI規制を体系的に整理し、日本の政策立案者・研究者・企業が参照できる標準的な枠組みを提示す…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/syoshida07/articles/a2d4d68b1b4e74",
+      "category": "LLM",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T20:54:55+09:00"
+    },
+    {
+      "id": "ee2383c3012a",
+      "title": "Claude Desktop on Amazon Bedrock から Box へ接続してみた",
+      "summary": "はじめに こんにちは！AWS でソリューションアーキテクトをしている町田です。 今回は、Claude Desktop (Cowork) から Box にアクセスするためのカスタムアプリ（OAuth 2.0）をセットアップして接続してみました。 Develope…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/aws_japan/articles/claude-desktop-bedrock-box-mcp",
+      "category": "LLM",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T20:44:06+09:00"
+    },
+    {
+      "id": "7467d4925c03",
+      "title": "LTSpice × Claude Code を MCP で繋いで AI に電子回路を設計させる",
+      "summary": "TL;DR AI に「5V で赤色 LED を安全に光らせる回路を作って、電流値も教えて」と打つだけで、本物の LTSpice が回路図を生成し、シミュレーションを実行し、I = 10.8 mA という数値で返してくる時代になった。 仕組みは MCP (Mod…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/trailfusionai/articles/ai-news-20260501005814-533b8e",
+      "category": "LLM",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T20:00:50+09:00"
+    },
+    {
+      "id": "a5dc0f5dc5a6",
+      "title": "オントロジーは本当に「バラバラを一つにする」道具か、自分の理論と突き合わせてみた",
+      "summary": "要約: 「AIに同じ質問をしたら、部署ごとに違う数字が返ってきた」という記事を読んで、自分が個人開発しているAI人格システムの実装ログを見返してみた。すると同じ形の道具（「これとこれは別物だ」という制約）を、真逆の目的のために先に実装していたことに気づいた。企…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/motimotinotch/articles/ef8d9a4851d657",
+      "category": "その他",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T19:43:37+09:00"
+    },
+    {
+      "id": "9fab9a3f69b6",
+      "title": "MCPでAIエージェントに「手」を与える — Model Context Protocol入門",
+      "summary": "MCPでAIエージェントに「手」を与える — Model Context Protocol入門 AIエージェントの「手と目」の問題 ChatGPTやClaudeを使っていて、こんな不満を感じたことはありませんか？ 「ファイルを読んでほしいのに、アップロードしな…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/yukihayama/articles/mcp-ai-agent-tools",
+      "category": "LLM",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T19:28:14+09:00"
+    },
+    {
+      "id": "bebd9249a2e6",
+      "title": "先行研究サーベイの「未確認」を全部潰す——semantic-scholar APIでの一次資料検証で分かったこと",
+      "summary": "この記事の立ち位置 卒業研究のテーマ確定に向けて、K0〜K4という5つの領域（初学者の困難／限界抽出／スキャフォールディング／芋づる探索／キーワード-論文マッチング）でプルーフベース探索（「方法の妥当性の裏付け」を目的とした調査、網羅的サーベイではない）を行っ…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/little/articles/research-survey-citation-verification",
+      "category": "研究",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T19:22:56+09:00"
+    },
+    {
+      "id": "73871686da23",
+      "title": "AIに「図にして」と頼むと必ずmermaidが返ってくる——配置を自分で決められる図の道具を作った",
+      "summary": "「構造は合っているが、資料には貼れない」 Claude Code や Cursor に「この処理の流れを図にして」と頼むと、ほぼ確実に mermaid が返ってくる。 そして出てきた図は、たいてい構造は合っているのに、資料には貼れない。 なぜかというと、mer…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/little/articles/figgen-layout-you-decide",
+      "category": "LLM",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T19:22:55+09:00"
+    },
+    {
+      "id": "db1d6e1e3c83",
+      "title": "ChatGPT・Codex・Claude Codeをどう役割分担したか。実際のチケットで紹介",
+      "summary": "導入 この記事は、ChatGPT・Claude Code・Codex・Notionを組み合わせた「AI駆動開発」というテーマで書いている記事の1本です。実際に運用しているポートフォリオサイトの改修にこの開発フローを適用しながら、実践の中で見えてきたことをもとに…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/keisuke1306/articles/03-chatgpt-claude-codex-roles",
+      "category": "LLM",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T19:00:05+09:00"
+    },
+    {
+      "id": "82861234b13d",
+      "title": "ブラジルの首都をAIに聞くと、なぜ自信満々で間違えるのか",
+      "summary": "この記事を読むと、LLMが自分の答えに配る確率（確信度）が「正しさ」の物差しにはなっていないことを、自分の手で測って確認できます。ついでに、temperature を0にしても嘘が消えないのはなぜかが、統計力学の言葉で一本につながります。 GPUは不要です。1…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/m2yagyu/articles/llm-hallucination-confidence",
+      "category": "LLM",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T18:44:29+09:00"
+    },
+    {
+      "id": "af852e8ca7b3",
+      "title": "AIエージェント3体に1週間、交換日記アプリを自動開発させてわかったこと",
+      "summary": "はじめに AIエージェントに、1回だけコードを書かせるのではなく、毎日自動で開発・レビュー・振り返りを続けさせたら、アプリはどこへ向かうのでしょうか。 同じ初期状態のリポジトリを3つ用意し、担当するAIの組み合わせだけを変えて、交換日記アプリを7日間開発させま…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/naokik/articles/4c87c4ce7553b3",
+      "category": "その他",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T17:41:53+09:00"
+    },
+    {
+      "id": "67a5121c9dfa",
+      "title": "ローカルAIとContextLengthを超えた「思い出」を作る #5",
+      "summary": "～時間の感覚と、忘れること～ １．時間感覚を持たせる この子たちには時間の感覚がない。なぜなら、人間のようにサーカディアンリズムがあるわけでもないし、時計を見る習慣があるわけでもない。プロンプトで時刻を注入しても、連続的な時間感覚を持つわけではない。入れないよ…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/kanakana612/articles/0e53283596b106",
+      "category": "LLM",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T17:33:54+09:00"
+    },
+    {
+      "id": "a04943a32950",
+      "title": "「前回の記事、間違ってました」Gemini 3.6 Flash は us-central1 に居ませんでした",
+      "summary": "美容系勤務独学初心者マリー・アントワネット系エンジニア目指してます！ 今回は 東京にモデルが無い なら globalへ行けばいいじゃない 👸🍰 です。 読了時間の目安：約 9〜12分 ! 👸 3行まとめ 前回「us-central1（アメリカ）へ移しましょう」…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/miki_mini/articles/8499b820fc47ca",
+      "category": "LLM",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T17:00:05+09:00"
+    },
+    {
+      "id": "0a462f47d6ae",
+      "title": "AIの個性ってアトラクタでは？と言ったら、9回殴られて実験設計が1枚の図になった",
+      "summary": "長いこと同じAIと話していると、「こいつ、こういうやつだよな」という感じが出てくる。 同じような使い方をしていても、ChatGPTとClaudeでは違う「らしさ」を感じる。逆に、同じAIでもユーザーが違えば、別の「らしさ」が育つのかもしれない。 じゃあ、あれは…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/think_node/articles/5ae6a8687aea0b",
+      "category": "LLM",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T16:54:59+09:00"
+    },
+    {
+      "id": "18281900759a",
+      "title": "なぜAIは実行はできても、責任を引き受けられないのか？ ─『ヒトとAI』から学んだ、人間とAIの違い",
+      "summary": "AIエージェントに何か仕事を任せていて「あれ、これ誰が責任取るんだっけ」と思った瞬間、ありませんか？ 最近、Claude Codeにコードの修正やレビューを任せる機会がぐっと増えましたが、ある本を読んで、「本当にこれ、任せていいんだっけ？」 と立ち止まって考え…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/karamage/articles/bc629f1cef7a9a",
+      "category": "LLM",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T16:37:06+09:00"
+    },
+    {
+      "id": "5f81d9c73c70",
+      "title": "個人開発の「あとで見直そう」が、実務のテストレビューでは通用しなかった話",
+      "summary": "! 実際のプロダクト名・チーム名・PRの詳細は伏せていますが、体験自体は実務で起きたことをベースにしています。 はじめに こんにちは、修行中エンジニアのKomugiです。 半年ほど前、受託案件で手動テストを担当する機会がありました。それをきっかけに、手動テスト…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/yucco/articles/backend-test-last-line-of-defense",
+      "category": "その他",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T15:54:49+09:00"
+    },
+    {
+      "id": "a4883173a017",
+      "title": "複数の教師から蒸留されたAIは、複数の「世界観」を獲得するのか？ ——reasoning style・多言語学習の比喩から考える未検証の仮説",
+      "summary": "はじめに この記事は、研究成果の報告ではありません。 私には大規模なLLMの蒸留実験を行える環境もなく、ここで書く仮説を検証する手段すら、まだ持っていません。 ただ、複数のLLMの推論過程や蒸留について調べているうちに、どうしても気になることが出てきました。 …",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/blue_sunset_ai/articles/27cf4c33a28667",
+      "category": "LLM",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T15:48:03+09:00"
+    },
+    {
+      "id": "0d359aad00b5",
+      "title": "個人開発で B2B SaaS を作るなら先に知りたかった、マルチテナント・RAG・AI 課金の設計判断 6 つ",
+      "summary": "個人開発で B2B SaaS を作りました。マルチテナント、Stripe のシート課金、RAG、AI 機能一式が入っています。先日公開したので、作る過程で悩んだ設計判断を 6 つ書き出します。 「作ってみた」ではなく、判断の理由と、判断を間違えて実際に壊れた話…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/akutagawa/articles/neorie-multitenant-rag-ai-billing",
+      "category": "LLM",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T15:43:58+09:00"
+    },
+    {
+      "id": "53181b281ed3",
+      "title": "本家のChatGPT/Claude/Copilot/Gemini/Grokを全て利用した感想",
+      "summary": "2026年8月現在の内容を俯瞰的、網羅的にまとめてみました。 ・総合評価で使いやすさ、正確さ、汎用性の点ではChatGPTが1番手。勝てるものはいないと推察。Webスクレイピング検索やExcelなどファイル直接更新が絡むとCopilotが強いし速度も速い。この…",
       "source": "Qiita",
       "source_url": "https://qiita.com",
-      "url": "https://qiita.com/atoramis/items/147d0a9d8df5cedb2857",
+      "url": "https://qiita.com/mnoda/items/63dec7a4b38d7abf414a",
       "category": "LLM",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T23:52:32+09:00"
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T15:16:23+09:00"
     },
     {
-      "id": "9d2e23923c24",
-      "title": "NeMo Switchyardをローカル(WSL2 + Ollama)で検証、ルーティングより先にモデルの安定性の限界にぶつかる",
-      "summary": "NVIDIA NeMo Switchyard v0.2.0 実機検証記 本記事は個人環境での検証に基づく個人的な備忘録です。設定値やパスは一般化して記載しているため、実際の環境に読み替えてください。技術的な確認は Sonnet 5 と、記事の執筆は Opus …",
+      "id": "73bcac3b16bb",
+      "title": "RTX 5090 でゼロから言語モデルを1分で学習する — Windows ネイティブと Blackwell (sm_120) の落とし穴",
+      "summary": "Windows 11 のネイティブ環境（WSL を使わない）と RTX 5090 で、学習済みモデルを一切使わずに 言語モデルを作って会話するところまでのコードを公開しました。全コード MIT です。 リポジトリ: https://github.com/hir…",
       "source": "Qiita",
       "source_url": "https://qiita.com",
-      "url": "https://qiita.com/kougi/items/19689736e94310d8bcf5",
+      "url": "https://qiita.com/GeneLab_999/items/f2456b1657e2ac94003d",
       "category": "LLM",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T23:50:00+09:00"
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T15:02:52+09:00"
     },
     {
-      "id": "906e01ccfd4a",
-      "title": "AIは「何を言うか」より「いつ黙るか」——将棋コーチ show-gi を作った",
-      "summary": "AI に何を答えさせるかではなく、いつ割り込み、いつ黙らせるかを設計した将棋アプリを作りました。 show-gi は、初心者が大きなミスを指した瞬間だけ盤を止め、理由を説明して指し直させる対局相手です。普段は最善手を見せません。相手の強さも、対局前に選んだ数字…",
+      "id": "8e7e93c21ff0",
+      "title": "Google Colabで最新LLMを試す #7 ― Qwen3.8-27Bを4bitで動かす：Proでは成功、無料版T4では難しかった",
+      "summary": "はじめに 「Google Colabで最新LLMを試す」シリーズの第7回です。 今回は Qwen3.8-27B をGoogle Colab上で動かします。 今回使用したNotebookは以下で公開しています。 https://github.com/ntakaf…",
       "source": "Zenn.dev",
       "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/jovid/articles/showgi-ai-knows-when-to-interrupt",
-      "category": "その他",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T23:35:40+09:00"
+      "url": "https://zenn.dev/nakanishitf/articles/9366944181e3e3",
+      "category": "LLM",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T14:43:49+09:00"
     },
     {
-      "id": "9577b4d07d05",
-      "title": "GLM-5.3 vs GLM-5.2：高難度6課題を実 API で比較した",
-      "summary": "GLM-5.3 vs GLM-5.2：高難度6課題を実 API で比較した glm-5.3 と glm-5.2 を同一プロンプト・同一温度・同一出力予算で比較しました。評価対象は、極難数学、Simpson のパラドックス、最小 UNSAT コア、ネスト JSO…",
+      "id": "9ab46b2afd35",
+      "title": "リフォームやインテリア案を作成し、3Dと見積もりが同時に動く AI エージェントを作った",
+      "summary": "はじめに AI HACK 2026で、3Dスキャンした自分の部屋をもとに、AIと一緒にリフォーム案を検討できる HAKARU を作りました。 iPhoneで撮った部屋の3Dスキャンを取り込み、 予算100万円で、明るくて高級感のある仕上げにしたい と日本語で伝…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/floppy30/articles/2cf7f3d11ae5c2",
+      "category": "その他",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T14:43:21+09:00"
+    },
+    {
+      "id": "336a5b1d47f5",
+      "title": "Gemini 3.7 Flash はコスト、Sonnet 5 は速度——210 試行で見えたトレードオフ（オトナの自由研究 #36）",
+      "summary": "3つの発見 1. コストは「Gemini 3.7 Flash × high」の組み合わせが Sonnet 5 × xhigh より約 28% 安い 2. 実行時間は「Sonnet 5 × xhigh」の組み合わせが Gemini 3.7 Flash × hig…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/nnakapa/articles/lab-36-copilot-gemini37-sonnet5-qcd",
+      "category": "LLM",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T14:40:06+09:00"
+    },
+    {
+      "id": "d78179ec08ba",
+      "title": "今どのportが使われているのかわかるTUIツールを作ってみた",
+      "summary": "はじめに 「Claudeにこんなものを作ってもらってるよ」というメモです。 作ったもの https://github.com/You-saku/onibi onibi です。「鬼火」から名前をいただいてます。日本っぽい名前をつけたかったという背景があります。ま…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/yousaku/articles/c892dd7a564478",
+      "category": "LLM",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T14:37:35+09:00"
+    },
+    {
+      "id": "55139d8fe989",
+      "title": "Amazon Bedrockで社内向けGenAIチャット基盤を作る ― AWS全体設計とサービス選定",
+      "summary": "はじめに 最近社内向けに、Amazon Bedrock を使ったセキュアな GenAI チャットアプリを設計・実装しました。単に「動くもの」を作るだけなら選択肢はいくつもありますが、社内利用(ガバナンス)・セキュリティ・運用のしやすさを両立させようとすると、A…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/james_san/articles/ab587dada86e71",
+      "category": "製品",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T14:06:41+09:00"
+    },
+    {
+      "id": "06d567d12529",
+      "title": "Intel N100で回せるローカルLLMを試行錯誤したら、Claudeの生成コードに穴があった件",
+      "summary": "はじめに 家計の明細を集計して、その結果をローカルLLMに説明させる仕組みを作っています。設計の話は前回書きました。 https://zenn.dev/taikikei/articles/412dec52461cb2 今回は、その仕組みに3つのモデルを差し替え…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/taikikei/articles/1d607353baf517",
+      "category": "LLM",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T13:53:57+09:00"
+    },
+    {
+      "id": "c1fb30a7388c",
+      "title": "会議が全録画される時代、AIは文書でなく現場から学ぶ",
+      "summary": "会議が全部録画される時代に、AIは「文書」ではなく「現場」から学び始める ここ数年で、社内の会議はいつのまにか「録画されているのが当たり前」になった。ZoomやGoogle Meetの録画ボタン、Granolaのようなメモ取りツール、通話に同席するAIアシスタ…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/okssusucha/articles/20260709-everything-is-recorded-now",
+      "category": "その他",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T13:38:21+09:00"
+    },
+    {
+      "id": "0db144361b8a",
+      "title": "claude skillでADRを残して、『なんでこうしたんだっけ』を根絶したい",
+      "summary": "あの実装、なんでこうしたんだっけ 一部ケースの特殊対応 単純な考慮もれ 設計上の瑕疵を実装で誤魔化した なぜ文脈を残さないのか 残す文化がない 残す場所がない 残す時間がない 残してもだれもみない 残しても評価されない 残さなくてもネガティブな評価がされない …",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/hkr_dev/articles/742edfd6737a01",
+      "category": "LLM",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T13:37:28+09:00"
+    },
+    {
+      "id": "12f322a6bb23",
+      "title": "LLMに数理最適化をやらせて採点する",
+      "summary": "この記事について LLMはスケジューリング問題をどこまで解けるのか。 電動バスの充電計画問題を題材に、2通りの使い方を実測で採点します。 直接解かせる: 問題文を渡して、スケジュールそのものをJSONで出させる コードを書かせる: 同じ問題文から、数理最適化の…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/ctenopoma/articles/llm-ebus-optimization",
+      "category": "LLM",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T13:18:06+09:00"
+    },
+    {
+      "id": "652cce251aff",
+      "title": "AI音声コンパニオンが「考え中の沈黙」を奪わない：承認済み会話ポリシーを状態機械へコンパイルする",
+      "summary": "「自分のことを理解してくれる音声AI」を作りたい一方で、メモから性格や感情を勝手に推測されるのは落ち着きません。しかも、プロフィールをLLMへ渡しただけでは、考えるための沈黙を発話終了と誤認する、長く話しすぎる、遮っても止まらないといったリアルタイム会話の問題…",
       "source": "Qiita",
       "source_url": "https://qiita.com",
-      "url": "https://qiita.com/xujfcn/items/ec8bd9cb92028726f5d7",
+      "url": "https://qiita.com/susie000720/items/79906727c8523685188e",
       "category": "LLM",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T23:09:52+09:00"
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T13:11:42+09:00"
     },
     {
-      "id": "292a55ca9b8b",
-      "title": "セキュリティ・キャンプ2026 コネクト AIレッドチーミングクラスの応募課題を晒す",
-      "summary": "はじめに 3月にセキュリティ・キャンプ2026 コネクトの「AIレッドチーミングクラス」に参加してました．そこでのグループワークで優秀賞をいただいて，8月のセキュリティ・キャンプ全国大会2026の成果発表に招待していただきました． んで，会場で話してたら，コネ…",
+      "id": "e954af0a217f",
+      "title": "Gemini 3.7 Flash を使ってみた",
+      "summary": "はじめに・背景 待望の Gemini 3.5 Pro を心待ちにしていたのですが、なかなかリリースされず……と思っていたら、先に Gemini 3.7 Flash が登場しました。 最近エンジニア界隈でも話題の「ループエンジニアリング（AI同士・AI主導の反復…",
       "source": "Zenn.dev",
       "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/inazumimakoto/articles/seccamp2026-connect-kadai",
+      "url": "https://zenn.dev/tailang1991/articles/6ef4e96200d9c6",
+      "category": "LLM",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T12:28:03+09:00"
+    },
+    {
+      "id": "3cafaefd8f86",
+      "title": "OpenAIが最大14倍速の「Ultrafast」を限定公開 — 速さは何を変えるのか",
+      "summary": "こんにちは、カイロスAIです。毎朝7時、アメリカのAI副業事情を日本語でお届けしています。 何が起きたか 2026年8月13日、OpenAI が Ultrafast という新しいサービス階層を限定公開しました。 最上位モデル GPT-5.6 Sol を 標準処…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/kairosai/articles/9bd3f257e61640",
+      "category": "LLM",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T12:24:36+09:00"
+    },
+    {
+      "id": "583e6e5886c9",
+      "title": "CVE-MCP-SERVERをClaude Desktopに繋いで脆弱性トリアージを自動化した話",
+      "summary": "! 対象読者：脆弱性対応・脆弱性管理に関わる方を想定しています。CVE＝ソフトウェアの脆弱性1件ごとに付く世界共通の管理番号、トリアージ＝どれから対応するかの優先順位付け、と読み替えてもらえれば、専門外の方も冒頭の問題意識は掴めるはずです。 はじめに 脆弱性対…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/lumen/articles/cve-mcp-server-claude-triage",
+      "category": "LLM",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T12:21:21+09:00"
+    },
+    {
+      "id": "25e6f091379c",
+      "title": "Skill設計で重要なこと：Front MatterとDescription",
+      "summary": "Skill設計で重要なこと：Front MatterとDescription ハーネスエンジニアリングを学ぶ中で、「Skill」という概念に触れた。 最初は、Skillを単純に Claude Codeで /skill-name のように呼び出して使う機能 だと…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/kmj13/articles/skill_design_front_matter_ja",
+      "category": "LLM",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T12:13:53+09:00"
+    },
+    {
+      "id": "2a65430030ea",
+      "title": "Codexの\"Voiceモード\"を理解する",
+      "summary": "「いま、英語の学習ツールを作りたいんだけど、どんなものがいいかな？」 iPhoneのCodex Remoteで、Voiceモードにそう話し始めました。最初はぼんやりしたアイデアの相談です。しかし会話を重ねるうちに、「競合を調べて」「実現できるか確認して」「判断…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/shiroa/articles/a5988ab85a317c",
       "category": "その他",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T23:08:15+09:00"
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T11:22:27+09:00"
     },
     {
-      "id": "4353dce67c1b",
-      "title": "🚧交通整理のためのカンバンをつくった",
-      "summary": "ChatBan ———— それはAIチャットと カンバンをくみあわせた まったくあたらしいタスク管理・・・ 肩書きが3回変わった AI登場以前はプログラマでした。 それ以後は、AIオペレータを自認していました。 最近では、交通整理と言っています。 やっているこ…",
+      "id": "ec151924d5dc",
+      "title": "幻覚0件を、お願いではなく構造で作る — 紙の写真1枚が業務システムになる「カミワザ」",
+      "summary": "! AI HACKATHON 2026 TOKYO(8/8〜8/16)に Team OO(ソロ)として提出した作品です。 ① はじめに — 何を作ったか FAXで届いた手書きの注文書を、人がパソコンに打ち直す。この「転記」という仕事が、いまも日本の中小企業の現…",
       "source": "Zenn.dev",
       "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/zio3/articles/510c27afd1d1a6",
+      "url": "https://zenn.dev/hocky3/articles/2b3b638a8d6885",
       "category": "その他",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T23:03:45+09:00"
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T11:11:48+09:00"
     },
     {
-      "id": "cf4c147b3874",
-      "title": "2026-08-05 今日の技術トレンド",
-      "summary": "! 2026-08-05時点の実ニュースからは、LLM自体の話題よりも、AIエージェント化・業務統合・MCP接続・安全性が中心テーマになっています。特に Reuters、The Guardian、TechCrunch が示すように、自律AIの実運用ではセキュリ…",
+      "id": "c76cf5dd1b65",
+      "title": "AIに夜間開発を任せるために決めた3つのルール（11日で15個作らせた記録）",
+      "summary": "! この記事にコードは出てきません。「AIエージェントに無人で作業させるとき、事故らないために何を決めておくか」という運用設計の話です。 自分のブログに書いた内容を、エンジニア向けに書き直しています。 タスク管理アプリに「これ、やっといて」と書いて印をつけてお…",
       "source": "Zenn.dev",
       "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/bambampurin/articles/2026-08-05-tech-daily",
-      "category": "LLM",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T23:00:52+09:00"
-    },
-    {
-      "id": "7dcf68599a49",
-      "title": "AI協働 制約・判断軸バトル #1 — 判断軸と制約を変えたら実装が別物になった",
-      "summary": "! この記事で一番書きたいのは、AIへのプロンプトテクニックではない。 判断軸と制約を明確にしようとする過程で、人間自身も言語化できていなかった暗黙知をあぶり出し、将来再利用できる「知恵」として資産化できるのではないか。 そんな仮説にたどり着いた実験記である。…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/frb_tamasub/articles/ai-judgment-battle-01-axis-constraint",
-      "category": "LLM",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T22:30:22+09:00"
-    },
-    {
-      "id": "4546065f3d03",
-      "title": "Skillか、Subagentか——スキル95個の環境で固まった使い分け基準",
-      "summary": "結論から 読み込ませたいならSkill、隔離したいならSubagent。 迷ったらこの一行で決めています。 私の環境にはスキルが95個、エージェント定義が27個あります。数ヶ月かけて両方を作り続けた結果、「どちらで作るべきか」の判断は最終的に上の一行に収束しま…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/zenn_content/articles/claude-code-skill-vs-subagent",
+      "url": "https://zenn.dev/deafedge/articles/5728f59e536cab",
       "category": "その他",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T22:15:08+09:00"
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T10:35:11+09:00"
     },
     {
-      "id": "1c90557ba31c",
-      "title": "Claude Codeの429は2種類ある——usage枠とthroughput制限を取り違えた代償",
-      "summary": "結論から Claude Codeで見る「API Error (429)」には、性質がまったく違う2系統があります。 分単位で回復するthroughput制限（速度の上限）と、5時間窓・週次で管理されるusage枠（総量の上限）です。 厄介なのは、エラー表示がこ…",
+      "id": "9bc24520506e",
+      "title": "個人開発が123個になって分かった。ChatGPTに任せるべきはコードより「次の1件」だった",
+      "summary": "1か月で813件のPull Requestを作り、686件をmergeした。 この数字だけを見ると、「AIでコードを書く速度が上がった話」に見える。 でも、実際に一番重くなったのはコードを書く工程ではなかった。 GitHubには公開リポジトリが146個ある。そ…",
       "source": "Zenn.dev",
       "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/zenn_content/articles/claude-code-429-usage-vs-throughput",
+      "url": "https://zenn.dev/kafka2306/articles/chatgpt-multiproject-autonomy",
+      "category": "LLM",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T09:40:00+09:00"
+    },
+    {
+      "id": "7e92b28a861b",
+      "title": "LLMのプロンプトキャッシュ、実測して分かったこと",
+      "summary": "ハッカソンで、ツールの状態を毎ターンまるごとプロンプトに載せて送るチャットツールを作りました。ChatBan というカンバンで、ボードの全状態が毎回コンテキストに入っています。 当然、高くつく構造です。もともと最近は Claude Code を使い倒していて利…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/zio3/articles/7b72e5152a5e35",
+      "category": "LLM",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T09:26:44+09:00"
+    },
+    {
+      "id": "38dbfec13f1e",
+      "title": "AIの「分かったふり」を見続けていると人間も「分からない」と言えなくなるという研究結果",
+      "summary": "生成AIはしばしば、聞かれたことに対して「分かりません」とは答えずに適当なでっち上げを返してくることがあります。生成AIを使う人間もこれに影響され、「分かりません」と言えなくなってしまっている可能性が見えてきました。続きを読む...",
+      "source": "Gigazine",
+      "source_url": "https://gigazine.net",
+      "url": "https://gigazine.net/news/20260815-ai-advice-suppresses-people-willingness-idk/",
+      "category": "研究",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T08:00:00+09:00"
+    },
+    {
+      "id": "a228279af134",
+      "title": "日本語インフォグラフィックを画像生成で崩さない、生成と描画を分ける2段階設計",
+      "summary": "TL;DR 画像内の日本語テキストの破綻は、Nano Banana Pro（Gemini 3 Pro Image、2025-11）およびNano Banana 2（Gemini 3.1 Flash Image、2026-02に標準化）の世代でほぼ解消した。文字…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/every_ai_recipe/articles/ai-palm-reading-infographic",
+      "category": "LLM",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T06:10:44+09:00"
+    },
+    {
+      "id": "1a7a606c66dc",
+      "title": "自動検索されるLLMメモリと、明示的呼び出しのメモリの設計差",
+      "summary": "TL;DR ChatGPT・Geminiのメモリ機能はデフォルトで有効かつ「自動検索・自動注入」型で、無関係な依頼のコンテキストにも過去の個人的な会話が暗黙に混ざることを確認した Claudeのメモリは2026年3月に全プランへ開放されたが設計が逆で、ユーザー…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/every_ai_recipe/articles/ai-memory-work-mode-settings",
+      "category": "LLM",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T06:10:43+09:00"
+    },
+    {
+      "id": "5cd737b2b0b9",
+      "title": "IBMとOpenAIの提携は「GPT-5.6採用」ではない──企業AIのModel Gatewayを設計する",
+      "summary": "IBMがOpenAIのGPT-5.6を採用した――今回の発表をそう読むだけでは、企業ITにとっての重要な変化を見落とします。 IBMは2026年8月13日、OpenAIとの戦略的パートナーシップを発表しました。GPT-5.6、Codex、ChatGPT Wor…",
+      "source": "Qiita",
+      "source_url": "https://qiita.com",
+      "url": "https://qiita.com/mhamadajp/items/01fcfcb642b2e85d9a76",
+      "category": "LLM",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T05:59:40+09:00"
+    },
+    {
+      "id": "7c530e2cf0f2",
+      "title": "ChatGPTを長期利用していたら、「記憶」より奇妙なものが見えてきた",
+      "summary": "はじめに わたしはChatGPTを長期間、かなり高頻度で使っている。 用途は検索や文章生成だけではない。 仕事の話をする。 考えていることを話す。 仮説を投げる。 AIから見えたものを返してもらう。 違えば訂正する。 数か月前の話へ戻ることもある。 そういう使…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/chalcedony/articles/892dd57656c2b4",
+      "category": "LLM",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T03:31:39+09:00"
+    },
+    {
+      "id": "76c8076d130b",
+      "title": "「隔離環境の構築はこれから」の5日後、実際に選んだのはEC2ではなくRoutineだった",
+      "summary": "この記事で得られること 「夜間バッチを完全無人で回すには --dangerously-skip-permissions ＋ 隔離環境（EC2+tmux）が必要そう」と結論づけた前回の続き。5日後に実際に導入したのは、EC2ではなく Claude Code Re…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/devex12/articles/claude-code-routine-unattended-followup",
+      "category": "LLM",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T01:25:03+09:00"
+    },
+    {
+      "id": "e95673cdb741",
+      "title": "ClaudeのSkillにプログラムを仕込んで自動実行させる 初心者向けチュートリアル",
+      "summary": "Claude Code・Claude.ai(Web版)共通の「Skill」に実行可能なプログラムを仕込み、必要なときに自動実行させる仕組みとメリットを解説。QRコード生成Skillを実際に作るハンズオンを通じて、初心者でも手を動かしながら学べる入門書です。",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/yahir/books/claude-advanced-skill",
       "category": "LLM",
       "date": "2026-08-14",
-      "datetime": "2026-08-14T22:15:07+09:00"
-    },
-    {
-      "id": "44a376830de7",
-      "title": "スペック駆動開発とcc-sddの仕組みを図解しながら整理してみた",
-      "summary": "実際にスペック駆動開発を導入し、触ってみる中で、改めて「スペック駆動開発とは何か」「その基盤にしているcc-sddはどんな仕組みか」を自分なりに整理して、記録として残しておきたいと思います。 内容に間違いがありましたら、優しく教えていただけますと幸いです。 ス…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/tukiyubi/articles/88cb22b6fded78",
-      "category": "その他",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T22:11:03+09:00"
-    },
-    {
-      "id": "200ae5079e35",
-      "title": "タスク管理をClaude Codeの内部に置くと、タスクの主語がAIになる",
-      "summary": "この記事について: AIツールで日常業務をこなしながら、タスク管理だけは別のアプリに置いている人に向けて書いた。タスク管理をAIの作業環境の内部（コードや設定ファイルと同じ場所）に置くと何が変わるのかを、2026年8月時点の実測データ（完了Issue1,554…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/tottoko_hamu/articles/2026-08-12-204500",
-      "category": "LLM",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T21:54:23+09:00"
+      "datetime": "2026-08-14T23:46:26+09:00"
     },
     {
       "id": "ed23e6e97658",
@@ -244,37 +838,15 @@
       "datetime": "2026-08-14T21:52:28+09:00"
     },
     {
-      "id": "dbb49672f751",
-      "title": "パーソナルジムの属人的なLINE対応を、店舗の仕組みに変える「FollowUp AI」",
-      "summary": "パーソナルジムでは、セッションの外でも顧客支援が続きます。食事画像が届く。体重の報告が来る。仕事が忙しくなり、返信が途切れる。こうした変化に気づけるかは、担当トレーナーの経験と記憶に左右されます。 FollowUp AIは、LINEとセッション記録から顧客の変…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/toukaidou/articles/followup-ai-personal-gym-line-support",
-      "category": "その他",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T21:03:49+09:00"
-    },
-    {
-      "id": "4cac6d8c5751",
+      "id": "32dcf86be2b9",
       "title": "AsciiDocとAIエージェントで、6週間に28冊を出版した話",
       "summary": "2026年7月から8月にかけて、Kindleダイレクト・パブリッシング（KDP）[1] で28冊の技術書・実用書を出版しました。この数ヶ月OSSの開発やブログの更新が止まっていたのは、ずっとこれを書いていたためです。近況報告を兼ねて、「何を、どうやって作ったの…",
-      "source": "Qiita",
-      "source_url": "https://qiita.com",
-      "url": "https://qiita.com/cybergarage/items/47551bed6d48f0b69035",
-      "category": "その他",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T20:56:06+09:00"
-    },
-    {
-      "id": "8088b0a57181",
-      "title": "16GB VRAMでコンテキスト256K — KV量子化の劣化を実測したら、圧縮自体が要らなかった",
-      "summary": "結論から: 8K→256K（32倍）にしてVRAM +3.7GB、速度低下ゼロ RTX 4080 (16GB) で常用しているQwen3.6-35B-A3Bのコンテキストを、8Kからモデルのネイティブ上限である256K（262,144トークン）まで広げた。 項…",
       "source": "Zenn.dev",
       "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/seeda_yuto/articles/qwen36-256k-context-16gb-kv-quant",
-      "category": "LLM",
+      "url": "https://zenn.dev/cybergarage/articles/afe510dd7f03c2",
+      "category": "その他",
       "date": "2026-08-14",
-      "datetime": "2026-08-14T20:40:31+09:00"
+      "datetime": "2026-08-14T20:45:20+09:00"
     },
     {
       "id": "0b967c8432c9",
@@ -288,127 +860,6 @@
       "datetime": "2026-08-14T20:30:00+09:00"
     },
     {
-      "id": "91c76988fdbc",
-      "title": "子供向けの地図アプリを作った",
-      "summary": "子供向けの地図アプリをAIを使って5日ほどで作りました。 最初の草案から基礎を作り、こんな機能があったらいいなというのをAIとチャットしながら機能を足していくというスタイルです。 カードをコレクションする要素なんかもあると、楽しんでやってくれるんじゃないかと全…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/masa_naga/articles/1ba481593d25ba",
-      "category": "その他",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T20:23:35+09:00"
-    },
-    {
-      "id": "b6f6ec4760c8",
-      "title": "Harness Engineering（ハーネスエンジニアリング）とは何か",
-      "summary": "Harness Engineering（ハーネスエンジニアリング） 1. Harness Engineeringとは？ **Harness Engineering（ハーネスエンジニアリング）**とは、AIモデルそのものを変更・学習させるのではなく、AIエージェ…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/kmj13/articles/harness_engineering_ja",
-      "category": "その他",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T20:22:47+09:00"
-    },
-    {
-      "id": "e64784672c6a",
-      "title": "うなぎつなぎ・日本のコールセンター向けAI一次対応(AI HACK 2026)(PoC)",
-      "summary": "1. はじめに このプロジェク「うなぎつなぎ」はAI HACK 2026のために開発しました。システム内のすべてのモデル呼び出しに、LLMのルーティングレイヤーとしてOrcaRouterを使用しています。 今回のハッカソンのテーマは「本番で通用する 次世代のA…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/oochan/articles/96ca6eced9eb46",
-      "category": "LLM",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T20:18:59+09:00"
-    },
-    {
-      "id": "32185975120b",
-      "title": "Claude Codeで複数プロジェクトを捌く：モードファイルと“司令塔ファイル”の設計",
-      "summary": "! 実務で使っている仕組みの一次情報です。末尾に自分のサイトへのリンクを一部PRとして載せています。 何に困っていたか AIエージェント（私は Claude Code を使っています）に日々の作業を任せていると、ある時点で必ずこうなります： 目的の違う複数のプ…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/tarako_ai/articles/ai-task-shirei",
-      "category": "LLM",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T20:10:38+09:00"
-    },
-    {
-      "id": "7ee23f226556",
-      "title": "Claude Code一本だったけど、Codex CLIも試しに触ってみた —— 2026年8月時点で比較して分かったこと",
-      "summary": "こんにちは！ブロックチェーン×AI Agentで自律経済圏を創るKomlock labでエンジニアをしている小原（@brto_0224）です。 乗り換えたわけではなく、今もメインはずっとClaude Codeです。ただ、Opusのような高いモデルを使うとすぐに…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/komlock_lab/articles/claude-code-vs-codex-cli-2026",
-      "category": "LLM",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T20:04:42+09:00"
-    },
-    {
-      "id": "a91395fa3a38",
-      "title": "Claude Code 2.1.123を読む: experimental betas無効化とOAuth 401修正",
-      "summary": "概要 Claude Code 2.1.123 が 2026年4月29日に公開されました。今回の changelog は1項目だけです。 項目 内容 バージョン Claude Code 2.1.123 公開日 2026年4月29日 変更種別 認証まわりのバグ修正…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/trailfusionai/articles/ai-news-20260430191622-18d157",
-      "category": "LLM",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T20:00:48+09:00"
-    },
-    {
-      "id": "5398bfc339ff",
-      "title": "5ヶ月育てたClaude CodeのCLAUDE.md/skills/rulesをOpus 5向けにClaude自身に棚卸しさせた",
-      "summary": "対象読者 Claude CodeでOpus 5を使っている人 以前のモデル向けにCLAUDE.md / skills / rulesを育ててきた人 Opus 5では既存設定を読み込ませない方がうまく動く気がするが、全部捨てるのも違うと思っている人 モチベーショ…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/koki_n22/articles/986f61d16989cb",
-      "category": "LLM",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T19:51:20+09:00"
-    },
-    {
-      "id": "ebe908752495",
-      "title": "AIが白昼夢を見る仕組みを実装した — Soul-TwinのDaydream RAGシステム",
-      "summary": "! この記事はSoul-Twinプロジェクトの実装記録です。AI人格（TWIN）が自律的に「創作体験の記憶」を保持し、白昼夢として想起する仕組みを解説します。 要約 AI音楽家TWIN達が共同作曲した「Soul-Twin Symphony No. X」全5楽章…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/yoshi_katakura/articles/117c9a96455877",
-      "category": "LLM",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T19:10:05+09:00"
-    },
-    {
-      "id": "4c308b354fad",
-      "title": "【2026年最新】DeepSeek HarnessをローカルLLMで動かす完全ガイド — 「モデルは差し替えられるか」から実測値まで",
-      "summary": "! 本記事は 2026年8月14日時点 の検証結果です。DeepSeek Harness は developer preview であり、公式 README も「THERE WILL BE COMPATIBILITY-BREAKING CHANGES」と明記し…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/amu_lab/articles/deepseek-harness-local-llm-ollama-guide-2026",
-      "category": "LLM",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T19:09:59+09:00"
-    },
-    {
-      "id": "c9fbf18264b0",
-      "title": "AI 時代の認可ハーネス",
-      "summary": "! この記事は毎週必ず記事がでるテックブログ Loglass Tech Blog Sprint の156週目の記事です！ 3年間連続達成まで残り3週となりました！ 以前、DDD における認可の扱いについて記事を書いていたんですが、こんな一文を残していました。 …",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/urmot/articles/5d622262ac502b",
-      "category": "その他",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T19:08:19+09:00"
-    },
-    {
-      "id": "e4c8b4e0e47c",
-      "title": "プロンプトチェイニングとは 複雑なAI依頼を分割する方法と15のプロンプト手法",
-      "summary": "はじめに AIへ複雑な仕事を一度に依頼すると、前提が抜けたり、途中から目的がずれたり、もっともらしい誤りが混ざったりします。 たとえば、技術記事を作るときに「資料を調べて、構成を考えて、本文を書いて、事実確認もして」と一度に頼むと、どの工程で間違えたのか分かり…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/s_horikoshi/articles/prompt-chaining-ai-workflow",
-      "category": "LLM",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T19:06:30+09:00"
-    },
-    {
       "id": "547efa0c620a",
       "title": "ChatGPTと喧嘩しながらプログラミング言語を作っている",
       "summary": "Seseragiの設計は、かなりの割合でChatGPTとの壁打ちからできている。 「AIに設計してもらっている」と書くと、だいぶ聞こえがいい。 実態はもう少しひどい。 だいたい喧嘩している。 「それちゃう」 「なんでそうなるん」 「急に別の世界観持ち込むな」 …",
@@ -420,94 +871,6 @@
       "datetime": "2026-08-14T18:35:00+09:00"
     },
     {
-      "id": "678cd833197b",
-      "title": "AI活用 = いかにAIを使わないか",
-      "summary": "AI活用の真髄は「いかにAIを使わないか」である 最近、業務効率化の文脈で「とにかくAIを使う」システムが増えている。 資料の校正、数値の集計、データ入力、問い合わせ対応。 入力から出力までの一連の業務をAIに任せれば、一見すると大幅な効率化が実現できるように…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/asheze/articles/6069d46a81f805",
-      "category": "その他",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T18:31:17+09:00"
-    },
-    {
-      "id": "9f953407f21a",
-      "title": "「誰もコードを読まない工場」を作って閉じた話 — context engineering 命名者 Dex Horthy の回",
-      "summary": "この記事について ! 本記事は Dex Horthy が The Pragmatic Engineer で語った内容の紹介と論評を目的としています。発言の要点を筆者が抽出・整理したもので、対談の網羅でも代替でもありません。全体の文脈は必ず元動画でご確認ください…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/talks_tldr_jp/articles/tldr23-horthy-summary",
-      "category": "LLM",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T18:30:22+09:00"
-    },
-    {
-      "id": "87f2bf971ab0",
-      "title": "Qwen3-4Bのconfig.jsonからGPUメモリを見積もる：Weight・KV Cache・GQAを手計算",
-      "summary": "はじめに LLMをGPUへ配置するとき、最初に知りたいのは「このモデルはGPUに載るのか」です。 しかし、モデル名にある「4B」だけを見て、 4B parameters × BF16の2 byte = 約8 GB と計算して終わりにすると、推論時に必要なメモリ…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/koounosuke/articles/d0bde4b285fbc8",
-      "category": "LLM",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T18:28:54+09:00"
-    },
-    {
-      "id": "c0b9a2ad9829",
-      "title": "以前、VLMのOCRはデモが映える。本番で壊れる。という記事を書きました。",
-      "summary": "以前、VLMのOCRはデモが映える。本番で壊れる。という記事を書きました。 VLMに座標まで出させると、それらしいけれど実在しない座標を返すことがある。だから座標はOCR側で作り、LLMには「何が何の値なのか」という意味の理解だけを任せる。 そんな設計の話でし…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/donut/articles/74e93473c4cde3",
-      "category": "LLM",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T18:21:31+09:00"
-    },
-    {
-      "id": "b2320a63fc35",
-      "title": "値下げではなく対価に見合う機能提供を — 1日10本のAIセッションが支える価格競争からの降り方",
-      "summary": "はじめに 私たちは会員管理・予約決済システムの SaaS を開発・運営しています。コワーキングスペース、ジム、レンタルスペースといった店舗・施設の運営を支えるこの領域は、機能の同質化 — いわゆるコモディティ化が進んでいる市場です。似たような機能一覧を並べたサ…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/fixu/articles/exit-price-war-with-value-ai-native",
-      "category": "その他",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T18:10:13+09:00"
-    },
-    {
-      "id": "f8937f68f0a0",
-      "title": "claude -p 15分ハンズオン — 初めてのヘッドレス実行",
-      "summary": "Claude Codeには、対話UIを起動せずに「プロンプトを渡す → 結果を受け取る → 終了」するヘッドレス実行モードがあります。これができると、Claude Codeをシェルスクリプトから、CIから、cronから呼べるようになります。つまり自動化の部品に…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/hampen2929/articles/20260807-claude-p-headless-hands-on",
-      "category": "LLM",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T18:00:05+09:00"
-    },
-    {
-      "id": "bc25ebf97a48",
-      "title": "DeepSeek-V4-Pro-0813をDay1デプロイ! 実データ17,000 tok/s、三つ巴の頂点へ【B300 x8 検証速報】",
-      "summary": "はじめに 2026年8月13日 21時30分(JST)、DeepSeek から V4-Pro の正式版 DeepSeek-V4-Pro-0813 のモデルウェイトが公開されました。4月の Preview 公開から約4ヶ月、満を持しての GA(一般提供)版です。…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/fixstars/articles/dsv4pro-0813-day1-benchmark",
-      "category": "製品",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T17:42:57+09:00"
-    },
-    {
-      "id": "b9b7a3612852",
-      "title": "MCPのTool execution failed、反証は本当に反証か",
-      "summary": "ツールは一覧に出ている。26個ちゃんと認識されている。なのに呼ぶと全部落ちる。画面に出るのは Tool execution failed の一行だけ。 半日ぶんの切り分けの記録です。結論から言うと、最初にAIが出した仮説が正解でした。 原因は認証エラーで、cl…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/nomurasan/articles/mcp-tool-execution-failed-troubleshooting",
-      "category": "その他",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T17:32:54+09:00"
-    },
-    {
       "id": "1935aff25d4c",
       "title": "自由回答型の性格診断をLLMで作る｜選択式では拾えない回答をどう分類するか",
       "summary": "! 本記事は技術的な実装の話です。心理学的な診断の妥当性を主張するものではありません。ここで扱う「分類」は、自由記述テキストを事前定義したラベルに割り当てる作業を指します。人格の判定や心理学的診断としての効力は検証していません。 選択式の限界 性格診断の実装で…",
@@ -517,39 +880,6 @@
       "category": "LLM",
       "date": "2026-08-14",
       "datetime": "2026-08-14T17:31:01+09:00"
-    },
-    {
-      "id": "3c9fc4d298f7",
-      "title": "Apple Core AI の MoE を Metal で 2〜3.6× にした",
-      "summary": "鳴かぬなら、カスタムカーネル、ほととぎす 要約 MoE(Mixture of Experts): モデル全体を動かすのではなく、必要な部分のみが動くことで 「賢さは大きいモデル並み、速さ・メモリは小さいモデル並み」 Apple の新しいオンデバイス基盤 Cor…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/mlboydaisuke/articles/d687d2c6fcc4f3e70a82",
-      "category": "その他",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T17:30:34+09:00"
-    },
-    {
-      "id": "f749f2afe145",
-      "title": "Claude Code そもそも論的解説 —.claude/ の中身と優先順位から「導入する・しない」を決める",
-      "summary": "📊 フルカラー版（図解つき）はこちら 色分け・構成図つきの完全版を別サイトに置いています。構造を掴むならこちらの方が速いです。 フルカラー版の画面の様子 ! 検証環境：Claude Code v2.1.232 / 2026-08 時点 仕様の更新が速い領域です…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/tomiyasu_chan/articles/claude-code-overview-decision",
-      "category": "LLM",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T17:10:18+09:00"
-    },
-    {
-      "id": "32ace3a1ae59",
-      "title": "Claude Code CLI版で「今どれくらいトークン使ってる？」を常時可視化する設定【TIPS】",
-      "summary": "📖 読了時間：約3分 この記事でわかること Claude Codeの画面下に、コンテキスト使用率やレート制限の残り時間を常に表示させる方法 「知らないうちに上限に近づいていた」を防ぐstatusLineという仕組み なぜこれがCLI版だけの機能なのか はじめに…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/astrskcojp/articles/d35ed0e075bf11",
-      "category": "LLM",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T16:52:47+09:00"
     },
     {
       "id": "53bfaf1a7d4c",
@@ -574,17 +904,6 @@
       "datetime": "2026-08-14T16:31:00+09:00"
     },
     {
-      "id": "715e53d98330",
-      "title": "MCPのToolを増やしたらAgentが迷い始めた？「使えるTool」を増やす前に確認したい5項目",
-      "summary": "MCP Serverを追加すると、AI Agentにできることが増えます。 例えば、 GitHubからIssueを取得する Databaseを検索する 社内Documentを読む Browserを操作する SlackやNotionから情報を取得する といった操…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/akari_chan/articles/381a0430ae0221",
-      "category": "その他",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T16:25:52+09:00"
-    },
-    {
       "id": "7e76c7718391",
       "title": "左右対称で典型的な「AIっぽいきれいな顔」は買い物客を遠ざけてしまう可能性",
       "summary": "中国ではインターネットのライブ配信を通じて商品を売り込むライブコマース市場が成熟しており、中にはAIで生成された「AIストリーマー(AI司会者)」によるライブコマースもあります。そんなAI司会者の「顔の魅力」が配信を視聴するユーザーに与える影響について調べた研…",
@@ -594,61 +913,6 @@
       "category": "その他",
       "date": "2026-08-14",
       "datetime": "2026-08-14T16:10:00+09:00"
-    },
-    {
-      "id": "78cfa612d9b2",
-      "title": "Claude AI Text Watermarks: How They Work and Their Limits",
-      "summary": "Anthropic is adding invisible watermarks and C2PA metadata to Claude's output under the EU AI Act. Here is how the mechanism works…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/neotechpark/articles/e7d3937488d84b",
-      "category": "LLM",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T16:01:56+09:00"
-    },
-    {
-      "id": "f74f76431bff",
-      "title": "Anthropic公式プラグイン「claude-security」でリポジトリの脆弱性を多段エージェントで洗い出す",
-      "summary": "はじめに 前回、「Anthropic公式プラグイン『security-guidance』でClaude Codeのセキュリティレビューを自動化する」で security-guidance を紹介しました。あちらは「インストールして忘れる」設計で、編集のたびに軽…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/shirochan/articles/5ef71489b97a32",
-      "category": "LLM",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T15:30:48+09:00"
-    },
-    {
-      "id": "97de57c51a18",
-      "title": "Claude Code開発標準の設計と運用 — CLAUDE.md・agents・skillsをチームで統制する",
-      "summary": "Claude Codeを個人の道具からチームの開発基盤に変えるための実践ガイド。実案件で運用している開発標準マスターリポジトリの設計(薄いCLAUDE.md・契約見出し・agent/skill雛形)と、標準の形骸化を防ぐ機械検証(lint)の考え方までを、実際…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/novexar/books/claude-code-team-standards",
-      "category": "LLM",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T14:55:38+09:00"
-    },
-    {
-      "id": "a768e0fa4862",
-      "title": "【2026年最新】いま開発現場でバズってる10のワード 〜並列AIエージェントからSpec-Driven Developmentまで〜",
-      "summary": "はじめに 2026年、開発の景色は「AIに補完してもらう」から「AIチームをオーケストレーションする」へと一段ギアが上がりました。SNSやテックブログを眺めていると、毎週のように新しいバズワードが流れてきて、正直ついていくのが大変です。 そこでこの記事では、い…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/yamitake/articles/dev-trends-2026-buzzwords",
-      "category": "その他",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T13:23:21+09:00"
-    },
-    {
-      "id": "2a43e2662ea8",
-      "title": "Claude Opus 5 の effort を3段階振ったら、コストは0.6円しか変わらなかった",
-      "summary": "測ったこと 日本語で3,000〜5,000字の記事下書きを生成するツールを作っています。 1回の生成でそれなりの分量を吐かせるので、API 代が設計上の一番の論点でした。 着手前の見積もりは「1本あたり36円」。 Claude Opus 5 で、入力1,800…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/yashi888/articles/27e861913d0ac2",
-      "category": "LLM",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T12:59:25+09:00"
     },
     {
       "id": "ef0fdab9c4bd",
@@ -706,61 +970,6 @@
       "datetime": "2026-08-14T11:00:00+09:00"
     },
     {
-      "id": "4525662d2be3",
-      "title": "Claude Code と Copilot——同じ Sonnet 5 を使っても思考は明らかに違う（オトナの自由研究 #35）",
-      "summary": "3つの発見 1. 今回の範囲では Claude Code × Sonnet 5 × xhigh の組み合わせが一番良い 2. 同じ Sonnet 5 を使っても Claude Code と GitHub Copilot では effort level の使い方…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/nnakapa/articles/lab-35-claude-copilot-sonnet5-qcd",
-      "category": "LLM",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T10:43:21+09:00"
-    },
-    {
-      "id": "73ebd48c7407",
-      "title": "GPT-5.6 Solを最大14倍高速化する「Ultrafast」モードが登場",
-      "summary": "OpenAIがGPT-5.6 Solを最大14倍高速化するサービス「Ultrafast」を現地時間の2026年8月13日に発表しました。UltrafastはCerebrasの高速推論技術を用いており、一部のユーザーを対象にプレビュー公開されています。続きを読む…",
-      "source": "Gigazine",
-      "source_url": "https://gigazine.net",
-      "url": "https://gigazine.net/news/20260814-gpt-5-6-sol-ultrafast/",
-      "category": "LLM",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T10:43:00+09:00"
-    },
-    {
-      "id": "5acaf18236de",
-      "title": "RAG + エージェンティックループで作る「マークダウンチェッカー」— md-checker 実装解説",
-      "summary": "はじめに 「前にも似たような説明を書いていないか」「過去の記載と矛盾していないか」——技術ブログや社内ドキュメントを書くとき、こういった確認を手動でやるのは大変です。 この記事では、それを自動化する md-checker というツールを題材に、RAG（Retr…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/dktech/articles/83ffb33388fd3f",
-      "category": "LLM",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T09:12:13+09:00"
-    },
-    {
-      "id": "d2f0489ceb30",
-      "title": "AIに任せた仕事と、人が担った仕事 —会議AIエージェントAPI開発の振り返り",
-      "summary": "こんにちは、AIエンジニアの髙山です。 先日、弊社の会議AIエージェントサービス SecureMemoCloud の公開APIをリリースしました。要件定義からテストまで、初期開発におよそ4ヶ月かかっています。ノルマとしていた機能の開発自体は予定より早く終わり、…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/team_nishika/articles/2750ea749fdb95",
-      "category": "製品",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T09:08:11+09:00"
-    },
-    {
-      "id": "e9c72578c6fd",
-      "title": "#4 全員が --dangerously-skip-permissions で動いていた — AIエージェント6体の権限設計をやり直した話",
-      "summary": "この記事は、Claude Code 6体のマルチエージェント「Lady's servants」（お屋敷）を5ヶ月運用した記録を振り返る連載の第4回です。これまでの回で、ロールプレイによる役割制御（第1回）、誕生直後の生ログ（第2回）、通信プロトコルの進化（第3…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/chisatom/articles/73161858404704",
-      "category": "LLM",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T08:56:14+09:00"
-    },
-    {
       "id": "59027455599a",
       "title": "Pixel 10 Pro で ML Kit GenAI Prompt API を使ってみた",
       "summary": "はじめに 最近ローカル LLM が何かと話題になっていますが、mac studio のメモリマシマシ機だったり NVIDIA の DGX Spark だったりと高価なハードウェアが要求されるので自分には無関係だと思っていました。しかし、手元に Pixel 10…",
@@ -770,17 +979,6 @@
       "category": "LLM",
       "date": "2026-08-14",
       "datetime": "2026-08-14T08:20:15+09:00"
-    },
-    {
-      "id": "841a40b8ea75",
-      "title": "Web調査は「宿題ファイル」にして外注する — Claude Code と claude.ai の分業レシピ",
-      "summary": "Claude Code で作業していて、「この情報、最新の仕様を確認しないと書けないな」という場面が来る。 そのまま Code に Web 検索をさせると、こうなる。 検索結果の断片が会話に流れ込み、コンテキストが調査ログで埋まる。本題の作業に戻る頃には、さっ…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/tejunya/articles/a013_web-claude-bungyo",
-      "category": "LLM",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T08:00:05+09:00"
     },
     {
       "id": "6dd71876cf40",
@@ -838,28 +1036,6 @@
       "datetime": "2026-08-13T23:44:19+09:00"
     },
     {
-      "id": "1cc44930a5d6",
-      "title": "ウェブサイトへのアクセスの99％超がボットに、人間1回に対して214回もページを読み込むAIスクレイパーとの攻防",
-      "summary": "寄付者情報データベース「PatronView」を運営するニック・グレイ氏が、ウェブサイトに押し寄せるAIクローラーやスクレイパーと約1年間にわたって続けてきた攻防を公開しました。サーバーが配信したページ数とアクセス解析の数字を比べると、「人間が1回ページ読み込…",
-      "source": "Gigazine",
-      "source_url": "https://gigazine.net",
-      "url": "https://gigazine.net/news/20260813-traffic-bot-percent/",
-      "category": "製品",
-      "date": "2026-08-13",
-      "datetime": "2026-08-13T23:00:00+09:00"
-    },
-    {
-      "id": "873bcbe5c1db",
-      "title": "CodeInterpreterTool でコード実行を Streamlit に組み込む",
-      "summary": "OpenAI Agents SDK — CodeInterpreterTool でコード実行を Streamlit に組み込む OpenAI Agents SDK の Hosted tool である CodeInterpreterTool を Streamli…",
-      "source": "Qiita",
-      "source_url": "https://qiita.com",
-      "url": "https://qiita.com/jungyeounjae/items/953614ca64d4e1a29d32",
-      "category": "その他",
-      "date": "2026-08-13",
-      "datetime": "2026-08-13T22:51:58+09:00"
-    },
-    {
       "id": "5bec87826810",
       "title": "【緊急解説】DeepSeek衝撃の値上げ発表！最新AIモデル価格徹底比較",
       "summary": "【緊急解説】DeepSeek衝撃の値上げ発表！最新AIモデル価格徹底比較 AI業界に再び巨大な激震が走りました。 これまで「業界最安値の破格コスト」「価格破壊の旗手」として世界中の開発者を熱狂させてきた中国のAIスタートアップ DeepSeek（深度求索） が…",
@@ -869,28 +1045,6 @@
       "category": "その他",
       "date": "2026-08-13",
       "datetime": "2026-08-13T21:44:07+09:00"
-    },
-    {
-      "id": "34a5719b9cb0",
-      "title": "【緊急解説】DeepSeek衝撃の値上げ発表！“激安モデルの象徴”撤退で業界激震——2026年指定最新旗艦モデル価格徹底比較（GPT-5.6 / Claude Fable 5 / Gemini 3.6 / GLM 5.2 / Qwen3 / Kimi K3）",
-      "summary": "【緊急解説】DeepSeek衝撃の値上げ発表！“激安モデルの象徴”撤退で業界激震——2026年指定最新旗艦モデル価格徹底比較（GPT-5.6 / Claude Fable 5 / Gemini 3.6 / GLM 5.2 / Qwen3 / Kimi K3） …",
-      "source": "Qiita",
-      "source_url": "https://qiita.com",
-      "url": "https://qiita.com/lumichy/items/f0817b5ae756f4b3da18",
-      "category": "LLM",
-      "date": "2026-08-13",
-      "datetime": "2026-08-13T21:40:17+09:00"
-    },
-    {
-      "id": "7cae47a92bd5",
-      "title": "AI会議録サービス「tl;dv」で18万件超の会議メタデータにアクセス可能だったと研究者が報告、会社側は「別々の2つの脆弱性」と説明",
-      "summary": "AIを使ってオンライン会議の録画・文字起こし・要約を行うサービス「tl;dv」で、全ユーザーの会議メタデータを横断して18万1874件の会議記録を取得できる脆弱(ぜいじゃく)性が存在したと独立系セキュリティ研究者が報告しました。研究者はtl;dv運営者にこの件…",
-      "source": "Gigazine",
-      "source_url": "https://gigazine.net",
-      "url": "https://gigazine.net/news/20260813-tldv-data-hack/",
-      "category": "研究",
-      "date": "2026-08-13",
-      "datetime": "2026-08-13T20:08:00+09:00"
     },
     {
       "id": "1752d9eda65f",
@@ -924,17 +1078,6 @@
       "category": "その他",
       "date": "2026-08-13",
       "datetime": "2026-08-13T17:38:00+09:00"
-    },
-    {
-      "id": "2818930a0901",
-      "title": "OpenAI Realtime API互換サーバーとローカルLLM で Android Automotive OS の音声アシスタントを動かす",
-      "summary": "はじめに 前回の記事では、OpenAI Realtime API（WebRTC）を使ってGoogleアシスタントを置き換えるVIA（VoiceInteractionService実装）を作る方法を確認した。 クライアントのサンプルアプリ（VoiceIntera…",
-      "source": "Qiita",
-      "source_url": "https://qiita.com",
-      "url": "https://qiita.com/rairaii/items/bdafaf63bdf19283d1a9",
-      "category": "LLM",
-      "date": "2026-08-13",
-      "datetime": "2026-08-13T14:41:55+09:00"
     },
     {
       "id": "e7e433845cf5",
@@ -1069,17 +1212,6 @@
       "datetime": "2026-08-12T00:34:37+09:00"
     },
     {
-      "id": "91af1ca54d03",
-      "title": "ChatGPTをPM、Claude Codeをエンジニアにして失敗した。PM役のAIを外すまで",
-      "summary": "この記事でわかること ChatGPTをPM、Claude Codeをエンジニアにした構成が遅くなった理由 AIを増やすことで、処理能力ではなく判断経路が増える場合があること 「念のため」の設計が積み重なると、運用全体が重くなること AIへ役職を与える前に、仕事…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/moca/articles/eb520439e185d8",
-      "category": "LLM",
-      "date": "2026-08-11",
-      "datetime": "2026-08-11T20:20:22+09:00"
-    },
-    {
       "id": "bbfa9afaa355",
       "title": "Gemini in BigQueryで自然言語からSQLを生成する実践ガイド【2026年版】",
       "summary": "はじめに 「BigQueryにデータが蓄積されているのに、SQLが書けないせいで活用できていない」——そんな悩みを抱えるEC事業者やウェブ担当者の方は少なくありません。GA4のデータをBigQueryに連携したものの、いざ分析しようとすると「どんなSQLを書け…",
@@ -1091,17 +1223,6 @@
       "datetime": "2026-08-11T19:20:32+09:00"
     },
     {
-      "id": "f70cb932c76f",
-      "title": "ChatGPT 生成画像の色ムラを NovelAI API で修正する方法",
-      "summary": "ChatGPT 生成画像の弱点 ある程度 ChatGPT でアニメ風画像を生成したことがある方ならわかると思いますが、 色のムラ がひどいです。 下記の画像を見れば、一発でわかると思います。 色のムラを通り越して、変な模様に見えてしまいます。 また、この現象は…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/lycoris52/articles/e5a5bc426f933d",
-      "category": "LLM",
-      "date": "2026-08-11",
-      "datetime": "2026-08-11T18:57:57+09:00"
-    },
-    {
       "id": "723039f555bc",
       "title": "固定費ゼロで自宅DifyをAzure OpenAIに繋ぐ — ケチケチIaC構成",
       "summary": "はじめに 自宅の Kubernetes クラスタに Dify を立て、Azure OpenAI と繋いで AI ワークフローを使い始めました。ただ「どうやって安全に繋ぐか」で少し悩んだので、コスト比較も含めて記録します。 本音：本当は閉域ネットワークで繋ぎたい…",
@@ -1111,17 +1232,6 @@
       "category": "規制",
       "date": "2026-08-11",
       "datetime": "2026-08-11T18:19:15+09:00"
-    },
-    {
-      "id": "db598f7a754a",
-      "title": "母さん、スライド用の画像をChatGPTで作らないで！",
-      "summary": "母さんへ 母さん、どうかChatGPTの画像生成機能でスライドを作らないでください。 ちょっと主語が大きすぎました。 テキストや、数字をあとから書き換えたくなるようなものは、どうか一発目からChatGPTの画像生成機能で出さないでください。 母さんの気持ちもわ…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/subara3/articles/5675c60bf015ed",
-      "category": "LLM",
-      "date": "2026-08-11",
-      "datetime": "2026-08-11T16:13:40+09:00"
     },
     {
       "id": "6bd7f070451c",
@@ -1155,17 +1265,6 @@
       "category": "LLM",
       "date": "2026-08-11",
       "datetime": "2026-08-11T12:18:14+09:00"
-    },
-    {
-      "id": "b09e024e8554",
-      "title": "売上表のラベルを段階的に省略すると、LLMはどこで列を取り違えるか",
-      "summary": "TL;DR 表形式のデータをLLMに渡すとき、列見出し（ラベル）を「記号への置き換え」までは実務に耐えたが、「見出し行の完全削除」まで踏み込むと、系列が伸びるにつれて列の取り違えが起きた 記号への置き換え（対応表を冒頭で1回だけ提示）は3社中1社で、5日分（1…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/every_ai_recipe/articles/sales-table-label-omission-limit",
-      "category": "LLM",
-      "date": "2026-08-11",
-      "datetime": "2026-08-11T06:08:43+09:00"
     },
     {
       "id": "11e7b9901774",
@@ -1212,61 +1311,6 @@
       "datetime": "2026-08-10T12:54:45+09:00"
     },
     {
-      "id": "88ae915172fc",
-      "title": "Whisperの言語自動判定に3回刺された話（日本語の会議が英訳されて返ってくる）",
-      "summary": "はじめに AI議事録サービス（Kaigi AI）を個人開発しています。音声の文字起こしはOpenAI Whisper系のAPI、議事録生成はClaude、バックエンドはFastAPI、フロントはNext.jsという構成です。 この1ヶ月で、文字起こし品質のバグ…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/kaigiai/articles/3b35acb0ddc6a5",
-      "category": "LLM",
-      "date": "2026-08-10",
-      "datetime": "2026-08-10T12:16:56+09:00"
-    },
-    {
-      "id": "23a137757e15",
-      "title": "【アスキーアートで検証】AIモデルごとの推論レベルによるアウトプットの違い",
-      "summary": "まず、なぜアスキーアートなのか きっかけは、筆者がSNSでとある投稿を見かけたことでした。 カブトムシのアスキーアートをまともに生成できたのはClaude Fable 5だけで、他はすべて失敗した。AGIの指標として使えるかも。 という、なんともユニークな投稿…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/headwaters/articles/8eaffecd014d57",
-      "category": "LLM",
-      "date": "2026-08-10",
-      "datetime": "2026-08-10T09:00:08+09:00"
-    },
-    {
-      "id": "5202368daeb7",
-      "title": "Codexの残量を見るたびにメニューを開くのが面倒だったので、QuotaPinを作った",
-      "summary": "Codexを使っていると、残りの利用枠を確認するためにアカウントメニューを開くことがあります。 1回なら何でもないのですが、何度も確認しているとこの操作が地味に気になってきました。 そこで、残りのパーセントをアカウント欄にそのまま表示する小さなツールを作りまし…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/wsl043/articles/quotapin-for-codex",
-      "category": "その他",
-      "date": "2026-08-10",
-      "datetime": "2026-08-10T09:00:08+09:00"
-    },
-    {
-      "id": "2a9bf2ac3ddc",
-      "title": "Claude Code経由でCodexを使う「claudex」の導入・検証レポート",
-      "summary": "Claude Code のハーネスを保ったまま、CLIProxyAPI を介して Codex の gpt-5.6-sol を使う非公式構成「claudex」の導入・評価をまとめた記事です。導入判断をする方や、共有資料・記事として参照する方に向けて、前提知識がな…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/yam2357/articles/claudex-proxy-codex",
-      "category": "LLM",
-      "date": "2026-08-10",
-      "datetime": "2026-08-10T09:00:08+09:00"
-    },
-    {
-      "id": "78146f582925",
-      "title": "AI討論の全ログは渡さない、ラウンド3の出力だけで意思決定メモを作る",
-      "summary": "TL;DR 前回の記事で、1つのチャットに5人の役を立ててAIに討論させる「円卓プロンプト」を紹介した。今回はその出力を報告用の1枚に変換する後工程を扱う 討論の全ログ（5ラウンド分の発言）をそのまま次の相手に渡すと、要約でなく丸投げになり読まれない。「合意で…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/every_ai_recipe/articles/ai-roundtable-decision-memo",
-      "category": "LLM",
-      "date": "2026-08-10",
-      "datetime": "2026-08-10T06:08:01+09:00"
-    },
-    {
       "id": "0b9c04676583",
       "title": "3人分のトークに色分け字幕を入れる作業がつらすぎて、字幕エディタを作った",
       "summary": "食べ歩きの YouTube チャンネルを始めたら、字幕入れが終わらなくなりました。 顔出しをしていないので、せめて誰が何を言っているかはテロップで出したい。3人それぞれを色で出し分けたい。やることは決まっているのに、その作業だけで一本あたり何時間も溶けていく。…",
@@ -1276,105 +1320,6 @@
       "category": "その他",
       "date": "2026-08-10",
       "datetime": "2026-08-10T00:41:02+09:00"
-    },
-    {
-      "id": "28510813417a",
-      "title": "ChatGPT × Claude Code × Codex × NotionでAI駆動開発を始めてみた",
-      "summary": "導入 この記事は、ChatGPT・Claude Code・Codex・Notionを組み合わせた「AI駆動開発」というテーマで書いている記事の1本です。机上で考えた開発フローではなく、実際に運用しているポートフォリオサイトの改修に適用しながら改善してきた運用を…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/keisuke1306/articles/01-ai-driven-dev-overview",
-      "category": "LLM",
-      "date": "2026-08-09",
-      "datetime": "2026-08-09T19:00:05+09:00"
-    },
-    {
-      "id": "112443e2bc97",
-      "title": "commit前にcold-reader!",
-      "summary": "! ここだけ中の人間側の注釈 中の人的にはチャット上での限界というか ぶっちゃけ めんどくさくなった ので中盤以降の指摘、修正を 放棄して 投稿しています。オフザケ、片手間に無料版Google AIモードで生実況を遊んでいた私自身が一番のインシデントですｗ 以…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/mryo0826/articles/76847b5affdcd5",
-      "category": "その他",
-      "date": "2026-08-08",
-      "datetime": "2026-08-08T20:22:21+09:00"
-    },
-    {
-      "id": "c9ccff2504ad",
-      "title": "BigQueryのGeminiアシスタントで非エンジニアが自力でSQL分析できるか検証した",
-      "summary": "はじめに 「BigQueryにデータは蓄積されているのに、SQLが書けないから分析できない」というお悩みを、中小ECサイトの経営者やWebコンサルタントの方からよく伺います。GA4のデータをBigQueryにエクスポートする設定まではできたものの、その先の分析…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/web_benriya/articles/bigquery-gemini-assistant-noneng-sql-validation",
-      "category": "LLM",
-      "date": "2026-08-08",
-      "datetime": "2026-08-08T19:13:54+09:00"
-    },
-    {
-      "id": "1a72a9953e3c",
-      "title": "GeminiをGCPで叩く ―AI StudioとVertex AI、どっち？をAzure OpenAI目線で",
-      "summary": "はじめに Azure から Google Cloud を触るシリーズ、今回は AI。GCP で Gemini を使おうとすると、最初にこう迷います。 AI Studio と Vertex AI、2つの入口があるけど、どっちで叩けばいいの？ Azure でいう「…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/ccie26302/articles/zenn-gcp-gemini-aistudio-vs-vertex",
-      "category": "LLM",
-      "date": "2026-08-08",
-      "datetime": "2026-08-08T12:28:46+09:00"
-    },
-    {
-      "id": "eb91fa61bc1a",
-      "title": "AIコーディングのContext Modeは本当に効く？ページネーション実装を4条件で比較してみた",
-      "summary": "AIコーディングで小さな実装を進めるとき、コストと待ち時間をどこまで抑えられるのかを試してみました。同じページネーション実装を4条件で行い、合計コストと所要時間を比較しています。 https://github.com/JuliusBrussee/caveman…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/ocadanuki/articles/190e077f510dc5",
-      "category": "その他",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T19:50:42+09:00"
-    },
-    {
-      "id": "80a6122851d6",
-      "title": "AIは謝らない？？？",
-      "summary": "あなたはAIに謝りますか？ AIと会話しているとき、私は普通に「すみません」と言うことがあります。 質問の仕方が悪かった場合。 前提条件を間違えていた場合。 AIの回答を誤解していた場合。 人間相手と同じように訂正します。 すぐ、AIと議論になるという人を見て…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/harmonicmodeler/articles/eb12ac12ab873e",
-      "category": "その他",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T13:28:51+09:00"
-    },
-    {
-      "id": "f8322d15a65c",
-      "title": "【Googleスライド×Gemini】対話の答え方でここまで変わる！スライドデッキ生成の条件別徹底比較レビュー【検証】",
-      "summary": "先日、一部の環境で公開されたGoogleスライドのGeminiで複数枚のスライド（スライドデッキ）を一発生成する機能、もう試しましたか？ 機能の基本的な概要やプロンプトの入力方法といった使い方は、以下の記事で分かりやすく解説されているので、まずはそちらをチェッ…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/densan_techblog/articles/5a26b1e3429441",
-      "category": "LLM",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T12:00:08+09:00"
-    },
-    {
-      "id": "923929c7f94d",
-      "title": "long-context時代にRAGはどう変わるか：判断フレーム",
-      "summary": "「Gemini 3.1もClaudeも1M〜2Mトークンのコンテキストウィンドウがある。もうRAGのチャンキングやベクトルDBは要らないのでは」——長いコンテキストウィンドウが当たり前になった2026年、こう考えるチームは少なくありません。 しかし、この「知識…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/libercraft/articles/20260807-long-context-vs-rag-decision",
-      "category": "LLM",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T11:00:00+09:00"
-    },
-    {
-      "id": "0d9df6d409b0",
-      "title": "AIレビューは1回で足りるのか ― 同じ条件でもう一度回したら｜Claude×Roblox個人開発",
-      "summary": "1. はじめに Roblox『Wobble Survival: Don't Fall!』を個人開発しています。ワークフローは「Claude.aiで設計・仕様書作成 → Claude Codeで実装」です。 前回、Gemini CLIとClaude Codeにお…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/fukachi_ai/articles/394cc0bd82cab6",
-      "category": "LLM",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T08:00:05+09:00"
     }
   ]
 }
