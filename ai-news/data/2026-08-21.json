@@ -2,17 +2,6 @@
   "date": "2026-08-21",
   "articles": [
     {
-      "id": "346c74e2ba33",
-      "title": "X自動投稿AI-Workflowの改善ループ設計",
-      "summary": "はじめに 前回、個人開発者向けのX投稿自動投稿「AgentMark」を作った話を書きました。 自動投稿まで実装したので、次はこのAI-Workflowを改善することについて考えて実装したので、まとめたいと思います。勉強を兼ねての側面が大きいですが、少しでも参考…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/rikky300/articles/eb49283c9c6438",
-      "category": "その他",
-      "date": "2026-08-21",
-      "datetime": "2026-08-21T23:51:15+09:00"
-    },
-    {
       "id": "59328020d6a7",
       "title": "Codexの PreToolUse フックにdenyを返しても、bashコマンドは実行されていた話",
       "summary": "検証環境: @velar-dev/cli v0.4.0 / Codex CLI v0.144.6（Windows） Velarは現在ベータ版です。前々回・前回の記事の続きです——「AIエージェントの危険操作を実行前に止めるCLI」を作っている過程で見つけた話で…",
@@ -33,28 +22,6 @@
       "category": "その他",
       "date": "2026-08-21",
       "datetime": "2026-08-21T23:00:00+09:00"
-    },
-    {
-      "id": "2608a959da2b",
-      "title": "Codexの /diff でコミット前の変更を確認する — READMEの1行を10分で見比べる",
-      "summary": "Codexの /diff でコミット前の変更を確認する — READMEの1行を10分で見比べる Codexを起動できた。でも、AIが触ったファイルをどう確認すればいいのか分からない。 そんな最初の一歩に使いやすいのが、Codex CLIの /diff です。…",
-      "source": "Qiita",
-      "source_url": "https://qiita.com",
-      "url": "https://qiita.com/akira_papa_AI/items/86369e4e1985031e5150",
-      "category": "その他",
-      "date": "2026-08-21",
-      "datetime": "2026-08-21T22:36:46+09:00"
-    },
-    {
-      "id": "e9a8c5184306",
-      "title": "AIに「あれは入れないで」と直させると、なぜか本文に「入れてません」と書いてくる",
-      "summary": "こんな投稿を見かけた。 https://x.com/chokudai/status/2084538207732178997?s=20 これは自分なりの要約だが、要するにこういう話だ。AIに何かを一発で出させるのは得意。でも、後から「〇〇は入れないで」と訂正させ…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/motimotinotch/articles/546674976fede8",
-      "category": "その他",
-      "date": "2026-08-21",
-      "datetime": "2026-08-21T21:26:45+09:00"
     },
     {
       "id": "3f218f8d3d5c",
@@ -90,17 +57,6 @@
       "datetime": "2026-08-21T20:50:58+09:00"
     },
     {
-      "id": "84d5df854902",
-      "title": "PII×LLMの4層防御 — Bedrockの非学習保証を規約とアーキテクチャで二重化する",
-      "summary": "PIIを含むワークロードにLLMを組み込む際の論点は、学習リスク・保持リスク・経路リスクの3つに分解できます。前二者は契約・規約のレイヤー、後者はネットワーク設計のレイヤーであり、対策も分けて設計すべきです。本記事はAmazon Bedrockでこの3リスクを…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/xim2jp_tokyo/articles/6dfcc980befb02",
-      "category": "LLM",
-      "date": "2026-08-21",
-      "datetime": "2026-08-21T20:22:39+09:00"
-    },
-    {
       "id": "a3153803fb36",
       "title": "小型モデル「LFM2.5」を2倍以上高速化する投機的デコーディング技術DSpark適用版が登場",
       "summary": "AI企業のLiquid AIが小型モデルのLFM2.5シリーズに高速化技術の「DSpark」を適用したことを発表しました。DSpark適用版のモデルは性能を維持したまま2倍以上の高速化に成功しています。続きを読む...",
@@ -132,28 +88,6 @@
       "category": "その他",
       "date": "2026-08-21",
       "datetime": "2026-08-21T17:45:00+09:00"
-    },
-    {
-      "id": "ee440e98c5ce",
-      "title": "AI駆動開発は早寝早起きで早朝に開発がおすすめ",
-      "summary": "深夜にAIコーディングエージェントを動かしていて、いつもよりアホな動きをすると感じたことはないでしょうか。 日本時間の深夜はUS系AIサービスにとって世界で最も混み合う時間帯です。個人開発でAIに熱中していると、つい深夜1時、2時まで粘ってしまいますが、その時…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/kamo78/articles/llm-midnight-congestion-sleep-early",
-      "category": "製品",
-      "date": "2026-08-21",
-      "datetime": "2026-08-21T17:30:05+09:00"
-    },
-    {
-      "id": "f31e237eb616",
-      "title": "【チームによるAI駆動開発の勘所：第4回】整合性の境界は、技術ではなく業務が決める",
-      "summary": "この記事では、マイクロサービス設計で最も後戻りが高くつく判断 —— 「ここからここまでは、同時に成功するか、同時に失敗するかでなければならない」という範囲をどこに引くか を扱います。 6つのペアについて「許せる / 許せない」を判定し、引いた境界に4つの破壊テ…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/scalar_sol_blog/articles/57ea2f9033096b",
-      "category": "製品",
-      "date": "2026-08-21",
-      "datetime": "2026-08-21T17:22:34+09:00"
     },
     {
       "id": "ae7048f050ee",
@@ -189,28 +123,6 @@
       "datetime": "2026-08-21T16:42:32+09:00"
     },
     {
-      "id": "923d3734ffa3",
-      "title": "AIに本番DBを触らせて全部消した話と、そのあとに入れたガードレール",
-      "summary": "社内システムのデータを、一度まるごと飛ばしたことがあります。悪意も油断もなく、正しい手順はスクリプトの先頭にコメントで書いてありました。それでも消えました。 この記事は、その事故のあとに作った禁止コマンド表・書き込み前の手順・既定値の設計を、なぜその形になった…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/ty1110/articles/10a916019f9a86",
-      "category": "その他",
-      "date": "2026-08-21",
-      "datetime": "2026-08-21T16:19:43+09:00"
-    },
-    {
-      "id": "b55b4bd8474e",
-      "title": "技術知識のない自分がAIと一緒にレシピ管理アプリを作った話",
-      "summary": "はじめに：正直に言います 最初に白状しておくと、自分はエンジニアではありません。 コードを書いた経験はほぼなく、Next.jsもSupabaseも名前くらいは聞いたことがある程度でした。この記事に出てくる技術的な実装は、ほぼすべてAI（Claude）と対話しな…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/demin/articles/b76b2f98326cad",
-      "category": "LLM",
-      "date": "2026-08-21",
-      "datetime": "2026-08-21T16:13:34+09:00"
-    },
-    {
       "id": "5ee30ecfe44b",
       "title": "AIは「確実に6人を犠牲に1人を救える方法」と「全員生還か全員犠牲のギャンブル」のどちらを選ぶのか？",
       "summary": "「人命と自分のデータセンターどちらを助けるか」や「AIに殺人を犯したと告白したら警察に密告するのか」などAIのさまざまな検証をしているYouTubeチャンネルのAi Convoが、新たなシナリオとして「『6人を犠牲に1人を救う確実な方法』と『全員助かるか全員犠…",
@@ -222,39 +134,6 @@
       "datetime": "2026-08-21T16:00:00+09:00"
     },
     {
-      "id": "b955a7e34053",
-      "title": "AIエージェント「Grok Build」がスマホアプリやウェブ版Grokでも利用可能に、アプリを作って固有URLで公開する機能もあり",
-      "summary": "ウェブ版のGrok、iOSおよびAndroid版のGrokアプリでAIエージェントの「Grok Build」が利用可能となりました。続きを読む...",
-      "source": "Gigazine",
-      "source_url": "https://gigazine.net",
-      "url": "https://gigazine.net/news/20260821-grok-build-web-mobile/",
-      "category": "製品",
-      "date": "2026-08-21",
-      "datetime": "2026-08-21T13:28:00+09:00"
-    },
-    {
-      "id": "7253f1db3aa9",
-      "title": "Chromebookの後継機種「Googlebook」のプレビューイベントをGoogleが2026年9月15日にニューヨークで開催",
-      "summary": "Googleは2026年5月に、Gemini Intelligence向けに設計されたノートPC「Googlebook」を発表しました。価格や発売時期、詳細なスペックなどは公開されていませんでしたが、Googleは2026年9月15日にメディア関係者限定のGo…",
-      "source": "Gigazine",
-      "source_url": "https://gigazine.net",
-      "url": "https://gigazine.net/news/20260821-googlebook-event/",
-      "category": "LLM",
-      "date": "2026-08-21",
-      "datetime": "2026-08-21T13:15:00+09:00"
-    },
-    {
-      "id": "597d2f5fb0e6",
-      "title": "最大4Kまで動画を高解像度化できるアップスケーラー「FLUX Video Upscale」が登場",
-      "summary": "AI企業のBlack Forest LabsがAIを用いた動画アップスケーラー「FLUX Video Upscale」をリリースしました。FLUX Video Upscaleは動画を最大4Kにまでアップスケールすることができます。続きを読む...",
-      "source": "Gigazine",
-      "source_url": "https://gigazine.net",
-      "url": "https://gigazine.net/news/20260821-flux-video-upscale/",
-      "category": "画像生成",
-      "date": "2026-08-21",
-      "datetime": "2026-08-21T12:32:00+09:00"
-    },
-    {
       "id": "e4380f6804bb",
       "title": "Bedrock の Web Search がライブ Web 取得に対応したので試してみた",
       "summary": "はじめに 2026 年 8 月 4 日に GA した Web Search on Amazon Bedrock は、リリース時点では検索対象が Amazon の管理する Web スナップショットに限られていました。external_web_access という…",
@@ -264,28 +143,6 @@
       "category": "製品",
       "date": "2026-08-21",
       "datetime": "2026-08-21T12:08:41+09:00"
-    },
-    {
-      "id": "ebae7e2bdf9c",
-      "title": "GitHubが約8時間ダウンした原因が判明、急増する利用量に重要なインフラが自動拡張できず障害が連鎖",
-      "summary": "2026年8月17日から18日にかけてGitHubで世界規模の障害が発生し、GitHub.comやGitHub Actions、GitHub Copilotなど多数のサービスが利用しづらくなりました。GitHubは8月20日に調査結果を公表し、過去最高水準のト…",
-      "source": "Gigazine",
-      "source_url": "https://gigazine.net",
-      "url": "https://gigazine.net/news/20260821-why-github-down/",
-      "category": "LLM",
-      "date": "2026-08-21",
-      "datetime": "2026-08-21T11:51:00+09:00"
-    },
-    {
-      "id": "45f582b2be91",
-      "title": "Claudeの使い方を学べる公式チュートリアル「Claude Academy」が登場、単純なチャットからエージェントまで網羅",
-      "summary": "AIの「Claude」を開発するAnthropicが、Claudeの使い方を解説するページ「Claude Academy」を公開しました。文章・画像・動画でClaudeの使用方法が解説されており、日本語にも対応しています。サインイン不要で誰でも閲覧できるのが特…",
-      "source": "Gigazine",
-      "source_url": "https://gigazine.net",
-      "url": "https://gigazine.net/news/20260821-anthropic-claude-academy/",
-      "category": "LLM",
-      "date": "2026-08-21",
-      "datetime": "2026-08-21T11:42:00+09:00"
     },
     {
       "id": "d7290449a7ad",
