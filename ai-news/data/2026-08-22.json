@@ -2,28 +2,6 @@
   "date": "2026-08-22",
   "articles": [
     {
-      "id": "04728dab09b7",
-      "title": "Claudeのテキスト透かし（ウォーターマーク）は何をしているのか ── サンプリングの仕組みから理解する",
-      "summary": "はじめに 2026年8月14日、AnthropicがClaudeの出力テキストに透かし（ウォーターマーク）を入れると発表しました。これを受けて、Sebastian Raschka氏（『Build a Large Language Model From Scra…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/rinrin_ds_17/articles/bc093cfa3bdbd1",
-      "category": "LLM",
-      "date": "2026-08-22",
-      "datetime": "2026-08-22T23:02:40+09:00"
-    },
-    {
-      "id": "c67891936b08",
-      "title": "\"AIコーディングのセッションが飛んだ。定義は残っていたので復元したら、事故になりかけた\"",
-      "summary": "何が起きたか 個人開発している学習アプリの作業中に、AIコーディングツールのセッションが3つまとめて飛んだ。 アプリ本体を触っていたセッション 毎日16:00に問題データを生成するスケジュールタスク 毎日17:00にそれを本番へ反映するスケジュールタスク 会話…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/ouchidrill/articles/ee6a147106aa80",
-      "category": "その他",
-      "date": "2026-08-22",
-      "datetime": "2026-08-22T22:18:39+09:00"
-    },
-    {
       "id": "cd0e165f843e",
       "title": "人工無脳のフリした Gemini bot が、まさかの本番機能の予行演習になった話",
       "summary": "はじめに 会社の Mattermost に、ちょっとした遊び心で bot を1体飼っています。 見た目はただの「人工無脳」——決まった言葉に反応して、それっぽい返事を返すだけの古典的なやつです。 ただ、中身だけは今どき仕立てで、返答の生成に Gemini を使…",
@@ -57,61 +35,6 @@
       "datetime": "2026-08-22T21:04:11+09:00"
     },
     {
-      "id": "45f30ae9eb98",
-      "title": "【チームによるAI駆動開発の勘所：第5回】サービスをまたぐ整合性 - 「どちらも使えない」が正解のとき",
-      "summary": "サービスをまたぐ整合性をどう担保するか。この問いに対して、多くの現場では次のような順序で判断が進みます。 外部SaaS があるから ScalarDB のような基盤には載せられない だから Saga（補償トランザクション）でいこう この順序、間違っています。しか…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/scalar_sol_blog/articles/6c77116c8528e8",
-      "category": "製品",
-      "date": "2026-08-22",
-      "datetime": "2026-08-22T20:58:27+09:00"
-    },
-    {
-      "id": "051789e45ba5",
-      "title": "無料でAIエージェントに最適化されたオープンソースのメモ帳アプリ「Hubble.md」、MarkdownとHTMLをベースにして保存・編集・操作が可能",
-      "summary": "Markdown形式のメモをAIエージェントに直接編集させたり、複数のメモからHTML形式のダッシュボード・本棚・地図を作らせたりと、AIがファイルを扱うことを前提に設計された無料・オープンソースのメモ帳アプリ「Hubble.md」が公開されています。続きを読…",
-      "source": "Gigazine",
-      "source_url": "https://gigazine.net",
-      "url": "https://gigazine.net/news/20260822-hubble-md/",
-      "category": "製品",
-      "date": "2026-08-22",
-      "datetime": "2026-08-22T19:00:00+09:00"
-    },
-    {
-      "id": "e4cf16ddc800",
-      "title": "Query-aware Compressionは本当に効く？BedrockでRAGのトークンとコストを実測",
-      "summary": "本記事は個人による技術検証の結果をまとめたものであり、所属組織の公式見解を示すものではありません。 1. はじめに RAGでは、検索でヒットした複数のチャンクをそのままLLMのプロンプトに詰め込むことがあります。しかし検索結果には質問と無関係な文章も含まれてお…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/kashiwabaray/articles/b9e86f3a564084",
-      "category": "LLM",
-      "date": "2026-08-22",
-      "datetime": "2026-08-22T18:15:37+09:00"
-    },
-    {
-      "id": "dbd78b074d20",
-      "title": "AIコーディングの精度を上げる「任せ方」と「確かめ方」",
-      "summary": "はじめに 最近では、ChatGPTやClaude Code、CodexなどのAIツールを、実際の開発業務で利用する機会が増えてきました。 コードの生成はもちろん、既存コードの調査、実装方針の検討、バグの原因調査、テストコードの作成、コードレビューなど、今では開…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/mamimami/articles/4fbcf34f2d8bac",
-      "category": "LLM",
-      "date": "2026-08-22",
-      "datetime": "2026-08-22T18:00:05+09:00"
-    },
-    {
-      "id": "2922de76a2ca",
-      "title": "AIモデルを選ぶ時に「実際に何をしているのか？」という内部構造や処理フローをアニメーションで視覚化して確認できる「modelmap」",
-      "summary": "Hugging Faceは多数のAIモデルを共有していますが、AIモデルを選定する際にはどのAIモデルが内部的にどのような動きをしているのか、モデルの違いによって何が変わるのかが気になるところです。「modelmap」はAIモデルがどのような構造をしていて動作…",
-      "source": "Gigazine",
-      "source_url": "https://gigazine.net",
-      "url": "https://gigazine.net/news/20260822-modelmap/",
-      "category": "その他",
-      "date": "2026-08-22",
-      "datetime": "2026-08-22T18:00:00+09:00"
-    },
-    {
       "id": "8da6092b3fb0",
       "title": "モードを増やす作業を、Markdown 1枚に閉じ込める：Go でプロンプトをコードから引き剥がす",
       "summary": "AI を使うアプリには、たいてい「モード」があります。レビューなら記事レビューとコードレビュー、漫画なら章立てとネームとパネル。中身の違いは、ほとんどがプロンプトの文言です。 にもかかわらず、モードを1つ増やすと触る場所は増えていきます。プロンプトの定数、画面…",
@@ -121,17 +44,6 @@
       "category": "LLM",
       "date": "2026-08-22",
       "datetime": "2026-08-22T17:29:42+09:00"
-    },
-    {
-      "id": "bef0cd473468",
-      "title": "GoogleのAIエージェント「Antigravity」が別デバイスからのリモートコントロールに対応",
-      "summary": "Googleのコーディングエージェント「Antigravity」がウェブブラウザからのリモートコントロールに対応しました。ユーザーの操作が必要になった際にスマートフォンに通知を届ける機能も提供されています。続きを読む...",
-      "source": "Gigazine",
-      "source_url": "https://gigazine.net",
-      "url": "https://gigazine.net/news/20260822-antigravity-remote-control/",
-      "category": "その他",
-      "date": "2026-08-22",
-      "datetime": "2026-08-22T17:20:00+09:00"
     },
     {
       "id": "5517f0cc44bf",
@@ -154,17 +66,6 @@
       "category": "研究",
       "date": "2026-08-22",
       "datetime": "2026-08-22T16:19:29+09:00"
-    },
-    {
-      "id": "b7e7678e3fdc",
-      "title": "血みどろ姿の「ガッツ[狂戦士の甲胄] Bloody Paint Ver. L size」がGood Smile Fest 2026 大阪会場に出現",
-      "summary": "ダークファンタジー漫画の大作「ベルセルク」の主人公・ガッツが狂戦士の甲冑をまとい、血にまみれた姿を立体化した彩色見本が、Good Smile Fest 2026 大阪の会場に展示されています。続きを読む...",
-      "source": "Gigazine",
-      "source_url": "https://gigazine.net",
-      "url": "https://gigazine.net/news/20260822-berserk-gsf2026/",
-      "category": "その他",
-      "date": "2026-08-22",
-      "datetime": "2026-08-22T11:07:00+09:00"
     },
     {
       "id": "e4814863fa03",
