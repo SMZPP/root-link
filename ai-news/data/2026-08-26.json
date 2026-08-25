@@ -1,0 +1,137 @@
+{
+  "date": "2026-08-26",
+  "articles": [
+    {
+      "id": "ee0c77cecfc1",
+      "title": "AIエージェントの暴走を止めるガード実装パターン集 — 実機ログから抽出した7つの型",
+      "summary": "📝 この記事は forge.workstyle.tech に掲載した記事の転載です。 tool-calling でPCやブラウザを操作するAIエージェントを実運用に近づけると、デモでは出なかった「暴走」に必ず出会います。本記事は、音声駆動のデスクトップエージェ…",
+      "source": "Qiita",
+      "source_url": "https://qiita.com",
+      "url": "https://qiita.com/maccotaro/items/e811f0d460acf5863da8",
+      "category": "その他",
+      "date": "2026-08-26",
+      "datetime": "2026-08-26T05:04:37+09:00"
+    },
+    {
+      "id": "9c59fce004fb",
+      "title": "Claude Code のモデル切替設定、実は思ってた仕様と違った",
+      "summary": "Claude Code のモデル切替設定、実は思ってた仕様と違った Claude Codeには「メインのモデルが混雑していて使えないときに、別のモデルへ自動で切り替える」という設定（fallbackModel）がある。 自分はこれを、純粋に「サーバーが混んでい…",
+      "source": "Qiita",
+      "source_url": "https://qiita.com",
+      "url": "https://qiita.com/y104autumn/items/9fe3baf9fe7b7d313006",
+      "category": "LLM",
+      "date": "2026-08-26",
+      "datetime": "2026-08-26T04:03:18+09:00"
+    },
+    {
+      "id": "64d44f940738",
+      "title": "Claude Code のフックに空いた穴が、どれだけテストしても出ず公式ドキュメントに書いてあった",
+      "summary": "Claude Code のフックに空いた穴が、どれだけテストしても出ず公式ドキュメントに書いてあった 以前、自分が作った検知フックが、自分の書いた説明文に反応して誤爆した話を書いたことがある（「Claude Code用に作った『うっかり防止フック』が、自分自身…",
+      "source": "Qiita",
+      "source_url": "https://qiita.com",
+      "url": "https://qiita.com/y104autumn/items/5f7788502df3d6527e6e",
+      "category": "LLM",
+      "date": "2026-08-26",
+      "datetime": "2026-08-26T03:58:50+09:00"
+    },
+    {
+      "id": "c2d735a5accb",
+      "title": "Claude Codeに「応答が遅い」と伝えたら、丸2日間ずっと見当違いの場所を高速化されていた話",
+      "summary": "Claude Codeに「応答が遅い」と伝えたら、丸2日間ずっと見当違いの場所を高速化されていた話 「なんか今日、AIの返事が遅いな」——そう感じて、使っているAIコーディングアシスタントに直接「遅い」とだけ伝えたことはないだろうか。そして返ってきた「改善しま…",
+      "source": "Qiita",
+      "source_url": "https://qiita.com",
+      "url": "https://qiita.com/y104autumn/items/06a729223b58e5e404de",
+      "category": "LLM",
+      "date": "2026-08-26",
+      "datetime": "2026-08-26T03:43:31+09:00"
+    },
+    {
+      "id": "ce74c8bd9319",
+      "title": "LLM が書いたテストを信頼する方法 — テスト義務ゲート",
+      "summary": "本記事は Zenn にも同内容を公開している: https://zenn.dev/flip451/articles/sotohe-test-obligation-gate 「機能 XX を実装して、そのテストも追加して」と LLM に頼んだとしよう。返ってくる…",
+      "source": "Qiita",
+      "source_url": "https://qiita.com",
+      "url": "https://qiita.com/Flip451/items/051aac37022af6823e51",
+      "category": "LLM",
+      "date": "2026-08-26",
+      "datetime": "2026-08-26T02:19:13+09:00"
+    },
+    {
+      "id": "9e999bb5db6d",
+      "title": "LLM が書いたテストを信頼する方法 — テスト義務ゲート",
+      "summary": "「機能 XX を実装して、そのテストも追加して」と LLM に頼んだとしよう。返ってくるのは、膨大な量のソースコードの差分と、膨大な数の自動テストかもしれない。テストはすべて green だ。さて、これをどう評価し、どう信頼すればよいだろうか。 この問いを、少…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/flip451/articles/sotohe-test-obligation-gate",
+      "category": "LLM",
+      "date": "2026-08-26",
+      "datetime": "2026-08-26T02:09:53+09:00"
+    },
+    {
+      "id": "16c4a39ef10c",
+      "title": "LLMのPrompt Caching（プロンプトキャッシュ）の仕組みを理解する — なぜ速く・安くなるのか",
+      "summary": "毎回同じ長いSystem Promptを送っている RAGで同じ巨大ドキュメントを何度も参照する AI Agentで大量のTool定義を毎回渡している 長い会話履歴を毎ターン送り直している 例えば、次のようなプロンプトです。 [System Prompt: 5…",
+      "source": "Qiita",
+      "source_url": "https://qiita.com",
+      "url": "https://qiita.com/softbase/items/03d50a54479df7afa5e7",
+      "category": "LLM",
+      "date": "2026-08-26",
+      "datetime": "2026-08-26T01:33:16+09:00"
+    },
+    {
+      "id": "5f30a8df0586",
+      "title": "なぜ、コンテキストエンジニアリングの次はハーネスでもループでもなく、ハイポセシスエンジニアリングだと言えるのか？",
+      "summary": "はじめに 生成AIの使い方をめぐる言葉は、ここ数年で急速に変わってきました。最初に注目されたのは、AIにどのような指示を出せば期待する回答を得られるかを考えるプロンプトエンジニアリングでした。その後、単一の指示文ではなく、会話履歴、資料、検索結果、ツール、メモ…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/pdfractal/articles/7672f27ad5f8b4",
+      "category": "LLM",
+      "date": "2026-08-26",
+      "datetime": "2026-08-26T00:59:05+09:00"
+    },
+    {
+      "id": "3ab6ecdde7f2",
+      "title": "ChatGPT Work（デスクトップアプリ）入門：チャットとの違いから並列作業・自動化まで、初心者向けに解説",
+      "summary": "はじめに 「ChatGPT はブラウザで質問するもの」という使い方から、なかなか抜け出せていない方は多いのではないでしょうか。資料を作りたいときにファイルをひとつずつアップロードし、できあがった成果物をダウンロードして自分のフォルダに保存し直す。この往復作業は…",
+      "source": "Qiita",
+      "source_url": "https://qiita.com",
+      "url": "https://qiita.com/Takuya__/items/c505c5190be3765f2cd8",
+      "category": "LLM",
+      "date": "2026-08-26",
+      "datetime": "2026-08-26T00:50:38+09:00"
+    },
+    {
+      "id": "d8a654c410b9",
+      "title": "ChatGPT Work（デスクトップアプリ）入門：チャットとの違いから並列作業・自動化まで、初心者向けに解説",
+      "summary": "はじめに 「ChatGPT はブラウザで質問するもの」という使い方から、なかなか抜け出せていない方は多いのではないでしょうか。資料を作りたいときにファイルをひとつずつアップロードし、できあがった成果物をダウンロードして自分のフォルダに保存し直す。この往復作業は…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/takuh/articles/93570a8bf8c846",
+      "category": "LLM",
+      "date": "2026-08-26",
+      "datetime": "2026-08-26T00:50:13+09:00"
+    },
+    {
+      "id": "99a894cd0603",
+      "title": "gooseのRecipeだけじゃない。コーディングエージェント7実装の「発明」カタログ",
+      "summary": "! この記事は AI（Claude Code）が調査から執筆まで自動で行ったものです。 各リポジトリのクローン、ソースの読解、比較、原稿化までを AI が実施し、 人間はテーマの指示と公開判断を担当しています。 引用したコードと数値は実際のソースに基づいていま…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/waribashi/articles/agent-harness-02-features",
+      "category": "LLM",
+      "date": "2026-08-26",
+      "datetime": "2026-08-26T00:43:33+09:00"
+    },
+    {
+      "id": "dd8d064bb433",
+      "title": "AIで作ったUIの話を、LT会でしゃべってきました",
+      "summary": "はじめに 記事なら、プロンプトも手順もハマった話も、好きなだけズラズラ書けます。でもLTの持ち時間は約10分。さすがに全部は話せません。 ということで、2026年8月22日に開催された「【AI業務改善】EDA Tech Talk @東京 #06 ー明日から使え…",
+      "source": "Qiita",
+      "source_url": "https://qiita.com",
+      "url": "https://qiita.com/inoyu-qiita/items/148acef97e0e53457304",
+      "category": "LLM",
+      "date": "2026-08-26",
+      "datetime": "2026-08-26T00:00:21+09:00"
+    }
+  ]
+}

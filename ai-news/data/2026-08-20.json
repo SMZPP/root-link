@@ -2,61 +2,6 @@
   "date": "2026-08-20",
   "articles": [
     {
-      "id": "66bade14b7c2",
-      "title": "【Gemini】Geminiで生成した画像や文章は商用利用できる？著作権や補償条件を徹底解説！",
-      "summary": "最近、業務の効率化やアイデア出しに生成AIを活用する機会が劇的に増えているのではないでしょうか。中でもGoogleの「Gemini」は、Google Workspace（GWS）とシームレスに連携できることから、多くの企業で導入が進んでいます。 しかし、活用が…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/densan_techblog/articles/a17ed9131d3b8e",
-      "category": "LLM",
-      "date": "2026-08-20",
-      "datetime": "2026-08-20T23:56:17+09:00"
-    },
-    {
-      "id": "3ff9816b1b90",
-      "title": "家計簿が続かないので、LINEにレシート写真を送るだけで記録される仕組みをGASとGeminiで作った",
-      "summary": "家計簿が続かなかった理由 スプレッドシートで家計簿をつけようとして、何度も挫折しました。理由は単純で、レシートを見ながら日付・店名・品目・金額を毎回手入力するのが面倒だったからです。「あとでまとめて入力しよう」と貯めたレシートは、たいてい行方不明になります。 …",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/clown_viper/articles/5ca51ec04b477a",
-      "category": "LLM",
-      "date": "2026-08-20",
-      "datetime": "2026-08-20T23:46:21+09:00"
-    },
-    {
-      "id": "b5d056ff67d6",
-      "title": "コードレビューが全文で回らなくなったので、AIにはdiffだけ渡すことにした",
-      "summary": "1.趣味のOSSプロダクトをAIくんたちにコードを書いて貰っている 今時珍しくもなくなってきましたがこんな体制で開発してます。お財布がどんどん軽くなるゾイ。 役割 誰が？ PO 私 アーキテクト ChatGPT 文書レビュワー Claude 調査・実装 Cod…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/k_motoki/articles/98ace2595164cf",
-      "category": "LLM",
-      "date": "2026-08-20",
-      "datetime": "2026-08-20T23:28:04+09:00"
-    },
-    {
-      "id": "166f7adbec25",
-      "title": "AIがそう言ったから正しい！ 職場に広がる新しい権威、若者も高齢者もAIに説得される違いは？",
-      "summary": "近年、生成AIが人間の意思決定にどの程度影響を及ぼすのかが、国際的な研究テーマとなっている。 特に正解のない「道徳的ジレンマ」に対してAIが反論を提示した場合、人間の判断がどれほど変化するのかは、AIガバナンスや組織の意思決定プロセスに直結する重要な論点である…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/syoshida07/articles/221b3db10ad2fb",
-      "category": "研究",
-      "date": "2026-08-20",
-      "datetime": "2026-08-20T20:07:46+09:00"
-    },
-    {
-      "id": "12721ad5978f",
-      "title": "製造業の多言語マニュアル作成にChatGPTを活用する実践知見",
-      "summary": "製造現場の多言語ドキュメントが抱える課題 製造業の現場では、海外工場との連携や外国人材の増加に伴い、作業マニュアルやFAQを複数言語で用意する必要が生じている。従来は専門の翻訳会社に外注するか、担当者が手作業で翻訳ソフトと辞書を往復しながら文書を作成しており、…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/yutaka8484/articles/kobayashi-20260817-chatgpt-multilingual-doc",
-      "category": "LLM",
-      "date": "2026-08-20",
-      "datetime": "2026-08-20T20:00:07+09:00"
-    },
-    {
       "id": "c77f79c17748",
       "title": "画像生成APIのretryで迷ったので、まずはPostgreSQLで冪等性を持たせた",
       "summary": "はじめに 画像生成を使ったアプリでAPIのrequestが失敗したとき、どこまで自動でretryしてよいのか迷いました。画像APIが遅いうえ、その後にBlob保存とPostgreSQLへの生成ログ保存が続くためです。 この3つは1つのtransactionで囲…",
@@ -66,39 +11,6 @@
       "category": "画像生成",
       "date": "2026-08-20",
       "datetime": "2026-08-20T20:00:05+09:00"
-    },
-    {
-      "id": "323aadd89499",
-      "title": "20年前の「簡単WEBサーバー」を作り直しました",
-      "summary": "20年前HTTPプロトコルの本を読んでえっほらえっほら作った昔の簡単WEBサーバーちゃん 今じゃ用意されているライブラリーを使うだけ そしてAIちゃんと相談するだけ chatgptちゃんにまとめてもらったにゃ ↓ 2005年ごろ、HTTPの本を読みながら作った…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/charmpic/articles/7ee1a830060df6",
-      "category": "LLM",
-      "date": "2026-08-20",
-      "datetime": "2026-08-20T13:11:38+09:00"
-    },
-    {
-      "id": "e741b8d2151a",
-      "title": "PMLEを2年ぶりに更新！Google Cloud認定資格「全冠」維持で見えたAI/MLの進化",
-      "summary": "～Vertex AIからAgent Platformへ。試験を通して理解したGoogle Cloud AI/MLの現在地～ はじめに 先日、Google CloudのProfessional Machine Learning Engineer（PMLE）試験に…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/nttdata_tech/articles/27edc1d2e66926",
-      "category": "その他",
-      "date": "2026-08-20",
-      "datetime": "2026-08-20T10:00:23+09:00"
-    },
-    {
-      "id": "975d86914b82",
-      "title": "多役プロンプトの後半ロール希薄化は、守るものの記述量で緩和できるか検証した",
-      "summary": "TL;DR 前回記事（賛成3vs反対3のLLMディベートで陣営内均質化を確かめた）で、「後半に定義した役ほど発言が抽象化する。守るものの具体性を上げても完全には解消しない」という未解決の傾向を報告した 今回は6人構成のロールプレイで、前半3ロールは「守るもの」…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/every_ai_recipe/articles/ai-role-defense-length-dilution",
-      "category": "LLM",
-      "date": "2026-08-20",
-      "datetime": "2026-08-20T06:10:05+09:00"
     }
   ]
 }
