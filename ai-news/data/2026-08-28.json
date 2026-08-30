@@ -13,39 +13,6 @@
       "datetime": "2026-08-28T23:10:00+09:00"
     },
     {
-      "id": "f357d8c4a5f8",
-      "title": "Neovim専用の日本語入力プラグイン「skk.nvim」を作りました",
-      "summary": "Neovim 専用、denops（Deno）などの外部プロセスに依存しない、Lua だけで実装した SKK（日本語入力）プラグイン skk.nvim を作りました。 https://github.com/nabehan/skk.nvim 現在 v0.1.1 ま…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/nabehan/articles/5df33e5c244e22",
-      "category": "その他",
-      "date": "2026-08-28",
-      "datetime": "2026-08-28T22:24:14+09:00"
-    },
-    {
-      "id": "efeddd5e5e6d",
-      "title": "なぜAgentic Loopに「静的ガードレール」が必要なのか——実測で見えた、トークン肥大化の正体と「止まれる」設計の価値",
-      "summary": "1. はじめに 前回・前々回の記事では、レガシーJavaライブラリを題材に、AIエージェントへ「CIの全ゲートがPASSするまで自律的に繰り返せ」という指示を何度も投げてきました。この形式——エージェントが「変更する→検証する→失敗したら直す」というループを、…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/yuninaka/articles/agentic-loop-static-guardrails",
-      "category": "LLM",
-      "date": "2026-08-28",
-      "datetime": "2026-08-28T21:12:49+09:00"
-    },
-    {
-      "id": "f155da774bfe",
-      "title": "Claude Workbench廃止でAI会社の自動化フローを見直した記録——launchd+MCP構成は壊れなかったが、失ったものがあった",
-      "summary": "2026年8月17日、Anthropic が Claude Workbench（claude.ai 内のプロンプトテスト環境）を廃止し、同等機能を Claude Console（console.anthropic.com）に統合した。 AI Maker Lab…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/aimakerlab/articles/7ba7a136dcbd70",
-      "category": "LLM",
-      "date": "2026-08-28",
-      "datetime": "2026-08-28T21:11:37+09:00"
-    },
-    {
       "id": "e4ee8502f8ab",
       "title": "GoogleがAIボットによる検索結果スクレイピングを防ぐためパススルーURLとして「google.com/goto」の展開を開始",
       "summary": "GoogleがGoogle検索の検索結果ページがスクレイピングされることを防ぐために、「google.com/goto」というパススルーURLを追加し始めたことが明らかになりました。続きを読む...",
@@ -112,17 +79,6 @@
       "datetime": "2026-08-28T19:00:00+09:00"
     },
     {
-      "id": "ac02ff839383",
-      "title": "許可ルールを152件ためこんでいた。完全一致で書かれた92件は、10万9762回の実行で一度も効かなかった",
-      "summary": "Claude Code で「このコマンドを許可しますか」と聞かれて Yes, and don't ask again を押すと、~/.claude/settings.json の permissions.allow に1行足される。押すたびに足される。押した記…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/tsutomusaito/articles/permission-rules-decay-ja",
-      "category": "LLM",
-      "date": "2026-08-28",
-      "datetime": "2026-08-28T18:57:06+09:00"
-    },
-    {
       "id": "da97e27c0ec5",
       "title": "国防総省によるAnthropicのサプライチェーンリスク指定は違法だと連邦判事が判断",
       "summary": "AIの軍事利用を巡って「Claude」開発元のAnthropicと決裂したアメリカ国防総省が、Anthropicを「国家安全保障上のサプライチェーンリスク」に指定したことについて争われていた裁判で、連邦地方裁判所が「国防総省は憲法修正第1条に違反した」と認定し…",
@@ -132,17 +88,6 @@
       "category": "LLM",
       "date": "2026-08-28",
       "datetime": "2026-08-28T18:24:00+09:00"
-    },
-    {
-      "id": "3ace24f01ccd",
-      "title": "[ADR] レビューを怠ると危ない。AI時代のADR運用で気づいたこと",
-      "summary": "はじめに ある案件で、フロントエンドが扱う認証トークンをどう保持するか、というADR[1]をまとめる機会がありました。 しかも今回は、後々AIに実装を任せることまで見越した内容にしようと思い、AIを使って文体を整えたり設計を具体化したりしながら作成を進めていま…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/ncdc/articles/51fd6e7a643687",
-      "category": "LLM",
-      "date": "2026-08-28",
-      "datetime": "2026-08-28T17:56:31+09:00"
     },
     {
       "id": "76c005b04607",
@@ -156,17 +101,6 @@
       "datetime": "2026-08-28T17:42:30+09:00"
     },
     {
-      "id": "5c25643cda31",
-      "title": "ClaudeのService Account Key移行前にWorkspaceを検証するPython",
-      "summary": "CIで使っているClaude APIキーの名前は分かっていても、「誰のアカウントに紐づいているか」までは見ていないことがあります。 個人のキーを共有ジョブに置いたままだと、その人の退職や権限変更が、CIの停止条件になります。かといって、新しいキーを作ってSec…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/amamiya_chan/articles/ba813f79654ba3",
-      "category": "LLM",
-      "date": "2026-08-28",
-      "datetime": "2026-08-28T16:50:05+09:00"
-    },
-    {
       "id": "c182245e9fbb",
       "title": "500万行のAI対話ログから「誰の判断だったのか」を掘ってみた",
       "summary": "この記事は何か 長期間AIと対話し続けていると、ある日ふと分からなくなる。 「この判断、元々私のものだったっけ？ それともAIとの対話の中で作られたもの？」 私は半年の間、複数のAI（GPT、Claude、Claude Code）と日常的に対話しながらアプリ開…",
@@ -176,17 +110,6 @@
       "category": "LLM",
       "date": "2026-08-28",
       "datetime": "2026-08-28T16:08:34+09:00"
-    },
-    {
-      "id": "0bd86152f439",
-      "title": "AIや企業によるカンニングを防ぎつつ最先端モデルをテストする方法をGoogleが考案",
-      "summary": "世界中の企業や研究機関が新たなAIモデルを発表する中で、AIモデルのテストは「どのモデルを利用するべきか」を判断する重要な手がかりになります。そんなAIモデルのテストにおいて、AIや開発企業によるカンニングを防ぎつつ性能評価するテストの手法を、GoogleのA…",
-      "source": "Gigazine",
-      "source_url": "https://gigazine.net",
-      "url": "https://gigazine.net/news/20260828-google-ai-evaluations-secure-environments/",
-      "category": "研究",
-      "date": "2026-08-28",
-      "datetime": "2026-08-28T15:40:00+09:00"
     },
     {
       "id": "4442990453d3",
@@ -200,72 +123,6 @@
       "datetime": "2026-08-28T15:01:00+09:00"
     },
     {
-      "id": "4e7f9b938e19",
-      "title": "ローカルのClaude Codeで、APIキーを設定ファイルに書かずに使う",
-      "summary": "はじめに ローカルのClaude Codeで使うAPIキー、どこに保存していますか。 MCP Serverへ渡すため、.zshrcで環境変数としてexportしている方も多いと思います。 export API_KEY=\"...\" これだとAPIキーが平文で残り…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/aranseshita/articles/bb9022497de331",
-      "category": "LLM",
-      "date": "2026-08-28",
-      "datetime": "2026-08-28T14:45:20+09:00"
-    },
-    {
-      "id": "9f9e525ec41b",
-      "title": "購入した電子書籍をGeminiに読ませて質問できる「Expert Intelligence」が登場、10万冊超に対応",
-      "summary": "文書・音声・動画をAIで分析して内容を整理してまとめてくれるGoogleのツール「Gemini Notebook(旧：NotebookLM)」の新しい取り組みとして、購入済みの書籍を取り込んで質問したり議論したりできる「Expert Intelligence」…",
-      "source": "Gigazine",
-      "source_url": "https://gigazine.net",
-      "url": "https://gigazine.net/news/20260828-expert-intelligence-gemini/",
-      "category": "LLM",
-      "date": "2026-08-28",
-      "datetime": "2026-08-28T14:15:00+09:00"
-    },
-    {
-      "id": "9946a1a77edb",
-      "title": "LLMを多段で繋ぐと、要約が根拠を落として後工程が捏造する",
-      "summary": "AIエージェントに毎日ニュース記事を書かせています。4つの工程を繋いだパイプラインで、公開先はnoteです。 30本たまったところで全部読み直したら、ある記事にこういう一覧が載っていました。 トップ10のうち5本が続編・シリーズ・アニメ作品でした。 ・2位「映…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/ms07bgf/articles/f7ebe0f343683c",
-      "category": "LLM",
-      "date": "2026-08-28",
-      "datetime": "2026-08-28T13:42:53+09:00"
-    },
-    {
-      "id": "8472d9bf612b",
-      "title": "歌って滑れるアヒル型ロボット「Microduck」をHugging Face傘下のスタートアップ・Pollen Roboticsが発表",
-      "summary": "AI開発プラットフォーム・Hugging Face傘下のロボットスタートアップであるPollen Roboticsが、二足歩行したりくちばしでものを拾い上げたりできるアヒル型ロボット「Microduck」を発表しました。続きを読む...",
-      "source": "Gigazine",
-      "source_url": "https://gigazine.net",
-      "url": "https://gigazine.net/news/20260828-pollen-robotics-microduck/",
-      "category": "その他",
-      "date": "2026-08-28",
-      "datetime": "2026-08-28T13:40:00+09:00"
-    },
-    {
-      "id": "88c53441f90b",
-      "title": "学生がAIを使うと論理が明確で専門家に近い回答になることがOpenAIの実験で判明",
-      "summary": "学生に生成AIを使わせるべきなのか、一律で禁止すべきなのかという議論は世界中で絶えず行われています。OpenAIが大学と共同で行った新たな実験では、AIを使う場合でも一定のメリットがあることが明らかになりました。続きを読む...",
-      "source": "Gigazine",
-      "source_url": "https://gigazine.net",
-      "url": "https://gigazine.net/news/20260828-student-gain-from-ai/",
-      "category": "研究",
-      "date": "2026-08-28",
-      "datetime": "2026-08-28T12:48:00+09:00"
-    },
-    {
-      "id": "c9241e1d53ab",
-      "title": "AnthropicがAIに顕微鏡やロボットアームを操作させる共通規格「Model Hardware Standard」を発表",
-      "summary": "AIが顕微鏡やロボットアームなどの物理機器を操作するための共通規格「Model Hardware Standard(MHS)」の研究プレビューをAnthropicが発表しました。MHSを使うことで、メーカーや種類が異なる機器をAIが共通の方法で扱いやすくなると…",
-      "source": "Gigazine",
-      "source_url": "https://gigazine.net",
-      "url": "https://gigazine.net/news/20260828-anthropic-model-hardware-standard/",
-      "category": "研究",
-      "date": "2026-08-28",
-      "datetime": "2026-08-28T12:30:00+09:00"
-    },
-    {
       "id": "9a5cafd455bc",
       "title": "ChatGPTの「カスタム指示」に要注意？ Web版／デスクトップ版、Chat／Work／Codexで検証",
       "summary": "ChatGPTの「カスタム指示」は、Web版とデスクトップ版で同じように見えます。しかし、私の環境で確認したところ、設定した場所によって反映先が分かれていました。 ※ここでのデスクトップ版とは、ChatGPT Classic ではなく Codex デスクトップ…",
@@ -275,17 +132,6 @@
       "category": "LLM",
       "date": "2026-08-28",
       "datetime": "2026-08-28T12:25:26+09:00"
-    },
-    {
-      "id": "3a20fb5a228f",
-      "title": "Googleが動画生成AI「Gemini Omni 1.1 Flash」をリリース、「最大4Kアップスケール」「動画の続きを生成」「低解像度で高速プレビュー」など",
-      "summary": "Googleが動画生成AI「Gemini Omni 1.1 Flash」を現地時間の2026年8月27日にリリースしました。続きを読む...",
-      "source": "Gigazine",
-      "source_url": "https://gigazine.net",
-      "url": "https://gigazine.net/news/20260828-gemini-omni-1-1-flash/",
-      "category": "LLM",
-      "date": "2026-08-28",
-      "datetime": "2026-08-28T12:12:00+09:00"
     },
     {
       "id": "d46059f7eaef",

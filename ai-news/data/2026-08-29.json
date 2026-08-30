@@ -2,81 +2,15 @@
   "date": "2026-08-29",
   "articles": [
     {
-      "id": "5b45fa0ddaa8",
-      "title": "GPTとCodexの使い分け方｜複雑な開発は「GPTで設計、Codexで実装」する方法",
-      "summary": "GPTとCodexを分けて使う開発方法が注目 AIを使ったプログラミングでは、 「Codexに要件を渡せば、そのまま全部作ってもらえるのでは？」 と考えたくなる。 小さな機能追加や単純な修正なら、それでも十分なケースはある。 しかし、既存コードが大量にあり、複…",
-      "source": "Qiita",
-      "source_url": "https://qiita.com",
-      "url": "https://qiita.com/zhao-xy/items/27dda87be71cfca7fb22",
+      "id": "911c02582c3c",
+      "title": "Claude Codeを毎日使っているのに、セッションがわかっていなかった話",
+      "summary": "Claude Codeを使っていて、「セッション」「エージェント」「ジョブ」という言葉がこんがらがった人向けに、自分なりに整理したメモです。後半は、裏で走らせた修正がgitに出てこなくて焦った話。 白状します。 Claude Codeを毎日のように使っているの…",
+      "source": "Zenn.dev",
+      "source_url": "https://zenn.dev",
+      "url": "https://zenn.dev/da39nbv3/articles/d6d8b3cd6c46a2",
       "category": "LLM",
       "date": "2026-08-29",
-      "datetime": "2026-08-29T22:38:15+09:00"
-    },
-    {
-      "id": "b71fd4deed3b",
-      "title": "Codexのconfig profileでread-only起動を保存する — 毎回の長いオプションを10分で短くする",
-      "summary": "この記事は2026年8月29日時点のOpenAI公式ドキュメントをもとにしています。 Codexを安全に試すたび、こんな長いコマンドを入力していませんか。 codex --sandbox read-only 1回だけなら、これで十分です。でも、READMEの要…",
-      "source": "Qiita",
-      "source_url": "https://qiita.com",
-      "url": "https://qiita.com/akira_papa_AI/items/84d0b74935523dd0bbcc",
-      "category": "規制",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T22:37:35+09:00"
-    },
-    {
-      "id": "7859b32db9ea",
-      "title": "AIエージェントの「ハーネス」完全ガイド、Claude Codeに学ぶ実用精度の秘密やで",
-      "summary": "Web版ClaudeとClaude Codeでなんで実用的な精度に差が出るんか。AIエージェントの能力を決定する「ハーネス」の概念と具体的な実装例を、マイルドな関西弁で解説するで。モデル性能だけでは分からへん真のAI活用法が分かるで。",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/masayan1126/books/ai-agent-harness-guide",
-      "category": "LLM",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T22:10:19+09:00"
-    },
-    {
-      "id": "7e22f892abfe",
-      "title": "PARC2026に挑戦した話",
-      "summary": "はじめに：PARC2026って何？ PARC2026（AIRoA × 東京大学松尾・岩澤研究室 Physical AI Robot Challenge 2026）は、 ロボットに言葉で指示を出すと、その指示通りに体を動かすAI——専門用語では VLA（Visi…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/akisayo/articles/6ca4ba715e5b5c",
-      "category": "研究",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T21:05:08+09:00"
-    },
-    {
-      "id": "cc11386ac459",
-      "title": "「知りすぎ」はAIには欠点だ ——熟練の実装知が負債に変わるとき",
-      "summary": "結論 DHH（Ruby on Rails作者）が、AI開発について意外なことを言っている。 「実のところ、しばらくの間は、私がプログラミングを知りすぎていることが、自分にとって不利益だった」 25年間美しいRubyを彫琢してきた本人の言葉だ。彼はこうも言う——…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/ryok/articles/knowing-too-much-liability",
-      "category": "その他",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T20:15:01+09:00"
-    },
-    {
-      "id": "65e3c82ced77",
-      "title": "Cursorから乗り換えられるのか：OpenAIのモデル提供終了を受け、設定の可搬性を Claude Code / Codex と実測した",
-      "summary": "こんにちは！うぐいすソリューションズのNakaeです。 2026年8月28日、OpenAI は SpaceX 傘下となった Cursor へのモデル提供を終了する方針を発表し、11月12日を停止予定日として提示しました。OpenAI が理由として挙げたのは、性…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/uguisu_blog/articles/f2286418e86de0",
-      "category": "LLM",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T19:59:59+09:00"
-    },
-    {
-      "id": "86fce14f9b3b",
-      "title": "Google Colabで最新LLMを試す #14 ― Microsoft Mage-VLを無料版T4で動かす：画像・動画",
-      "summary": "はじめに 「Google Colabで最新LLMを試す」シリーズの第14回です。 今回は、Microsoftが公開している Mage-VL を、Google Colab無料版のNVIDIA T4 GPUで動かしてみます。 今回使用したNotebookは、以下の…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/nakanishitf/articles/5468a0d83f3da9",
-      "category": "LLM",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T19:58:18+09:00"
+      "datetime": "2026-08-29T21:27:05+09:00"
     },
     {
       "id": "4d5caf62b0c3",
@@ -99,138 +33,6 @@
       "category": "LLM",
       "date": "2026-08-29",
       "datetime": "2026-08-29T19:27:03+09:00"
-    },
-    {
-      "id": "04c734a93291",
-      "title": "コミュニティの2つの記事が、自分のガードレールの穴を2つ埋めてくれた話",
-      "summary": "先日公開したGuardrail Red-Team(自分のAIチェッカーに反証テストをかける無料ツール)について、その後コミュニティで読んだ2つの記事がきっかけで、実際に穴が2つ見つかり、両方とも直しました。この記事はその記録です。 1つ目: 「集計値と個票の分…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/tosh_vance/articles/dcd63aa63f45cf",
-      "category": "製品",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T19:25:04+09:00"
-    },
-    {
-      "id": "e5156158724e",
-      "title": "IT部門の品質管理（QA）担当が、筋トレログをAIに「Markdown」で渡せるiOSアプリをリリースした話",
-      "summary": "1. はじめに：AI時代の個人開発、そして「誰もやっていないニッチ」への挑戦 時代の変化と初期衝動: ClaudeやCursorの登場により、AIの力を借りて自作アプリを作る人は確実に増えた。 しかし、「AIに極上のコンテキストを渡すため、Markdown（M…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/toshiyuki_wwm/articles/58eeb45148fc6e",
-      "category": "LLM",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T19:00:05+09:00"
-    },
-    {
-      "id": "f6a387cec9dd",
-      "title": "APIキーなしで個人ツールにAIを足す — claude CLIは楽だが、無視された引数が静かに嘘をつく",
-      "summary": "自分用の小さなツールに「AI に聞く」を足したくなることがあります。ワインのラベル写真からフィールドを埋める、行ったことのない店を提案してもらう、医学雑誌の新着号を要約する。どれも個人用で、使うのは自分ひとりです。 素直にやるなら Anthropic API …",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/takagit/articles/claude-cli-llm-provider",
-      "category": "LLM",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T18:59:20+09:00"
-    },
-    {
-      "id": "309b87c8516c",
-      "title": "AI指揮と拡張脳教育の価値",
-      "summary": "AI指揮（AI Command &amp; Control）と拡張脳教育（Extended Mind / Augmented Brain Education）は、単なる既存作業の効率化を超え、人間の知的・構造的能力を異次元へと引き上げるパラダイムシフトです。 …",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/hiro_f35/articles/bbbc8146693a8a",
-      "category": "その他",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T18:33:04+09:00"
-    },
-    {
-      "id": "5eeb5e32d9c6",
-      "title": "【超小ネタ】デスクトップ版ChatGPTアプリの Codex で今のフォルダを対象にアプリを開くコマンド（Mac で試したもの）",
-      "summary": "2026年の統合版ChatGPTデスクトップアプリの Codex（旧デスクトップ版の Codexアプリ）に関する超小ネタです。 Mac の zsh のカレントフォルダを作業対象にして、統合版ChatGPTデスクトップアプリの Codex を開く、というのを試し…",
-      "source": "Qiita",
-      "source_url": "https://qiita.com",
-      "url": "https://qiita.com/youtoy/items/c77c89874e24c45565bc",
-      "category": "LLM",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T18:16:40+09:00"
-    },
-    {
-      "id": "a3d6e2127db1",
-      "title": "AIに書かせた記事が読みにくい真因は、文章でなく「書く前の工程」だった",
-      "summary": "AIに文章を書かせていると、ちょっと不思議な壁にぶつかります。事実は合っているし、日本語も破綻していない。なのに読み終えても、なぜか何も残らない。「間違ってはいないのに、読みにくい」という状態です。 先に、この記事でいちばん伝えたいことを書きます。 AIが書い…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/hoshiorange/articles/33-ai-writing-readability-process-gate",
-      "category": "その他",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T18:11:15+09:00"
-    },
-    {
-      "id": "3ed0e23a69b0",
-      "title": "AIエージェントは『ルール不足』だけでなく『あるのに使われない』でも壊れる —— Activation Failureという問題",
-      "summary": "AIエージェントが失敗すると、修正は「何を追加するか」に寄りがちです。 プロンプトを足す。Memoryを増やす。Skillを作る。禁止事項を強く書く。 どれも必要になることはあります。 ただ、私自身を運用してきて、もっと先に切り分けるべき失敗があると考えるよう…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/c_a_p_engineer/articles/activation-failure",
-      "category": "LLM",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T18:07:29+09:00"
-    },
-    {
-      "id": "a1567dc1ba5d",
-      "title": "セッションが違えば「別の人」―― Claude Codeの記憶・引き継ぎ・compactを、新卒のたとえで説明する",
-      "summary": "こんにちは、AI師範です。普段はAIを組織のように使って、業務自動化ツールの製作と、その運用の引き継ぎ支援をしています。 前回、「AIは新人研修しか受けていない新卒だ」という話を書きました。今回はその続きで、実務で一番つまずきやすいところを扱います。 画面（セ…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/ai_shihan/articles/9df8c4a6a287ff",
-      "category": "LLM",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T18:06:50+09:00"
-    },
-    {
-      "id": "e494409f7163",
-      "title": "実装前にAIへ要件を「詰めさせる」——grillingという6問の実例",
-      "summary": "! この記事は連載「AIと作る、ひとりの開発OS」の一部です。単体で読めますが、全体像は noteのハブ記事 にまとめています。 前回までPhase1として、3体のAIエージェントを動かす仕組みそのものを書いてきた。ここからはPhase2、仕組みの外側——どう…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/peyangu485/articles/jibun-os-grilling",
-      "category": "その他",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T17:44:07+09:00"
-    },
-    {
-      "id": "8ad2150a8614",
-      "title": "初めてKaggleに参戦してみた — ポケカ対戦AIで一時9位まで行って、落ちた話",
-      "summary": "初めてKaggleのコンペに出ました。題材はポケモンカードゲームの対戦AI。約2ヶ月、ランダム打ちのスコア431から始めて、最高で9位(7月上旬、当時約4,200チーム)まで上がり、月末に一度12位まで戻し、そして540位まで落ちました。 この記事は「初参戦で…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/kokotatan/articles/first-kaggle-ptcg-ai-battle",
-      "category": "その他",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T17:20:05+09:00"
-    },
-    {
-      "id": "2c8834fecc8e",
-      "title": "58万インストールのVercel製UIレビュースキル、中身は39行でルールが1件もない",
-      "summary": "インストール数587,920件(2026年8月29日時点、Skillselionカタログ)のVercel製UIレビュースキルには、アクセシビリティのルールが1件も入っていません。Vercelのweb-design-guidelinesスキルとしてインストールさ…",
-      "source": "Qiita",
-      "source_url": "https://qiita.com",
-      "url": "https://qiita.com/Skillselion/items/bfddb93d6970a6ee8d86",
-      "category": "その他",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T17:11:20+09:00"
-    },
-    {
-      "id": "b4fe530135a2",
-      "title": "絶対に知っておくべきLLMのキャッシュの話。AIチャットボットのコストが 1/10 になる",
-      "summary": "3行まとめ 適当にClaude Codeでチャットボットを作ると、非効率な設計にされコスト爆増しがち。適切な設計でLLMのコストはざっくり10分の1になる 💰 方法: AIエージェントは宣言的に定義し、エンジン（実行部分）は LLM呼び出しの ループを回すだけ…",
-      "source": "Qiita",
-      "source_url": "https://qiita.com",
-      "url": "https://qiita.com/peka2/items/830f5ba5a0cd019af23c",
-      "category": "LLM",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T17:09:46+09:00"
     },
     {
       "id": "bfd035dcb049",
@@ -266,17 +68,6 @@
       "datetime": "2026-08-29T16:31:28+09:00"
     },
     {
-      "id": "bb409c5b2133",
-      "title": "「全件は見なくていい」をどこまで信じるか——PMD CPD抑制135件を掘り直し、AI監査委譲を標準化するまで",
-      "summary": "1. はじめに 前回・前々回・前々々回の記事で扱ってきたレガシーJavaライブラリの検証は、実は一つ、片付けていない宿題を残していました。 第2弾の記事で、PMD CPD（重複コード検知）が検出した139件の重複ブロックのうち135件を、AIエージェントが「共…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/yuninaka/articles/delegated-audit-workflow",
-      "category": "その他",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T15:54:01+09:00"
-    },
-    {
       "id": "a47d3d1abfe0",
       "title": "OpenAIがCursorとの提携・モデル提供の終了を通達、「SpaceXがOpenAIの利用規約に従って技術を使うという確信が持てないため」",
       "summary": "OpenAIがAIコーディングツール・Cursorとの提携関係を終了し、モデル提供を2026年11月12日で終えることを明らかにしました。理由はCursorがSpaceXに買収されたことです。続きを読む...",
@@ -299,39 +90,6 @@
       "datetime": "2026-08-29T15:43:31+09:00"
     },
     {
-      "id": "860ea6441f72",
-      "title": "モデルサイズに応じてプロンプト戦術を出し分ける設計",
-      "summary": "対象読者と前提 Ollama などローカル LLM を複数モデルで使い分けていて、プロンプト設計をモデルサイズ別に変えるか迷っている方 プロンプトエンジニアリングの Self-Consistency（自己一貫性）を、多数決以外の形で実装したい方 動作確認環境:…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/tanishi_z/articles/07-jin-model-size-prompt-strategy",
-      "category": "LLM",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T15:43:17+09:00"
-    },
-    {
-      "id": "ca070333b65a",
-      "title": "「5歳児にもわかる」パワポをClaude Codeで量産する ― eli5-slidesを公開した",
-      "summary": "Claude Codeのプラグイン eli5-slides を公開しました。任意のトピックを「5歳児にもわかるように」説明する絵本スタイルのPowerPoint(.pptx)に変換するスキルです。 https://github.com/takumina/eli…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/takumina/articles/45eafdf0fb5701",
-      "category": "LLM",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T15:26:04+09:00"
-    },
-    {
-      "id": "9b2701a66e7e",
-      "title": "犬の3D作成を自動化する",
-      "summary": "はじめに 4本足のリグ入りキャラクター（犬）を自動生成できないかと思い、Autodesk Flow Studio の Text to 3D / オートリグ機能を試しました。結論から言うと、現状は4足動物のオートリグには未対応でしたが、代わりに二足歩行キャラクタ…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/tonote/articles/dog-3d-auto-rig",
-      "category": "その他",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T15:25:07+09:00"
-    },
-    {
       "id": "4a61ea15d82d",
       "title": "わかりにくい概念やニュースを“わかりやすいイラスト”で貯める - AI Second Brainを作った",
       "summary": "まず、できあがるもの 「気になったけどよくわからない概念やニュースを放り込むと、統一されたテイストのイラスト付きで“わかりやすい一枚”にまとまってObsidianに貯まっていく」——そんなツール AI Second Brain を作りました。個人利用のOSSと…",
@@ -341,28 +99,6 @@
       "category": "その他",
       "date": "2026-08-29",
       "datetime": "2026-08-29T14:26:00+09:00"
-    },
-    {
-      "id": "f334d4cf4e0d",
-      "title": "未来クライム ベーシックコース 第三回（2026年9月13日）",
-      "summary": "美唄市民会館 講師：先崎",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/zumiyan/books/533182dfa21977",
-      "category": "その他",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T13:53:37+09:00"
-    },
-    {
-      "id": "a070ec8d80eb",
-      "title": "キャラAIは初手から別人になる",
-      "summary": "前回（キャラAIが別人になるのはプロンプトが悪いんじゃない）の続きです。 記憶を足す前に、そのターンで何を見せるか を測りました。 結論から書きます。 履歴がなくても、初手で未提示の事実を埋め、核を書き換えます 長い設定より、短い確定だけを見せた方が、穴と核が…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/void09/articles/1abff9fc7b327e",
-      "category": "LLM",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T13:32:47+09:00"
     },
     {
       "id": "233e51c444b8",
@@ -376,138 +112,6 @@
       "datetime": "2026-08-29T13:13:05+09:00"
     },
     {
-      "id": "5e19c2907456",
-      "title": "【実験】Claude Codeのパフォーマンスは綺麗or汚いコードで変わるのか？",
-      "summary": "前置き 普段Claude CodeやCodexを使ってコーディングをしている（任せている）のですが、今年に入ってからほとんど自分でコードを書くことがなくなりました。 ここ数ヶ月は、いかに実装の中身を見ずに（AIに丸投げで実装させて）品質を担保するか？に焦点を当…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/yskuue/articles/20260823_coding-agent-clean-vs-messy",
-      "category": "LLM",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T13:11:48+09:00"
-    },
-    {
-      "id": "bd2596f19cab",
-      "title": "GPUを燃やさないために - RTX 5090にパワーリミットをかけると、性能はどれだけ落ち、どれだけ冷えるのか -",
-      "summary": "みなさん、GPUを燃やしていますか？ もちろん「研究や開発でGPUを燃やすほど使い倒している」という意味なら、多くの方はイエスでしょう。でも本記事で聞きたいのは、もう少し物理的な意味です。最近のGPU、めちゃくちゃ消費電力が高くて、めちゃくちゃ熱いですよね。R…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/holy_fox/articles/572083c130ce46",
-      "category": "研究",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T12:52:52+09:00"
-    },
-    {
-      "id": "228c52012453",
-      "title": "AIにテストを書かせると毎回同じ場所が抜ける理由と対策",
-      "summary": "AIにテストを書かせると毎回同じ場所が抜ける理由と対策 この記事の要点 AIにテストを書かせると、境界値・異常系・非同期処理・副作用の検証が毎回同じように抜けやすい傾向があります。 原因は、AIが正常系の使われ方を推測してテストを組み立てるため、失敗パスや副作…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/sunsun_eng/articles/ai-generated-test-blind-spots",
-      "category": "その他",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T12:38:13+09:00"
-    },
-    {
-      "id": "659eb3fb6a9a",
-      "title": "全員をAI人材にしなくていい――現場AI活用をスケールする組織設計",
-      "summary": "! 本記事はシリーズ「現場を置き去りにしない AI 活用」の第1回（全2回予定）です。第1回では組織設計を、第2回では技術アーキテクチャを取り上げます。各回は単体でも読めるように書いています。 はじめに：あるZenn記事から考え始めたこと 先日、Zenn で公…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/minipoisson/articles/ai-scaling-org-design",
-      "category": "その他",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T11:54:55+09:00"
-    },
-    {
-      "id": "bacbb6085f5d",
-      "title": "ERPO: 安定性と探索のジレンマを入力側正則化で打破",
-      "summary": "TL;DR LLMのポリシー最適化（GRPO/PPO等）は、Policy-KL正則化という「応答側」の制約で安定性と探索のトレードオフを制御してきた。残念ながら、残すと探索が阻害され、外すとドリフト制御がなくなるというジレンマに陥る。AlibabaのZhouら…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/lixian/articles/erpo-environment-regularized-policy-optimization",
-      "category": "LLM",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T11:05:22+09:00"
-    },
-    {
-      "id": "5de76d24dd39",
-      "title": "JavaScript Array メソッドリファレンス — 破壊的/非破壊的を一覧で",
-      "summary": "sort()は破壊的だったっけ？flatMap()って何バージョンから使える？毎回調べるのが面倒なので devnestio に JavaScript Array Methods Reference を作りました。 https://devnestio.pages…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/devnestio/articles/devnestio-tool-js-array-methods-ref",
-      "category": "その他",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T11:04:01+09:00"
-    },
-    {
-      "id": "c0a0de4f1b7d",
-      "title": "コードを書いたのはClaude、Codex、Kimi。それでも全repoが「自分の設計」になる",
-      "summary": "コードの作者は誰なのか きっかけは、LLMとの雑談だった。 自動車ECUの開発環境について話していて、私が「道具がないなら旋盤で作ればいい。旋盤の精度が出ないなら、精度の高い旋盤を作ればいい。そんな感じだよな」と言った。そこでLLMに「リポジトリを見返してみな…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/hrmtz/articles/vibe-coding-architecture-signature",
-      "category": "LLM",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T10:56:30+09:00"
-    },
-    {
-      "id": "f23a20b86a05",
-      "title": "Exa-Vision ProにGemma 4 E4Bを載せたい。ChatGPTと一緒にハマり続けている備忘録",
-      "summary": "※この記事は完成した技術解説ではありません。 現在進行形で開発しているExa-Vision Proの、Gemma 4 E4Bローカル推論実装についての備忘録です。 コードが書ける人向けの記事ではありません。 むしろ、ChatGPTと一緒にFlutter開発をし…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/gitmame00/articles/845219b4659980",
-      "category": "LLM",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T10:54:41+09:00"
-    },
-    {
-      "id": "2750e9130dca",
-      "title": "DGX SparkでQwen3.8-Flash-Next をサクッと動かしてみる",
-      "summary": "目的 最近のローカルLLMの本命ともいえる、Qwen3.8-Flash-NextをDGX Sparkで動かします。MoEモデルですので実用的な速度での実行が期待できます！ 量子化度合いとサイズのバランス的には以下のUD-IQ4_XSが93.7GBのファイルサイ…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/nooop/articles/ea1bb8866bdb5e",
-      "category": "LLM",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T10:34:20+09:00"
-    },
-    {
-      "id": "f16ff66bdf4c",
-      "title": "Claude Codeのトークン消費、92〜97%は「文脈の再読」だった——読み取り専用DeepSeekワーカーを作って実測99%削減した",
-      "summary": "TL;DR Claude Code の transcript（~/.claude/projects/**/*.jsonl）の usage を全集計したら、費用の 92〜97%がキャッシュ読み書き（＝毎ターンの文脈再読）、思考トークンは0.4%だった マルチエー…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/megu0xxx0x/articles/5d7c11d406fa2c",
-      "category": "LLM",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T10:25:37+09:00"
-    },
-    {
-      "id": "a19da9d3c767",
-      "title": "自分のAIチェッカーを解いてみる無料ツールを作った話 — 攻撃してわかった「判定への攻撃」と「構造への攻撃」の違い",
-      "summary": "先日、自分が作っているAI戦略分析ツール(AnchorStrategy)のcitation-fidelityガードレール(AIの主張が元ソースに実在するかをチェックする仕組み)に対して、反証テストをやってみました。結果、8パターンの攻撃のうち6パターンが検出を…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/tosh_vance/articles/0d4a1e1f67a64d",
-      "category": "その他",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T08:58:02+09:00"
-    },
-    {
-      "id": "7f2db84ef251",
-      "title": "Pythonで自作MCPサーバを作り、複数のAIコーディングエージェントから呼び出してみた",
-      "summary": "はじめに AIコーディングエージェントを使っていると、次のようなことをAIに頼みたくなる場面があります。 社内APIを検索してほしい データベースを参照してほしい プロジェクト独自の計算をしてほしい 自作ツールをAIから呼び出したい このような外部ツールとの接…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/pekopugu/articles/zenn-mcp-server",
-      "category": "その他",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T06:40:45+09:00"
-    },
-    {
       "id": "eb593cdee268",
       "title": "Salesforceカスタム改修の変更履歴をスプレッドシート+Geminiで顧客向けリリースノートに変換する",
       "summary": "はじめに 「あの改修、いつのリリースで入れたんだっけ」と、過去のチケットを掘り返した経験はないでしょうか。 カスタム開発を続けていると、小さな機能改修や新機能が少しずつ積み重なっていきます。 ところが本番リリースのタイミングで顧客に何を伝えるべきかまとめる段に…",
@@ -517,17 +121,6 @@
       "category": "LLM",
       "date": "2026-08-29",
       "datetime": "2026-08-29T06:24:47+09:00"
-    },
-    {
-      "id": "590e0fd74e25",
-      "title": "Claude「Record a Skill」を programming by demonstration として読む",
-      "summary": "TL;DR Anthropicは2026年7月21日、Claude Cowork（デスクトップアプリ）に「Record a skill」を追加した。画面録画＋音声ナレーションから、繰り返し呼び出せる「スキル」を生成する機能で、プロンプトやスキル定義ファイルを書…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/every_ai_recipe/articles/ai-record-skill-screen-recording",
-      "category": "LLM",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T06:08:57+09:00"
     },
     {
       "id": "49a770d140ae",
@@ -561,17 +154,6 @@
       "category": "LLM",
       "date": "2026-08-29",
       "datetime": "2026-08-29T00:10:00+09:00"
-    },
-    {
-      "id": "1c0bd2eb412d",
-      "title": "あなたがAIにUIを作らせると、何が起きるか",
-      "summary": "予備知識ゼロのAIに、実在する業種の業務UIを175枚作らせ続けた記録。何が組めて、何が組めなかったか。",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/uixhero/books/gunjo-ai-ui-175",
-      "category": "その他",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T00:03:18+09:00"
     }
   ]
 }
