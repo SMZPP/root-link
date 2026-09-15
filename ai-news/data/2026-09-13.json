@@ -2,17 +2,6 @@
   "date": "2026-09-13",
   "articles": [
     {
-      "id": "68dd53821cdc",
-      "title": "OpenClawを学び、日々を便利に",
-      "summary": "OpenClaw 概要 OpenClaw は、自分の PC やサーバーで動く、オープンソースの常駐型 AI エージェントです。チャットアプリから自然言語で依頼すると、許可された範囲でブラウザー・ファイル・シェルを操作します。 たとえば「このテーマを調べてファイ…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/microsoft/articles/openclaw_intro",
-      "category": "その他",
-      "date": "2026-09-13",
-      "datetime": "2026-09-13T23:42:42+09:00"
-    },
-    {
       "id": "d0225ba06edd",
       "title": "なぜ、Google Geminiの長所は全くお金にならないのか？",
       "summary": "はじめに Google Geminiには、GPTやClaudeより明らかに得意に見える画像認識があります。ただし、ここでいう画像認識とはOCRやエラー画面の解析ではありません。エラー画面のスクリーンショットから原因を推測したり、画面中の細かな文字やユーザーイン…",
@@ -57,17 +46,6 @@
       "datetime": "2026-09-13T19:33:00+09:00"
     },
     {
-      "id": "a8b2c8b37c60",
-      "title": "コンテキストウィンドウの限界を逆手にとってAIエージェントの性能を向上させる方法",
-      "summary": "導入: コンテキストウィンドウという制約 AIエージェントを長時間・長期間にわたって運用しようとすると、必ず突き当たる壁がある。 コンテキストウィンドウの上限だ。 どれだけモデルの性能が上がっても、1つのセッションに詰め込めるトークン数には限りがある。長いコー…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/ken_okabe/articles/2026-09-13-context-handoff-critic-loop",
-      "category": "LLM",
-      "date": "2026-09-13",
-      "datetime": "2026-09-13T17:22:16+09:00"
-    },
-    {
       "id": "bd81b1664618",
       "title": "コミュニケーションを補助してくれるシンプルなAIエージェント案",
       "summary": "横にいたAI（よこにいたい） ― 人間に話しかける、その一歩をAIに預ける ― これは事情¹があり実装出来ない為、誰かに作ってほしいと切実に願っている、あったらいいなをモリモリ盛った企画です。 ¹ めんどくさい 1. コンセプト 「いつ相談しよう」 「今、話し…",
@@ -77,50 +55,6 @@
       "category": "その他",
       "date": "2026-09-13",
       "datetime": "2026-09-13T16:03:01+09:00"
-    },
-    {
-      "id": "eb306a504360",
-      "title": "4年前に自分が作った日報の限界を、AIで超えてみた",
-      "summary": "雑談から始まった 4年前、現場で使っていた記録の仕組みを、別のものに切り替えることになりました。 新しい方は、現場の書き方に合っていませんでした。 ある日、課長から相談されました。正式な依頼ではなく、雑談の中の愚痴に近いものです。 「なんとかならないか」 その…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/shinya_uno/articles/ab7b137983788e",
-      "category": "その他",
-      "date": "2026-09-13",
-      "datetime": "2026-09-13T15:56:52+09:00"
-    },
-    {
-      "id": "5744aa24bcd9",
-      "title": "手元の84リポジトリを数えたら、.env は63%が gitignore 済みで .claude/ は18%だった",
-      "summary": ".env を .gitignore に入れるのは、もう考えなくてもやる。15年かけて反射になった。 .claude/ は違う。まだ誰の反射にもなっていない。 手元のマシンにある git リポジトリを全部数えたら、その差が数字で出た。 数えたもの ~/git を…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/tsutomusaito/articles/dotclaude-gitignore-ja",
-      "category": "LLM",
-      "date": "2026-09-13",
-      "datetime": "2026-09-13T12:33:38+09:00"
-    },
-    {
-      "id": "0f5181771e7b",
-      "title": "課題管理とは何か。私たちは何を課題とし、管理していくべきか。",
-      "summary": "きっかけは、課題管理ツールを作ろうとして手が止まったことだ。私は AI と一緒にプロジェクトを進めるために、WBS のツールを作って公開している[1]。次に課題管理を足そうとして、表にどんな列が要るかを考えたところで気づいた。課題管理とは何をすることか、自分の…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/piguolabo/articles/3ddc26e6e91f47",
-      "category": "製品",
-      "date": "2026-09-13",
-      "datetime": "2026-09-13T10:00:05+09:00"
-    },
-    {
-      "id": "56746502b2f9",
-      "title": "参照資料を渡し忘れたLLMは、存在しない規定を作って断定的に答える",
-      "summary": "TL;DR 「返品ポリシーを踏まえて返信メールを書け」という同一の依頼を、(A)ポリシー文書を渡さない条件と(B)渡す条件の2つで、独立したサブエージェント2体に実行させた 条件Aは「分かりません」「確認が必要です」とは言わず、実在しない返品期限（8日以内）を…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/every_ai_recipe/articles/ai-reference-material-project-feature",
-      "category": "LLM",
-      "date": "2026-09-13",
-      "datetime": "2026-09-13T06:10:49+09:00"
     },
     {
       "id": "b44f990ce71b",
