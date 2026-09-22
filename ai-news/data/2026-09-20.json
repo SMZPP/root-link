@@ -2,17 +2,6 @@
   "date": "2026-09-20",
   "articles": [
     {
-      "id": "7019439f7fc5",
-      "title": "OpenAI APIで20件の障害が発生、Agent API過剰請求は要確認",
-      "summary": "はじめに 2026年9月20日時点で、OpenAIの公式ステータスページに 20件のインシデント が新規掲載されました。いずれも既に解決済みですが、ChatGPT Work、Codex、SSO/SCIM、GPT-5.6系モデル、Agent APIの課金など幅広…",
-      "source": "Qiita",
-      "source_url": "https://qiita.com",
-      "url": "https://qiita.com/picnic/items/fd2261f9753de62ba324",
-      "category": "LLM",
-      "date": "2026-09-20",
-      "datetime": "2026-09-20T23:48:31+09:00"
-    },
-    {
       "id": "b5128c7410cc",
       "title": "LLMにタスクの紐付けまで一度にやらせたら、88%が誤爆した",
       "summary": "LLM に「会議の完了報告を拾って、手元のタスクの状態を更新する」をやらせていました。動かして出てきた候補を 1 件ずつ人の目で確かめたら、88% が関係のないタスクに貼られていました。 原因はプロンプトの書き方ではなく、1 つのプロンプトに 2 つの仕事をさ…",
@@ -35,28 +24,6 @@
       "datetime": "2026-09-20T21:52:36+09:00"
     },
     {
-      "id": "53a23750ebb5",
-      "title": "Pull RequestをDiffの外まで読んで理解するレビューツール「rvw」を作った",
-      "summary": "PRをDiffの外まで読んで理解するためのツールを作った PRレビューがボトルネックになっている、というのは多くの開発チームで課題になっているはずです。Diffを読んで、周辺のコードを開いて、AIに説明してもらって、またコードに戻る。その途中で気になったことを…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/daradaragoron/articles/12b36364b40d63",
-      "category": "その他",
-      "date": "2026-09-20",
-      "datetime": "2026-09-20T21:39:05+09:00"
-    },
-    {
-      "id": "0462b3a25d46",
-      "title": "AIエージェントのための言語「Bend」は、ハーネスとコードレビューをなくせるか",
-      "summary": "はじめに 2026年9月17日、Victor Taelinさんが Bend 2 を公開しました。 https://x.com/VictorTaelin/status/2100681226143092875 これは、AIエージェント用のプログラミング言語です。 …",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/sc30gsw/articles/ac24e359bc7d6b",
-      "category": "製品",
-      "date": "2026-09-20",
-      "datetime": "2026-09-20T19:38:07+09:00"
-    },
-    {
       "id": "616d47775970",
       "title": "Jev VS GPT‑5.6 Luna。迷路を解かせてみて速度などを比較。",
       "summary": "Jev VS GPT‑5.6 Luna。迷路を解かせてみて速度などを比較。 前回、文章を書かないAI「Jev」を試してみた。 今回はもう少し見た目にも分かりやすい検証として、JevとGPT‑5.6 Lunaに同じ迷路を解かせて、どちらが早くゴールできるか比べて…",
@@ -77,17 +44,6 @@
       "category": "その他",
       "date": "2026-09-20",
       "datetime": "2026-09-20T19:00:00+09:00"
-    },
-    {
-      "id": "c4f9e0bb7df1",
-      "title": "claude + cve-lite-cliでフロントエンドの脆弱性対応の優先順位づけをAIに任せる",
-      "summary": "前回、cve-lite-cliを利用してローカルで完結するフロントエンドの脆弱性管理という記事で、手元でCVEを可視化する方法を書きました。 可視化まではできても、そこから先の「どれから直すか」「実際に直す」という作業は、地味で疲れる作業のまま残ります。 今回…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/t_o_d/articles/fb181bb8a5a023",
-      "category": "LLM",
-      "date": "2026-09-20",
-      "datetime": "2026-09-20T18:41:24+09:00"
     },
     {
       "id": "ee58a8cac920",
@@ -134,17 +90,6 @@
       "datetime": "2026-09-20T16:53:33+09:00"
     },
     {
-      "id": "1b214f2ab2ef",
-      "title": "「レビューして」の一言で3,600万トークンが溶けた話とClaude Codeのトークン効率化設定",
-      "summary": "Claude Code に「このPRレビューして」と軽くお願いしただけなのに、気付けば数十回・数百回のシェルコマンドが走り、API利用枠（Rate Limit）を一瞬で食いつぶしてしまった経験はないでしょうか。 わずか**250行程度の差分（追加206行／削除…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/chro96/articles/6ac66a2192a958",
-      "category": "LLM",
-      "date": "2026-09-20",
-      "datetime": "2026-09-20T15:25:23+09:00"
-    },
-    {
       "id": "aaf4de3d0ab7",
       "title": "セルフレビューに疲弊した人に: Claude Code を Gemini で叩く",
       "summary": "はじめに Claude Code に書かせたコードを同じ Claude に読み返させる往復に疲れ、読む係を Gemini に替えました。繋ぎ方と、実際に何件当たったのかを書きます。 個人開発での運用で、チームでの実績はありません。ただ、仕組み一式は Claud…",
@@ -154,17 +99,6 @@
       "category": "LLM",
       "date": "2026-09-20",
       "datetime": "2026-09-20T14:24:57+09:00"
-    },
-    {
-      "id": "bd7ebf1be24a",
-      "title": "SmAilTalk その1 todo アプリ作ってみた",
-      "summary": "これはなに？ SmAilTalkでtodoアプリを1から作ってみた 実物はこちらです ※利用バージョン 0.4.0 まずはやること この記事を読まずに TUTORIAL をみながら進めていってもいいです（この記述をベースに仕上げたので） 不明点とかハマったとこ…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/makotan/articles/3542609edeb92f",
-      "category": "その他",
-      "date": "2026-09-20",
-      "datetime": "2026-09-20T14:11:06+09:00"
     },
     {
       "id": "e83b54ea95f4",
