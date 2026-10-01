@@ -13,28 +13,6 @@
       "datetime": "2026-09-29T23:29:01+09:00"
     },
     {
-      "id": "833b9e145144",
-      "title": "Claude API の tool_use 実装で必ずハマる5つの罠",
-      "summary": "はじめに Anthropic が公開した金融業務向けエージェントテンプレート群（KYC・ピッチブック生成・月次決算処理など）が注目を集めている。これらを参考に社内のドキュメント処理エージェントを実装しようとすると、tool_use (function call…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/yunisuta/articles/ai1-dedup-ai-2026-05-10-ai-2026510-notic-zkxlod",
-      "category": "LLM",
-      "date": "2026-09-29",
-      "datetime": "2026-09-29T22:41:01+09:00"
-    },
-    {
-      "id": "040979b23c97",
-      "title": "Claude Tool Use で作るKYC書類解析パイプライン：Anthropic金融エージェントの仕組みを自前実装で理解する",
-      "summary": "書類1枚のOCR結果を渡したら、氏名・生年月日・書類番号がスキーマ崩れなしのJSONで返ってくる。Anthropicが2026年5月に公開した anthropics/financial-services リポジトリが話題だが、KYCスクリーナーのコアは意外とシ…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/yunisuta/articles/ai1-dedup-ai-2026-05-10-ai-2026510-notic-zkxlob",
-      "category": "LLM",
-      "date": "2026-09-29",
-      "datetime": "2026-09-29T22:41:00+09:00"
-    },
-    {
       "id": "d61ed167badd",
       "title": "Gemini APIのTTSサンプルコードでreportArgumentTypeに悩まされる人へ",
       "summary": "はじめに Googleの音声生成モデルであるGemini 3.8 Flash TTSは、読み上げるテキストとあわせて発話スタイルを自然言語で指定して音声を生成できます。 ただ、公式ドキュメントのPythonサンプルコードをPylance有効下のVS Codeに…",
@@ -79,17 +57,6 @@
       "datetime": "2026-09-29T18:08:19+09:00"
     },
     {
-      "id": "6a92034e1793",
-      "title": "同じパソコン内で２つのCodexアカウントを使用する",
-      "summary": "個人開発用と勉強用で、Codex（ChatGPT） の契約を分けた。 同じパソコン内で２つのCodexアカウントのCodex CLIを使分けたい。 さらに、片方でコードを書きながら、もう片方では教材を更新するような同時起動の運用スタイルも可能にしたい。 今回使…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/kasouzou/articles/use-two-codex-accounts-one-computer",
-      "category": "LLM",
-      "date": "2026-09-29",
-      "datetime": "2026-09-29T18:02:16+09:00"
-    },
-    {
       "id": "1e0f1d41ef5c",
       "title": "自作AIベンチの数字を疑ったら、壊れていたのは測る側だった — 同じAIで最大4.3倍",
       "summary": "美容系勤務独学初心者マリー・アントワネット系エンジニア目指してます！ 今回は AIの点数を1回しか測っていない なら 3回測ればいいじゃない 👸🍰です。 読了時間の目安：約 9〜11分（前回までを読んでいなくても大丈夫です） ! 3行まとめ 誰も学習していない…",
@@ -121,50 +88,6 @@
       "category": "LLM",
       "date": "2026-09-29",
       "datetime": "2026-09-29T13:07:34+09:00"
-    },
-    {
-      "id": "b596e3e7c496",
-      "title": "大東亜戦争（太平洋戦争）AI化で迅速に戦没者遺品と遺族を結びつけるために。",
-      "summary": "戦時マラヤの未発見資料を仕入れた中に、ビルマ戦線に出征した兵士へ、妻が送った手紙がありました。手紙の内容から、宛先のご家族のご子息がご存命である可能性が高いと考え、一刻も早く遺族の方にお届けしたいと思ったことが、この記事の出発点です。 当時のChatGPT 4…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/masato7suzuki/articles/e8f2684382bfbb",
-      "category": "LLM",
-      "date": "2026-09-29",
-      "datetime": "2026-09-29T11:15:23+09:00"
-    },
-    {
-      "id": "d1eaee6269df",
-      "title": "AIエージェントのSafety Caseをコードと運用に落とす──Claim・Evidence・Assumptionの設計",
-      "summary": "AIエージェントの安全性を説明するとき、「ガードレールを入れた」「人が確認する」とだけ書いても検証できません。どの動作を、どの条件で、どの証拠によって安全とみなすのかを構造化する必要があります。 OpenAIは2026年9月22日、第三者による技術的な安全性評…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/jinsights/articles/9e1f1a1ebdc070",
-      "category": "規制",
-      "date": "2026-09-29",
-      "datetime": "2026-09-29T09:31:01+09:00"
-    },
-    {
-      "id": "ee73d4e55db0",
-      "title": "矛盾する指示、AIは書く順番と優先順位の明示でどう変わるか3条件で検証した",
-      "summary": "TL;DR 「300字以内で簡潔に」と「理由は1つも漏らさず全部書いて」という、文字数制限と網羅性の要求が矛盾する指示を、会話履歴を共有しない独立したLLMインスタンス3体に条件だけ変えて渡した 条件A（文字数制限が先、「全部書いて」があとから追記）: 135…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/every_ai_recipe/articles/ai-instruction-conflict-order-check",
-      "category": "LLM",
-      "date": "2026-09-29",
-      "datetime": "2026-09-29T06:17:52+09:00"
-    },
-    {
-      "id": "1b7c05105e2f",
-      "title": "ChatGPT が突然 BAN されたら — 理由の見えない判定と、先に握っておくべきこと",
-      "summary": "朝、パソコンを開いたら、事務所の全員が ChatGPT を使えなくなっていた ある税理士事務所で、ChatGPT のアカウントが停止（いわゆる BAN）されました。事務所はビジネスプランを契約し、スタッフにも席を割り当てて業務に使っていました。所長のアカウント…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/exapolicy/articles/83995b8791d4ab",
-      "category": "LLM",
-      "date": "2026-09-29",
-      "datetime": "2026-09-29T01:45:41+09:00"
     }
   ]
 }
