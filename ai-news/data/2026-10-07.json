@@ -2,17 +2,6 @@
   "date": "2026-10-07",
   "articles": [
     {
-      "id": "b431b69aac04",
-      "title": "リリース直前に気づいた「AIのプロンプトをアプリから送っていた」問題と、Supabase Edge Functionでの直し方",
-      "summary": "はじめに スマホを触らない時間（デジタルデトックス）でモンスターが育つ育成ゲーム「Hotamon」を、Expo（React Native）とSupabaseで個人開発しています。進化のたびに、モンスターの名前・説明をOpenAIで、画像をfal.aiで生成して…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/ksg1/articles/5ac2d1dec1b10e",
-      "category": "LLM",
-      "date": "2026-10-07",
-      "datetime": "2026-10-07T23:24:37+09:00"
-    },
-    {
       "id": "dd77bb5b4acd",
       "title": "AIチームを7日間マネジメントして分かったこと",
       "summary": "2026年10月1日から7日まで、ChatGPTのdotsを進行役にして、複数のAIに開発や調査を任せてみました。私はこの進行役を「ドッチー」と呼んでいます。 初日に予定した9件のタスクのうち、完了したのは3件。残りは私の判断待ちや、ローカルGUIへの手動の受…",
@@ -22,94 +11,6 @@
       "category": "LLM",
       "date": "2026-10-07",
       "datetime": "2026-10-07T22:21:49+09:00"
-    },
-    {
-      "id": "d39f18891c2d",
-      "title": "仏Mistralが1兆規模AIを公開、AIの選択肢が一気に広がる",
-      "summary": "2026年10月7日（水）のAIニュース完全解説版。図解を見れば本文を読まなくても分かる形にしています。 皆さん、おはようございます。僕は毎朝、自分で作った仕組みでAIのニュースを集めて読んでるんですけど、今日は「選択肢が増える話」と「任せ方が問われる話」が並…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/sugawara_ai/articles/ai-news-20261007",
-      "category": "LLM",
-      "date": "2026-10-07",
-      "datetime": "2026-10-07T18:26:37+09:00"
-    },
-    {
-      "id": "34309e4ef24f",
-      "title": "Jev「見せてもらおうか、OpenAIのDecisions APIの性能とやらを」",
-      "summary": "こんにちは、カンリーの萩野です。 Jev、Clefと試してきた「確率を返す意思決定モデル」に、OpenAIも加わりました。Decisions APIがpublic betaになったので、さっそくJevと同じ7タスク、3,800件で比較しました。使用モデルはGP…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/canly/articles/c1c03518949c54",
-      "category": "その他",
-      "date": "2026-10-07",
-      "datetime": "2026-10-07T17:40:54+09:00"
-    },
-    {
-      "id": "75ed357c585f",
-      "title": "dotsとClaude Codeをつないでみた、試験運用中のコピペ用プロンプト",
-      "summary": "ChatGPT の dots（常時稼働のエージェント）に「次に何をやるか」を考えさせて、手を動かすのは Claude Code、チェックは Codex。この三者を、人がコピペで中継せずにつなげないかと試している記録です。 先に正直に書いておくと、まだ試験運用で…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/genkunjc/articles/dots-claude-code-hub-prompt",
-      "category": "LLM",
-      "date": "2026-10-07",
-      "datetime": "2026-10-07T16:22:12+09:00"
-    },
-    {
-      "id": "75227fc16162",
-      "title": "ChatGPTにパスワードを入れていい？｜AI時代のユーザーセキュリティ入門",
-      "summary": "「ChatGPTとの会話は公開されているわけではないし、パスワードもここで管理してもらった方が楽なのでは？」 私自身、以前はそう感じていました。 実際、ChatGPTはSNSのように会話を不特定多数へ公開するサービスではありません。OpenAIも、ユーザーの会…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/yasashii_pc/articles/ai-era-user-security-guide",
-      "category": "LLM",
-      "date": "2026-10-07",
-      "datetime": "2026-10-07T13:54:48+09:00"
-    },
-    {
-      "id": "c5f5ebf83026",
-      "title": "Decisions APIとJevを比較してみる",
-      "summary": "概要 OpenAIにDecisions APIが登場しました。 これはJevと同等の判断だけ行うAPIになります。 以前こちらの記事で使った検証をもとにDecisions APIとの比較を行いました https://zenn.dev/tkada/article…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/tkada/articles/f758587a326d83",
-      "category": "その他",
-      "date": "2026-10-07",
-      "datetime": "2026-10-07T11:23:27+09:00"
-    },
-    {
-      "id": "a084333d058b",
-      "title": "OpenAI API のプロンプトエンジニアリング基礎",
-      "summary": "OpenAI API のプロンプトエンジニアリング基礎 概要 LLM を使ったアプリケーションを作るとき、モデルの性能そのものより「どう指示するか」で結果が大きく変わります。同じ GPT モデルでも、プロンプトの設計次第で精度・安定性・コストがまるで違ってきま…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/akinori901/articles/20260927-plan063",
-      "category": "LLM",
-      "date": "2026-10-07",
-      "datetime": "2026-10-07T10:03:26+09:00"
-    },
-    {
-      "id": "8285960c6abc",
-      "title": "設計も分析も実装も、なぜ開発の中心はチャットにあり続けたのか？",
-      "summary": "Human–AI collaboration × Heitan 全10回のケーススタディ / 第4回 開発が進むと、使う道具は増えていく。Heitanでも、Ludii、Codex、GitHub、分析環境、Web版など、途中から多くの道具を使うようになった。 普…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/seconddeep/articles/b485d79d865fb1",
-      "category": "その他",
-      "date": "2026-10-07",
-      "datetime": "2026-10-07T08:41:27+09:00"
-    },
-    {
-      "id": "e82c9be6ddd7",
-      "title": "録音→議事録→次の仕事まで：ChatGPTが音声ファイルの直接アップロードに対応",
-      "summary": "会議や面談を録音したのに、あとで聞き返す時間がなく、そのまま眠ってしまう。 そんな「音声はある。でも仕事には戻せていない」を減らせる更新です。 OpenAIは2026年10月6日、ChatGPTで音声ファイルを直接アップロードできる機能を発表しました。録音の文…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/humanos_lab/articles/fd5006c638e866",
-      "category": "LLM",
-      "date": "2026-10-07",
-      "datetime": "2026-10-07T08:24:04+09:00"
     }
   ]
 }
