@@ -2,17 +2,6 @@
   "date": "2026-10-22",
   "articles": [
     {
-      "id": "ef178b8bfe5d",
-      "title": "Claude Codeのフックで止めたはずの書き込みが、Bashのlnやtouchで通っていた",
-      "summary": "観測日: 2026-09-08、2026-09-10、2026-09-11、2026-09-12、2026-09-18、2026-09-28 ／ 記事の作成: 2026-10-22（Claude Code 2.1.270、macOS 13.7.8） Claud…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/starken/articles/claude-code-hook-gate-bash-bypass",
-      "category": "LLM",
-      "date": "2026-10-22",
-      "datetime": "2026-10-22T23:56:42+09:00"
-    },
-    {
       "id": "fc822bdb2ee7",
       "title": "Bedrock Managed Agentsでデータ分析を組み込み実測 — skillの有無で売上集計に17.5%の差",
       "summary": "1. はじめに 「CSV を渡すと集計・グラフ・Excel を作って返してくれる分析アシスタント」を組み込みたい、というケースはよくあります。自前で作る場合は、モデル呼び出しのループ、コード実行環境、会話の保持、生成ファイルの受け渡しをすべて実装する必要があり…",
@@ -35,17 +24,6 @@
       "datetime": "2026-10-22T22:55:02+09:00"
     },
     {
-      "id": "37dce16dc156",
-      "title": "GitHubのユーザー名を入れるだけで「営業ページ」を自動生成するサービスを作った",
-      "summary": "作ったもの Folio — GitHubユーザー名を入れると、公開リポジトリを解析して「発注者に伝わる言葉」の営業プロフィールページを自動生成する無料サービスです。 https://folio.akima-inc.co.jp 試すのに登録もログインも要りません…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/masamune0625/articles/b8230b3cc50cc8",
-      "category": "製品",
-      "date": "2026-10-22",
-      "datetime": "2026-10-22T22:40:10+09:00"
-    },
-    {
       "id": "eed02ff4b125",
       "title": "5箱の状態は月次報告の1行に足す — 積もりと数字の並び順の設計",
       "summary": "商談前メモ5箱の運用では、AIの案をそのまま使う箱と、確認を挟む箱の間を月に数箱ずつ動かします。前回の確認1行は2か月連続の修正ゼロで戻すでは、▲確認つきの箱を2段でAI案へ戻す昇格の条件と順番を扱いました。 降格と昇格を回すと、読み替え表・降格表の両方に「ど…",
@@ -55,17 +33,6 @@
       "category": "その他",
       "date": "2026-10-22",
       "datetime": "2026-10-22T21:57:39+09:00"
-    },
-    {
-      "id": "2141ffa4d8a4",
-      "title": "Codex Day 17はフルリセット！発表時刻・日本時間の反映期限・Daybreak Blueを詳しく解説",
-      "summary": "OpenAIの「28日間アップデート」**Day 17（米国太平洋時間2026年10月21日）**は、新機能の発表ではなく、Codex / ChatGPT Workの利用枠リセットを行う日と案内されました。 Tibo Sottiaux氏の公式X投稿は次のとおり…",
-      "source": "Qiita",
-      "source_url": "https://qiita.com",
-      "url": "https://qiita.com/sponge841841/items/8678288f1d4eea94fe60",
-      "category": "LLM",
-      "date": "2026-10-22",
-      "datetime": "2026-10-22T21:45:58+09:00"
     },
     {
       "id": "6363eb5ebda2",
@@ -79,17 +46,6 @@
       "datetime": "2026-10-22T21:44:06+09:00"
     },
     {
-      "id": "6cda35f6671c",
-      "title": "AIに動画編集を任せられるかは、暗黙知をどう渡すかで決まる ― 7つの法則を「入力・確かめ方・記憶・手入れ」で読む",
-      "summary": "Claude Codeに動画編集をお願いしている、と友達に話したら、「そんなドラえもんみたいなこと、できるわけない」と返されました。 株式会社AI Orchestraの私（みやっち🧑‍💻）は、2026年10月にYouTubeを再開してから、出した動画をすべてC…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/tmiyachi/articles/ai-video-edit-tacit-knowledge-design",
-      "category": "LLM",
-      "date": "2026-10-22",
-      "datetime": "2026-10-22T21:17:22+09:00"
-    },
-    {
       "id": "b423b3c1cc63",
       "title": "PHPの緊急RCE修正を読む：失敗したリクエストの後に、何が残るのか",
       "summary": "2026年10月21日、PHP公式は、認証不要のリモートコード実行（RCE）につながる2件の脆弱性と、その修正版を告知しました。対応の第一歩は、Webリクエストを処理するPHPを修正版へ更新することです。PHP公式告知 この記事では、公式アドバイザリから「メモ…",
@@ -99,17 +55,6 @@
       "category": "その他",
       "date": "2026-10-22",
       "datetime": "2026-10-22T19:25:26+09:00"
-    },
-    {
-      "id": "b2e23cdf6bf4",
-      "title": "Issueを投げたら、PRが立つ。Claude Codeに開発を一周させる「ハーネス」の作り方（ブランチ運用込み）",
-      "summary": "運用フェーズに入ったプロダクトの仕事は、ほぼこのループです。 要望が来る → 直す → PR を出す 自分は AI Contents Bank という小さな SaaS を1人で運用していて、このループを1日に何周も回します。Claude Code を使い始めた…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/aicontentsbank/articles/issue-to-pr-harness-claude-code",
-      "category": "LLM",
-      "date": "2026-10-22",
-      "datetime": "2026-10-22T19:00:05+09:00"
     },
     {
       "id": "5de35471a9d7",
@@ -154,17 +99,6 @@
       "category": "LLM",
       "date": "2026-10-22",
       "datetime": "2026-10-22T14:15:47+09:00"
-    },
-    {
-      "id": "ca17a12952d8",
-      "title": "Claude DuetとdotsはAIに任せる線の引き方が違う？日本はいつ",
-      "summary": "📺 この記事は YouTube チャンネル きなこもっちーのテック深掘り の動画解説記事です。 ▶️ 動画はこちら → Claude DuetとdotsはAIに任せる線の引き方が違う？日本はいつ 🐹🦜 この記事に登場する2匹 🐹 もっちー （ハムスター）… A…",
-      "source": "Qiita",
-      "source_url": "https://qiita.com",
-      "url": "https://qiita.com/kinamocchi_tech/items/18bb3b66938e75024879",
-      "category": "LLM",
-      "date": "2026-10-22",
-      "datetime": "2026-10-22T14:02:32+09:00"
     },
     {
       "id": "dccb53d5a354",
