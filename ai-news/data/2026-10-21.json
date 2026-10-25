@@ -2,17 +2,6 @@
   "date": "2026-10-21",
   "articles": [
     {
-      "id": "99b048b94ccc",
-      "title": "reasoning_effortが接続先で変わるときの3つの失敗と対処",
-      "summary": "📝 この記事は forge.workstyle.tech に掲載した記事の転載です。 OpenAI互換の接続先でも、同じ欄名が同じ動作を意味するとは限りません。reasoning_effortをクラウド、自前のvLLM、中継サーバーに送ると、値の拒否や逐次応答…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/orca_forge/articles/openai-compatible-reasoning-effort",
-      "category": "LLM",
-      "date": "2026-10-21",
-      "datetime": "2026-10-21T22:06:32+09:00"
-    },
-    {
       "id": "95a2cbbba008",
       "title": "確認1行は2か月連続の修正ゼロで戻す — 降格した箱を2段で昇格させる運用の型",
       "summary": "商談前メモ5箱の運用では、AIの案をそのまま使う箱から「AIの案＋人の確認1行」へ降格させる箱を、月に2箱まで動かします。前回の止めた行は消さずに降格させるでは、降格した箱を置く降格表（箱名・降格形・確認の問い1行・戻る基準）と、読む順番の最後尾から降格する順…",
@@ -22,94 +11,6 @@
       "category": "その他",
       "date": "2026-10-21",
       "datetime": "2026-10-21T21:56:47+09:00"
-    },
-    {
-      "id": "ca941c92d007",
-      "title": "【ゆるっとAI基礎 #1】AIは会話するたびに学習してるの？",
-      "summary": "先に結論から言う。 AIは、あなたについて、渡されたことしか知らない。 正確に言うと、AIが使えるのは二つだけ。 学習のときに身につけた知識 今回、渡されたもの あなたが前に話したことは、二つ目に入れて渡さない限り、知らない。 でも、ChatGPTなどのAIと…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/daphne/articles/ai-learning-vs-context",
-      "category": "LLM",
-      "date": "2026-10-21",
-      "datetime": "2026-10-21T16:00:05+09:00"
-    },
-    {
-      "id": "16d30baa4c54",
-      "title": "OpenAIの12時間プロンプトキャッシュ：重なる書込みをPythonで二重計上しない",
-      "summary": "長い共通指示や参照資料を何時間かおきに使うアプリでは、キャッシュの有効時間が採用判断に関わります。ただし、長く保存する指定を足せば必ず安くなるわけではありません。複数の書込み境界を置く場合は、同じトークンを重複して数えたり、書込み倍率に通常入力分を再び加えたり…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/aipha_euro/articles/31bc109bf45f71",
-      "category": "LLM",
-      "date": "2026-10-21",
-      "datetime": "2026-10-21T14:25:27+09:00"
-    },
-    {
-      "id": "782ddba64a12",
-      "title": "gpt-realtime でツール呼び出しを試してみた 〜単一・並列呼び出しの実装とモデル別比較〜",
-      "summary": "はじめに Azure OpenAI の Realtime API において、ツール呼び出し（Function Calling）の動作と応答速度を検証しました。 検証対象モデルは、gpt-realtime（v1）と gpt-realtime-2.1、gpt-re…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/enterprise_ai/articles/ea1777efb5579e",
-      "category": "LLM",
-      "date": "2026-10-21",
-      "datetime": "2026-10-21T13:30:14+09:00"
-    },
-    {
-      "id": "b00f11717ed6",
-      "title": "記事を書くつもりが、気づいたら対話ログの探索方法を研究していた。",
-      "summary": "Human–AI collaboration × Heitan 全10回のケーススタディ / 第8回 Heitanの開発では、設計上の問いや違和感、仮説、テストプレイの感想、AI分析の解釈まで、多くの思考がChatGPTとの対話として残っていた。 ゲームが形に…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/seconddeep/articles/1449ab6232e537",
-      "category": "LLM",
-      "date": "2026-10-21",
-      "datetime": "2026-10-21T12:10:52+09:00"
-    },
-    {
-      "id": "81bc91e39abf",
-      "title": "OpenAI DevDay Exchange Tokyo 2026 参加レポート",
-      "summary": "2026年10月20日に東京で開かれた OpenAI DevDay Exchange Tokyo に参加しました。数週間前にサンフランシスコで開かれた DevDay 2026 を受けて東京で開かれたイベントで、15時から20時まで、メインステージとブレイクアウ…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/elith/articles/devday-exchange-tokyo-2026",
-      "category": "その他",
-      "date": "2026-10-21",
-      "datetime": "2026-10-21T10:12:57+09:00"
-    },
-    {
-      "id": "749e4eb5124b",
-      "title": "Grok Bot と dots の使い分けと活用事例",
-      "summary": "はじめに 僕は普段、dots や Grok Bot に日々のタスクや予定の管理を任せています。両方のアプリを使う中で感じた違いや使い分けをまとめてみました。 使ってみて感じたのは、AI 秘書としての日常の仕事はどちらにも任せられて、違うのは入り口と特徴だという…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/sunagaku/articles/grokbot-vs-dots-ai-secretary",
-      "category": "その他",
-      "date": "2026-10-21",
-      "datetime": "2026-10-21T08:01:49+09:00"
-    },
-    {
-      "id": "ea6c14ae2e7a",
-      "title": "記事を読みに来たのに、Geminiしかいない。Google検索を元に戻す方法",
-      "summary": "Google検索をすると画面のすべてがGeminiの回答で埋まっている!? ↑これを... ↑こうしたい ここ半年ほどでこういう場面が増えてきました。 調べ物をしようとGoogleを開いて、検索します。画面を見ると、Geminiの回答しかありません。 スクロー…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/taruroma/articles/ff20f90126e053",
-      "category": "LLM",
-      "date": "2026-10-21",
-      "datetime": "2026-10-21T03:08:02+09:00"
-    },
-    {
-      "id": "4b45d55a7ebf",
-      "title": "ChatGPT から自分のボットに仕事を頼む ― MCP コネクタでつなぐ手順",
-      "summary": "ChatGPT を開いたまま、別のところに置いてある自分の AI ボットにも用事を頼めたら便利です。たとえば「明日の予定を確認しておいて」「この内容をメモに足しておいて」といった作業は、ChatGPT 側の会話からそのまま投げられると助かります。 これを可能に…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/zackchew/articles/3479eb603c9cd4",
-      "category": "LLM",
-      "date": "2026-10-21",
-      "datetime": "2026-10-21T01:40:41+09:00"
     }
   ]
 }
