@@ -3,7 +3,7 @@
   "articles": [
     {
       "id": "f02f19087e3c",
-      "title": "LambdaとBedrockで自作するLLMプロキシ(キー発行・予算・管理UI)",
+      "title": "LambdaとBedrockでキー発行・予算・管理UI付きのLLMプロキシを自作する",
       "summary": "社内でClaude CodeやCodex CLIを使う人が増えてくると、「誰がどのモデルにいくら使っているかわからない」「キーを配るしくみがない」「危ないツールを禁止したい」という話になります。 LiteLLMを立てれば解決しますが、常時起動のコンテナとDBを…",
       "source": "Zenn.dev",
       "source_url": "https://zenn.dev",
@@ -90,17 +90,6 @@
       "datetime": "2026-10-31T14:00:11+09:00"
     },
     {
-      "id": "c401e402b12d",
-      "title": "OpenAI互換APIの接続をcurlで切り分ける：Base URL・モデルID・ストリーミング",
-      "summary": "OpenAI互換APIをチャットクライアントや自作アプリに接続するとき、APIキーを入力しただけでは動かないことがあります。接続先のパスが重複している、モデルIDが違う、通常のJSONとストリーミングを同じ方法で読んでいる、といった原因を分けて確認する必要があ…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/taodock/articles/cb532eed204483",
-      "category": "その他",
-      "date": "2026-10-31",
-      "datetime": "2026-10-31T12:46:00+09:00"
-    },
-    {
       "id": "b4baafed3778",
       "title": "AIエージェント実践設計＆テンプレート大全 — コピペで動くAGENTS.md・SKILL.md・秘匿自動化キット",
       "summary": "これからClaude Code・Gemini・Antigravity等を始める初心者から実務者まで、フォルダにコピペして置くだけで「安全に自走するAI開発チーム」が完成する実践設計書＆テンプレートセット。汎用AGENTS.md、現場で最も使う5大実用SKILL…",
@@ -121,17 +110,6 @@
       "category": "LLM",
       "date": "2026-10-31",
       "datetime": "2026-10-31T09:29:26+09:00"
-    },
-    {
-      "id": "7893758c091c",
-      "title": "Tech Watch 2026-10-31: エージェントの境界を設計する",
-      "summary": "AIが書きました🤖 この記事は、AIが書いたものをAIがレビューしてから公開しています。 L: 野生動物を識別する仕事で、写真に写る模様を手がかりに個体を追うという話が気になった。人が現場で確かめる部分と、AIに任せる部分の境目は、どこに置けばいいのだろう。自…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/laiken/articles/20261031-tech-watch",
-      "category": "製品",
-      "date": "2026-10-31",
-      "datetime": "2026-10-31T06:30:11+09:00"
     },
     {
       "id": "f10cbf1cbdf9",
@@ -165,17 +143,6 @@
       "category": "LLM",
       "date": "2026-10-31",
       "datetime": "2026-10-31T01:23:28+09:00"
-    },
-    {
-      "id": "a3d68d96a4c8",
-      "title": "山手線の車窓ゲームを作ってみた振り返り（でも締切に間に合わず）",
-      "summary": "はじめに 第5回 Agentic AI Hackathon with Google Cloud に向けて、山手線の車窓を観察するサービス「YAMANOTE OBSERVER」を作りました。 提出の締切には間に合いませんでしたが、Cloud Run で動くところ…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/degel/articles/yamanote-observer-retrospective",
-      "category": "製品",
-      "date": "2026-10-31",
-      "datetime": "2026-10-31T01:14:43+09:00"
     }
   ]
 }
