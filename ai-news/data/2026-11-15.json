@@ -24,17 +24,6 @@
       "datetime": "2026-11-15T23:22:44+09:00"
     },
     {
-      "id": "d665617333ab",
-      "title": "サブエージェントに任せた仕事の報告が当てにならない。任せ方と確かめ方の Skill",
-      "summary": "AI エージェントは、仕事をサブエージェント（自分が立てる別の AI。以下、子）に任せられます。子は任せた側（以下、親）の会話を見ておらず、依頼文だけを読んで動き、報告だけを返します。依頼文に書かなかったことは守られず、子の「完了しました。テストはすべて通りま…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/itoken_lab/articles/delegating-work-with-without",
-      "category": "その他",
-      "date": "2026-11-15",
-      "datetime": "2026-11-15T23:01:23+09:00"
-    },
-    {
       "id": "ff438908d819",
       "title": "月頭の第一仕事は週の締めに割り振る — 残った箱の読み返しを月報1行から週記録へ配る形",
       "summary": "月初の月報から「数2つと仕事1つ」の引き継ぎ行を出す受け渡しは前回で固定しました。渡された第一仕事は「済み表に残った箱の読み返し」です。ただしこの仕事を月頭の1日で終わらせようとすると、読み返しが月頭に寄り、週の実績と読み返しの実績がつながらない時間になります…",
@@ -44,28 +33,6 @@
       "category": "その他",
       "date": "2026-11-15",
       "datetime": "2026-11-15T22:12:08+09:00"
-    },
-    {
-      "id": "e6e072178be6",
-      "title": "/goalを使わずStopフックを自作したら、Claude Codeが止まらず使用量が増え続けた",
-      "summary": "Claude Codeを、作業が終わるまで止めないようにしたい。そう考えて、/goalを使わずStopフックを自作しました。すると、Claudeが止まらなくなりました。 自作すれば、終わりの判定はより確かになります。しかし、「裏の仕事を待つ仕組み」を作り損ねれ…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/kagaribilab/articles/claude-code-stop-hook-loop",
-      "category": "LLM",
-      "date": "2026-11-15",
-      "datetime": "2026-11-15T21:54:54+09:00"
-    },
-    {
-      "id": "5c2db6ae42e3",
-      "title": "AI に書かせた日本語が読みにくい。読み手から書かせる Skill を比べた",
-      "summary": "AI エージェントに README や PR の本文、社内向けの報告を日本語で書かせると、箇条書きと「見出し：説明」の形が並び、文と文のつながりが抜けた文章が返ってきがちです。japanese-writing は、読み手と場面から書く順番と文体を決め、AI の…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/itoken_lab/articles/japanese-writing-with-without",
-      "category": "その他",
-      "date": "2026-11-15",
-      "datetime": "2026-11-15T21:36:53+09:00"
     },
     {
       "id": "4261b3dd1205",
@@ -154,39 +121,6 @@
       "category": "LLM",
       "date": "2026-11-15",
       "datetime": "2026-11-15T09:19:25+09:00"
-    },
-    {
-      "id": "0e60caecc7fb",
-      "title": "Gemini Decision 1 で学校行事のカレンダー判定を 7 割安くした（選ぶ AI と書く AI を分ける）",
-      "summary": "! この記事は LLM・LLM活用 Advent Calendar 2026（シリーズ 2）の 2 日目の記事です。 わが家では、学校や幼稚園のお便りから行事を取り出し、家族の Google カレンダーに毎晩入れています。この「どの予定を、誰のカレンダーに入れ…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/hiroyamayu/articles/gemini-decision-calendar",
-      "category": "LLM",
-      "date": "2026-11-15",
-      "datetime": "2026-11-15T08:00:05+09:00"
-    },
-    {
-      "id": "d987554b34c8",
-      "title": "Tech Watch 2026-11-15: 道具と検証の境界",
-      "summary": "AIが書きました🤖 この記事は、AIが書いたものをAIがレビューしてから公開しています。 L: 地図の小さな部品を更新したら、送信先に渡す参照元の扱いが問題になった。機能が動くことと、外部サービスの利用条件に沿って動くことは別なんですね。エージェントにも似た境…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/laiken/articles/20261115-tech-watch",
-      "category": "製品",
-      "date": "2026-11-15",
-      "datetime": "2026-11-15T07:45:13+09:00"
-    },
-    {
-      "id": "f8769e50718e",
-      "title": "窓口はひとつ、裏側は5経路 — Muse の環境で複数 AI エージェントを fail-closed に回す設計と運用",
-      "summary": "1. この記事の結論 Muse の環境で、Claude Code・Codex CLI・Gemini 系 CLI・Grok・OpenAI API の5経路を動かしている構造と運用をまとめます。汎用のフレームワークの話ではなく、私が日常的に使っている実際の構成の話…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/coastlinedb/articles/c976a27eb7c127",
-      "category": "LLM",
-      "date": "2026-11-15",
-      "datetime": "2026-11-15T01:37:09+09:00"
     }
   ]
 }
