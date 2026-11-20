@@ -2,61 +2,6 @@
   "date": "2026-11-18",
   "articles": [
     {
-      "id": "10d483956cb8",
-      "title": "[Amazon Nova 2.5 Sonic] Speech-to-Speechモデルにゲームをやらせてみた",
-      "summary": "はじめに 前回の記事[1]では、音声を聞いて音声で返す speech-to-speech モデルの Amazon Nova 2.5 Sonic[2] と、Strands Agents の BidiAgent で、話しながら体を動かすクマのぬいぐるみを作りました…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/aws_japan/articles/nova-sonic-realtime-game-control",
-      "category": "その他",
-      "date": "2026-11-18",
-      "datetime": "2026-11-18T23:48:17+09:00"
-    },
-    {
-      "id": "c99976fd6fb6",
-      "title": "聞きながら話す音声 AI「Haru-4B」を Mac で動かして、AI 同士にお昼ごはんを相談させてみた",
-      "summary": "はじめに 2026 年 11 月 13 日、higurashi が日本語でも話せる音声対話モデル Haru-4B を公開しました。いちばんの特徴は、相手の声を聞きながら、同時に話せる (全二重、full-duplex) ことです。相づちを打ったり、話の途中で割…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/lecto/articles/6406d68580910b",
-      "category": "製品",
-      "date": "2026-11-18",
-      "datetime": "2026-11-18T23:36:13+09:00"
-    },
-    {
-      "id": "1c67681325d4",
-      "title": "ハイレゾB200計算クラスタを使用してファインチューニングに挑む件 第5回 作ったモデルの評価をしてみよう",
-      "summary": "本記事は、ハイレゾのB200計算クラスタ（Slurm Workload Manager）を使ってLLMのファインチューニングに挑む全5回連載の第5回（最終回）です。 第1回 ハイレゾ計算クラスタへアクセスしてみよう 第2回 Slurm Workload Man…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/highreso/articles/b56a13b866ccf2",
-      "category": "LLM",
-      "date": "2026-11-18",
-      "datetime": "2026-11-18T23:33:01+09:00"
-    },
-    {
-      "id": "4dc062e87c9a",
-      "title": "Claude Fable 5.2 Thinking Highのコーディング性能がすごい！",
-      "summary": "はじめに 11月9日にClaude Fable 5.2 Thinking Highモデルが公開されました。早速SonarのLLM Leaderboardにベンチマークが掲載されましたが、驚くべき結果でしたので、簡潔にまとめます。 Pass率は、過去最高の90.…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/tkishioka/articles/claude-fable-5-2-leaderboard",
-      "category": "LLM",
-      "date": "2026-11-18",
-      "datetime": "2026-11-18T23:29:03+09:00"
-    },
-    {
-      "id": "f607ae4a2cdd",
-      "title": "クラウドAI不要を掲げるJarvisの知識グラフ・日記メモリを、ローカルLLMで手を動かして検証した",
-      "summary": "今日の対象: isair/jarvis isair/jarvisは、Ollama・LM Studio・llama.cppなどローカルのモデルサーバーだけで動く音声対応デスクトップAIアシスタントである(独自ライセンス。個人・教育・研究目的の非商用利用は無料、商…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/matsushima_a/articles/day-050-jarvis-local-knowledge-graph-memory",
-      "category": "LLM",
-      "date": "2026-11-18",
-      "datetime": "2026-11-18T23:28:57+09:00"
-    },
-    {
       "id": "169fe5a47704",
       "title": "GB10 1 台とクラウドのハイブリッド LLM — 正解率・秒・Wh・ドルを同じ物差しで測って振り分ける",
       "summary": "NVIDIA GB10（128GB ユニファイドメモリ）のマシン 1 台でローカル LLM を常時動かし、クラウドの LLM と組み合わせて、個人の自動化を 3 か月半ほど回しています。以前の記事では、振り分けの考え方を言葉で書きました（個人 AI 基盤の設計…",
@@ -77,28 +22,6 @@
       "category": "その他",
       "date": "2026-11-18",
       "datetime": "2026-11-18T23:05:06+09:00"
-    },
-    {
-      "id": "e564c364c740",
-      "title": "無料でIntel・AMD・NVIDIAのGPUを使ってQwen3.8-Flash-Nextをローカルで動かせる「XeStrata」",
-      "summary": "1250億パラメーターのAIモデル「Qwen3.8-Flash-Next」を一般的なPCで動作させるソフトウェアの「Strata」をベースにGPUの計算処理をオープンな標準規格「SYCL」で書き直すことでIntel製GPUにも対応し、Intel・AMD・NVI…",
-      "source": "Gigazine",
-      "source_url": "https://gigazine.net",
-      "url": "https://gigazine.net/news/20261118-xestrata/",
-      "category": "その他",
-      "date": "2026-11-18",
-      "datetime": "2026-11-18T23:00:00+09:00"
-    },
-    {
-      "id": "fd400e7ad6dc",
-      "title": "ローカルLLMをデスゲームに参加させてみた",
-      "summary": "ローカル LLM に、言われた作業を最後まで間違えずにやらせたい。どうすればそうなるのかを、ローカル LLM のデスゲームで確かめました。部屋から脱出するゲームで、失敗するとそのまま死にます。 まずは、検証するための sandbox を Claude Code…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/bmexami/articles/local-llm-death-game",
-      "category": "LLM",
-      "date": "2026-11-18",
-      "datetime": "2026-11-18T22:44:49+09:00"
     },
     {
       "id": "92240addc273",
@@ -134,259 +57,6 @@
       "datetime": "2026-11-18T21:36:15+09:00"
     },
     {
-      "id": "1b7ca88f00ce",
-      "title": "AI同士で直し合うレビューを1か月回した結果。効いたのは全部のチェックではなく対象を絞ること",
-      "summary": "AI が Backlog に書くたび、別の AI が直後にレビューする仕組みを約1か月回した。レビューは175回、指摘は819件出た 重要度が高い指摘は74件で、本物の誤りも混ざっていた。ただ全体の9割は、書き方や要確認といった軽い指摘だった 効いたのは全部を…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/mizo_ko/articles/article-101-zenn",
-      "category": "その他",
-      "date": "2026-11-18",
-      "datetime": "2026-11-18T21:35:08+09:00"
-    },
-    {
-      "id": "82c8a314d950",
-      "title": "AIを使う個人開発で、ユーザーが増えても課金が増えない構成にした",
-      "summary": "個人で AI を使ったサービスを作るとき、いちばん怖いのは成功したときの請求だと思います。 バズってユーザーが増えたら、その分だけ LLM の課金が増える。喜ぶべき状況で口座を見て青くなる。この構造がある限り、伸ばす努力にブレーキがかかります。 基本情報技術者…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/aiu_aiu/articles/0178e8c0d6bef9",
-      "category": "LLM",
-      "date": "2026-11-18",
-      "datetime": "2026-11-18T21:26:43+09:00"
-    },
-    {
-      "id": "a26938e80bf4",
-      "title": "Claude Codeチームは検証についてどのように考えて実行しているのか、エンドツーエンドテスト・プロパティテスト・差分テストで証拠に基づいて自身の作業を検証する方法",
-      "summary": "AIコーディングツール「Claude Code」の開発チームでは、コードの約90％をClaudeが記述・レビューしています。AIに大量の開発作業を任せながらコードの品質を維持するため、Claude Codeの開発チームがどのような検証の仕組みを構築しているのか…",
-      "source": "Gigazine",
-      "source_url": "https://gigazine.net",
-      "url": "https://gigazine.net/news/20261118-claude-code-test-code-review/",
-      "category": "LLM",
-      "date": "2026-11-18",
-      "datetime": "2026-11-18T21:00:00+09:00"
-    },
-    {
-      "id": "293c42a6d955",
-      "title": "「AIにペルソナを」と言ったら、AIが別案を出した🥊 プロンプトも差し替えずに挑戦者と並走させる",
-      "summary": "みなさん、こんにちは！ 「ALPHA FORGE 開発秘話」の第35話です。 「AIにペルソナを与えましょうか」。そう聞いたら、AIは「役柄は付けない方がいいです」と返してきました。 代わりに出てきたのは、今のプロンプトを1文字も変えずに、新しい版を横で走らせ…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/charge0315/articles/775fd46c143656",
-      "category": "LLM",
-      "date": "2026-11-18",
-      "datetime": "2026-11-18T20:55:19+09:00"
-    },
-    {
-      "id": "803ff772b603",
-      "title": "Claude Code のルールの置き場を判定表で決めた。3か月後に数えたら、増え方は止まっていなかった",
-      "summary": "月次の棚卸しレポートに、毎月同じ行が出る。実装前確認.md が10項目を超えている、という指摘だ。9月は17項目、10月は18項目、11月は21項目。1ファイルが10項目を超えたら分割か統合を検討する、という出口の基準を決めたのは自分で、ルールの置き場を判定表…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/handa_lab/articles/11-rules-placement-table",
-      "category": "LLM",
-      "date": "2026-11-18",
-      "datetime": "2026-11-18T20:04:05+09:00"
-    },
-    {
-      "id": "7c2f82e00d62",
-      "title": "AI ツールごとに前提がずれるので、自分の情報を Notion の SSOT に集約した",
-      "summary": "検証環境： 2026 年 11 月時点 正本: Notion（ページ＋データベース） 読む側: ChatGPT、Claude、Grok Bot、Muse など、日常的に使う複数の AI ツール Grok Bot は、複数の専門ボットで開発を分担するボット艦隊の…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/kyto64/articles/notion-ai-ssot-aboutme",
-      "category": "LLM",
-      "date": "2026-11-18",
-      "datetime": "2026-11-18T20:00:06+09:00"
-    },
-    {
-      "id": "fd449f43c5a3",
-      "title": "AWS Continuum ペンテスティング機能 検証レポート (LLM App 編)",
-      "summary": "対象読者: AWS Continuumをまだ導入検討段階にあるユーザー企業のIT部門(特に、チャットボットや生成AI機能を自社アプリケーションに組み込んでいる、またはこれから組み込む予定の組織) 検証期間: 2026年11月 前提: 本レポートは「AWS Co…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/aws_japan/articles/524d87d9c2384d",
-      "category": "LLM",
-      "date": "2026-11-18",
-      "datetime": "2026-11-18T19:51:15+09:00"
-    },
-    {
-      "id": "a1ded845d4fe",
-      "title": "AIを活用した社内マニュアル作成で属人化を防ぐ構造化手順と改訂チェックリスト【コピペ用プロンプト2本＋5項目チェック】",
-      "summary": "退職する先輩が残した引き継ぎ資料は、箇条書き5行だけ。 「あとは見れば分かるよ」……分からないです。 この記事の結論： AIを使って雑多な業務手順を「構造化されたマニュアル」に変換する具体的なステップ。 業務の属人化を防おうとマニュアルを作っても、文章が抽象的…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/andyailab/articles/e8a69f84e5961d",
-      "category": "LLM",
-      "date": "2026-11-18",
-      "datetime": "2026-11-18T19:38:58+09:00"
-    },
-    {
-      "id": "937df60464b4",
-      "title": "Claude Fable 5.2のSVG・Canvas描画を検証：出力切れと実行エラーの見分け方",
-      "summary": "2026年11月18日、Claude Fable 5.2に村の絵をコードで描かせたところ、HTTP 200の応答でもファイルが完成していないケースがあった。短いSVGは解析・表示まで通ったが、より詳しいCanvasは分割出力の接続と手動修正が必要だった。コード…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/boluoji/articles/5a222f7a5271a9",
-      "category": "LLM",
-      "date": "2026-11-18",
-      "datetime": "2026-11-18T19:34:57+09:00"
-    },
-    {
-      "id": "b480d8ffa3ca",
-      "title": "「検査は走っていた。それでもpushされた」——Claude Codeの3か月の記録と、SAPの移送ゲート",
-      "summary": "規程はある。手順書もある。研修資料も、マニュアルもある。 それでも、事故は起きる。 「ある」だけでは、効かないのです。 フォローしている著者の3か月の記録が、その話をAIエージェントの世界で、数字つきでやっていました。 @tottoko_hamuさんの「Cla…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/dantarg/articles/claude-code-playbook-gates",
-      "category": "LLM",
-      "date": "2026-11-18",
-      "datetime": "2026-11-18T19:33:11+09:00"
-    },
-    {
-      "id": "b89eab75429a",
-      "title": "PLaMo 3 Translate 2B／0.8BをVRAM 6GBで実測：短文翻訳10問は10/10、長文は2つとも打ち切り",
-      "summary": "翻訳特化の LLM PLaMo 3 Translate の 2B と 0.8B（PFN 公式 GGUF の Q4_K_M）を、VRAM 6GB の GPU で動かした実測です。llama.cpp b12340 の llama-server、-ngl 99、te…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/localai_lab/articles/c6993d321c618d",
-      "category": "LLM",
-      "date": "2026-11-18",
-      "datetime": "2026-11-18T19:32:04+09:00"
-    },
-    {
-      "id": "d41ef7829c3f",
-      "title": "llama.cpp v1 を内蔵 GPU で試したら、長い入力の読み込みは約 2 倍、MoE キャッシュは遅くなった",
-      "summary": "! 先に、この記事の要約（専門用語なし） 手元で AI の言葉のモデルを動かす道具 llama.cpp が、バージョン 1.0.0 になった。性格の違う 2 台の PC で、前の版と比べた メインメモリーを GPU と分け合う PC（MSI Claw 8 AI…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/maruhana/articles/llamacpp-v1-igpu-prompt-2x-moe-cache",
-      "category": "LLM",
-      "date": "2026-11-18",
-      "datetime": "2026-11-18T19:22:13+09:00"
-    },
-    {
-      "id": "9968834a9829",
-      "title": "SNSの投稿は、入力までAI・ボタンは人。Claude in Chromeで5つのSNSに入れてつまずいたこと",
-      "summary": "iPhoneアプリを一人で作っている Atsushi です。アプリの告知は、X・Threads・Instagram・TikTok・YouTube に出しています。 投稿の準備は、Claude in Chrome（Chrome の拡張機能で、Claude が私の…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/atsushi_apps/articles/claude-in-chrome-sns-posting-split",
-      "category": "LLM",
-      "date": "2026-11-18",
-      "datetime": "2026-11-18T19:05:44+09:00"
-    },
-    {
-      "id": "51f4e2622843",
-      "title": "Google検索の「AIによる概要」のせいで外部ウェブサイトのクリック率が約40％減少、サイト運営者はどうするべきか？",
-      "summary": "Googleで何らかの検索をした際、検索結果の一番上に「AIによる概要」が表示されることがよくあります。検索結果画面にAIによる概要が表示されると、外部ウェブサイトのクリック率が約40％減少するという研究結果も発表されており、ウェブサイト向けの収益分析ツールを…",
-      "source": "Gigazine",
-      "source_url": "https://gigazine.net",
-      "url": "https://gigazine.net/news/20261118-google-ai-overviews-cut-clicks-websites/",
-      "category": "研究",
-      "date": "2026-11-18",
-      "datetime": "2026-11-18T19:00:00+09:00"
-    },
-    {
-      "id": "b1c80d362160",
-      "title": "Claude Code の statusLine が渡す rate_limits を読んで、推測しない使用量メーターを作る",
-      "summary": "Claude Code の使用量を表示するツールは、セッションログのトークン数から上限を推定するものが多いです。この記事では推定をやめて、Claude Code 自身が statusLine コマンドに渡している rate_limits だけを読むメーターを作…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/s3onghyun/articles/2e99d77e6a5a03",
-      "category": "LLM",
-      "date": "2026-11-18",
-      "datetime": "2026-11-18T18:30:13+09:00"
-    },
-    {
-      "id": "c8f6aa4c982f",
-      "title": "Claude Designで再現性のあるデザインを作るためにやったこと",
-      "summary": "初めに こんにちは。しーさんです。 少しずつAIを使った開発に慣れてきたかなと感じる今日ですが、業務でのフロントエンド開発においてClaude Designがありがたかったポイントを紹介します。 おそらくエンジニアリングと似たような話になってると思いますが、ご…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/caffe_latte_623/articles/claude-design-reproducibility",
-      "category": "LLM",
-      "date": "2026-11-18",
-      "datetime": "2026-11-18T18:18:07+09:00"
-    },
-    {
-      "id": "165055bde825",
-      "title": "GPT-6.2 AstraとSolの違い：トークン効率・キャッシュ・料金の仕組みを解説",
-      "summary": "個人開発しているもの 日々の開発で得た知識を発信しながら、「あったら便利」「作ってみたい」と思ったアイデアを形にしています。 これまでに、グループ旅行アプリ Trip Supporter、スコア管理サービス PointPia、リアルタイム共有サービス Just…",
-      "source": "Qiita",
-      "source_url": "https://qiita.com",
-      "url": "https://qiita.com/sponge841841/items/eea85fa68909474537f4",
-      "category": "LLM",
-      "date": "2026-11-18",
-      "datetime": "2026-11-18T18:08:11+09:00"
-    },
-    {
-      "id": "e3c90e7cedf4",
-      "title": "Microsoftが新型AIプログラミングモデル「MAI Code 2」と高速版「MAI Code 2 Flash」を発表、GPT-6.1 Solに匹敵する性能を40％のコストで発揮",
-      "summary": "Microsoftが2026年11月17日にプログラミング向けAIモデル「MAI Code 2」と「MAI Code 2 Flash」を発表しました。MAI Code 2はOpenAIの「GPT-6.1 Sol」に匹敵する性能を低コストで発揮するとされており、…",
-      "source": "Gigazine",
-      "source_url": "https://gigazine.net",
-      "url": "https://gigazine.net/news/20261118-mai-code-2-flash/",
-      "category": "LLM",
-      "date": "2026-11-18",
-      "datetime": "2026-11-18T17:58:00+09:00"
-    },
-    {
-      "id": "78a606177361",
-      "title": "AIのサブエージェントを「課」に分けて、帳簿と承認で動かす小さなキットを公開しました",
-      "summary": "本記事は個人の運用記録とツールの紹介です。紹介するキットは現実のお金・暗号資産を扱いません。 AIに毎日の作業を任せていると、サブエージェント（調べもの係、実装係、検証係…）を何人も動かすようになります。便利な一方で、次のことが分からなくなってきました。 どの…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/hachihou_system/articles/389a2800e92f64",
-      "category": "製品",
-      "date": "2026-11-18",
-      "datetime": "2026-11-18T17:54:14+09:00"
-    },
-    {
-      "id": "b6e3f2a7b213",
-      "title": "Claude Codeに危ないコマンドを打たせないフック — AIが作った安全装置は何も止めていなかった",
-      "summary": "この記事について 目的: Claude Code に rm -rf や git reset --hard のような、取り返しのつかないコマンドを打たせないための「フック」の作り方を、動くコード付きで説明します。 読者: Claude Code にコードを書かせ…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/miokuri_ai/articles/c8f93358846ac3",
-      "category": "LLM",
-      "date": "2026-11-18",
-      "datetime": "2026-11-18T17:30:06+09:00"
-    },
-    {
-      "id": "ec359ecf91a3",
-      "title": "今話題のMuseってなに？どんなことができる？※この記事はMuseが書いて自動で投稿しています",
-      "summary": "※この記事は、Museと壁打ちしながら内容を作り、投稿作業もMuseに自動で行わせているものです。 TL;DR Museは、質問に答えるだけのチャットAIではなく、あなたのことを覚えて、自分で調べて・作って・定期的に動いてくれるパーソナルエージェントです でき…",
-      "source": "Qiita",
-      "source_url": "https://qiita.com",
-      "url": "https://qiita.com/inoyu-qiita/items/05f9c10adc1a398d6ff5",
-      "category": "その他",
-      "date": "2026-11-18",
-      "datetime": "2026-11-18T17:13:37+09:00"
-    },
-    {
-      "id": "cf045c81147c",
-      "title": "大手9社のAI Agent求人を20件読んだ — JDが示す次の2〜3年と、誰も採っていない「身元・権限検証」",
-      "summary": "「大手のAI Agent採用の求人票（JD）を読むと、今後2〜3年AIがどこへ向かうか分かる。業界分析を100本読むより役に立つ」という投稿を見かけた。 半分ネタだと思ったが、実際にやってみた。OpenAI、Anthropic、Google DeepMind、…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/kokotatan/articles/ai-agent-jd-20-identity-permission-verification",
-      "category": "その他",
-      "date": "2026-11-18",
-      "datetime": "2026-11-18T16:59:04+09:00"
-    },
-    {
-      "id": "2c83c851b01d",
-      "title": "PLATEAU京都の3D作品をAIが実機なしで検証、自動検証8種と人に残した確認3点",
-      "summary": "はじめに 「スマートフォンでも見られるようにしました」と AI が報告してきたとき、その言葉を何で信じればよいでしょうか。AI の作業環境にはスマートフォンも GPU もスピーカーもありません。それでも成果物には「動きます」「音が鳴ります」「群れは自然に振る舞…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/kai_kou/articles/1294-hato-no-me-kyoto-ai-verification-design",
-      "category": "その他",
-      "date": "2026-11-18",
-      "datetime": "2026-11-18T16:15:42+09:00"
-    },
-    {
       "id": "701abd8b94e9",
       "title": "【ゆるっとAI基礎 #5】AIは、渡したことを全部覚えていられるの？",
       "summary": "前回は、ツールを足すことでAIがメモに書き足せるようになる、という話をした。 https://zenn.dev/daphne/articles/ai-readable-form 第1回からここまで、記憶を持たないAIに「覚えておいてほしいこと」をどう渡すか、と…",
@@ -420,39 +90,6 @@
       "datetime": "2026-11-18T15:00:06+09:00"
     },
     {
-      "id": "543e4e7d8067",
-      "title": "Claude Code の使用率を毎朝 LINE に届ける ── 3つのやり方を試して、残ったのは1つだった",
-      "summary": "! 著者の環境（Windows・タスクスケジューラ）で、2026-09-04〜10-07に試した記録です。 この記事は誰のためか Claude Code の使用率を、わざわざ見に行かなくても毎朝目に入るようにしたい人のための記事です。具体的にはスマホに情報を自…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/civras/articles/889e80a936421a",
-      "category": "LLM",
-      "date": "2026-11-18",
-      "datetime": "2026-11-18T13:30:20+09:00"
-    },
-    {
-      "id": "c440bfbe7fde",
-      "title": "OpenAIが「GPT-6.2 Astra」「GPT-6.2 Sol」をリリース、資料作成やPC操作が進化＆少ないトークンで複雑な業務を処理可能に",
-      "summary": "OpenAIが新たなAIモデル「GPT-6.2 Astra」と「GPT-6.2 Sol」を発表しました。GPT-6.2 Astraは複雑な業務やプログラミング、科学研究に適した最上位モデルで、GPT-6.2 Solは日常的な作業を効率よく処理できるモデルです。…",
-      "source": "Gigazine",
-      "source_url": "https://gigazine.net",
-      "url": "https://gigazine.net/news/20261118-openai-gpt-6-2-astra-sol/",
-      "category": "LLM",
-      "date": "2026-11-18",
-      "datetime": "2026-11-18T13:15:00+09:00"
-    },
-    {
-      "id": "060b04f49e74",
-      "title": "OpenJDKのBase64デコーダにおけるメモリ破損の脆弱性「Java4Shell」をOpenAIのCodexで発見、わずか3時間で攻撃実証まで成功",
-      "summary": "セキュリティ研究企業のCalifが2026年11月17日、Javaのオープンソース実装であるOpenJDKに重大な脆弱(ぜいじゃく)性「Java4Shell(CVE-2026-114938)」が存在すると発表しました。Java4Shellを悪用すると、攻撃者は…",
-      "source": "Gigazine",
-      "source_url": "https://gigazine.net",
-      "url": "https://gigazine.net/news/20261118-java4shell/",
-      "category": "研究",
-      "date": "2026-11-18",
-      "datetime": "2026-11-18T13:00:00+09:00"
-    },
-    {
       "id": "b8709de59c96",
       "title": "ChatGPTに副業の「調べる時間」を丸投げしたら、1記事36分で回るようになった",
       "summary": "note版はこちら：https://note.com/cozy_acacia294/n/nad32f9d8484d 2026年11月18日にnoteへ公開した無料記事のZenn向け転載です。数字はすべてnoteダッシュボードの実測で、集計時刻を明記しています。…",
@@ -464,17 +101,6 @@
       "datetime": "2026-11-18T12:16:32+09:00"
     },
     {
-      "id": "d2958364ee54",
-      "title": "NVIDIAのコレット・クレス暫定CEOが中国向けのH200販売終了を発表",
-      "summary": "ジェンスン・フアン氏のCEO辞任後、初となる決算説明会で、コレット・クレス暫定CEOがAI用途やHPC用途向けのGPU・H200の中国向け販売を終了することを明らかにしました。続きを読む...",
-      "source": "Gigazine",
-      "source_url": "https://gigazine.net",
-      "url": "https://gigazine.net/news/20261118-nvidia-ends-to-sell-chip-to-china/",
-      "category": "その他",
-      "date": "2026-11-18",
-      "datetime": "2026-11-18T12:14:00+09:00"
-    },
-    {
       "id": "49b1c4a19b3d",
       "title": "AIが試験場を抜け出した。カリフォルニア州がOpenAIを提訴",
       "summary": "2026年11月17日（火）のAIニュース完全解説版。図解を見れば本文を読まなくても分かる形にしています。 今日は、AIが「勝手に動いた」ときの責任の話から入ります。アメリカのカリフォルニア州が、OpenAIを訴えました。ほかにも、クレディセゾンのROI954…",
@@ -484,28 +110,6 @@
       "category": "その他",
       "date": "2026-11-18",
       "datetime": "2026-11-18T12:10:44+09:00"
-    },
-    {
-      "id": "15eecded7987",
-      "title": "作業はAIに、判断は人で ― ゲーム開発で実践しているAI駆動のワークフロー",
-      "summary": "はじめに ゲームクライアントエンジニアをしています。個人開発でも仕事でも、実装計画を立てるところから実装、テスト、レビューまでをAIに任せています。自分がやるのは、実装計画書(実装計画をまとめた文書)の承認と、コードレビュー、動作チェックです。それでも、コード…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/chinpangx_tech/articles/19dd77b67e02f0",
-      "category": "その他",
-      "date": "2026-11-18",
-      "datetime": "2026-11-18T12:00:05+09:00"
-    },
-    {
-      "id": "db45659d0cc5",
-      "title": "メモリ不足でAppleがSamsungと異例の4年間にわたるDRAM長期供給契約を締結へ、メモリメーカー優位の市場に",
-      "summary": "AIデータセンターの建設ラッシュに伴って世界的なメモリ不足が深刻化する中、AppleがSamsungと4年間にわたるDRAMの長期供給契約を締結する見通しだと、韓国の経済紙・毎日経済が報じました。部品メーカーに対して強い価格交渉力を持つことで知られるApple…",
-      "source": "Gigazine",
-      "source_url": "https://gigazine.net",
-      "url": "https://gigazine.net/news/20261118-apple-samsung-dram/",
-      "category": "その他",
-      "date": "2026-11-18",
-      "datetime": "2026-11-18T11:49:00+09:00"
     },
     {
       "id": "3bc99c6b2f19",
@@ -528,17 +132,6 @@
       "category": "LLM",
       "date": "2026-11-18",
       "datetime": "2026-11-18T10:59:53+09:00"
-    },
-    {
-      "id": "44cb279ecd48",
-      "title": "韓国が大学入試のAIカンニング対策を大幅強化、メガネの全数検査や衣服のボタンの封印を実施し受験資格停止期間を10年に延長へ",
-      "summary": "韓国政府が2026年11月17日、大学入試におけるAIや小型電子機器を悪用したカンニングへの対策を発表しました。受験生が着用するメガネの全数検査や衣服のボタンをシールで覆うといった対策を実施するほか、不正行為をした受験生の受験資格停止期間を1年から10年に延長…",
-      "source": "Gigazine",
-      "source_url": "https://gigazine.net",
-      "url": "https://gigazine.net/news/20261118-korean-anti-ai-cheating/",
-      "category": "その他",
-      "date": "2026-11-18",
-      "datetime": "2026-11-18T10:48:00+09:00"
     },
     {
       "id": "03888a805f7a",
