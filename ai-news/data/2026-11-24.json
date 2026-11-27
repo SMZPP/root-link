@@ -4,7 +4,7 @@
     {
       "id": "f922ae51cb3c",
       "title": "「OpenAI・Anthropic互換」を鵜呑みにしない — さくらのAI Engine を公式SDKで12項目検証した",
-      "summary": "! この記事は Zennfes Autumn 2026「さくらのAIチャレンジ祭り」 への投稿です。 確かめたかったこと さくらのAI Engine は「OpenAI・Anthropic互換API」を謳っています。無償プランなら月3,000リクエストまで無料で…",
+      "summary": "この記事は Zennfes Autumn 2026「さくらのAIチャレンジ祭り」 への投稿です。 さくらのAI Engine は「OpenAI・Anthropic互換API」を謳っています。無償プランなら月3,000リクエストまで無料です。 ただ、「互換」とい…",
       "source": "Zenn.dev",
       "source_url": "https://zenn.dev",
       "url": "https://zenn.dev/taketake36/articles/9a093b50571c83",
@@ -37,7 +37,7 @@
     {
       "id": "9deaeceabaa8",
       "title": "Notion をマルチ AI エージェントの共有ナレッジ基盤にした話",
-      "summary": "課題: AI ツールごとに記憶が分断される Claude Code、Codex CLI、ChatGPT — 複数の AI ツールを併用していると、それぞれが独立したコンテキストを持つ問題に直面する。 Claude Code で調査した技術知見を、Codex が…",
+      "summary": "Claude Code、Codex CLI、ChatGPT — 複数の AI ツールを併用していると、それぞれが独立したコンテキストを持つ問題に直面する。 Claude Code で調査した技術知見を、Codex が知らない ChatGPT で整理した要件を、…",
       "source": "Zenn.dev",
       "source_url": "https://zenn.dev",
       "url": "https://zenn.dev/0505keitan/articles/notion-ai-central-hub-multi-agent",
@@ -59,11 +59,11 @@
     {
       "id": "36e6ba606b3c",
       "title": "ネットワーク機器の設定やログを、生成AIに貼る前にPythonでマスキングする",
-      "summary": "r&quot;^\\s*(enable\\s+)?(se障害の切り分けや設定の確認で、ChatGPT などの生成AIにログや設定を見せたくなることがあります。そのとき気になるのが「何を伏せればいいのか」と「伏せ忘れ」です。 この記事では、Cisco IOS 系の設…",
+      "summary": "この記事では、Cisco IOS 系の設定やログを、AIに貼る前に Python で機械的にマスキングするスクリプトを紹介します。標準ライブラリだけで動きます。 生成AIの業務利用は、まず所属先のルールを確認してください。ルールで禁止されている場合や、機密性の…",
       "source": "Zenn.dev",
       "source_url": "https://zenn.dev",
       "url": "https://zenn.dev/yuru_nw_ops/articles/06a6e8edaa48a2",
-      "category": "LLM",
+      "category": "その他",
       "date": "2026-11-24",
       "datetime": "2026-11-24T19:13:07+09:00"
     },
@@ -103,7 +103,7 @@
     {
       "id": "bfa41f04abe8",
       "title": "Claude Coworkの代替ツール比較【Mac・2026年版】動く場所・実行前の確認・料金・日本語対応",
-      "summary": "! この記事は、Mac 向けの個人エージェント「Nico」を開発しているチームが書いています。そのため比較に Nico も入れていますが、ほかの製品と同じ項目で、各社の公式ページ（2026年11月24日に確認）にもとづいて書いています。 結論 Claude の…",
+      "summary": "この記事は、Mac 向けの個人エージェント「Nico」を開発しているチームが書いています。そのため比較に Nico も入れていますが、ほかの製品と同じ項目で、各社の公式ページ（2026年11月24日に確認）にもとづいて書いています。 Claude の有料プラン…",
       "source": "Zenn.dev",
       "source_url": "https://zenn.dev",
       "url": "https://zenn.dev/nico_app_ai/articles/ab81848689f8ff",
@@ -114,7 +114,7 @@
     {
       "id": "b4b3de99b974",
       "title": "MacのAIエージェント比較【2026年版】触れる範囲・実行前の確認・料金・日本語対応",
-      "summary": "! この記事は、Mac 向けの個人エージェント「Nico」を開発しているチームが書いています。そのため Nico も比較に入れていますが、ほかの製品と同じ項目・同じ基準で、各社の公式ページ（2026年11月24日に確認）にもとづいて書いています。 2026年1…",
+      "summary": "この記事は、Mac 向けの個人エージェント「Nico」を開発しているチームが書いています。そのため Nico も比較に入れていますが、ほかの製品と同じ項目・同じ基準で、各社の公式ページ（2026年11月24日に確認）にもとづいて書いています。 2026年11月…",
       "source": "Zenn.dev",
       "source_url": "https://zenn.dev",
       "url": "https://zenn.dev/nico_app_ai/articles/0371e20c137b2d",
@@ -125,7 +125,7 @@
     {
       "id": "1fab97252b8d",
       "title": "「昨日ゲーセンで千円と自販機で150円」を家計簿の2行にする ― Apps Script で日本語の金額・日付を読む",
-      "summary": "この記事で書くこと Google スプレッドシートと Apps Script で家計簿を作っています。レシートの写真は Gemini API に読ませますが、自販機やゲームセンターのようにレシートが出ない支出は、スマホから文字で入れます。 昨日ゲーセンで千円と…",
+      "summary": "Google スプレッドシートと Apps Script で家計簿を作っています。レシートの写真は Gemini API に読ませますが、自販機やゲームセンターのようにレシートが出ない支出は、スマホから文字で入れます。 これを、次の2行にするのが目標です。 全…",
       "source": "Zenn.dev",
       "source_url": "https://zenn.dev",
       "url": "https://zenn.dev/moneystock/articles/gas-kakeibo-japanese-amount-parser",
@@ -156,20 +156,9 @@
       "datetime": "2026-11-24T15:46:27+09:00"
     },
     {
-      "id": "de7c0b7decae",
-      "title": "AIエージェント「Muse」にClaudeとChatGPTを議論させたら、会社名決めが進んだ話",
-      "summary": "答えが一つに決まらないことを、これから決める人へ。 私は今、個人事業から法人化を見据えて、将来の会社名にもなり得る名前を決めている最中です。決め方として、ClaudeとChatGPTに候補を出してもらい、Museにその2つを操作させて議論させる、という方法を取…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/jota590/articles/93cd95958edc65",
-      "category": "LLM",
-      "date": "2026-11-24",
-      "datetime": "2026-11-24T15:20:11+09:00"
-    },
-    {
       "id": "5d7ffc890d9c",
       "title": "Google Cloud Data & AI Summit ’26 Fall 参加レポート：スタッフとして見た AI Economics",
-      "summary": "1. はじめに 株式会社 MBK デジタルの古畑です。 2026 年 11 月 18 日 (水) に Google 渋谷オフィスで開催された、Google Cloud 主催の「Data &amp; AI Summit ’26 Fall」に参加してきました。 今…",
+      "summary": "株式会社 MBK デジタルの古畑です。 2026 年 11 月 18 日 (水) に Google 渋谷オフィスで開催された、Google Cloud 主催の「Data & AI Summit ’26 Fall」に参加してきました。 今回は一般参加ではなく、午…",
       "source": "Zenn.dev",
       "source_url": "https://zenn.dev",
       "url": "https://zenn.dev/mbk_digital/articles/b9b389b8bc5e4e",
@@ -180,7 +169,7 @@
     {
       "id": "24d03ee6fa11",
       "title": "0.3秒で答えるAIは、暗算でつまずく ― Jev・OpenAI・Geminiの判断APIを165問で比べた",
-      "summary": "はじめに Rehab for JAPANでCTOを務めている@rkyuragiです。 2026年11月にGoogleのGemini Decisions APIが公開され、TypeSafeのJev、OpenAIのDecisions APIと合わせて、判断専用のA…",
+      "summary": "Rehab for JAPANでCTOを務めている@rkyuragiです。 2026年11月にGoogleのGemini Decisions APIが公開され、TypeSafeのJev、OpenAIのDecisions APIと合わせて、判断専用のAPIが3社…",
       "source": "Zenn.dev",
       "source_url": "https://zenn.dev",
       "url": "https://zenn.dev/rehabforjapan/articles/decision-api-comparison",
@@ -189,75 +178,9 @@
       "datetime": "2026-11-24T14:01:28+09:00"
     },
     {
-      "id": "dbd3c75426a0",
-      "title": "【出力課金$0】Gemini Decisions API (gemini-decision-1) の1パス高速判定とConfidenc…",
-      "summary": "📰 本記事の一次ソース（公式発表） タイトル: Gemini Decisions API: Fast, calibrated multimodal decisions 詳細な図解・完全版解説記事: ggnn.tech の本編記事はこちら 1. 背景：なぜ「LL…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/adopture/articles/1bfe25a2e5cf40",
-      "category": "LLM",
-      "date": "2026-11-24",
-      "datetime": "2026-11-24T14:00:50+09:00"
-    },
-    {
-      "id": "2574860f2540",
-      "title": "Gemini の Gem が使えなくなる前に棚卸しする ── 使っている Gem は、文書を検索しても分からない。持ち主に一覧を見てもらう",
-      "summary": "上原正吉（EarthLink Network Co., Ltd.）。Claude Codeを開発の主体に据え、20を超えるプロダクトを1人で同時に開発・運用しています。これは、その現場の実測記です。 Gemini の Gem が使えなくなる前に棚卸しする ──…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/chooser/articles/aico-007-research",
-      "category": "LLM",
-      "date": "2026-11-24",
-      "datetime": "2026-11-24T10:03:03+09:00"
-    },
-    {
-      "id": "81a4a1bea55e",
-      "title": "Gemini無料枠を送る前に数える：D1の条件付きUPSERTで上限の手前で止める",
-      "summary": "環境・前提 実行環境: Cloudflare Workers（compatibility_date = &quot;2026-06-01&quot;）＋ D1（SQLite） 言語: TypeScript 5.7 系、デプロイは wrangler 4.123.…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/hyconsulting/articles/article-1795482030048",
-      "category": "LLM",
-      "date": "2026-11-24",
-      "datetime": "2026-11-24T10:00:35+09:00"
-    },
-    {
-      "id": "3f27a36f91c0",
-      "title": "DMM 生成AI CAMP 学び放題の評判は？コース・学習内容・確認ポイントを調査",
-      "summary": "DMM 生成AI CAMP 学び放題とは DMM 生成AI CAMP 学び放題は、生成AIを仕事や業務改善に活用するためのオンライン学習サービスです。公式案内では、複数のコースから目的に合う内容を学べるプログラムとして紹介されています。 この記事では、公開され…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/nagi_ai_notes/articles/22d014a386a8cc",
-      "category": "製品",
-      "date": "2026-11-24",
-      "datetime": "2026-11-24T09:59:46+09:00"
-    },
-    {
-      "id": "62eba27a6dd9",
-      "title": "目的に合わせた英語教材を AI に作らせて、自分専用の学習アプリにした",
-      "summary": "英語の教材は、世の中にたくさんあります。それでも続かなかったのは、出てくる英文が「自分が仕事で読む英語」ではなかったからだと思います。旅行の会話や日常のフレーズを覚えても、次の日に読むのはクラウドの技術ブログです。 そこで、毎朝の教材を AI（Gemini）に…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/hiroyamayu/articles/purpose-based-english-study-app",
-      "category": "LLM",
-      "date": "2026-11-24",
-      "datetime": "2026-11-24T08:00:05+09:00"
-    },
-    {
-      "id": "5e56a582d960",
-      "title": "大会結果の紙・PDF・写真を AI で読み取って順位表にする（AI に任せるのは「読む」まで）",
-      "summary": "ソフトバレーボールの大会アプリ「Sofvo」を1人で作っています。 大会の主催者は、要項・対戦表・結果表を、ずっと自分たちで作ってきました。Excel で作ったもの、手書きの紙を写真に撮ったもの、PDF。形は主催者ごとにばらばらです。 この「いつもの資料」を、…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/sofvo/articles/ai-read-tournament-results",
-      "category": "その他",
-      "date": "2026-11-24",
-      "datetime": "2026-11-24T08:00:00+09:00"
-    },
-    {
       "id": "5b4a10e524b4",
       "title": "Claude CodeとCodex CLIを両方使う理由: 1つが書き、もう1つが直す",
-      "summary": "本記事は System Design Simple の英語記事の日本語版です。原文: https://systemdesignsimple.com/claude-code-vs-codex-cli/ Claude Code(Anthropic)とCodex C…",
+      "summary": "本記事は System Design Simple の英語記事の日本語版です。原文: Claude Code(Anthropic)とCodex CLI(OpenAI)は、どちらもターミナルで動くAIコーディングエージェントです。プロジェクトを読み、ファイルを編…",
       "source": "Zenn.dev",
       "source_url": "https://zenn.dev",
       "url": "https://zenn.dev/systemdesignsim/articles/claude-code-vs-codex-cli",
@@ -268,24 +191,13 @@
     {
       "id": "a4f7a066af8d",
       "title": "Kaeso: Rust 製のオープンソース・セルフホスト型 AI ゲートウェイ",
-      "summary": "Kaeso とは Kaeso は、Rust で書かれた MIT ライセンスのセルフホスト型 AI ゲートウェイです。アプリケーションは OpenAI 互換・Anthropic 互換の 1 つの API を呼び出すだけで、Kaeso がリクエストを各プロバイダー…",
+      "summary": "Kaeso は、Rust で書かれた MIT ライセンスのセルフホスト型 AI ゲートウェイです。アプリケーションは OpenAI 互換・Anthropic 互換の 1 つの API を呼び出すだけで、Kaeso がリクエストを各プロバイダーへルーティングしま…",
       "source": "Zenn.dev",
       "source_url": "https://zenn.dev",
       "url": "https://zenn.dev/dvnold/articles/b86b4cc65d64ac",
       "category": "その他",
       "date": "2026-11-24",
       "datetime": "2026-11-24T04:56:09+09:00"
-    },
-    {
-      "id": "f23affe9d38d",
-      "title": "Museに「この手を直して」と頼めるAIイラスト修正ワークフローを作った",
-      "summary": "AIイラストの顔も構図も気に入っているのに、組んだ指だけが不自然。そこで、MetaのパーソナルAIエージェント Muse に、画像を渡して「この手の指を交互に組ませて」と頼めば、修正から合成、差分チェックまで進められるようにしました。MetaのMuse紹介 こ…",
-      "source": "Zenn.dev",
-      "source_url": "https://zenn.dev",
-      "url": "https://zenn.dev/hoshigumo/articles/gemini-hand-inpaint",
-      "category": "その他",
-      "date": "2026-11-24",
-      "datetime": "2026-11-24T00:26:33+09:00"
     }
   ]
 }
